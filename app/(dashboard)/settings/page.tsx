@@ -156,25 +156,6 @@ export default function SettingsPage() {
                     </button>
                   </div>
                 </form>
-
-                {/* Account Stats Booster Tool */}
-                <div className="mt-6 pt-5 border-t-2 border-corp-border space-y-3 font-mono">
-                  <h4 className="text-xs font-extrabold uppercase text-corp-text flex items-center gap-2">
-                    <Zap size={15} className="text-amber-400 fill-amber-400" /> Account Stats Booster
-                  </h4>
-                  <p className="text-[11px] font-sans font-medium text-corp-text-secondary">
-                    Click below to add +5,000 XP and +10 Days Streak to your account every time you press it!
-                  </p>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      boostUserStats(5000, 10, "Executive Boost — +5,000 XP & +10 Days Streak");
-                    }}
-                    className="px-5 py-3 rounded-xl text-xs font-mono font-extrabold uppercase text-amber-950 bg-amber-400 hover:bg-amber-300 border-2 border-slate-950 shadow-[4px_4px_0px_0px_#000] active:scale-95 transition-all cursor-pointer flex items-center gap-2"
-                  >
-                    <Zap size={14} className="fill-amber-950" /> Boost +5,000 XP &amp; +10 Days Streak
-                  </button>
-                </div>
               </motion.div>
             )}
 

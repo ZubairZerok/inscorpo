@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { 
-  CheckCircle2, Circle, Sparkles, ChevronRight, Zap, Target, 
-  ArrowRight, ShieldCheck, Award, BookOpen, Trophy 
+import {
+  CheckCircle2, Circle, Sparkles, ChevronRight, Zap, Target,
+  ArrowRight, ShieldCheck, Award, BookOpen, Trophy
 } from "lucide-react";
 import Link from "next/link";
 import { useUser } from "@/components/providers/user-context";
@@ -42,7 +42,7 @@ export function GettingStartedChecklist() {
     const testMet = state.completedChallengeIds.length > 0 || state.courseProgress.some((c) => c.category === "tests");
 
     // 4. AI Interview / Assistant Verification (Attempted AI interview or used AI tools)
-    const aiMet = state.completedChallengeIds.some((id) => id.includes("interview") || id.includes("ai")) || passportMet;
+    const aiMet = state.completedChallengeIds.some((id) => id.includes("interview") || id.includes("ai"));
 
     setItems([
       {
@@ -117,10 +117,10 @@ export function GettingStartedChecklist() {
             <Trophy size={20} />
           </div>
           <div>
-            <h3 className="text-sm font-black uppercase text-white flex items-center gap-2">
+            <h3 className="text-sm font-black uppercase text-emerald-950 flex items-center gap-2">
               Onboarding Checklist Complete! 🎉
             </h3>
-            <p className="text-xs text-[#A0ABBC]">
+            <p className="text-xs text-emerald-800">
               You have claimed all 4 milestones (+200 XP earned). Your profile is fully verified for corporate recruiters!
             </p>
           </div>
@@ -175,13 +175,12 @@ export function GettingStartedChecklist() {
           return (
             <div
               key={item.id}
-              className={`relative p-3.5 rounded-xl border-2 flex flex-col justify-between gap-3 transition-all ${
-                item.isCompleted
-                  ? "bg-[#3DAA78]/10 border-[#3DAA78]/40 text-[#E8ECF4]"
-                  : canClaim
+              className={`relative p-3.5 rounded-xl border-2 flex flex-col justify-between gap-3 transition-all ${item.isCompleted
+                ? "bg-[#3DAA78]/10 border-[#3DAA78]/40 text-[#E8ECF4]"
+                : canClaim
                   ? "bg-[#3B5BDB]/15 border-[#5B7CF6] text-white shadow-md shadow-[#3B5BDB]/20"
                   : "bg-[#161B27] border-[#262F45] hover:border-[#5B7CF6]/60 text-[#E8ECF4]"
-              }`}
+                }`}
             >
               <div className="flex items-start gap-3">
                 <div className="mt-0.5 flex-shrink-0">
