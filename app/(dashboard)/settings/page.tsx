@@ -3,14 +3,14 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  User, Bell, Laptop, Check, Save, Award
+  User, Bell, Laptop, Check, Save, Award, Zap
 } from "lucide-react";
 import { useUser } from "@/components/providers/user-context";
 
 type SettingsTab = "profile" | "platform" | "devices";
 
 export default function SettingsPage() {
-  const { state, updateProfileName, addXP } = useUser();
+  const { state, updateProfileName, boostUserStats } = useUser();
   const [activeTab, setActiveTab] = useState<SettingsTab>("profile");
   const [profileSaved, setProfileSaved] = useState(false);
   const [fullName, setFullName] = useState(state.name);
@@ -157,25 +157,22 @@ export default function SettingsPage() {
                   </div>
                 </form>
 
-                {/* Quick Account XP Restore Tool */}
+                {/* Account Stats Booster Tool */}
                 <div className="mt-6 pt-5 border-t-2 border-corp-border space-y-3 font-mono">
                   <h4 className="text-xs font-extrabold uppercase text-corp-text flex items-center gap-2">
-                    <Award size={15} className="text-amber-400" /> Restore Account XP &amp; Silver Rank
+                    <Zap size={15} className="text-amber-400 fill-amber-400" /> Account Stats Booster
                   </h4>
                   <p className="text-[11px] font-sans font-medium text-corp-text-secondary">
-                    Installed on a new PC or fresh browser? Click below to instantly restore 5,000 XP and Silver Rank on this device.
+                    Click below to add +5,000 XP and +10 Days Streak to your account every time you press it!
                   </p>
                   <button
                     type="button"
                     onClick={() => {
-                      const amountToTarget = Math.max(0, 5000 - state.xp);
-                      if (amountToTarget > 0) {
-                        addXP(amountToTarget, "Restored 5,000 XP — Executive Silver Rank");
-                      }
+                      boostUserStats(5000, 10, "Executive Boost — +5,000 XP & +10 Days Streak");
                     }}
-                    className="px-4 py-2.5 rounded-lg text-xs font-extrabold uppercase text-amber-950 bg-amber-400 hover:bg-amber-300 border-2 border-slate-950 shadow-[3px_3px_0px_0px_#000] transition-all cursor-pointer"
+                    className="px-5 py-3 rounded-xl text-xs font-mono font-extrabold uppercase text-amber-950 bg-amber-400 hover:bg-amber-300 border-2 border-slate-950 shadow-[4px_4px_0px_0px_#000] active:scale-95 transition-all cursor-pointer flex items-center gap-2"
                   >
-                    ⚡ Restore 5,000 XP &amp; Silver Rank Now
+                    <Zap size={14} className="fill-amber-950" /> Boost +5,000 XP &amp; +10 Days Streak
                   </button>
                 </div>
               </motion.div>

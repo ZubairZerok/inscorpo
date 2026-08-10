@@ -29,6 +29,7 @@ type UserContextType = {
   buyItem: (itemId: string, itemTitle: string, method: string) => void;
   buyStreakFreeze: () => boolean;
   completeChecklistTask: (taskId: string, title: string, xpAmount?: number) => boolean;
+  boostUserStats: (xpAmount: number, streakDays: number, reason: string) => void;
 };
 
 const UserContext = createContext<UserContextType | undefined>(undefined);
@@ -759,6 +760,27 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
     });
   };
 
+  const boostUserStats = (xpAmount: number, streakDays: number, reason: string) => {
+    setState((prev) => {
+      const newXp = prev.xp + xpAmount;
+      const newLevel = Math.floor(newXp / 200) + 1;
+      const newStreak = prev.streak + streakDays;
+      const newLog: XpLog = {
+        id: `x_${Date.now()}`,
+        reason,
+        amount: xpAmount,
+        date: new Date().toISOString(),
+      };
+      return {
+        ...prev,
+        xp: newXp,
+        level: newLevel,
+        streak: newStreak,
+        xpLogs: [newLog, ...prev.xpLogs],
+      };
+    });
+  };
+
   return (
     <UserContext.Provider
       value={{
@@ -783,6 +805,7 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
         buyItem,
         buyStreakFreeze,
         completeChecklistTask,
+        boostUserStats,
       }}
     >
       {/*
