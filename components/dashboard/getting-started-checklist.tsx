@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   CheckCircle2, Circle, Sparkles, ChevronRight, Zap, Target, 
-  ArrowRight, ShieldCheck, Award, BookOpen, BrainCheck, Trophy 
+  ArrowRight, ShieldCheck, Award, BookOpen, Trophy 
 } from "lucide-react";
 import Link from "next/link";
 import { useUser } from "@/components/providers/user-context";
