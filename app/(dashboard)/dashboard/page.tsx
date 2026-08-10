@@ -17,7 +17,6 @@ import { LinkedInSkillsCard } from "@/components/dashboard/linkedin-skills-card"
 import { WeeklyVelocityChart } from "@/components/dashboard/weekly-velocity-chart";
 import { ActivityHeatmap } from "@/components/dashboard/activity-heatmap";
 import { DailyQuestEngine } from "@/components/dashboard/daily-quest-engine";
-import { GettingStartedChecklist } from "@/components/dashboard/getting-started-checklist";
 import { DashboardRegisteredWorkshopsWidget } from "@/components/dashboard/dashboard-registered-workshops-widget";
 import { XpExplainerModal } from "@/components/dashboard/xp-explainer-modal";
 import { StreakExplainerModal } from "@/components/dashboard/streak-explainer-modal";
@@ -112,9 +111,6 @@ export default function LinkedInDashboardPage() {
     >
       {/* ── 0. Live Workshops & Event Pass Widget ── */}
       <DashboardRegisteredWorkshopsWidget />
-
-      {/* ── 0.5 Getting Started Activation Checklist ── */}
-      <GettingStartedChecklist />
 
       {/* ── 1. LinkedIn Cover Banner & Profile Header ── */}
       <LinkedInProfileHeader
