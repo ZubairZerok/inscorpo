@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fluidBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="40%" stop-color="#0d9488"/>
+      <stop offset="75%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#5eead4"/>
+    </linearGradient>
+
+    <radialGradient id="glowTop" cx="80%" cy="20%" r="65%">
+      <stop offset="0%" stop-color="#ccfbf1" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0d9488" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="shadowHard" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#042f2c" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#fluidBg)"/>
+  <path d="M 0,0 Q 400,180 800,0 L 800,450 Z" fill="url(#glowTop)" opacity="0.7"/>
+
+  <!-- 3D CENTER BADGE CONTAINER (WIDE - NO OVERFLOW) -->
+  <g transform="translate(400, 225) scale(1.1)" filter="url(#shadowHard)">
+    <rect x="-190" y="-60" width="380" height="120" rx="16" fill="#042f2c" stroke="#FFFFFF" stroke-width="4"/>
+    <rect x="-170" y="-46" width="340" height="38" rx="8" fill="#5EEAD4" stroke="#CCFBF1" stroke-width="2"/>
+    <text x="0" y="-21" text-anchor="middle" fill="#115E59" font-family="monospace" font-weight="900" font-size="16" letter-spacing="1">VISUALIZATIONS &amp; PIVOTS</text>
+    <text x="0" y="32" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-weight="900" font-size="22" letter-spacing="0.5">📊 DYNAMIC DASHBOARDS</text>
+  </g>
+</svg>

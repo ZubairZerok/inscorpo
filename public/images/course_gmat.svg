@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gmatBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#311042"/>
+      <stop offset="50%" stop-color="#6D28D9"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899"/>
+      <stop offset="100%" stop-color="#F43F5E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="450" fill="url(#gmatBg)"/>
+
+  <!-- Math Logic Grid -->
+  <g opacity="0.18" stroke="#DDD6FE" stroke-width="2">
+    <line x1="0" y1="90" x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+
+  <!-- GMAT Score Card Vector -->
+  <g transform="translate(60, 60)">
+    <rect x="0" y="0" width="350" height="320" rx="16" fill="#2E1065" stroke="#C4B5FD" stroke-width="4"/>
+
+    <rect x="0" y="0" width="350" height="55" rx="16" fill="url(#pinkGrad)"/>
+    <rect x="0" y="40" width="350" height="15" fill="#EC4899"/>
+    <text x="25" y="36" fill="#FFFFFF" font-family="monospace" font-weight="900" font-size="18">GMAT / GRE QUANT MASTERY</text>
+
+    <!-- Score Blocks -->
+    <rect x="25" y="80" width="145" height="100" rx="10" fill="#6D28D9" stroke="#A78BFA" stroke-width="2"/>
+    <text x="40" y="115" fill="#DDD6FE" font-family="monospace" font-weight="800" font-size="12">TARGET SCORE</text>
+    <text x="40" y="160" fill="#FDE047" font-family="sans-serif" font-weight="900" font-size="34">760+</text>
+
+    <rect x="185" y="80" width="140" height="100" rx="10" fill="#8B5CF6" stroke="#DDD6FE" stroke-width="2"/>
+    <text x="200" y="115" fill="#F3E8FF" font-family="monospace" font-weight="800" font-size="12">QUANT PERCENTILE</text>
+    <text x="200" y="160" fill="#FFFFFF" font-family="sans-serif" font-weight="900" font-size="34">99th</text>
+
+    <rect x="25" y="200" width="300" height="42" rx="8" fill="#F43F5E"/>
+    <text x="45" y="227" fill="#FFFFFF" font-family="monospace" font-weight="900" font-size="13">DATA INSIGHTS &amp; LOGIC</text>
+
+    <rect x="25" y="255" width="300" height="42" rx="8" fill="#FDE047"/>
+    <text x="45" y="282" fill="#713F12" font-family="sans-serif" font-weight="900" font-size="13">🎓 TOP B-SCHOOL READY</text>
+  </g>
+
+  <!-- Math Formula Symbols Geometry -->
+  <g transform="translate(470, 70)">
+    <rect x="0" y="0" width="270" height="300" rx="16" fill="#581C87" stroke="#F472B6" stroke-width="4"/>
+
+    <text x="35" y="85" fill="#F43F5E" font-family="serif" font-weight="900" font-size="52">∑</text>
+    <text x="135" y="85" fill="#FDE047" font-family="serif" font-weight="900" font-size="52">√x</text>
+    <text x="35" y="185" fill="#38BDF8" font-family="serif" font-weight="900" font-size="52">∫</text>
+    <text x="135" y="185" fill="#A7F3D0" font-family="serif" font-weight="900" font-size="52">Δy</text>
+
+    <rect x="25" y="235" width="220" height="40" rx="8" fill="#EC4899"/>
+    <text x="40" y="260" fill="#FFFFFF" font-family="monospace" font-weight="900" font-size="14">PROBLEM SOLVING ⚡</text>
+  </g>
+</svg>

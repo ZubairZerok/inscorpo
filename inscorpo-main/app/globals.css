@@ -1,0 +1,865 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════════════════════════
+   INSYT CORPORATE — Professional Design System
+   Refined · Cohesive · Readable · Premium
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ─── Theme Tokens ────────────────────────────────────────────── */
+
+@theme inline {
+  --font-sans: var(--font-inter), "Inter", "system-ui", sans-serif;
+  --font-mono: var(--font-jetbrains), "JetBrains Mono", "monospace";
+  --font-bangla: "Volte Bangla", var(--font-volte-bangla), sans-serif;
+
+  /* ── Single blue accent — no rainbow ── */
+  --color-game-blue: #3B5BDB;
+  --color-game-blue-light: #EEF2FF;
+  --color-game-blue-dark: #2F4AC0;
+  --color-game-sky: #4B94E0;
+
+  /* Muted rose — errors/destructive only */
+  --color-game-rose: #E11D48;
+  --color-game-rose-light: #FEE2E8;
+  --color-game-rose-dark: #BE123C;
+
+  /* Muted amber — XP/streak/gold only */
+  --color-game-amber: #F59E0B;
+  --color-game-amber-light: #FEF3C7;
+  --color-game-orange: #B85C12;
+
+  /* All accent aliases → unified blue */
+  --color-game-teal: #3B5BDB;
+  --color-game-teal-light: #EEF2FF;
+  --color-game-teal-dark: #2F4AC0;
+
+  --color-game-purple: #3B5BDB;
+  --color-game-purple-light: #EEF2FF;
+  --color-game-purple-dark: #2F4AC0;
+
+  /* Sage green — success/complete only */
+  --color-game-green: #2D7D5A;
+  --color-game-green-light: #DCFCE7;
+  --color-game-green-dark: #236147;
+
+  /* Neutral surfaces */
+  --color-corp-bg: #F7F8FC;
+  --color-corp-bg-secondary: #EDEEF5;
+  --color-corp-surface: #FFFFFF;
+  --color-corp-surface-hover: #F4F5FB;
+  --color-corp-border: #DDE0EE;
+  --color-corp-border-active: #3B5BDB;
+
+  --color-corp-text: #1A1D2E;
+  --color-corp-text-secondary: #4A4D63;
+  --color-corp-text-tertiary: #8B8FA8;
+
+  --color-corp-accent: #3B5BDB;
+  --color-corp-accent-hover: #2F4AC0;
+  --color-corp-accent-light: #EEF2FF;
+  --color-corp-accent-muted: #7B9AF8;
+
+  --color-corp-cyan: #4B94E0;
+  --color-corp-cyan-light: #EEF2FF;
+  --color-corp-gold: #F59E0B;
+  --color-corp-gold-light: #FEF3C7;
+  --color-corp-success: #2D7D5A;
+  --color-corp-success-light: #DCFCE7;
+  --color-corp-warning: #B85C12;
+  --color-corp-error: #E11D48;
+  --color-corp-error-light: #FEE2E8;
+
+  /* ── Shadows — restrained, no color bleed in light mode ── */
+  --shadow-xs: 0 1px 4px rgba(26, 29, 46, 0.06);
+  --shadow-sm: 0 2px 8px rgba(26, 29, 46, 0.07);
+  --shadow-md: 0 4px 16px rgba(26, 29, 46, 0.09);
+  --shadow-lg: 0 8px 28px rgba(26, 29, 46, 0.11);
+  --shadow-xl: 0 16px 40px rgba(26, 29, 46, 0.13);
+  --shadow-glass: 0 8px 32px rgba(59, 91, 219, 0.10);
+
+  /* Color-tinted game shadows */
+  --shadow-game-blue:   0 6px 20px rgba(59, 91, 219, 0.22);
+  --shadow-game-rose:   0 6px 20px rgba(225, 29, 72, 0.20);
+  --shadow-game-teal:   0 6px 20px rgba(59, 91, 219, 0.22);
+  --shadow-game-amber:  0 6px 20px rgba(245, 158, 11, 0.22);
+  --shadow-game-purple: 0 6px 20px rgba(59, 91, 219, 0.22);
+  --shadow-game-green:  0 6px 20px rgba(45, 125, 90, 0.20);
+
+  /* ── Border Radius — Rounder/Bubbly ── */
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  /* ── Animations ── */
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-delayed: float 6s ease-in-out 2s infinite;
+  --animate-float-slow: float 8s ease-in-out 1s infinite;
+  --animate-shimmer: shimmer 2s linear infinite;
+  --animate-fade-up: fade-up 0.5s cubic-bezier(0.16,1,0.3,1) forwards;
+  --animate-fade-down: fade-down 0.5s cubic-bezier(0.16,1,0.3,1) forwards;
+  --animate-fade-in: fade-in 0.3s ease-out forwards;
+  --animate-slide-up: slide-up 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-slide-right: slide-right 0.3s ease-out forwards;
+  --animate-scale-in: scale-in 0.2s cubic-bezier(0.34,1.56,0.64,1) forwards;
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-pulse-soft: pulse-soft 3s ease-in-out infinite;
+  --animate-gradient: gradient-shift 8s ease infinite;
+  --animate-count-up: count-up 0.8s cubic-bezier(0.16,1,0.3,1) forwards;
+  --animate-bounce-in: bounce-in 0.5s cubic-bezier(0.34,1.56,0.64,1) forwards;
+  --animate-pop: pop 0.3s cubic-bezier(0.34,1.56,0.64,1) forwards;
+  --animate-score-pop: score-pop 0.6s cubic-bezier(0.34,1.56,0.64,1) forwards;
+  --animate-wobble: wobble 0.6s ease-in-out;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  @keyframes fade-up {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fade-down {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes slide-up {
+    0% { opacity: 0; transform: translateY(14px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes slide-right {
+    0% { opacity: 0; transform: translateX(-10px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  @keyframes scale-in {
+    0% { opacity: 0; transform: scale(0.85); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes pulse-soft {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.65; }
+  }
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  @keyframes count-up {
+    0% { opacity: 0; transform: translateY(10px) scale(0.9); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  @keyframes bounce-in {
+    0% { opacity: 0; transform: scale(0.6); }
+    60% { transform: scale(1.08); }
+    80% { transform: scale(0.96); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  @keyframes pop {
+    0% { transform: scale(1); }
+    40% { transform: scale(1.12); }
+    100% { transform: scale(1); }
+  }
+  @keyframes score-pop {
+    0% { opacity: 0; transform: translateY(0) scale(0.7); }
+    50% { opacity: 1; transform: translateY(-16px) scale(1.15); }
+    100% { opacity: 0; transform: translateY(-32px) scale(1); }
+  }
+  @keyframes wobble {
+    0%, 100% { transform: rotate(0deg); }
+    15% { transform: rotate(-6deg); }
+    30% { transform: rotate(5deg); }
+    45% { transform: rotate(-4deg); }
+    60% { transform: rotate(3deg); }
+    75% { transform: rotate(-2deg); }
+  }
+}
+
+
+/* ─── Base CSS Variables ──────────────────────────────────────── */
+
+:root {
+  /* ── Light Mode: Warm-white surfaces, slate text, single blue accent ── */
+  --corp-bg: #F7F8FC;
+  --corp-bg-secondary: #EDEEF5;
+  --corp-surface: #FFFFFF;
+  --corp-surface-hover: #F4F5FB;
+  --corp-border: #DDE0EE;
+  --corp-border-active: #3B5BDB;
+  --corp-text: #1A1D2E;
+  --corp-text-secondary: #4A4D63;
+  --corp-text-tertiary: #8B8FA8;
+
+  /* Single refined blue — the ONLY primary accent */
+  --corp-accent: #3B5BDB;
+  --corp-accent-hover: #2F4AC0;
+  --corp-accent-light: #EEF2FF;
+
+  /* Blue (primary) */
+  --game-blue:       #3B5BDB;
+  --game-blue-dark:  #2F4AC0;
+  --game-blue-light: #EEF2FF;
+  --game-sky:        #4B94E0;
+
+  /* All former teal/purple aliases → unified blue */
+  --game-teal:       #3B5BDB;
+  --game-teal-light: #EEF2FF;
+  --game-purple:     #3B5BDB;
+  --game-purple-light: #EEF2FF;
+
+  /* Muted amber — XP/streak/gold ONLY */
+  --game-amber:        #F59E0B;
+  --game-amber-light:  #FEF3C7;
+  --game-yellow:       #CA8A04;
+
+  /* Sage green — completed/verified states ONLY */
+  --game-green:        #2D7D5A;
+  --game-green-light:  #DCFCE7;
+
+  /* Muted rose — errors/destructive ONLY */
+  --game-rose:         #E11D48;
+  --game-rose-light:   #FEE2E8;
+
+  --corp-glass-bg: rgba(255, 255, 255, 0.96);
+  --corp-glass-border: rgba(59, 91, 219, 0.14);
+  --corp-glass-blur: 20px;
+
+  /* Restrained shadows */
+  --shadow-soft-ui: 0 2px 12px rgba(26, 29, 46, 0.07);
+  --shadow-soft-hover: 0 6px 24px rgba(26, 29, 46, 0.12);
+  --shadow-game-blue:   0 6px 20px rgba(59, 91, 219, 0.22);
+  --shadow-game-rose:   0 6px 20px rgba(225, 29, 72, 0.18);
+  --shadow-game-amber:  0 6px 20px rgba(245, 158, 11, 0.20);
+  --shadow-game-green:  0 6px 20px rgba(45, 125, 90, 0.18);
+  --shadow-game-teal:   0 6px 20px rgba(59, 91, 219, 0.22);
+  --shadow-game-purple: 0 6px 20px rgba(59, 91, 219, 0.22);
+}
+
+.dark {
+  /* ── Dark Mode: Deep graphite — premium, not flat-black ── */
+  --corp-bg: #0E1117;
+  --corp-bg-secondary: #161B27;
+  --corp-surface: #1A2235;
+  --corp-surface-hover: #1F2840;
+  --corp-border: #262F45;
+  --corp-border-active: #5B7CF6;
+  --corp-text: #E8ECF4;
+  --corp-text-secondary: #A0ABBC;
+  --corp-text-tertiary: #626C80;
+
+  --corp-accent: #5B7CF6;
+  --corp-accent-hover: #7090FF;
+  --corp-accent-light: rgba(91, 124, 246, 0.18);
+
+  --game-blue:       #5B7CF6;
+  --game-blue-dark:  #3B5BDB;
+  --game-blue-light: rgba(91, 124, 246, 0.18);
+  --game-sky:        #6B9FFF;
+
+  --game-teal:       #5B7CF6;
+  --game-teal-light: rgba(91, 124, 246, 0.18);
+  --game-purple:     #5B7CF6;
+  --game-purple-light: rgba(91, 124, 246, 0.18);
+
+  --game-amber:      #E09C28;
+  --game-amber-light: rgba(224, 156, 40, 0.18);
+  --game-yellow:     #D4A016;
+
+  --game-green:      #3DAA78;
+  --game-green-light: rgba(61, 170, 120, 0.18);
+
+  --game-rose:       #D94F69;
+  --game-rose-light: rgba(217, 79, 105, 0.18);
+
+  --corp-glass-bg: rgba(26, 34, 53, 0.97);
+  --corp-glass-border: rgba(91, 124, 246, 0.18);
+
+  --shadow-soft-ui: 0 2px 16px rgba(0, 0, 0, 0.40);
+  --shadow-soft-hover: 0 8px 28px rgba(0, 0, 0, 0.55);
+  --shadow-game-blue:   0 6px 20px rgba(91, 124, 246, 0.28);
+  --shadow-game-rose:   0 6px 20px rgba(217, 79, 105, 0.25);
+  --shadow-game-amber:  0 6px 20px rgba(224, 156, 40, 0.25);
+  --shadow-game-green:  0 6px 20px rgba(61, 170, 120, 0.25);
+  --shadow-game-teal:   0 6px 20px rgba(91, 124, 246, 0.28);
+  --shadow-game-purple: 0 6px 20px rgba(91, 124, 246, 0.28);
+}
+
+
+/* ─── Bangla Font ─────────────────────────────────────────────── */
+
+.font-bangla {
+  font-family: "Volte Bangla", var(--font-volte-bangla), sans-serif;
+  /* Bangla script needs larger sizes for legibility */
+  font-size: 1.1em;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+}
+
+/* Force Bangla text up a size level everywhere it appears */
+[class*="text-"][class*="font-bangla"],
+.font-bangla [class*="text-"] {
+  line-height: 1.7;
+}
+
+/* Inline Bangla size overrides — bump each tailwind size class up */
+.text-\[9px\].font-bangla,
+.text-\[10px\].font-bangla  { font-size: 0.78rem !important; }
+.text-\[11px\].font-bangla  { font-size: 0.84rem !important; }
+.text-\[12px\].font-bangla  { font-size: 0.9rem  !important; }
+.text-\[13px\].font-bangla  { font-size: 0.97rem !important; }
+.text-\[14px\].font-bangla  { font-size: 1.05rem !important; }
+.text-\[15px\].font-bangla  { font-size: 1.12rem !important; }
+.text-xs.font-bangla        { font-size: 0.85rem !important; }
+.text-sm.font-bangla        { font-size: 0.97rem !important; }
+.text-base.font-bangla      { font-size: 1.1rem  !important; }
+.text-lg.font-bangla        { font-size: 1.25rem !important; }
+.text-xl.font-bangla        { font-size: 1.4rem  !important; }
+.text-2xl.font-bangla       { font-size: 1.65rem !important; }
+.text-3xl.font-bangla       { font-size: 2.0rem  !important; }
+
+
+/* ─── Base Resets ─────────────────────────────────────────────── */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--corp-bg);
+  color: var(--corp-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* ─── Scrollbar ───────────────────────────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(59, 91, 219, 0.18);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 91, 219, 0.32);
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(91, 124, 246, 0.20);
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(91, 124, 246, 0.35);
+}
+
+
+/* ─── Glassmorphism ───────────────────────────────────────────── */
+
+.glass {
+  background: var(--corp-glass-bg);
+  border: 1px solid var(--corp-glass-border);
+}
+
+@supports (backdrop-filter: blur(1px)) {
+  .glass {
+    backdrop-filter: blur(var(--corp-glass-blur));
+    -webkit-backdrop-filter: blur(var(--corp-glass-blur));
+  }
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+@supports (backdrop-filter: blur(1px)) {
+  .glass-strong {
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    background: rgba(255, 255, 255, 0.90);
+  }
+}
+
+.dark .glass-strong {
+  background: rgba(26, 34, 53, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+@supports (backdrop-filter: blur(1px)) {
+  .dark .glass-strong {
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    background: rgba(26, 34, 53, 0.92);
+  }
+}
+
+
+/* ─── Gamified Card Classes ───────────────────────────────────── */
+
+/* Base game card */
+.game-card {
+  background: var(--corp-surface);
+  border-radius: 22px;
+  padding: 20px;
+  border: 1.5px solid var(--corp-border);
+  box-shadow: var(--shadow-soft-ui);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft-hover);
+}
+
+/* Colored stat cards — unified */
+.game-card-blue   { background: var(--game-blue);   color: #fff; border: none; box-shadow: var(--shadow-game-blue); }
+.game-card-rose   { background: var(--game-rose);   color: #fff; border: none; box-shadow: var(--shadow-game-rose); }
+.game-card-teal   { background: var(--game-blue);   color: #fff; border: none; box-shadow: var(--shadow-game-blue); }
+.game-card-amber  { background: var(--game-amber);  color: #fff; border: none; box-shadow: var(--shadow-game-amber); }
+.game-card-purple { background: var(--game-blue);   color: #fff; border: none; box-shadow: var(--shadow-game-blue); }
+.game-card-green  { background: var(--game-green);  color: #fff; border: none; box-shadow: var(--shadow-game-green); }
+
+/* Large stat number */
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.stat-number-xl {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+/* XP pill badge */
+.xp-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 800;
+  background: var(--game-blue-light);
+  color: var(--game-blue);
+}
+
+.dark .xp-pill {
+  background: rgba(91, 124, 246, 0.18);
+  color: #7090FF;
+}
+
+/* Rank badge */
+.rank-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+/* Progress pill bar */
+.progress-pill {
+  height: 10px;
+  border-radius: 9999px;
+  background: var(--corp-border);
+  overflow: hidden;
+}
+
+.progress-pill-fill {
+  height: 100%;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, var(--game-blue) 0%, var(--game-sky) 100%);
+  transition: width 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Tag / chip */
+.game-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* Floating action button */
+.game-fab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--game-blue);
+  color: #fff;
+  box-shadow: var(--shadow-game-blue);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-fab:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 32px rgba(59, 91, 219, 0.30);
+}
+
+/* Level badge */
+.level-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background: var(--game-blue);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  box-shadow: var(--shadow-game-blue);
+}
+
+/* Streak badge — muted amber only */
+.streak-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background: var(--game-amber);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+/* Section header pill */
+.section-header-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 14px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+
+/* ─── Gradient Backgrounds ────────────────────────────────────── */
+
+.bg-gradient-hero {
+  background: linear-gradient(
+    135deg,
+    #F7F8FC 0%,
+    #EEF2FF 40%,
+    #F3F5FC 70%,
+    #F7F8FC 100%
+  );
+}
+
+.dark .bg-gradient-hero {
+  background: linear-gradient(
+    135deg,
+    #0E1117 0%,
+    #131A2A 40%,
+    #101520 70%,
+    #0E1117 100%
+  );
+}
+
+.bg-gradient-mesh {
+  background: transparent;
+}
+
+.dark .bg-gradient-mesh {
+  background: transparent;
+}
+
+.bg-grid-pattern {
+  background-image:
+    linear-gradient(rgba(59, 91, 219, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 91, 219, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.dark .bg-grid-pattern {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(circle, rgba(59, 91, 219, 0.07) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.dark .bg-dot-pattern {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+
+/* ─── Skeleton Shimmer ────────────────────────────────────────── */
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--corp-bg-secondary) 25%,
+    rgba(59, 91, 219, 0.05) 50%,
+    var(--corp-bg-secondary) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s linear infinite;
+  border-radius: 12px;
+}
+
+.dark .skeleton {
+  background: linear-gradient(
+    90deg,
+    #161B27 25%,
+    rgba(91, 124, 246, 0.08) 50%,
+    #161B27 75%
+  );
+  background-size: 200% 100%;
+}
+
+
+/* ─── Focus & Accessibility ───────────────────────────────────── */
+
+:focus-visible {
+  outline: 2px solid var(--game-blue);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* ─── Selection ───────────────────────────────────────────────── */
+
+::selection {
+  background: rgba(59, 91, 219, 0.15);
+  color: inherit;
+}
+
+.dark ::selection {
+  background: rgba(91, 124, 246, 0.22);
+}
+
+
+/* ─── Gradient Text Utility ───────────────────────────────────── */
+
+.text-gradient {
+  background: linear-gradient(135deg, #3B5BDB 0%, #4B94E0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-warm {
+  background: linear-gradient(135deg, #F59E0B 0%, #B85C12 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #F59E0B 0%, #E11D48 50%, #F59E0B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+/* ─── Gamified Button Styles ──────────────────────────────────── */
+
+.btn-game {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 14px;
+  font-weight: 800;
+  font-size: 14px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-game:active {
+  transform: scale(0.95);
+}
+
+.btn-game-blue {
+  background: var(--game-blue);
+  color: #fff;
+  box-shadow: var(--shadow-game-blue);
+}
+
+.btn-game-blue:hover {
+  background: var(--game-blue-dark);
+  box-shadow: 0 10px 24px rgba(59, 91, 219, 0.30);
+  transform: translateY(-1px);
+}
+
+.btn-game-rose {
+  background: var(--game-rose);
+  color: #fff;
+  box-shadow: var(--shadow-game-rose);
+}
+
+.btn-game-rose:hover {
+  background: #A8293F;
+  box-shadow: 0 10px 24px rgba(225, 29, 72, 0.28);
+  transform: translateY(-1px);
+}
+
+.btn-game-teal {
+  background: var(--game-blue);
+  color: #fff;
+  box-shadow: var(--shadow-game-blue);
+}
+
+.btn-game-outline {
+  background: transparent;
+  color: var(--game-blue);
+  border: 2px solid var(--game-blue);
+  box-shadow: none;
+}
+
+.btn-game-outline:hover {
+  background: var(--game-blue-light);
+}
+
+
+/* ─── Mobile Performance & Touch Enhancements ─────────────────── */
+
+.touch-manipulation {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.gpu-accelerated {
+  transform: translateZ(0);
+  will-change: transform, opacity;
+}
+
+/* Minimum 44×44px touch targets */
+@media (pointer: coarse) {
+  button, [role="button"], a[href] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  a[href].inline-text-link {
+    min-height: unset;
+    min-width: unset;
+  }
+}
+
+/* Active press feedback */
+.btn-primary:active,
+button[type="submit"]:active {
+  transform: scale(0.96);
+}
+
+/* Floating bottom nav pill helper */
+.bottom-nav-pill {
+  border-radius: 28px;
+  box-shadow: 0 8px 32px rgba(26, 29, 46, 0.14), 0 2px 8px rgba(26, 29, 46, 0.08);
+}
+
+.dark .bottom-nav-pill {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.55), 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ─── Gamified Heatmap ────────────────────────────────────────── */
+
+.heatmap-cell {
+  border-radius: 5px;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.heatmap-cell:hover {
+  transform: scale(1.3);
+  z-index: 10;
+  position: relative;
+}
+
+
+/* ─── Print CSS — Career Passport & Certificates ─────────────── */
+
+@media print {
+  header, nav, aside,
+  [class*="sidebar"],
+  [class*="topbar"],
+  [class*="bottom-nav"],
+  [class*="premium-banner"],
+  button:not(.print-visible),
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: #0E1117 !important;
+  }
+
+  .cert-card,
+  .passport-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    box-shadow: none !important;
+  }
+
+  main, .max-w-5xl, .max-w-7xl, .max-w-4xl {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  @page {
+    margin: 1cm;
+  }
+}
+
+/* ─── Global Interactive Pointer Cursor ───────────────────────── */
+
+button, [role="button"], a, input[type="submit"], input[type="button"], select, label, .cursor-pointer {
+  cursor: pointer !important;
+}
+

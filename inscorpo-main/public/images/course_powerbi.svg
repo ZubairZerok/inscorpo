@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pbiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C2D12"/>
+      <stop offset="50%" stop-color="#C2410C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6B21A8"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="450" fill="url(#pbiBg)"/>
+
+  <!-- Grid Lines -->
+  <g opacity="0.2" stroke="#FEF08A" stroke-width="2">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="0" y1="350" x2="800" y2="350"/>
+
+    <line x1="200" y1="0" x2="200" y2="450"/>
+    <line x1="400" y1="0" x2="400" y2="450"/>
+    <line x1="600" y1="0" x2="600" y2="450"/>
+  </g>
+
+  <!-- Vector Power BI Column Bar Block -->
+  <g transform="translate(60, 50)">
+    <rect x="0" y="0" width="350" height="340" rx="16" fill="#451A03" stroke="#FDE047" stroke-width="4"/>
+
+    <!-- Title Bar -->
+    <rect x="0" y="0" width="350" height="55" rx="16" fill="url(#cyanGrad)"/>
+    <rect x="0" y="40" width="350" height="15" fill="#06B6D4"/>
+    <text x="25" y="36" fill="#164E63" font-family="sans-serif" font-weight="900" font-size="18">POWER BI EXECUTIVE ANALYTICS</text>
+
+    <!-- Bar Columns -->
+    <rect x="35" y="160" width="55" height="140" rx="8" fill="#F59E0B" stroke="#FEF08A" stroke-width="2"/>
+    <rect x="110" y="120" width="55" height="180" rx="8" fill="url(#cyanGrad)" stroke="#E0F2FE" stroke-width="2"/>
+    <rect x="185" y="80" width="55" height="220" rx="8" fill="url(#purpleGrad)" stroke="#F3E8FF" stroke-width="2"/>
+    <rect x="260" y="140" width="55" height="160" rx="8" fill="#10B981" stroke="#A7F3D0" stroke-width="2"/>
+  </g>
+
+  <!-- Circular Donut Chart Vector -->
+  <g transform="translate(470, 70)">
+    <rect x="0" y="0" width="270" height="300" rx="16" fill="#7C2D12" stroke="#FDBA74" stroke-width="4"/>
+
+    <!-- Donut Segments -->
+    <circle cx="135" cy="140" r="85" fill="none" stroke="#6B21A8" stroke-width="32"/>
+    <circle cx="135" cy="140" r="85" fill="none" stroke="#06B6D4" stroke-width="32" stroke-dasharray="240 500" stroke-dashoffset="40"/>
+    <circle cx="135" cy="140" r="85" fill="none" stroke="#F59E0B" stroke-width="32" stroke-dasharray="140 500" stroke-dashoffset="-200"/>
+
+    <circle cx="135" cy="140" r="50" fill="#7C2D12"/>
+    <text x="110" y="146" fill="#FDE047" font-family="monospace" font-weight="900" font-size="20">88%</text>
+
+    <!-- Metric Pill -->
+    <rect x="25" y="245" width="220" height="36" rx="8" fill="#F59E0B"/>
+    <text x="40" y="268" fill="#451A03" font-family="sans-serif" font-weight="900" font-size="13">DAX &amp; MODELING READY</text>
+  </g>
+</svg>

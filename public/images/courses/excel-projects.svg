@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fluidBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022c22"/>
+      <stop offset="40%" stop-color="#064e3b"/>
+      <stop offset="70%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <radialGradient id="glowTop" cx="80%" cy="20%" r="65%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#064e3b" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="shadow3d" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#022c22" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#fluidBg)"/>
+  <path d="M 0,0 Q 400,200 800,0 L 800,450 Z" fill="url(#glowTop)" opacity="0.6"/>
+
+  <!-- 3D Center CEO Performance Tracker Capstone Badge -->
+  <g transform="translate(400, 225) scale(1.15)" filter="url(#shadow3d)">
+    <rect x="-90" y="-50" width="180" height="100" rx="16" fill="#047857" stroke="#FEF08A" stroke-width="3"/>
+    <rect x="-80" y="-40" width="160" height="32" rx="6" fill="#F59E0B"/>
+    <text x="0" y="-18" text-anchor="middle" fill="#451A03" font-family="monospace" font-weight="900" font-size="15">CEO TRACKER CAPSTONE</text>
+    <text x="0" y="24" text-anchor="middle" fill="#FEF08A" font-family="sans-serif" font-weight="900" font-size="18">🏆 100% VERIFIED</text>
+  </g>
+</svg>

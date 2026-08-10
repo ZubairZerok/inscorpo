@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="aiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#164E63"/>
+      <stop offset="50%" stop-color="#0891B2"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="limeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A3E635"/>
+      <stop offset="100%" stop-color="#84CC16"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="450" fill="url(#aiBg)"/>
+
+  <!-- Neural AI Grid Lines -->
+  <g opacity="0.2" stroke="#CFFAFE" stroke-width="2">
+    <line x1="0" y1="90" x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+
+  <!-- AI Prompt Flowchart Block Vector -->
+  <g transform="translate(60, 60)">
+    <rect x="0" y="0" width="360" height="320" rx="16" fill="#155E75" stroke="#67E8F9" stroke-width="4"/>
+
+    <rect x="0" y="0" width="360" height="55" rx="16" fill="url(#limeGrad)"/>
+    <rect x="0" y="40" width="360" height="15" fill="#84CC16"/>
+    <text x="25" y="36" fill="#1A2E05" font-family="monospace" font-weight="900" font-size="18">AI PROMPT &amp; AUTOMATION</text>
+
+    <!-- Node Boxes -->
+    <rect x="25" y="75" width="145" height="42" rx="8" fill="#0891B2"/>
+    <text x="40" y="101" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="13">LLM Context</text>
+
+    <rect x="190" y="75" width="145" height="42" rx="8" fill="#0E7490"/>
+    <text x="205" y="101" fill="#CFFAFE" font-family="sans-serif" font-weight="800" font-size="13">Few-Shot Prompt</text>
+
+    <rect x="25" y="135" width="310" height="42" rx="8" fill="url(#limeGrad)"/>
+    <text x="40" y="161" fill="#1A2E05" font-family="monospace" font-weight="900" font-size="14">🤖 AUTOMATED PYTHON AGENT</text>
+
+    <rect x="25" y="195" width="145" height="42" rx="8" fill="#7C3AED"/>
+    <text x="40" y="221" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="13">Vector DB RAG</text>
+
+    <rect x="190" y="195" width="145" height="42" rx="8" fill="#06B6D4"/>
+    <text x="205" y="221" fill="#155E75" font-family="sans-serif" font-weight="900" font-size="13">Zero Latency</text>
+
+    <rect x="25" y="255" width="310" height="42" rx="8" fill="#A855F7"/>
+    <text x="45" y="281" fill="#FFFFFF" font-family="monospace" font-weight="900" font-size="13">WORKPLACE AUTOMATION</text>
+  </g>
+
+  <!-- AI Neural Network Vector Graphic -->
+  <g transform="translate(470, 70)">
+    <rect x="0" y="0" width="270" height="300" rx="16" fill="#0E7490" stroke="#A5F3FC" stroke-width="4"/>
+
+    <!-- Connections -->
+    <line x1="60" y1="90" x2="135" y2="60" stroke="#A3E635" stroke-width="4"/>
+    <line x1="60" y1="90" x2="135" y2="150" stroke="#A3E635" stroke-width="4"/>
+    <line x1="60" y1="210" x2="135" y2="150" stroke="#A3E635" stroke-width="4"/>
+    <line x1="60" y1="210" x2="135" y2="240" stroke="#A3E635" stroke-width="4"/>
+
+    <line x1="135" y1="60" x2="210" y2="150" stroke="#67E8F9" stroke-width="4"/>
+    <line x1="135" y1="150" x2="210" y2="150" stroke="#67E8F9" stroke-width="4"/>
+    <line x1="135" y1="240" x2="210" y2="150" stroke="#67E8F9" stroke-width="4"/>
+
+    <!-- Nodes -->
+    <circle cx="60" cy="90" r="14" fill="#A3E635"/>
+    <circle cx="60" cy="210" r="14" fill="#A3E635"/>
+    <circle cx="135" cy="60" r="14" fill="#06B6D4"/>
+    <circle cx="135" cy="140" r="14" fill="#06B6D4"/>
+    <circle cx="135" cy="240" r="14" fill="#06B6D4"/>
+    <circle cx="210" cy="150" r="18" fill="#FDE047"/>
+
+    <text x="45" y="278" fill="#ECFEFF" font-family="monospace" font-weight="900" font-size="13">NEURAL AGENTIC PIPELINE</text>
+  </g>
+</svg>

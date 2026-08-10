@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <!-- Ultra Vibrant Rose Gradient -->
+    <linearGradient id="fluidBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#881337"/>
+      <stop offset="40%" stop-color="#be123c"/>
+      <stop offset="75%" stop-color="#e11d48"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+
+    <radialGradient id="glowTop" cx="85%" cy="15%" r="65%">
+      <stop offset="0%" stop-color="#fecdd3" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#e11d48" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Hard High-Contrast 3D Drop Shadow -->
+    <filter id="shadowHard" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#4c0519" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Bright Base Background -->
+  <rect width="800" height="450" fill="url(#fluidBg)"/>
+  <path d="M 0,0 Q 400,200 800,0 L 800,450 Z" fill="url(#glowTop)" opacity="0.7"/>
+
+  <!-- Corner Floating Vector Icons (Ultra High Brightness White) -->
+  <!-- Top Left: Brain Icon -->
+  <g transform="translate(110, 45)" stroke="#FFFFFF" stroke-width="4" fill="none" opacity="0.95">
+    <path d="M 20,40 C 0,40 0,20 15,10 C 15,0 35,0 40,15 C 50,0 70,10 65,25 C 75,35 60,50 45,45 C 35,55 20,50 20,40 Z"/>
+  </g>
+
+  <!-- Top Right: Stopwatch Icon -->
+  <g transform="translate(670, 130)" stroke="#FFFFFF" stroke-width="4" fill="none" opacity="0.95">
+    <circle cx="24" cy="28" r="20"/>
+    <line x1="24" y1="0" x2="24" y2="8"/>
+    <line x1="24" y1="28" x2="34" y2="20"/>
+  </g>
+
+  <!-- Bottom Left: Target Icon -->
+  <g transform="translate(65, 330)" stroke="#FFFFFF" stroke-width="4" fill="none" opacity="0.95">
+    <circle cx="24" cy="24" r="22"/>
+    <circle cx="24" cy="24" r="12"/>
+    <circle cx="24" cy="24" r="4" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Bottom Right: Lightning Zap -->
+  <g transform="translate(680, 360)" fill="#FFFFFF" opacity="0.95">
+    <polygon points="20,0 0,26 16,26 10,48 34,18 18,18"/>
+  </g>
+
+  <!-- 3D CENTER BADGE CONTAINER (EXTRA WIDE - ZERO OVERFLOW, ULTRA BRIGHT HARD LOOK) -->
+  <g transform="translate(400, 225) scale(1.1)" filter="url(#shadowHard)">
+    <!-- Container Box -->
+    <rect x="-190" y="-60" width="380" height="120" rx="16" fill="#4c0519" stroke="#FFFFFF" stroke-width="4"/>
+    
+    <!-- Top Pill Badge -->
+    <rect x="-170" y="-46" width="340" height="38" rx="8" fill="#10B981" stroke="#A7F3D0" stroke-width="2"/>
+    <text x="0" y="-21" text-anchor="middle" fill="#022C22" font-family="monospace" font-weight="900" font-size="16" letter-spacing="1">SHL ASSESSMENT PREP</text>
+    
+    <!-- Bottom Main Text -->
+    <text x="0" y="32" text-anchor="middle" fill="#FEF08A" font-family="sans-serif" font-weight="900" font-size="24" letter-spacing="0.5">⚡ NUMERICAL 99% PASS</text>
+  </g>
+</svg>

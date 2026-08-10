@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="carBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4C0519"/>
+      <stop offset="50%" stop-color="#BE123C"/>
+      <stop offset="100%" stop-color="#E11D48"/>
+    </linearGradient>
+    <linearGradient id="goldCar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FACC15"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="450" fill="url(#carBg)"/>
+
+  <!-- Career Grid Lines -->
+  <g opacity="0.18" stroke="#FECDD3" stroke-width="2">
+    <line x1="0" y1="90" x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+
+  <!-- Case Interview Tree Block Vector -->
+  <g transform="translate(60, 60)">
+    <rect x="0" y="0" width="360" height="320" rx="16" fill="#881337" stroke="#FDA4AF" stroke-width="4"/>
+
+    <rect x="0" y="0" width="360" height="55" rx="16" fill="url(#goldCar)"/>
+    <rect x="0" y="40" width="360" height="15" fill="#F59E0B"/>
+    <text x="25" y="36" fill="#713F12" font-family="monospace" font-weight="900" font-size="18">MTO &amp; CASE INTERVIEWS</text>
+
+    <!-- Milestone Nodes -->
+    <rect x="25" y="75" width="145" height="42" rx="8" fill="#BE123C"/>
+    <text x="40" y="101" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="13">1. Resume ATS 95+</text>
+
+    <rect x="190" y="75" width="145" height="42" rx="8" fill="#E11D48"/>
+    <text x="205" y="101" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="13">2. Case Framework</text>
+
+    <rect x="25" y="135" width="145" height="42" rx="8" fill="#E11D48"/>
+    <text x="40" y="161" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="13">3. GUESTIMATE</text>
+
+    <rect x="190" y="135" width="145" height="42" rx="8" fill="url(#goldCar)"/>
+    <text x="205" y="161" fill="#713F12" font-family="sans-serif" font-weight="900" font-size="13">4. HR &amp; STAR</text>
+
+    <rect x="25" y="200" width="310" height="45" rx="8" fill="#10B981"/>
+    <text x="45" y="228" fill="#022C22" font-family="sans-serif" font-weight="900" font-size="14">🎯 UNILEVER / BAT / McKinsey OFFER</text>
+
+    <rect x="25" y="255" width="310" height="42" rx="8" fill="#FACC15"/>
+    <text x="45" y="281" fill="#713F12" font-family="monospace" font-weight="900" font-size="13">CAREER READY CERTIFICATE</text>
+  </g>
+
+  <!-- Vector Briefcase Graphic -->
+  <g transform="translate(470, 70)">
+    <rect x="0" y="0" width="270" height="300" rx="16" fill="#9F1239" stroke="#FECDD3" stroke-width="4"/>
+
+    <!-- Briefcase -->
+    <rect x="45" y="110" width="180" height="130" rx="12" fill="url(#goldCar)"/>
+    <rect x="95" y="80" width="80" height="35" rx="6" fill="none" stroke="#FACC15" stroke-width="8"/>
+    <rect x="120" y="145" width="30" height="25" rx="4" fill="#713F12"/>
+
+    <text x="50" y="275" fill="#FFE4E6" font-family="monospace" font-weight="900" font-size="14">EXECUTIVE PATHWAYS 🚀</text>
+  </g>
+</svg>

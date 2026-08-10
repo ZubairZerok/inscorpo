@@ -1,0 +1,17 @@
+{
+  "name": "INSYT Corporate — The Career Operating System",
+  "short_name": "INSYT Corporate",
+  "description": "Master banking, corporate skills, GRE, GMAT, IELTS, AI productivity and more.",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "background_color": "#0d1f3c",
+  "theme_color": "#0d1f3c",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
