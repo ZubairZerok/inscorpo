@@ -2,12 +2,13 @@
 
 import { Client, Account, Databases, ID, Query } from "appwrite";
 import { UserState } from "./state/types";
+import { APPWRITE_CONFIG } from "@/lib/config";
 
 export const client = new Client();
 
 client
-  .setEndpoint(process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT || "https://sgp.cloud.appwrite.io/v1")
-  .setProject(process.env.NEXT_PUBLIC_APPWRITE_PROJECT_ID || process.env.NEXT_PUBLIC_APPWRITE_PROJECT || "6a55c66500032e142d85");
+  .setEndpoint(APPWRITE_CONFIG.endpoint)
+  .setProject(APPWRITE_CONFIG.projectId);
 
 export const account = new Account(client);
 export const databases = new Databases(client);
