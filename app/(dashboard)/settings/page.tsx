@@ -3,14 +3,14 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  User, Bell, Laptop, Check, Save, Award, Zap
+  User, Bell, Laptop, Check, Save, Award, RotateCcw
 } from "lucide-react";
 import { useUser } from "@/components/providers/user-context";
 
 type SettingsTab = "profile" | "platform" | "devices";
 
 export default function SettingsPage() {
-  const { state, updateProfileName, boostUserStats } = useUser();
+  const { state, updateProfileName, resetUserStats } = useUser();
   const [activeTab, setActiveTab] = useState<SettingsTab>("profile");
   const [profileSaved, setProfileSaved] = useState(false);
   const [fullName, setFullName] = useState(state.name);
@@ -156,6 +156,27 @@ export default function SettingsPage() {
                     </button>
                   </div>
                 </form>
+
+                {/* Reset Progress Section */}
+                <div className="mt-6 pt-5 border-t-2 border-corp-border space-y-3 font-mono">
+                  <h4 className="text-xs font-extrabold uppercase text-rose-500 flex items-center gap-2">
+                    <RotateCcw size={15} /> Reset Account Stats &amp; Progress
+                  </h4>
+                  <p className="text-[11px] font-sans font-medium text-corp-text-secondary">
+                    Reset your XP to 0, streak to 0, and clear all test/interview attempts back to a fresh level 1 account.
+                  </p>
+                  <button
+                    type="button"
+                    onClick={async () => {
+                      if (confirm("Are you sure you want to reset all XP, streak, and progress back to 0?")) {
+                        await resetUserStats();
+                      }
+                    }}
+                    className="px-4 py-2.5 rounded-lg text-xs font-extrabold uppercase text-white bg-rose-600 hover:bg-rose-700 border-2 border-slate-950 shadow-[3px_3px_0px_0px_#000] transition-all cursor-pointer flex items-center gap-2"
+                  >
+                    <RotateCcw size={14} /> Reset XP, Streak &amp; Rank to 0
+                  </button>
+                </div>
               </motion.div>
             )}
 
