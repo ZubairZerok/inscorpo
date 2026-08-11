@@ -102,7 +102,7 @@ export function DashboardTopbar() {
 
   return (
     <header
-      className="relative z-[100] h-16 flex items-center justify-between gap-2 sm:gap-3 px-3 sm:px-4 md:px-6 flex-shrink-0 font-sans border-b-2 max-w-full"
+      className="relative z-30 h-16 flex items-center justify-between gap-2 sm:gap-3 px-3 sm:px-4 md:px-6 flex-shrink-0 font-sans border-b-2 max-w-full"
       style={{
         background: "var(--corp-surface)",
         borderColor: "var(--corp-border)",

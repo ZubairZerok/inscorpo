@@ -47,7 +47,7 @@ export function GovJobModal({ job, onClose }: GovJobModalProps) {
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 overflow-y-auto" style={{ background: "rgba(0,0,0,0.65)", backdropFilter: "blur(8px)" }}>
+      <div className="fixed inset-0 z-[99999] flex items-center justify-center p-4 overflow-y-auto" style={{ background: "rgba(0,0,0,0.65)", backdropFilter: "blur(8px)" }}>
         <motion.div
           initial={{ opacity: 0, scale: 0.95, y: 15 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}

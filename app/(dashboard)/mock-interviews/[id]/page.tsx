@@ -839,7 +839,7 @@ ${!isLast ? `\n**Next Probing Question:** "${scenario.questions[nextIdx]}"` : ""
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[1000] flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm font-mono"
+            className="fixed inset-0 z-[99999] flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm font-mono"
             onClick={() => setShowScorecardModal(false)}
           >
             <motion.div

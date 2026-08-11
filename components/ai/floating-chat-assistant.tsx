@@ -91,7 +91,7 @@ export function FloatingChatAssistant() {
     return (
       <button
         onClick={() => setIsDismissed(false)}
-        className="fixed bottom-20 md:bottom-5 right-4 md:right-5 z-[8000] opacity-80 hover:opacity-100 transition-opacity text-xs font-mono px-3.5 py-2 rounded-full bg-[#2563eb] text-white border-2 border-blue-400 shadow-lg flex items-center gap-2 focus-visible:ring-2 focus-visible:ring-[#2563eb] focus-visible:ring-offset-2 outline-none min-h-[44px] min-w-[44px]"
+        className="fixed bottom-20 md:bottom-5 right-4 md:right-5 z-40 opacity-80 hover:opacity-100 transition-opacity text-xs font-mono px-3.5 py-2 rounded-full bg-[#2563eb] text-white border-2 border-blue-400 shadow-lg flex items-center gap-2 focus-visible:ring-2 focus-visible:ring-[#2563eb] focus-visible:ring-offset-2 outline-none min-h-[44px] min-w-[44px]"
         title="Show AI Helper"
         aria-label="Re-enable Floating AI Assistant"
       >
@@ -110,7 +110,7 @@ export function FloatingChatAssistant() {
       onDragEnd={() => {
         setTimeout(() => setIsDragging(false), 200);
       }}
-      className="fixed bottom-20 right-5 z-[8000] touch-none select-none font-sans"
+      className="fixed bottom-20 right-5 z-40 touch-none select-none font-sans"
     >
       {/* ── EXPANDED CHAT DRAWER ── */}
       <AnimatePresence>

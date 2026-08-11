@@ -1021,7 +1021,7 @@ Always maintain a clean separation between **Inputs** (Blue font), **Calculation
             initial={{ opacity: 0, scale: 0.8, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: -20 }}
-            className="fixed inset-0 flex items-center justify-center bg-black/40 z-50 p-4"
+            className="fixed inset-0 flex items-center justify-center bg-black/40 z-[99999] p-4"
             onClick={() => setShowXPPopup(false)}
           >
             <div className="glass-strong rounded-3xl p-8 max-w-sm w-full text-center space-y-4 shadow-2xl border border-amber-500/30" onClick={(e) => e.stopPropagation()}>

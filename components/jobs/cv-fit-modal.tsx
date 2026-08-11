@@ -64,7 +64,7 @@ export function CvFitModal({ job, onClose }: CvFitModalProps) {
   return (
     <AnimatePresence>
       <div
-        className="fixed inset-0 z-50 flex items-center justify-center p-4 overflow-y-auto"
+        className="fixed inset-0 z-[99999] flex items-center justify-center p-4 overflow-y-auto"
         style={{ background: "rgba(0,0,0,0.7)", backdropFilter: "blur(8px)" }}
       >
         <motion.div
