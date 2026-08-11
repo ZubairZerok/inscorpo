@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   X, Sparkles, AlertCircle, CheckCircle2, Award, ArrowRight,
@@ -8,32 +8,58 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { GovJob, analyzeCvFit, CvFitResult } from "@/lib/data/gov-jobs-db";
+import { JobListing } from "@/lib/data/jobs";
 import { useUser } from "@/components/providers/user-context";
+import { CompanyLogo } from "./company-logo";
 
 interface CvFitModalProps {
-  job: GovJob | null;
+  isOpen?: boolean;
+  job: JobListing | GovJob | null;
   onClose: () => void;
 }
 
-export function CvFitModal({ job, onClose }: CvFitModalProps) {
+export function CvFitModal({ isOpen, job, onClose }: CvFitModalProps) {
   const { state, addXP, addNotification } = useUser();
 
   const passportProfile: any = state.passportProfile || {};
   const [customDegree, setCustomDegree] = useState<string>(
-    passportProfile.education?.[0]?.degree || passportProfile.degree || ""
+    passportProfile.education?.[0]?.degree || passportProfile.degree || "BBA (Finance & Marketing)"
   );
   const [customSkillsInput, setCustomSkillsInput] = useState<string>(
-    Array.isArray(passportProfile.skills) ? passportProfile.skills.join(", ") : ""
+    Array.isArray(passportProfile.skills) ? passportProfile.skills.join(", ") : "financial_modeling, analytics, communication, excel"
   );
   const [isAnalyzed, setIsAnalyzed] = useState(false);
   const [analysisResult, setAnalysisResult] = useState<CvFitResult | null>(null);
 
-  if (!job) return null;
+  // Esc key listener
+  useEffect(() => {
+    if (isOpen === false) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        onClose();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen, onClose]);
+
+  if (isOpen === false || !job) return null;
+
+  const isGov = "organizationAcronym" in job;
+  const companyName = isGov ? `${(job as GovJob).organizationName} (${(job as GovJob).organizationAcronym})` : (job as JobListing).company;
+  const companyAcronym = isGov ? (job as GovJob).organizationAcronym : undefined;
+  const jobTitle = job.title;
+  const jobGrade = isGov ? `Grade ${(job as GovJob).grade}` : (job as JobListing).experienceLevel;
+  const requirementsText = isGov ? (job as GovJob).requirements : (job as JobListing).requirements.join(". ");
 
   const userXp = state.xp;
   const hasEnoughXp = userXp >= 10;
 
-  const handleRunAnalysis = () => {
+  const handleRunAnalysis = (e?: React.MouseEvent) => {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
     if (!hasEnoughXp) return;
 
     // Parse user skills
@@ -43,10 +69,32 @@ export function CvFitModal({ job, onClose }: CvFitModalProps) {
       .filter((s) => s.length > 0);
 
     // Deduct 10 XP
-    addXP(-10, `CV Fit Check: ${job.title} (${job.organizationAcronym})`);
+    addXP(-10, `CV Fit Check: ${jobTitle} (${companyName})`);
+
+    // Normalize mock GovJob for analysis if corporate
+    const govJobForAnalysis: GovJob = isGov
+      ? (job as GovJob)
+      : {
+          id: job.id,
+          organizationAcronym: companyName.substring(0, 4).toUpperCase(),
+          organizationName: companyName,
+          title: jobTitle,
+          grade: 9,
+          vacancy: 1,
+          family: (job as JobListing).department,
+          requirements: requirementsText,
+          before_skills: ["financial_modeling", "analytics", "communication", "excel"],
+          after_skills_inferred: ["strategic_planning", "leadership", "risk_management"],
+          salary_scale_bdt: (job as JobListing).salary,
+          applicationDeadline: (job as JobListing).deadline,
+          applicationMode: "Corporate Direct",
+          ministry: "Corporate",
+          experience: (job as JobListing).experienceLevel,
+          source_confidence: "VERIFIED_GOVT_CIRCULAR",
+        };
 
     // Run AI / Rule Engine analysis
-    const result = analyzeCvFit(job, {
+    const result = analyzeCvFit(govJobForAnalysis, {
       degree: customDegree,
       skills: skillsArray,
     });
@@ -54,58 +102,73 @@ export function CvFitModal({ job, onClose }: CvFitModalProps) {
     setAnalysisResult(result);
     setIsAnalyzed(true);
 
+    try {
+      localStorage.setItem(`insyt_cv_fit_${job.id}`, JSON.stringify({ matchScore: result.matchScore, timestamp: Date.now() }));
+      window.dispatchEvent(new Event("insyt_fit_check_updated"));
+    } catch {
+      /* ignore */
+    }
+
     addNotification({
       type: "achievement",
       title: "CV Fit Check Complete (-10 XP)",
-      message: `Analyzed alignment for ${job.title}. Match score: ${result.matchScore}%`,
+      message: `Analyzed alignment for ${jobTitle}. Match score: ${result.matchScore}%`,
     });
   };
 
   return (
     <AnimatePresence>
       <div
-        className="fixed inset-0 z-[99999] flex items-center justify-center p-4 overflow-y-auto"
-        style={{ background: "rgba(0,0,0,0.7)", backdropFilter: "blur(8px)" }}
+        onClick={onClose}
+        className="fixed inset-0 z-[99999] flex items-center justify-center p-4 overflow-y-auto bg-black/60 backdrop-blur-md font-mono"
       >
         <motion.div
+          onClick={(e) => e.stopPropagation()}
           initial={{ opacity: 0, scale: 0.95, y: 15 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 15 }}
           transition={{ duration: 0.2 }}
-          className="relative w-full max-w-2xl rounded-2xl border-2 border-blue-500 shadow-[6px_6px_0px_0px_#2563eb] overflow-hidden my-8 font-mono"
-          style={{ background: "var(--corp-surface)" }}
+          className="relative w-full max-w-2xl rounded-sm border-2 border-blue-400 shadow-[6px_6px_0px_0px_#2563eb] overflow-hidden my-8 bg-corp-surface text-corp-text"
         >
           {/* Top Accent Bar */}
           <div className="h-2 bg-[#2563eb]" />
 
           {/* Close Button */}
           <button
-            onClick={onClose}
-            className="absolute top-4 right-4 p-2 rounded-lg border-2 border-blue-400 transition-colors z-20 shadow-md"
-            style={{ background: "var(--corp-surface)", color: "var(--corp-text)" }}
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              onClose();
+            }}
+            className="absolute top-4 right-4 p-1.5 rounded-md bg-amber-400 hover:bg-amber-300 text-amber-950 border-2 border-amber-500 shadow-sm transition-colors z-20 cursor-pointer"
+            title="Close (Esc)"
           >
-            <X className="w-5 h-5" />
+            <X className="w-5 h-5 stroke-[3]" />
           </button>
 
           <div className="p-6 md:p-8 space-y-5">
             {/* Header Block */}
-            <div className="space-y-1">
-              <div className="flex items-center gap-2">
-                <span className="px-2.5 py-0.5 rounded-md text-[10px] font-black uppercase bg-[#2563eb] text-white border border-blue-400 flex items-center gap-1">
-                  <Sparkles className="w-3 h-3 text-sky-300" />
-                  INSYT AI CV Fit Engine
-                </span>
-                <span className="px-2.5 py-0.5 rounded-md text-[10px] font-black uppercase bg-amber-400 text-amber-950 border border-amber-500 flex items-center gap-1">
-                  <Coins className="w-3 h-3" />
-                  Cost: 10 XP
-                </span>
+            <div className="flex items-start gap-4">
+              <CompanyLogo company={companyName} acronym={companyAcronym} size={48} />
+              <div className="space-y-1 flex-1 min-w-0">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="px-2.5 py-0.5 rounded-md text-[10px] font-black uppercase bg-[#2563eb] text-white border border-blue-400 flex items-center gap-1">
+                    <Sparkles className="w-3 h-3 text-sky-300" />
+                    INSYT AI CV Fit Engine
+                  </span>
+                  <span className="px-2.5 py-0.5 rounded-md text-[10px] font-black uppercase bg-amber-400 text-amber-950 border border-amber-500 flex items-center gap-1">
+                    <Coins className="w-3 h-3" />
+                    Cost: 10 XP
+                  </span>
+                </div>
+                <h2 className="text-xl font-black uppercase tracking-tight text-corp-text truncate">
+                  CV Fit Check — {jobTitle}
+                </h2>
+                <p className="text-xs font-sans font-medium text-corp-text-tertiary truncate">
+                  {companyName} · {jobGrade}
+                </p>
               </div>
-              <h2 className="text-xl font-black uppercase tracking-tight" style={{ color: "var(--corp-text)" }}>
-                CV Fit Check — {job.title}
-              </h2>
-              <p className="text-xs font-sans font-medium" style={{ color: "var(--corp-text-tertiary)" }}>
-                {job.organizationAcronym} · Grade {job.grade} · National Pay Scale 2015
-              </p>
             </div>
 
             {/* 1. INITIAL MISSING DATA INPUT / XP CHECK FORM */}
@@ -113,54 +176,52 @@ export function CvFitModal({ job, onClose }: CvFitModalProps) {
               <div className="space-y-4">
                 {/* XP Balance Indicator */}
                 <div
-                  className={`p-4 rounded-xl border-2 flex items-center justify-between font-mono text-xs ${
-                    hasEnoughXp ? "border-blue-400" : "border-rose-500 bg-rose-500/10 text-rose-600"
+                  className={`p-4 rounded-md border-2 flex items-center justify-between font-mono text-xs ${
+                    hasEnoughXp ? "border-blue-400 bg-corp-bg-secondary" : "border-rose-500 bg-rose-500/10 text-rose-600"
                   }`}
-                  style={{ background: hasEnoughXp ? "var(--corp-bg-secondary)" : undefined }}
                 >
                   <div className="flex items-center gap-2">
                     <Coins className="w-4 h-4 text-amber-500" />
                     <span>Your XP Balance: <strong className="font-black text-sm">{userXp} XP</strong></span>
                   </div>
                   {hasEnoughXp ? (
-                    <span className="text-[10px] font-black uppercase text-green-600">Sufficient XP</span>
+                    <span className="text-[10px] font-black uppercase text-[#2563eb]">Sufficient XP</span>
                   ) : (
                     <span className="text-[10px] font-black uppercase text-rose-600">Need 10 XP</span>
                   )}
                 </div>
 
                 {!hasEnoughXp && (
-                  <div className="p-3 rounded-lg border-2 border-rose-500 bg-rose-500/10 text-rose-600 text-xs font-sans">
+                  <div className="p-3 rounded-md border-2 border-rose-500 bg-rose-500/10 text-rose-600 text-xs font-sans">
                     <AlertCircle className="w-4 h-4 inline mr-1" />
                     You need at least 10 XP to run a CV Fit Check. Claim your daily check-in or complete quests to earn XP!
                   </div>
                 )}
 
                 {/* Profile Data Inputs */}
-                <div className="p-5 rounded-xl border-2 border-blue-400 space-y-4" style={{ background: "var(--corp-bg-secondary)" }}>
-                  <div className="text-xs font-black uppercase tracking-wider flex items-center gap-2" style={{ color: "var(--corp-text)" }}>
+                <div className="p-5 rounded-md border-2 border-blue-400 space-y-4 bg-corp-bg-secondary">
+                  <div className="text-xs font-black uppercase tracking-wider flex items-center gap-2 text-corp-text">
                     <GraduationCap className="w-4 h-4 text-[#2563eb]" />
                     Verify / Add Your Profile Data for Accuracy
                   </div>
 
                   {/* Degree Input */}
                   <div className="space-y-1">
-                    <label className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--corp-text-secondary)" }}>
-                      Degree / Major (e.g. Agriculture, Library Science, Civil, CSE, Statistics)
+                    <label className="text-[10px] font-bold uppercase tracking-wider text-corp-text-secondary">
+                      Degree / Major (e.g. Finance, Agriculture, CSE, Statistics, BBA)
                     </label>
                     <input
                       type="text"
                       placeholder="Type your degree major..."
                       value={customDegree}
                       onChange={(e) => setCustomDegree(e.target.value)}
-                      className="w-full px-3.5 py-2.5 rounded-lg border-2 border-blue-400 text-xs font-mono font-extrabold outline-none focus:border-[#2563eb]"
-                      style={{ background: "var(--corp-surface)", color: "var(--corp-text)" }}
+                      className="w-full px-3.5 py-2.5 rounded-md border-2 border-blue-400 text-xs font-mono font-extrabold outline-none focus:border-[#2563eb] bg-corp-surface text-corp-text"
                     />
                   </div>
 
                   {/* Skills Input */}
                   <div className="space-y-1">
-                    <label className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--corp-text-secondary)" }}>
+                    <label className="text-[10px] font-bold uppercase tracking-wider text-corp-text-secondary">
                       Key Technical &amp; Screening Skills (Comma separated)
                     </label>
                     <input
@@ -168,31 +229,35 @@ export function CvFitModal({ job, onClose }: CvFitModalProps) {
                       placeholder="e.g. research, statistics_data, computer, agriscience..."
                       value={customSkillsInput}
                       onChange={(e) => setCustomSkillsInput(e.target.value)}
-                      className="w-full px-3.5 py-2.5 rounded-lg border-2 border-blue-400 text-xs font-mono font-extrabold outline-none focus:border-[#2563eb]"
-                      style={{ background: "var(--corp-surface)", color: "var(--corp-text)" }}
+                      className="w-full px-3.5 py-2.5 rounded-md border-2 border-blue-400 text-xs font-mono font-extrabold outline-none focus:border-[#2563eb] bg-corp-surface text-corp-text"
                     />
                   </div>
                 </div>
 
                 {/* Requirements Reminder */}
-                <div className="p-3.5 rounded-lg border-2 border-sky-400 text-xs font-sans" style={{ background: "var(--corp-surface)" }}>
-                  <span className="font-bold font-mono text-sky-600 uppercase text-[10px] block mb-1">Circular Prerequisite:</span>
-                  <p style={{ color: "var(--corp-text-secondary)" }}>{job.requirements}</p>
+                <div className="p-3.5 rounded-md border-2 border-sky-400 text-xs font-sans bg-corp-surface">
+                  <span className="font-bold font-mono text-sky-600 uppercase text-[10px] block mb-1">Role Prerequisite:</span>
+                  <p className="text-corp-text-secondary line-clamp-3">{requirementsText}</p>
                 </div>
 
                 {/* Action Buttons */}
                 <div className="flex gap-2 justify-end pt-2">
                   <button
-                    onClick={onClose}
-                    className="px-4 py-2.5 rounded-lg text-xs font-black uppercase border-2 transition-colors"
-                    style={{ borderColor: "var(--corp-border)", color: "var(--corp-text-secondary)" }}
+                    type="button"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      onClose();
+                    }}
+                    className="px-4 py-2.5 rounded-md text-xs font-black uppercase border-2 border-blue-400 text-corp-text bg-corp-surface hover:bg-corp-bg-secondary transition-colors cursor-pointer"
                   >
                     Cancel
                   </button>
                   <button
+                    type="button"
                     disabled={!hasEnoughXp}
                     onClick={handleRunAnalysis}
-                    className={`px-6 py-2.5 rounded-lg text-xs font-black uppercase text-white border border-blue-400 shadow-[3px_3px_0px_0px_#1e3a8a] transition-all flex items-center gap-1.5 ${
+                    className={`px-6 py-2.5 rounded-md text-xs font-black uppercase text-white border-2 border-blue-300 shadow-[3px_3px_0px_0px_#1e3a8a] transition-all flex items-center gap-1.5 cursor-pointer ${
                       hasEnoughXp ? "bg-[#2563eb] hover:bg-[#1d4ed8]" : "bg-slate-400 cursor-not-allowed opacity-60"
                     }`}
                   >
@@ -206,10 +271,7 @@ export function CvFitModal({ job, onClose }: CvFitModalProps) {
               analysisResult && (
                 <div className="space-y-5">
                   {/* Score Meter Banner */}
-                  <div
-                    className="p-5 rounded-xl border-2 border-sky-400 shadow-[4px_4px_0px_0px_#0284c7] font-mono space-y-3"
-                    style={{ background: "var(--corp-bg-secondary)" }}
-                  >
+                  <div className="p-5 rounded-md border-2 border-sky-400 shadow-[4px_4px_0px_0px_#0284c7] font-mono space-y-3 bg-corp-bg-secondary">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <Award className="w-5 h-5 text-sky-500" />
@@ -218,14 +280,14 @@ export function CvFitModal({ job, onClose }: CvFitModalProps) {
                       <span className="text-2xl font-black text-[#2563eb]">{analysisResult.matchScore}%</span>
                     </div>
 
-                    <div className="w-full h-3 rounded-full overflow-hidden" style={{ background: "var(--corp-border)" }}>
+                    <div className="w-full h-3 rounded-full overflow-hidden border border-blue-400 bg-corp-surface">
                       <div
                         className="h-full bg-[#2563eb] transition-all duration-700 rounded-full"
                         style={{ width: `${analysisResult.matchScore}%` }}
                       />
                     </div>
 
-                    <p className="text-xs font-sans font-medium leading-relaxed" style={{ color: "var(--corp-text-secondary)" }}>
+                    <p className="text-xs font-sans font-medium leading-relaxed text-corp-text-secondary">
                       {analysisResult.guidanceText}
                     </p>
                   </div>
@@ -233,15 +295,15 @@ export function CvFitModal({ job, onClose }: CvFitModalProps) {
                   {/* Skill & Prerequisite Breakdown */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {/* Matched Skills */}
-                    <div className="p-4 rounded-xl border-2 border-blue-400" style={{ background: "var(--corp-bg-secondary)" }}>
-                      <div className="text-[10px] font-black uppercase tracking-wider flex items-center gap-1 mb-2 text-green-600">
-                        <CheckCircle2 className="w-4 h-4 text-green-500" />
+                    <div className="p-4 rounded-md border-2 border-blue-400 bg-corp-bg-secondary">
+                      <div className="text-[10px] font-black uppercase tracking-wider flex items-center gap-1 mb-2 text-[#2563eb]">
+                        <CheckCircle2 className="w-4 h-4 text-[#2563eb]" />
                         Matched Prerequisites ({analysisResult.matchedSkills.length})
                       </div>
                       <div className="flex flex-wrap gap-1">
                         {analysisResult.matchedSkills.length > 0 ? (
                           analysisResult.matchedSkills.map((sk) => (
-                            <span key={sk} className="text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-green-500/15 text-green-700 dark:text-green-300 border border-green-500/30">
+                            <span key={sk} className="text-[10px] font-bold uppercase px-2 py-0.5 rounded-md bg-blue-500/15 text-[#2563eb] border border-blue-400/40">
                               {sk.replace(/_/g, " ")}
                             </span>
                           ))
@@ -252,7 +314,7 @@ export function CvFitModal({ job, onClose }: CvFitModalProps) {
                     </div>
 
                     {/* Skill Gaps */}
-                    <div className="p-4 rounded-xl border-2 border-blue-400" style={{ background: "var(--corp-bg-secondary)" }}>
+                    <div className="p-4 rounded-md border-2 border-blue-400 bg-corp-bg-secondary">
                       <div className="text-[10px] font-black uppercase tracking-wider flex items-center gap-1 mb-2 text-sky-600">
                         <ShieldCheck className="w-4 h-4 text-sky-500" />
                         Skills to Bridge ({analysisResult.missingSkills.length})
@@ -260,22 +322,22 @@ export function CvFitModal({ job, onClose }: CvFitModalProps) {
                       <div className="flex flex-wrap gap-1">
                         {analysisResult.missingSkills.length > 0 ? (
                           analysisResult.missingSkills.map((sk) => (
-                            <span key={sk} className="text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-sky-500/15 text-sky-700 dark:text-sky-300 border border-sky-400/30">
+                            <span key={sk} className="text-[10px] font-bold uppercase px-2 py-0.5 rounded-md bg-sky-500/15 text-sky-700 dark:text-sky-300 border border-sky-400/30">
                               {sk.replace(/_/g, " ")}
                             </span>
                           ))
                         ) : (
-                          <span className="text-[11px] font-sans font-bold text-green-600">All screening skills matched!</span>
+                          <span className="text-[11px] font-sans font-bold text-[#2563eb]">All screening skills matched!</span>
                         )}
                       </div>
                     </div>
                   </div>
 
                   {/* SAAS Internal Course Recommendations */}
-                  <div className="p-5 rounded-xl border-2 border-blue-500 shadow-[3px_3px_0px_0px_#2563eb] space-y-3" style={{ background: "var(--corp-surface)" }}>
+                  <div className="p-5 rounded-md border-2 border-blue-400 shadow-[3px_3px_0px_0px_#2563eb] space-y-3 bg-corp-surface">
                     <div className="flex items-center gap-2">
                       <BookOpen className="w-4 h-4 text-[#2563eb]" />
-                      <h4 className="text-xs font-black uppercase tracking-wider" style={{ color: "var(--corp-text)" }}>
+                      <h4 className="text-xs font-black uppercase tracking-wider text-corp-text">
                         Recommended SAAS Learning Tracks
                       </h4>
                     </div>
@@ -284,8 +346,7 @@ export function CvFitModal({ job, onClose }: CvFitModalProps) {
                       {analysisResult.recommendedCourses.map((c) => (
                         <div
                           key={c.slug}
-                          className="p-3 rounded-lg border-2 border-blue-400 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:border-[#2563eb] transition-all"
-                          style={{ background: "var(--corp-bg-secondary)" }}
+                          className="p-3 rounded-md border-2 border-blue-400 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:border-[#2563eb] transition-all bg-corp-bg-secondary"
                         >
                           <div>
                             <h5 className="text-xs font-black uppercase text-[#2563eb]">{c.title}</h5>
@@ -294,7 +355,8 @@ export function CvFitModal({ job, onClose }: CvFitModalProps) {
 
                           <Link
                             href={c.url}
-                            className="px-3 py-1.5 rounded text-[10px] font-black uppercase text-white bg-[#2563eb] border border-blue-300 shadow-sm flex items-center gap-1 shrink-0 self-start sm:self-auto hover:bg-[#1d4ed8] transition-colors"
+                            onClick={onClose}
+                            className="px-3 py-1.5 rounded-md text-[10px] font-black uppercase text-white bg-[#2563eb] border border-blue-300 shadow-sm flex items-center gap-1 shrink-0 self-start sm:self-auto hover:bg-[#1d4ed8] transition-colors"
                           >
                             Enroll Course
                             <ArrowRight className="w-3 h-3" />
@@ -307,15 +369,24 @@ export function CvFitModal({ job, onClose }: CvFitModalProps) {
                   {/* Re-analyze or Close */}
                   <div className="flex gap-2 justify-end pt-2">
                     <button
-                      onClick={() => setIsAnalyzed(false)}
-                      className="px-4 py-2.5 rounded-lg text-xs font-black uppercase border-2 transition-colors"
-                      style={{ borderColor: "var(--corp-border)", color: "var(--corp-text-secondary)" }}
+                      type="button"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setIsAnalyzed(false);
+                      }}
+                      className="px-4 py-2.5 rounded-md text-xs font-black uppercase border-2 border-blue-400 text-corp-text bg-corp-surface hover:bg-corp-bg-secondary transition-colors cursor-pointer"
                     >
                       Modify CV Data
                     </button>
                     <button
-                      onClick={onClose}
-                      className="px-6 py-2.5 rounded-lg text-xs font-black uppercase text-white bg-[#2563eb] border border-blue-400 shadow-[3px_3px_0px_0px_#1e3a8a]"
+                      type="button"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        onClose();
+                      }}
+                      className="px-6 py-2.5 rounded-md text-xs font-black uppercase text-white bg-[#2563eb] border border-blue-300 shadow-[3px_3px_0px_0px_#1e3a8a] cursor-pointer"
                     >
                       Done
                     </button>

@@ -189,7 +189,7 @@ export function RankPill({
   const textCol = getContrastColor(rank.color);
   return (
     <div
-      className={`px-3 py-1.5 rounded-lg text-xs font-mono font-extrabold uppercase flex items-center gap-2 ${className}`}
+      className={`px-3 py-1.5 rounded-full text-xs font-mono font-extrabold uppercase flex items-center gap-2 ${className}`}
       style={{
         background: rank.gradient,
         color: textCol,

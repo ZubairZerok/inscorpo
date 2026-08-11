@@ -97,7 +97,7 @@ export function MobileBottomNav() {
         style={{ paddingBottom: "calc(8px + env(safe-area-inset-bottom, 0px))", paddingTop: "6px" }}
       >
         <div
-          className="flex items-center justify-around px-2 mx-4 w-full max-w-md rounded-2xl border-2 border-corp-border shadow-2xl"
+          className="flex items-center justify-around px-2 mx-4 w-full max-w-md rounded-sm border-2 border-corp-border shadow-2xl"
           style={{
             background: "var(--corp-surface)",
             height: "60px",

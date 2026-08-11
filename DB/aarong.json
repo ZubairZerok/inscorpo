@@ -1,0 +1,1095 @@
+{
+    "dataset_name": "INSYT Corporate Job Intelligence — BRAC / Aarong Dairy Batch",
+    "organization": {
+        "name": "BRAC",
+        "enterprise": "BRAC Enterprises / BRAC Dairy and Food Project / Aarong Dairy",
+        "sector": [
+            "NGO",
+            "Development",
+            "Social Enterprise",
+            "Dairy",
+            "FMCG",
+            "Agro-processing",
+            "Food Manufacturing",
+            "Supply Chain",
+            "Sales & Distribution"
+        ],
+        "career_relevance": "VERY_HIGH"
+    },
+    "source_types": [
+        "BRAC Careers official job descriptions pasted by user",
+        "BRAC/Aarong Dairy newspaper recruitment advertisement",
+        "BRAC/Aarong Dairy job listings from Chakri Circular",
+        "BRAC/Aarong Dairy job listing from Bdjobs",
+        "BRAC Careers screenshot"
+    ],
+    "jobs": [
+        {
+            "id": "BRAC-DAIRY-2026-01",
+            "title": "Distribution Incharge",
+            "organization": "BRAC Dairy and Food Project",
+            "business_unit": "Aarong Dairy",
+            "job_family": "Sales & Distribution",
+            "location": "Anywhere in Bangladesh",
+            "date_posted": "2026-08-09",
+            "deadline": "2026-08-22",
+            "employment": "Full Time",
+            "vacancy": null,
+            "salary": "Negotiable",
+            "education": {
+                "minimum": "Graduation / Post-Graduation in Accounting",
+                "academic_requirement": "Minimum 2nd division/class or equivalent GPA/CGPA in all academic examinations",
+                "relaxation": "Age, education and experience may be relaxed for potential candidates"
+            },
+            "experience": {
+                "minimum_years": 0,
+                "requirement": "N/A"
+            },
+            "job_purpose": [
+                "Distribute products to salesmen according to demand",
+                "Collect daily sales proceeds",
+                "Deposit collected money into bank/head office",
+                "Maintain relevant accounts"
+            ],
+            "key_responsibilities": [
+                "Receive products from factory vehicle and check leakage/shortage",
+                "Distribute products according to salesman demand",
+                "Collect daily sales value",
+                "Deposit collected money to bank and head office",
+                "Control receivables",
+                "Increase salesman security",
+                "Control sales-center cost",
+                "Control product damage",
+                "Reduce cash in hand",
+                "Prepare daily DCR",
+                "Maintain demand, product-received, stock and salesman registers",
+                "Maintain cash book",
+                "Maintain stock according to stock norms",
+                "Apply FIFO to current-dated products",
+                "Prepare accounts reports and monthly accounts",
+                "Support audit and compliance",
+                "Control irregularities",
+                "Prepare daily reports",
+                "Maintain sales-center hygiene",
+                "Maintain assets",
+                "Monitor salesman attendance",
+                "Control salesman dropout",
+                "Use Excel and/or ERP for accounts",
+                "Visit markets to check salesman dues and issues",
+                "Verify salesman profiles",
+                "Maintain safety stock for home delivery",
+                "Coordinate with relevant teams"
+            ],
+            "hard_skills": [
+                "MS Excel",
+                "MS Word",
+                "ERP",
+                "Accounting",
+                "Cash Management",
+                "Inventory Management",
+                "Distribution Management",
+                "Sales Administration",
+                "Financial Reporting",
+                "Audit Support"
+            ],
+            "soft_skills": [
+                "Communication",
+                "People Management",
+                "Relationship Building",
+                "Work Prioritization",
+                "Working Under Pressure",
+                "Coordination"
+            ],
+            "insyt_skill_tags": [
+                "accounting",
+                "excel",
+                "erp",
+                "cash_management",
+                "inventory",
+                "distribution",
+                "sales_operations",
+                "financial_reporting",
+                "audit",
+                "people_management"
+            ],
+            "career_domains": [
+                "Agribusiness",
+                "FMCG",
+                "Dairy",
+                "Supply Chain",
+                "Sales",
+                "Finance"
+            ],
+            "priority_for_insyt": "VERY_HIGH"
+        },
+        {
+            "id": "BRAC-DAIRY-2026-02",
+            "title": "Forklift Operator",
+            "organization": "BRAC Dairy and Food Project",
+            "business_unit": "Aarong Dairy",
+            "job_family": "Warehouse / Logistics",
+            "location": "Gazipur, BDFP Factory, Gazipur Sadar",
+            "date_posted": "2026-07-29",
+            "deadline": "2026-08-16",
+            "employment": "Full Time",
+            "salary": "Negotiable",
+            "education": {
+                "minimum": "SSC Pass",
+                "academic_requirement": "Minimum 2nd class/division or equivalent result in all academic examinations",
+                "relaxation": "Age, education and experience may be relaxed for potential candidates"
+            },
+            "experience": {
+                "minimum_years": 1,
+                "preferred_background": [
+                    "Store",
+                    "Distribution",
+                    "Warehouse"
+                ]
+            },
+            "job_purpose": [
+                "Operate powered industrial reach trucks and forklifts",
+                "Load and unload goods",
+                "Move goods between production floor, store, loading bay and maintenance machines"
+            ],
+            "hard_skills": [
+                "Forklift operation",
+                "Reach truck operation",
+                "Counterbalance forklift",
+                "Pallet jack operation",
+                "Warehouse operations",
+                "Inventory movement",
+                "Equipment inspection",
+                "PPE and safety procedures"
+            ],
+            "responsibilities": [
+                "Move goods safely inside warehouse",
+                "Load/unload trucks and containers",
+                "Stack goods according to safety and space standards",
+                "Follow inventory-control instructions",
+                "Inspect forklift equipment daily",
+                "Report mechanical issues",
+                "Maintain stock-movement records",
+                "Maintain clean warehouse aisles",
+                "Report accidents and hazards"
+            ],
+            "insyt_skill_tags": [
+                "warehouse",
+                "forklift",
+                "inventory",
+                "logistics",
+                "material_handling",
+                "warehouse_safety"
+            ],
+            "career_domains": [
+                "Supply Chain",
+                "Warehouse",
+                "Logistics",
+                "FMCG",
+                "Dairy Manufacturing"
+            ]
+        },
+        {
+            "id": "BRAC-DAIRY-2026-03",
+            "title": "Area Sales Manager",
+            "organization": "BRAC Enterprises",
+            "business_unit": "Aarong Dairy",
+            "job_family": "Sales / Distribution Management",
+            "location": "Anywhere in Bangladesh",
+            "date_posted": "2026-07-19",
+            "deadline": "2026-07-31",
+            "employment": "Full Time",
+            "salary": "Negotiable",
+            "experience_minimum_years": 3,
+            "education": {
+                "minimum": "Graduate",
+                "academic_requirement": "Minimum CGPA 2.50 or 2nd class/division or equivalent in all academic examinations",
+                "relaxation": "Education and experience may be relaxed for potential candidates"
+            },
+            "job_purpose": [
+                "Achieve sales targets",
+                "Improve business growth",
+                "Increase market share",
+                "Improve operational excellence",
+                "Ensure financial performance at area level"
+            ],
+            "responsibilities": [
+                "Achieve primary and secondary sales targets/budget",
+                "Increase outlet and market coverage",
+                "Maintain safety stocks at distributors and sales centers",
+                "Ensure product visibility",
+                "Identify market gaps",
+                "Take corrective action",
+                "Monitor competitors",
+                "Manage sales teams",
+                "Motivate and develop salespeople",
+                "Manage distribution network",
+                "Monitor product movement",
+                "Control market returns and damage",
+                "Expand cold-chain outlets",
+                "Coordinate with sales-center operations"
+            ],
+            "hard_skills": [
+                "Direct Sales",
+                "Sales Target Management",
+                "Distributor Management",
+                "Inventory Management",
+                "Supply Chain",
+                "Visual Merchandising",
+                "Market Analysis",
+                "Cold Chain Management",
+                "Sales Distribution"
+            ],
+            "soft_skills": [
+                "People Management",
+                "Leadership",
+                "Communication",
+                "Relationship Building",
+                "Time Management",
+                "Work Prioritization",
+                "Working Under Pressure"
+            ],
+            "insyt_skill_tags": [
+                "sales",
+                "marketing",
+                "distribution",
+                "inventory",
+                "supply_chain",
+                "market_analysis",
+                "people_management",
+                "leadership",
+                "fmcg"
+            ],
+            "career_domains": [
+                "Agribusiness",
+                "FMCG",
+                "Sales",
+                "Marketing",
+                "Supply Chain",
+                "Dairy"
+            ],
+            "priority_for_insyt": "VERY_HIGH"
+        },
+        {
+            "id": "BRAC-DAIRY-HIST-01",
+            "title": "Manager, Procurement",
+            "organization": "BRAC Enterprises",
+            "business_unit": "Aarong Dairy",
+            "job_family": "Procurement / Banking / Management",
+            "location": "Anywhere in Bangladesh",
+            "employment": "Full Time",
+            "salary": "Not stated",
+            "education": {
+                "minimum": "Post-Graduation",
+                "academic_requirement": "No 3rd class/division"
+            },
+            "experience": {
+                "minimum_years": 8,
+                "specific_requirement": "Minimum 8 years banking experience including minimum 2 years as Head of Branch / Manager Operations"
+            },
+            "additional_requirements": [
+                "Cash Management",
+                "General Banking",
+                "Liability Management",
+                "Credit Risk",
+                "Administration",
+                "Trade Finance",
+                "Banking Operations",
+                "SME client network",
+                "Retail client network",
+                "Corporate client network",
+                "Leadership",
+                "Team Management",
+                "Client Servicing",
+                "Computer Literacy",
+                "Bangla communication",
+                "English communication"
+            ],
+            "responsibilities": [
+                "Customer relationship management",
+                "Business acquisition",
+                "Cross-selling",
+                "Revenue optimization",
+                "Financial administration",
+                "Budget management",
+                "Team leadership",
+                "Operational excellence",
+                "Governance",
+                "AML",
+                "Internal controls",
+                "Regulatory compliance",
+                "Audit readiness",
+                "Cash and asset security"
+            ],
+            "insyt_skill_tags": [
+                "banking",
+                "finance",
+                "cash_management",
+                "credit_risk",
+                "trade_finance",
+                "leadership",
+                "compliance",
+                "aml",
+                "branch_operations"
+            ],
+            "priority_for_insyt": "MEDIUM",
+            "note": "The supplied listing is unusually banking-heavy despite being associated with Aarong Dairy and should be retained as a cross-industry management-career signal rather than treated as a conventional dairy procurement role."
+        },
+        {
+            "id": "BRAC-DAIRY-HIST-02",
+            "title": "Assistant Manager, Enterprise Web Application",
+            "organization": "BRAC Enterprises",
+            "business_unit": "Aarong Dairy",
+            "job_family": "Enterprise Technology / ERP / Business Systems",
+            "location": "Dhaka",
+            "employment": "Full Time",
+            "date_published": "2025-01-06",
+            "experience_minimum_years": 2,
+            "salary": "Negotiable",
+            "education": {
+                "minimum": "Bachelor in Computer Science",
+                "academic_requirement": "Minimum CGPA 2.50 or 2nd class/division/equivalent"
+            },
+            "preferred_industries": [
+                "Manufacturing",
+                "FMCG",
+                "Agro-based firms",
+                "Agro-processing",
+                "Seed",
+                "Poultry",
+                "Packaging",
+                "Fisheries",
+                "Livestock",
+                "Dairy",
+                "Healthcare",
+                "Lifestyle products"
+            ],
+            "hard_skills": [
+                "ERP",
+                "Enterprise Applications",
+                "Odoo ERP",
+                "Business Process Analysis",
+                "Software Development",
+                ".NET",
+                "PHP",
+                "Python",
+                "Software Design",
+                "Requirements Engineering",
+                "SRS",
+                "UAT",
+                "Load Testing",
+                "Security Testing",
+                "System Integration",
+                "Information Security",
+                "System Performance",
+                "Service Monitoring",
+                "Backup",
+                "Dashboard Design",
+                "Report Design"
+            ],
+            "business_process_skills": [
+                "Procurement",
+                "Production",
+                "Inventory Management",
+                "Sales & Distribution",
+                "Finance & Accounting",
+                "Management Reporting"
+            ],
+            "responsibilities": [
+                "Convert stakeholder use cases into problem statements",
+                "Conduct impact analysis",
+                "Participate in software design",
+                "Define business requirements",
+                "Customize and integrate ERP systems",
+                "Prepare SRS",
+                "Identify business solutions",
+                "Define infrastructure requirements",
+                "Support software development",
+                "Conduct UAT",
+                "Conduct load testing",
+                "Conduct security testing",
+                "Coordinate deployment",
+                "Conduct user training",
+                "Provide post-implementation support",
+                "Bug fixing",
+                "Incident management",
+                "Change management",
+                "Design dashboards and reports"
+            ],
+            "insyt_skill_tags": [
+                "erp",
+                "odoo",
+                "python",
+                "software",
+                "business_analysis",
+                "requirements_engineering",
+                "srs",
+                "uat",
+                "testing",
+                "sql",
+                "inventory",
+                "procurement",
+                "production",
+                "sales_distribution",
+                "finance",
+                "dashboard"
+            ],
+            "priority_for_insyt": "EXTREMELY_HIGH"
+        },
+        {
+            "id": "BRAC-DAIRY-HIST-03",
+            "title": "Associate Officer, Store",
+            "organization": "BRAC Enterprises",
+            "business_unit": "Aarong Dairy Factory",
+            "job_family": "Store / Inventory / Supply Chain",
+            "location": "Gazipur",
+            "employment": "Full Time",
+            "experience_minimum_years": 1,
+            "salary": "Negotiable",
+            "education": {
+                "minimum": "Graduation in any discipline",
+                "academic_requirement": "Minimum CGPA 2.50 or 2nd class/division/equivalent",
+                "preferred": "Diploma in Supply Chain / Engineering"
+            },
+            "responsibilities": [
+                "Manage receipt, storage and dispatch of finished goods",
+                "Maintain accurate records",
+                "Follow GSDP/GMP and ISO guidelines",
+                "Apply FIFO and FEFO",
+                "Maintain product stack norms",
+                "Maintain temperature standards",
+                "Maintain hygiene and sanitation",
+                "Use ERP software",
+                "Conduct cycle counts",
+                "Conduct stocktaking",
+                "Reconcile inventory",
+                "Ensure correct labeling",
+                "Supervise loading and unloading",
+                "Maintain stock movement records",
+                "Maintain warehouse organization",
+                "Dispose defective/expired goods according to policy",
+                "Maintain warehouse safety"
+            ],
+            "hard_skills": [
+                "Inventory Management",
+                "Store Management",
+                "ERP",
+                "FIFO",
+                "FEFO",
+                "Warehouse Management",
+                "GMP",
+                "GSDP",
+                "ISO",
+                "Food Safety",
+                "Stock Reconciliation",
+                "Supply Chain"
+            ],
+            "soft_skills": [
+                "People Management",
+                "Communication",
+                "Analytical Ability",
+                "Problem Solving",
+                "Report Writing",
+                "Time Management",
+                "Work Prioritization"
+            ],
+            "insyt_skill_tags": [
+                "supply_chain",
+                "inventory",
+                "warehouse",
+                "erp",
+                "fifo",
+                "fefo",
+                "food_safety",
+                "gmp",
+                "iso",
+                "excel",
+                "analytics"
+            ],
+            "priority_for_insyt": "EXTREMELY_HIGH"
+        },
+        {
+            "id": "BRAC-DAIRY-HIST-04",
+            "title": "Forklift Operator",
+            "organization": "BRAC Enterprises",
+            "business_unit": "Aarong Dairy",
+            "job_family": "Warehouse / Logistics",
+            "location": "Anywhere in Bangladesh",
+            "employment": "Full Time",
+            "experience_minimum_years": 1,
+            "education": "SSC Pass",
+            "preferred_background": [
+                "Store",
+                "Distribution",
+                "Warehouse",
+                "Manufacturing",
+                "Dairy"
+            ],
+            "hard_skills": [
+                "Forklift Operation",
+                "Counterbalance Forklift",
+                "Reach Truck",
+                "Pallet Jack",
+                "Store Management",
+                "Product Handling",
+                "Food Safety",
+                "Good Warehouse Practice",
+                "Safety Equipment",
+                "Equipment Maintenance"
+            ],
+            "responsibilities": [
+                "Move goods",
+                "Load and unload materials",
+                "Stack and store products",
+                "Maintain inventory/activity logs",
+                "Inspect equipment",
+                "Recharge batteries",
+                "Lubricate equipment",
+                "Maintain safety",
+                "Report incidents",
+                "Maintain warehouse cleanliness"
+            ],
+            "insyt_skill_tags": [
+                "warehouse",
+                "forklift",
+                "logistics",
+                "inventory",
+                "food_safety",
+                "warehouse_safety"
+            ]
+        },
+        {
+            "id": "BRAC-DAIRY-HIST-05",
+            "title": "Officer, Store",
+            "organization": "BRAC Enterprises",
+            "business_unit": "Aarong Dairy",
+            "job_family": "Store / Inventory",
+            "location": "Gazipur",
+            "employment": "Full Time",
+            "experience_minimum_years": 3,
+            "salary": "BDT 10,000–11,000/month",
+            "age": "25-42 years",
+            "education": {
+                "minimum": "Bachelor/Master's degree in any discipline",
+                "academic_requirement": "Minimum CGPA 2.50 or 2nd class/division/equivalent"
+            },
+            "preferred_industries": [
+                "FMCG",
+                "Retail Store",
+                "Agro-based firms",
+                "Agro-processing",
+                "Seed",
+                "Packaging",
+                "Dairy"
+            ],
+            "hard_skills": [
+                "Inventory Management Software",
+                "Inventory Records",
+                "Stock Audit",
+                "Stock Reconciliation",
+                "FIFO",
+                "FEFO",
+                "Food Processing Hygiene",
+                "Material Receiving",
+                "Production Material Issuance"
+            ],
+            "responsibilities": [
+                "Maintain RM, PM and general store inventory",
+                "Perform stock checks",
+                "Conduct audits",
+                "Prevent shortage and overstock",
+                "Label and categorize materials",
+                "Ensure appropriate storage conditions",
+                "Receive goods according to PO",
+                "Verify bills",
+                "Issue materials to production",
+                "Apply FIFO/FEFO",
+                "Prepare inventory reports",
+                "Supervise store assistants"
+            ],
+            "insyt_skill_tags": [
+                "inventory",
+                "supply_chain",
+                "warehouse",
+                "fifo",
+                "fefo",
+                "erp",
+                "food_safety",
+                "audit",
+                "reporting"
+            ],
+            "priority_for_insyt": "VERY_HIGH"
+        },
+        {
+            "id": "BRAC-DAIRY-HIST-06",
+            "title": "Branch Sales Manager",
+            "organization": "BRAC Enterprises",
+            "business_unit": "Aarong Dairy",
+            "job_family": "Sales Management",
+            "location": "Anywhere in Bangladesh",
+            "employment": "Full Time",
+            "experience_minimum_years": 2,
+            "salary": "Negotiable",
+            "education": {
+                "minimum": "Graduate",
+                "academic_requirement": "Minimum CGPA 2.50 or 2nd class/division/equivalent",
+                "preferred_background": "Commerce"
+            },
+            "preferred_industries": [
+                "FMCG",
+                "Beverage",
+                "Dairy"
+            ],
+            "hard_skills": [
+                "Direct Sales",
+                "Market Analysis",
+                "Visual Merchandising",
+                "Distributor Management",
+                "Inventory Management",
+                "Sales Distribution",
+                "Cold Chain"
+            ],
+            "soft_skills": [
+                "People Management",
+                "Leadership",
+                "Time Management",
+                "Work Prioritization",
+                "Communication"
+            ],
+            "responsibilities": [
+                "Achieve monthly and annual sales targets",
+                "Ensure cold-chain product availability",
+                "Ensure product visibility",
+                "Supervise cold-chain van operations",
+                "Develop new cold-chain outlets",
+                "Coordinate sales-center operations",
+                "Monitor product movement",
+                "Control damage and market returns"
+            ],
+            "insyt_skill_tags": [
+                "sales",
+                "fmcg",
+                "distribution",
+                "inventory",
+                "cold_chain",
+                "market_analysis",
+                "people_management"
+            ],
+            "priority_for_insyt": "VERY_HIGH"
+        },
+        {
+            "id": "BRAC-NEWSPAPER-01",
+            "title": "Assistant Manager, Store",
+            "organization": "BRAC / Aarong Dairy",
+            "job_family": "Store / Supply Chain",
+            "source": "BRAC/Aarong Dairy newspaper advertisement",
+            "salary": "Negotiable",
+            "education": {
+                "field": "Store / Supply Chain related qualification",
+                "preferred_certification": "IPSCM Advanced Certificate Course"
+            },
+            "experience": {
+                "minimum_years": 5,
+                "type": "Relevant professional experience"
+            },
+            "responsibilities": [
+                "Store management",
+                "Stock control",
+                "Warehouse coordination",
+                "Product receiving",
+                "Inventory control",
+                "Operational coordination"
+            ],
+            "insyt_skill_tags": [
+                "store_management",
+                "inventory",
+                "supply_chain",
+                "warehouse",
+                "ipscm"
+            ],
+            "priority_for_insyt": "VERY_HIGH",
+            "source_confidence": "MEDIUM"
+        },
+        {
+            "id": "BRAC-NEWSPAPER-02",
+            "title": "Officer, Store",
+            "organization": "BRAC / Aarong Dairy",
+            "job_family": "Store / Supply Chain",
+            "source": "BRAC/Aarong Dairy newspaper advertisement",
+            "education": {
+                "preferred_background": [
+                    "Business",
+                    "Engineering"
+                ],
+                "preferred_certification": "IPSCM Certificate Course"
+            },
+            "experience": {
+                "minimum_years": 2,
+                "type": "Relevant professional experience"
+            },
+            "responsibilities": [
+                "Store operations",
+                "Stock management",
+                "Receiving and issuing materials",
+                "Warehouse administration"
+            ],
+            "insyt_skill_tags": [
+                "store_management",
+                "inventory",
+                "supply_chain",
+                "warehouse",
+                "ipscm"
+            ],
+            "priority_for_insyt": "VERY_HIGH",
+            "source_confidence": "MEDIUM"
+        },
+        {
+            "id": "BRAC-NEWSPAPER-03",
+            "title": "Assistant Supervisor, Store",
+            "organization": "BRAC / Aarong Dairy",
+            "job_family": "Store / Warehouse",
+            "source": "BRAC/Aarong Dairy newspaper advertisement",
+            "education": {
+                "minimum": "Graduate"
+            },
+            "experience": {
+                "requirement": "Relevant experience preferred"
+            },
+            "responsibilities": [
+                "Store supervision",
+                "Product receiving",
+                "Stock handling",
+                "Warehouse operations",
+                "Coordination with store personnel"
+            ],
+            "insyt_skill_tags": [
+                "store_management",
+                "inventory",
+                "warehouse",
+                "supervision"
+            ],
+            "priority_for_insyt": "HIGH",
+            "source_confidence": "MEDIUM"
+        },
+        {
+            "id": "BRAC-NEWSPAPER-04",
+            "title": "Engineer, Electrical",
+            "organization": "BRAC / Aarong Dairy",
+            "job_family": "Engineering / Manufacturing",
+            "source": "BRAC/Aarong Dairy newspaper advertisement",
+            "education": {
+                "minimum": "BSc in Electrical Engineering"
+            },
+            "experience": {
+                "minimum_years": 2,
+                "type": "Relevant professional experience"
+            },
+            "responsibilities": [
+                "Machinery maintenance",
+                "Electrical system maintenance",
+                "Equipment troubleshooting",
+                "Plant engineering support",
+                "Preventive maintenance"
+            ],
+            "insyt_skill_tags": [
+                "electrical_engineering",
+                "manufacturing",
+                "maintenance",
+                "industrial_engineering",
+                "machinery"
+            ],
+            "priority_for_insyt": "HIGH",
+            "source_confidence": "MEDIUM"
+        },
+        {
+            "id": "BRAC-NEWSPAPER-05",
+            "title": "Sales Promotion Officer",
+            "organization": "BRAC / Aarong Dairy",
+            "job_family": "Sales / Marketing",
+            "source": "BRAC/Aarong Dairy newspaper advertisement",
+            "education": {
+                "minimum": "BBA/Business-related qualification"
+            },
+            "experience": {
+                "minimum_years": 2,
+                "type": "Relevant professional experience"
+            },
+            "responsibilities": [
+                "Market development",
+                "Demand generation",
+                "Product promotion",
+                "Market coverage",
+                "Customer communication",
+                "Sales support",
+                "Market information collection"
+            ],
+            "hard_skills": [
+                "Sales Promotion",
+                "Market Research",
+                "Demand Analysis",
+                "Distribution",
+                "Customer Relationship Management"
+            ],
+            "insyt_skill_tags": [
+                "sales",
+                "marketing",
+                "market_research",
+                "distribution",
+                "crm"
+            ],
+            "priority_for_insyt": "VERY_HIGH",
+            "source_confidence": "MEDIUM"
+        }
+    ],
+    "cross_source_insights": {
+        "major_career_families": [
+            "Sales & Marketing",
+            "Supply Chain",
+            "Procurement",
+            "Store & Inventory",
+            "Warehouse & Logistics",
+            "Accounting & Finance",
+            "ERP / Enterprise Technology",
+            "Business Analysis",
+            "Engineering",
+            "Manufacturing Operations"
+        ],
+        "strongest_signal": "Aarong Dairy repeatedly hires across the entire agro-FMCG value chain rather than only agriculture-specific roles.",
+        "value_chain": {
+            "upstream": [
+                "Milk / agricultural producers",
+                "Procurement",
+                "Raw material management"
+            ],
+            "manufacturing": [
+                "Production",
+                "Electrical Engineering",
+                "Plant Maintenance",
+                "Quality / Food Safety"
+            ],
+            "storage": [
+                "Store",
+                "Inventory",
+                "Warehouse",
+                "Forklift",
+                "Cold Chain"
+            ],
+            "distribution": [
+                "Distribution",
+                "Transport",
+                "Sales Centers",
+                "Distributor Management"
+            ],
+            "market": [
+                "Sales",
+                "Area Sales",
+                "Branch Sales",
+                "Sales Promotion",
+                "Market Development"
+            ],
+            "technology": [
+                "ERP",
+                "Odoo",
+                "Enterprise Applications",
+                "Business Analysis",
+                "Python",
+                "Software Development",
+                "Dashboards"
+            ],
+            "finance": [
+                "Accounting",
+                "Cash Management",
+                "Audit",
+                "Financial Reporting"
+            ]
+        },
+        "most_repeated_skills": [
+            "Inventory Management",
+            "Store Management",
+            "Supply Chain",
+            "Distribution Management",
+            "ERP",
+            "Excel",
+            "People Management",
+            "Communication",
+            "Sales",
+            "Market Analysis",
+            "Warehouse Management",
+            "Food Safety",
+            "FIFO",
+            "FEFO",
+            "Reporting"
+        ],
+        "especially_important_for_agricultural_economics_graduates": [
+            "Sales & Distribution",
+            "Supply Chain",
+            "Inventory Management",
+            "Market Analysis",
+            "Agribusiness",
+            "FMCG",
+            "Procurement",
+            "Business Analysis",
+            "ERP",
+            "Accounting",
+            "Data/Reporting"
+        ]
+    },
+    "insyt_career_pathways": {
+        "agricultural_economics_to_agribusiness": [
+            "Agricultural Economics Graduate",
+            "Sales/Distribution Officer",
+            "Area Sales Manager",
+            "Branch/Regional Management",
+            "Commercial/Business Management"
+        ],
+        "agricultural_economics_to_supply_chain": [
+            "Agricultural Economics Graduate",
+            "Store/Inventory Officer",
+            "Associate Officer — Store",
+            "Assistant Manager — Store",
+            "Supply Chain Management"
+        ],
+        "agricultural_economics_to_business_analytics": [
+            "Agricultural Economics Graduate",
+            "Excel + Statistics",
+            "Business/Data Analyst",
+            "ERP / Business Systems",
+            "Business Intelligence"
+        ],
+        "agricultural_economics_to_erp": [
+            "Business Process Knowledge",
+            "ERP Fundamentals",
+            "Odoo / Enterprise Applications",
+            "Business Analysis",
+            "SRS",
+            "UAT",
+            "ERP Implementation"
+        ]
+    },
+    "new_insyt_skill_taxonomy": {
+        "agribusiness": [
+            "Agribusiness Management",
+            "Dairy Business",
+            "FMCG",
+            "Agro-processing",
+            "Agricultural Supply Chain"
+        ],
+        "sales": [
+            "Direct Sales",
+            "Primary Sales",
+            "Secondary Sales",
+            "Distributor Management",
+            "Outlet Management",
+            "Market Coverage",
+            "Visual Merchandising",
+            "Sales Target Management",
+            "Cold Chain Sales"
+        ],
+        "supply_chain": [
+            "Procurement",
+            "Inventory Management",
+            "Store Management",
+            "Warehouse Management",
+            "Distribution Management",
+            "Stock Reconciliation",
+            "FIFO",
+            "FEFO",
+            "Safety Stock",
+            "Demand Planning"
+        ],
+        "technology": [
+            "ERP",
+            "Odoo",
+            "Enterprise Applications",
+            "Business Analysis",
+            "Requirements Engineering",
+            "SRS",
+            "UAT",
+            "Software Testing",
+            "Python",
+            "Dashboard Development"
+        ],
+        "finance": [
+            "Accounting",
+            "Cash Management",
+            "Financial Reporting",
+            "Audit",
+            "Compliance",
+            "Receivables Management"
+        ],
+        "operations": [
+            "Manufacturing Operations",
+            "Food Safety",
+            "GMP",
+            "GSDP",
+            "ISO",
+            "Warehouse Safety",
+            "Equipment Maintenance"
+        ]
+    },
+    "highest_priority_jobs_for_insyt_corporate": [
+        {
+            "job": "Assistant Manager, Enterprise Web Application",
+            "reason": "Extremely strong intersection of technology + ERP + business processes + agro/FMCG.",
+            "skill_bundle": [
+                "Python",
+                "ERP",
+                "Odoo",
+                "Business Analysis",
+                "SQL",
+                "SRS",
+                "UAT",
+                "Dashboard",
+                "Supply Chain"
+            ]
+        },
+        {
+            "job": "Associate Officer, Store",
+            "reason": "Strong entry-level bridge from a general/agriculture/business degree into agro-FMCG supply chain.",
+            "skill_bundle": [
+                "Inventory",
+                "ERP",
+                "Supply Chain",
+                "FIFO",
+                "FEFO",
+                "Warehouse",
+                "Excel"
+            ]
+        },
+        {
+            "job": "Area Sales Manager",
+            "reason": "Demonstrates the commercial/market side of agribusiness.",
+            "skill_bundle": [
+                "Sales",
+                "Distribution",
+                "Market Analysis",
+                "Inventory",
+                "People Management"
+            ]
+        },
+        {
+            "job": "Distribution Incharge",
+            "reason": "Excellent Agriculture Economics → FMCG distribution/finance bridge.",
+            "skill_bundle": [
+                "Accounting",
+                "Excel",
+                "ERP",
+                "Cash Management",
+                "Inventory",
+                "Distribution"
+            ]
+        },
+        {
+            "job": "Officer, Store",
+            "reason": "Repeated recruitment signal for agro-processing/dairy supply-chain operations.",
+            "skill_bundle": [
+                "Inventory",
+                "Warehouse",
+                "FIFO",
+                "FEFO",
+                "ERP",
+                "Food Safety"
+            ]
+        }
+    ],
+    "important_database_conclusion": "BRAC/Aarong Dairy should NOT be represented in INSYT Corporate as merely an NGO employer. It should be classified as a diversified social-enterprise/agro-FMCG employer with career tracks spanning agribusiness, dairy, manufacturing, supply chain, sales, distribution, finance, ERP/business systems, engineering and warehouse operations."
+}

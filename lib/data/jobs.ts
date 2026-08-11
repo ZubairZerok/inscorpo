@@ -20,414 +20,412 @@ export interface JobListing {
 
 export const jobsData: JobListing[] = [
   {
-    id: "brac-bank-mtp",
-    title: "Management Trainee Officer (MTO)",
-    company: "BRAC Bank Limited",
-    location: "Dhaka, Bangladesh",
-    salary: "৳65,000 - ৳75,000 / mo",
-    type: "Full-time (MTO Track)",
-    experienceLevel: "Fresh Graduate / 0-1 Year",
-    deadline: "Aug 15, 2026",
-    logo: "🏦",
-    department: "Corporate Banking & Risk",
-    postedDate: "Jul 25, 2026",
-    description: "BRAC Bank's flagship Management Trainee Program (MTP) prepares top-tier university graduates for accelerated executive leadership across Corporate Banking, Treasury, Credit Risk, and Digital Transformation.",
-    responsibilities: [
-      "Rotate through Corporate Credit Risk, Retail Operations, Treasury, and Tech Product divisions.",
-      "Analyze commercial credit applications, financial statement ratios, and corporate loan portfolios.",
-      "Present strategic business optimization cases directly to division heads.",
-      "Lead cross-functional fintech initiatives and digital customer onboarding projects."
-    ],
-    requirements: [
-      "BBA / B.Sc in Business, Finance, Economics, Engineering, or Data Analytics from a recognized university.",
-      "Minimum CGPA of 3.00 out of 4.00 (or equivalent academic standing).",
-      "Strong proficiency in Financial Modeling, Excel (XLOOKUP, Pivot Tables), and Business Analytics.",
-      "Exceptional verbal and written business communication in English and Bangla."
-    ],
-    perks: [
-      "Fast-track promotion to Senior Officer / Manager within 18 months",
-      "Subsidized executive MBA / CFA certification support",
-      "Comprehensive medical coverage and festive bonuses",
-      "Direct mentorship from C-Suite executives"
-    ],
-    stages: [
-      { step: 1, title: "INSYT CV & Aptitude Screening", desc: "Shortlisting based on INSYT Career Passport score and analytical CGPA." },
-      { step: 2, title: "Analytical & Excel Assessment Test", desc: "60-minute online test covering financial modeling, logical reasoning, and data interpretation." },
-      { step: 3, title: "Group Discussion (GD) & Business Case", desc: "Real-world commercial case study breakdown in a 6-candidate panel." },
-      { step: 4, title: "C-Suite Board Interview & Offer", desc: "Final executive interview with Deputy Managing Director & HR Head." }
-    ]
-  },
-  {
-    id: "sheba-xyz-analytics",
-    title: "Junior Business Analyst",
-    company: "Sheba.xyz",
-    location: "Dhaka, Bangladesh (Hybrid)",
-    salary: "৳45,000 - ৳55,000 / mo",
-    type: "Full-time",
-    experienceLevel: "Entry Level (0-2 Years)",
-    deadline: "Aug 10, 2026",
-    logo: "📈",
-    department: "Business Intelligence & Operations",
-    postedDate: "Jul 24, 2026",
-    description: "Join Bangladesh's leading service marketplace to drive data-informed operational growth. Work closely with product leads and operations heads to build SQL data pipelines and Power BI executive dashboards.",
-    responsibilities: [
-      "Build real-time Power BI dashboards tracking daily gross merchandise value (GMV) and service delivery SLAs.",
-      "Execute SQL queries on PostgreSQL data warehouse to analyze customer churn and service provider retention.",
-      "Conduct cohort analysis and price elasticity experiments across service categories."
-    ],
-    requirements: [
-      "Bachelor's degree in Business, Computer Science, Statistics, or Data Science.",
-      "Demonstrated experience with SQL (JOINs, CTEs, Aggregations) and Power BI / Tableau.",
-      "Hands-on familiarity with Excel data cleaning, TRIM, and XLOOKUP formulas."
-    ],
-    perks: [
-      "Flexible hybrid work policy (2 days WFH / week)",
-      "Employee equity options pool for high performers",
-      "Unlimited coffee and catered office lunches",
-      "Learning allowance for cloud data certifications"
-    ],
-    stages: [
-      { step: 1, title: "Resume & Portfolio Review", desc: "Reviewing Power BI portfolio projects and SQL assessment scores." },
-      { step: 2, title: "Live SQL & Analytics Test", desc: "Practical 45-minute live query test on sample e-commerce dataset." },
-      { step: 3, title: "Hiring Manager & Product Interview", desc: "Technical walkthrough of previous business analytics projects." }
-    ]
-  },
-  {
-    id: "ific-bank-associate",
-    title: "Banking Associate Officer",
-    company: "IFIC Bank PLC",
-    location: "Chittagong, Bangladesh",
-    salary: "৳50,000 / mo",
-    type: "Full-time",
-    experienceLevel: "Fresh Graduate",
-    deadline: "Aug 20, 2026",
-    logo: "🏦",
-    department: "Retail & Commercial Banking",
-    postedDate: "Jul 20, 2026",
-    description: "IFIC Bank is hiring Associate Officers for its Chittagong regional hub to handle commercial credit underwriting, trade services, and retail banking operations.",
-    responsibilities: [
-      "Review commercial loan applications, SME collateral documentation, and audit balance sheets.",
-      "Ensure compliance with Bangladesh Bank regulatory circulars and LC trade guidelines.",
-      "Maintain corporate customer relationships across regional trade accounts."
-    ],
-    requirements: [
-      "Graduate degree in Business Administration, Finance, Accounting, or Economics.",
-      "Basic understanding of banking accounting, loan ratios, and MS Excel.",
-      "Willingness to be placed in regional branches within Chittagong zone."
-    ],
-    perks: [
-      "Standard banking pay scale with 3 festive bonuses per year",
-      "Contributory Provident Fund (CPF) and Gratuity benefits",
-      "Structured 6-week residential training academy"
-    ],
-    stages: [
-      { step: 1, title: "Preliminary Written Exam", desc: "General aptitude, Bangla, English, and basic accounting exam." },
-      { step: 2, title: "Viva Voce & Document Verification", desc: "Face-to-face interview with Regional HR Committee." }
-    ]
-  },
-  {
-    id: "unilever-mto-finance",
-    title: "Unilever Future Leaders Program (UFLP) — Finance MTO",
-    company: "Unilever Bangladesh",
-    location: "Dhaka, Bangladesh",
-    salary: "৳95,000 / mo",
-    type: "Full-time (MTO Track)",
-    experienceLevel: "Fresh Graduate / <1 Year",
-    deadline: "Sep 01, 2026",
-    logo: "🌿",
-    department: "Corporate Finance & Supply Chain",
-    postedDate: "Jul 26, 2026",
-    description: "Unilever's premier management trainee program designed to groom future CFOs and business leaders. Includes a 3-month international stint and rotational leadership exposure.",
-    responsibilities: [
-      "Manage brand P&L forecasting, advertising return on investment (ROI), and pricing models.",
-      "Collaborate with supply chain teams on factory cost optimization and inventory reduction.",
-      "Present quarterly financial performance reviews to Executive Management Committee."
-    ],
-    requirements: [
-      "Top-tier BBA / MBA / B.Sc graduate with outstanding academic and leadership achievements.",
-      "Mastery of corporate financial modeling, DCF valuation, and Power BI visualization.",
-      "Proven agility in high-pressure case solving and team leadership."
-    ],
-    perks: [
-      "Market-leading compensation starting at ৳95,000 / month",
-      "International business rotation opportunity",
-      "Executive health insurance and company transport allowance"
-    ],
-    stages: [
-      { step: 1, title: "Online Gamified Assessment", desc: "Problem-solving games and situational judgment tests." },
-      { step: 2, title: "Digital Discovery Center", desc: "Live business case simulation and individual presentation." },
-      { step: 3, title: "Final Board Interview", desc: "Interview with Unilever Bangladesh Leadership Team." }
-    ]
-  },
-  {
-    id: "grameenphone-gmt-tech",
-    title: "Graduate Management Trainee (GMT) — Tech & Commercial",
-    company: "Grameenphone Limited (Telenor)",
-    location: "Dhaka, Bangladesh (Hybrid)",
-    salary: "৳85,000 - ৳95,000 / mo",
-    type: "Full-time (GMT Track)",
-    experienceLevel: "Fresh Graduate / 0-1 Year",
-    deadline: "Aug 25, 2026",
-    logo: "📡",
-    department: "Technology & Digital Solutions",
-    postedDate: "Jul 28, 2026",
-    description: "Join the largest telecom network in Bangladesh through Grameenphone's GMT program. Lead digital product transformation, cloud infrastructure, and enterprise data analytics.",
-    responsibilities: [
-      "Rotate through Cloud Architecture, Data Engineering, Digital Products, and Commercial Strategy.",
-      "Analyze network utilization metrics and subscriber lifetime value (LTV) datasets.",
-      "Design user journey flows for the MyGP super-app platform."
-    ],
-    requirements: [
-      "Degree in CSE, EEE, Software Engineering, Business Analytics, or MIS.",
-      "Proficiency in Python/SQL data analytics or cloud computing fundamentals (AWS/GCP).",
-      "Analytical mindset with strong problem-solving skills."
-    ],
-    perks: [
-      "Accelerated career progression to Manager grade within 24 months",
-      "Telenor global exchange program eligibility",
-      "Comprehensive medical, mobile handset, and transport allowances"
-    ],
-    stages: [
-      { step: 1, title: "Digital Screening & Cognitive Test", desc: "Online logical reasoning and numerical aptitude test." },
-      { step: 2, title: "Hackathon & Hack Day Simulation", desc: "24-hour group technology hackathon problem solving." },
-      { step: 3, title: "Executive Leadership Viva", desc: "Panel interview with Chief Technology Officer & People Division Head." }
-    ]
-  },
-  {
-    id: "pathao-backend-engineer",
-    title: "Software Engineer (Backend / Go)",
-    company: "Pathao Limited",
-    location: "Dhaka, Bangladesh",
-    salary: "৳70,000 - ৳90,000 / mo",
-    type: "Full-time",
+    id: "aarong-qa-chemist",
+    title: "Quality Assurance Officer / Plant Chemist",
+    company: "Aarong Dairy",
+    location: "Gazipur Plant, Bangladesh",
+    salary: "৳32,000 - ৳45,000 / mo",
+    type: "Full-time (Executive Level)",
     experienceLevel: "1-3 Years",
-    deadline: "Aug 18, 2026",
-    logo: "🛵",
-    department: "Engineering & Infrastructure",
-    postedDate: "Jul 22, 2026",
-    description: "Pathao is hiring high-throughput Backend Engineers to scale microservices powering food delivery, ride-hailing, and courier dispatch algorithms handling millions of requests daily.",
+    deadline: "Aug 20, 2026",
+    logo: "🧪",
+    department: "Quality Assurance & Food Safety",
+    postedDate: "Aug 01, 2026",
+    description: "Responsible for raw milk adulteration testing, CIP verification, pasteurization monitoring, and ISO 22000 / HACCP food safety compliance across dairy processing lines.",
     responsibilities: [
-      "Design and maintain scalable Go / gRPC microservices deployed on Kubernetes.",
-      "Optimize Redis caching layers and PostgreSQL database indexing for low-latency queries.",
-      "Implement real-time driver matching and dynamic surge pricing engines."
+      "Perform chemical and microbiological analysis on raw milk and processed dairy batches.",
+      "Enforce ISO 22000 & FSSC 22000 food safety standards across pasteurization and packaging units.",
+      "Conduct raw milk adulteration detection and CIP (Clean-in-Place) verification.",
+      "Issue final batch quality sign-offs prior to cold-chain dispatch."
     ],
     requirements: [
-      "B.Sc in Computer Science or Software Engineering.",
-      "Hands-on experience with Golang or Node.js/Python microservices architecture.",
-      "Familiarity with Kafka, Docker, Kubernetes, and distributed systems design."
+      "B.Sc / M.Sc in Food Engineering, Food Technology, Applied Chemistry, Dairy Science, or Biotechnology.",
+      "Demonstrated familiarity with HACCP principles, lab titrations, and spectrophotometry.",
+      "1-3 years of laboratory experience in food/beverage or FMCG manufacturing."
     ],
     perks: [
-      "Competitive tech pay with semi-annual performance reviews",
-      "Catered lunches, snacks, and unlimited Pathao credit per month",
-      "Flexible work hours and continuous dev conference support"
+      "BRAC Enterprise employee benefits and healthcare coverage",
+      "Subsidized Gazipur plant dining and festival bonuses",
+      "Direct technical training on Tetra Pak quality systems"
     ],
     stages: [
-      { step: 1, title: "System Design & Code Assessment", desc: "Online coding challenge covering data structures and algorithms." },
-      { step: 2, title: "Technical System Architecture Interview", desc: "Deep dive into concurrency, database locks, and microservices design." },
-      { step: 3, title: "Culture Fit & VP Engineering Interview", desc: "Final conversation with Engineering VP and HR Team." }
+      { step: 1, title: "INSYT Academic & Lab Skill Screening", desc: "Shortlisting based on Chemistry / Food Tech credentials." },
+      { step: 2, title: "Practical Lab Assessment & Written Test", desc: "Chemical analysis and HACCP case evaluation." },
+      { step: 3, title: "Plant Quality Head & HR Viva", desc: "Final technical viva at Gazipur Dairy Processing Facility." }
     ]
   },
   {
-    id: "bkash-product-manager",
-    title: "Associate Product Manager — Fintech Payments",
-    company: "bKash Limited",
-    location: "Dhaka, Bangladesh",
-    salary: "৳75,000 - ৳85,000 / mo",
-    type: "Full-time",
+    id: "aarong-milk-collection-supervisor",
+    title: "Milk Collection & Chilling Center Supervisor",
+    company: "Aarong Dairy",
+    location: "Pabna / Sirajganj Chilling Centers",
+    salary: "৳22,000 - ৳30,000 / mo",
+    type: "Full-time (Field Operations)",
     experienceLevel: "1-2 Years",
-    deadline: "Aug 30, 2026",
-    logo: "💳",
-    department: "Product & Digital Payments",
-    postedDate: "Jul 29, 2026",
-    description: "Shape the future of digital financial inclusion at bKash. Lead product roadmaps for merchant QR payments, international remittances, and digital micro-loans.",
+    deadline: "Aug 18, 2026",
+    logo: "🥛",
+    department: "Procurement & Field Operations",
+    postedDate: "Jul 28, 2026",
+    description: "Manage direct farmer milk procurement, lactometer fat testing, bulk chilling operations, and cold-chain transport logistics from rural farm sheds.",
     responsibilities: [
-      "Define product requirements (PRDs), wireframes, and user acceptance criteria for payment APIs.",
-      "Collaborate with UX designers, engineering squads, and risk compliance officers.",
-      "Track daily active users (DAU), transaction conversion rates, and drop-off analytics."
+      "Operate bulk milk chilling units and manage milk collection center hygiene.",
+      "Execute rapid lactometer and Gerber fat tests to verify milk purity.",
+      "Manage farmer cooperatives and reconcile digital payout disbursements.",
+      "Coordinate insulated tanker route logistics for raw milk transit to Gazipur plant."
     ],
     requirements: [
-      "Bachelor's degree in Engineering, Business, or Computer Science.",
-      "1+ years of experience in product management, fintech, or business analysis.",
-      "Familiarity with Agile/Scrum, Figma wireframing, and SQL funnel analytics."
+      "B.Sc in Agriculture, Animal Husbandry, DVM, Diploma in Livestock, or Graduate in any discipline.",
+      "1-2 years experience in agricultural procurement, rural extension, or dairy operations.",
+      "Strong interpersonal skills for farmer mobilization and cooperative building."
     ],
     perks: [
-      "Direct impact on 70M+ fintech users across Bangladesh",
-      "3 festive bonuses, gratuity, and provident fund benefits",
-      "Executive health insurance for employee and dependents"
+      "Field transport allowance and mobile bill reimbursement",
+      "BRAC social enterprise career progression pathway",
+      "Performance incentives based on raw milk quality compliance"
     ],
     stages: [
-      { step: 1, title: "Product Portfolio Screening", desc: "Evaluation of PRDs, UI wireframes, and business case submissions." },
-      { step: 2, title: "Live Product Case Defense", desc: "Presenting a 15-minute fintech growth case to Product VP." },
-      { step: 3, title: "Final Board Interview", desc: "Leadership evaluation with Chief Product Officer." }
+      { step: 1, title: "Field Experience Review", desc: "Evaluation of rural extension and procurement background." },
+      { step: 2, title: "Milk Testing & Operations Assessment", desc: "Practical test on milk fat testing and record-keeping." },
+      { step: 3, title: "Regional Procurement Manager Viva", desc: "Final interview with Dairy Procurement Lead." }
     ]
   },
   {
-    id: "bat-gmt-operations",
-    title: "Global Management Trainee (GMT) — Operations",
-    company: "British American Tobacco Bangladesh",
-    location: "Dhaka / Dhaka Factory, Bangladesh",
-    salary: "৳110,000 / mo",
-    type: "Full-time (GMT Track)",
-    experienceLevel: "Fresh Graduate / <1 Year",
-    deadline: "Sep 05, 2026",
-    logo: "🏭",
-    department: "Operations & Supply Chain",
-    postedDate: "Jul 30, 2026",
-    description: "BAT's premier Global Management Trainee program offers 18 months of intensive leadership rotation including factory automation, green supply chain, and international assignments.",
+    id: "aarong-business-data-analyst",
+    title: "Business Data Analyst / MIS Executive",
+    company: "Aarong Dairy",
+    location: "Dhaka (Head Office), Bangladesh",
+    salary: "৳35,000 - ৳55,000 / mo",
+    type: "Full-time (Analytics Track)",
+    experienceLevel: "2-4 Years",
+    deadline: "Aug 25, 2026",
+    logo: "📊",
+    department: "Data & Business Intelligence",
+    postedDate: "Aug 02, 2026",
+    description: "Bridge rural milk procurement trends with corporate FMCG sales forecasting. Build Power BI dashboards, SQL queries, and Python analytics models for executive decision making.",
     responsibilities: [
-      "Manage high-capacity manufacturing lines, Lean Six Sigma projects, and factory yield targets.",
-      "Optimize raw material procurement logistics and leaf processing operations.",
-      "Lead cross-functional sustainability initiatives targeting net-zero carbon emissions."
+      "Develop executive dashboards tracking milk procurement yield and distributor sales variance.",
+      "Execute SQL queries on enterprise ERP databases to track plant wastage and inventory turnover.",
+      "Build predictive forecasting models for seasonal dairy demand fluctuations.",
+      "Present commercial optimization insights to Head of Business Operations."
     ],
     requirements: [
-      "Top-tier B.Sc in Engineering (ME, IPE, EEE, ChE) or BBA/B.Sc from recognized institutions.",
-      "Demonstrated campus leadership (Club President, Case Competition Champion).",
-      "Willingness to rotate across manufacturing facilities in Dhaka and Kushtia."
+      "B.Sc in Computer Science, Statistics, Economics, Agricultural Economics, or BBA in Business Analytics.",
+      "2-4 years experience with Power BI / Tableau, SQL, and Advanced Excel (VBA/XLOOKUP).",
+      "Strong background in econometric modeling and quantitative business reporting."
     ],
     perks: [
-      "Starting salary ৳110,000 / month — top corporate compensation",
-      "Guaranteed international stint at BAT regional hub",
-      "Full executive benefits, car loan support, and international health coverage"
+      "Hybrid corporate office work policy in Gulshan/Mohakhali HQ",
+      "Direct exposure to BRAC Enterprise Executive Committee",
+      "Professional development budget for Python and SQL certifications"
     ],
     stages: [
-      { step: 1, title: "Online Aptitude & Behavioral Test", desc: "Gamified cognitive and situational judgment assessment." },
-      { step: 2, title: "Assessment Center (AC)", desc: "Full-day group business case simulation, presentation, and role-play." },
-      { step: 3, title: "Executive Leadership Board Interview", desc: "Final interview with BAT Bangladesh Board of Directors." }
+      { step: 1, title: "SQL & Analytics Screening Test", desc: "60-minute practical data modeling & Power BI test." },
+      { step: 2, title: "Commercial Case Study Presentation", desc: "Analyze raw milk supply vs sales variance dataset." },
+      { step: 3, title: "Head of Analytics & HR Director Interview", desc: "Final executive panel interview." }
     ]
   },
   {
-    id: "scb-relationship-manager",
-    title: "Relationship Manager — Corporate Banking",
-    company: "Standard Chartered Bank BD",
+    id: "aarong-assistant-manager-erp",
+    title: "Assistant Manager, Enterprise Web Application (ERP)",
+    company: "Aarong Dairy",
     location: "Dhaka, Bangladesh",
-    salary: "৳80,000 - ৳100,000 / mo",
-    type: "Full-time",
+    salary: "৳50,000 - ৳70,000 / mo",
+    type: "Full-time (Enterprise Tech)",
     experienceLevel: "2-4 Years",
     deadline: "Aug 22, 2026",
-    logo: "🏦",
-    department: "Corporate & Institutional Banking",
-    postedDate: "Jul 21, 2026",
-    description: "Standard Chartered is seeking experienced Corporate Relationship Managers to manage trade finance, cross-border loans, and treasury accounts for multinational conglomerates in Bangladesh.",
+    logo: "💻",
+    department: "Enterprise Technology & Systems",
+    postedDate: "Aug 05, 2026",
+    description: "Lead Odoo ERP customization, business process analysis, and system integration across dairy procurement, inventory, sales distribution, and financial reporting.",
     responsibilities: [
-      "Structure commercial credit proposals, syndication facilities, and foreign exchange hedging strategies.",
-      "Maintain active relationship portfolios with RMG exporters, pharmaceuticals, and infrastructure conglomerates.",
-      "Ensure adherence to Anti-Money Laundering (AML) and Bangladesh Bank trade guidelines."
+      "Convert stakeholder business requirements into functional software SRS documents.",
+      "Customize and integrate Odoo ERP modules for factory store and sales distribution.",
+      "Conduct UAT (User Acceptance Testing), load testing, and system security audits.",
+      "Design executive management reporting dashboards and automated workflows."
     ],
     requirements: [
-      "BBA / MBA in Finance, Accounting, or Economics from a top university.",
-      "2+ years in corporate credit underwriting, commercial lending, or trade finance.",
-      "Mastery of financial ratio analysis, DCF modeling, and credit memorandum writing."
+      "B.Sc in Computer Science or Software Engineering from a recognized university.",
+      "2-4 years experience in ERP implementation (Odoo / SAP / Python / .NET / PHP).",
+      "Familiarity with FMCG manufacturing, inventory (FIFO/FEFO), and supply chain workflows."
     ],
     perks: [
-      "International banking pay structure with performance bonus pool",
-      "Global training opportunities in Singapore / Dubai hubs",
-      "Comprehensive medical and retirement benefits package"
+      "Key enterprise tech leadership role across BRAC Enterprises",
+      "Comprehensive medical insurance and provident fund benefits",
+      "Accelerated promotion path to Enterprise Solutions Manager"
     ],
     stages: [
-      { step: 1, title: "Credit Memorandum Walkthrough", desc: "Reviewing sample corporate credit proposal writing." },
-      { step: 2, title: "Technical Finance Interview", desc: "In-depth testing on trade finance, LCs, and financial modeling." },
-      { step: 3, title: "Managing Director Viva", desc: "Final executive interview with Head of Corporate Banking." }
+      { step: 1, title: "ERP & Technical System Design Test", desc: "Evaluation of SRS writing and Odoo/Python skills." },
+      { step: 2, title: "Architecture & Business Process Interview", desc: "Technical viva with Head of Enterprise Tech." },
+      { step: 3, title: "C-Suite Technology Board Interview", desc: "Final interview with Group CIO." }
     ]
   },
   {
-    id: "robi-data-engineer",
-    title: "Junior Data Engineer",
-    company: "Robi Axiata PLC",
-    location: "Dhaka, Bangladesh (Hybrid)",
-    salary: "৳60,000 - ৳70,000 / mo",
+    id: "aarong-associate-store-officer",
+    title: "Associate Officer, Store & Inventory",
+    company: "Aarong Dairy",
+    location: "Gazipur Factory, Bangladesh",
+    salary: "৳28,000 - ৳38,000 / mo",
     type: "Full-time",
-    experienceLevel: "0-2 Years",
+    experienceLevel: "1-3 Years",
+    deadline: "Aug 15, 2026",
+    logo: "📦",
+    department: "Store & Supply Chain",
+    postedDate: "Jul 30, 2026",
+    description: "Supervise receipt, storage, and dispatch of finished dairy goods adhering to GSDP, GMP, ISO guidelines, and FEFO / FIFO stock rotation standards.",
+    responsibilities: [
+      "Manage ERP inventory records for raw materials, packaging, and finished dairy products.",
+      "Enforce FEFO (First-Expired, First-Out) and FIFO principles to minimize spoilage.",
+      "Conduct weekly cycle counts, stock reconciliation, and warehouse safety audits.",
+      "Supervise warehouse assistants in loading/unloading insulated distribution trucks."
+    ],
+    requirements: [
+      "Graduation in any discipline (BBA, B.Sc, or Supply Chain Diploma preferred).",
+      "1-3 years experience in store management, ERP inventory software, and warehouse safety.",
+      "Good understanding of food safety hygiene (GMP/ISO) and Excel reporting."
+    ],
+    perks: [
+      "Factory lunch and Gazipur transport facility",
+      "Festival bonuses, gratuity, and group health insurance",
+      "Clear career trajectory into Supply Chain Executive"
+    ],
+    stages: [
+      { step: 1, title: "Inventory & ERP Aptitude Test", desc: "Evaluation of Excel formulas and FEFO/FIFO logic." },
+      { step: 2, title: "Warehouse Manager & HR Viva", desc: "Interview at Gazipur Processing Factory." }
+    ]
+  },
+  {
+    id: "aarong-territory-sales-manager",
+    title: "Territory Sales Manager (TSM)",
+    company: "Aarong Dairy",
+    location: "Regional Hubs, Bangladesh",
+    salary: "৳35,000 - ৳50,000 / mo",
+    type: "Full-time (Commercial Track)",
+    experienceLevel: "2-4 Years",
+    deadline: "Aug 14, 2026",
+    logo: "📈",
+    department: "Sales & Distribution",
+    postedDate: "Jul 26, 2026",
+    description: "Drive primary and secondary cold-chain FMCG sales targets, expand refrigerated retail display coverage, and manage regional distributor networks.",
+    responsibilities: [
+      "Achieve monthly territory sales budgets for liquid milk, yogurt, butter, and ghee.",
+      "Expand cold-chain retail outlet coverage and monitor dealer safety stock.",
+      "Manage field sales representatives (SRs) and resolve distributor market issues.",
+      "Control product returns and execute trade marketing visual merchandising."
+    ],
+    requirements: [
+      "Bachelor's degree or BBA/MBA in Marketing or Business Administration.",
+      "2-4 years experience in FMCG channel sales, preferably cold-chain food products.",
+      "Proven leadership in distributor management and sales target achievement."
+    ],
+    perks: [
+      "Attractive monthly sales incentive and TA/DA allowance",
+      "Corporate mobile allowance and laptop support",
+      "Fast-track promotion to Area Sales Manager"
+    ],
+    stages: [
+      { step: 1, title: "Sales & Commercial Screening", desc: "Evaluation of territory sales track record." },
+      { step: 2, title: "Territory Business Case Viva", desc: "Presentation of 90-day market expansion plan." },
+      { step: 3, title: "National Sales Head Interview", desc: "Final interview with Sales Operations Lead." }
+    ]
+  },
+  {
+    id: "aarong-rnd-specialist",
+    title: "Research & Development (R&D) Specialist",
+    company: "Aarong Dairy",
+    location: "Gazipur R&D Center, Bangladesh",
+    salary: "৳45,000 - ৳65,000 / mo",
+    type: "Full-time (R&D Track)",
+    experienceLevel: "3-5 Years",
     deadline: "Aug 28, 2026",
-    logo: "📊",
-    department: "Big Data & Analytics Hub",
-    postedDate: "Jul 27, 2026",
-    description: "Join Robi's Big Data Hub to build ETL data pipelines processing terabytes of CDR (call detail records) and mobile monetary transaction data using PySpark and Databricks.",
+    logo: "🧬",
+    department: "Research & Development",
+    postedDate: "Aug 03, 2026",
+    description: "Lead novel dairy product formulation, probiotic yogurt cultures, flavored milk stabilization, and pilot plant scale-up trials compliant with BFSA/BSTI standards.",
     responsibilities: [
-      "Build batch and streaming data pipelines using Apache Spark, Kafka, and Python.",
-      "Maintain BigQuery / Snowflake data warehouse models powering customer analytics dashboards.",
-      "Optimize SQL query performance and data partitioning strategies."
+      "Formulate innovative functional dairy recipes, probiotic beverages, and low-fat products.",
+      "Conduct sensory panel evaluations, rheology testing, and shelf-life acceleration trials.",
+      "Scale up laboratory pilot recipes to full-scale commercial manufacturing lines.",
+      "Ensure all new formulations comply with BFSA (Bangladesh Food Safety Authority) regulations."
     ],
     requirements: [
-      "B.Sc in Computer Science, Data Science, Software Engineering, or Information Systems.",
-      "Strong proficiency in Python (Pandas, PySpark) and SQL window functions.",
-      "Familiarity with Docker, Airflow, or cloud data warehousing platforms."
+      "M.Sc / Ph.D in Food Science, Dairy Technology, or Applied Chemistry.",
+      "3-5 years experience in dairy culture development, food formulation, or FMCG R&D.",
+      "Deep understanding of hydrocolloids, food emulsifiers, and sensory analysis."
     ],
     perks: [
-      "Hybrid work culture with top telecom employee benefits",
-      "Annual performance bonus and mobile bill reimbursement",
-      "Subsidized Databricks / AWS Data Engineer certification support"
+      "State-of-the-art BRAC Dairy R&D laboratory access",
+      "Support for scientific journal publishing and international food tech conferences",
+      "Executive compensation package and healthcare benefits"
     ],
     stages: [
-      { step: 1, title: "SQL & Data Pipeline Test", desc: "60-minute practical data engineering exercise." },
-      { step: 2, title: "Technical Data Architecture Interview", desc: "Discussion on Spark optimization, data modeling, and Airflow DAGs." },
-      { step: 3, title: "Division Head Interview", desc: "Interview with Head of Analytics & Data Science." }
+      { step: 1, title: "Scientific Portfolio Review", desc: "Evaluation of R&D formulation publications and patents." },
+      { step: 2, title: "Pilot Recipe Technical Defense", desc: "Presentation of sensory trial and stabilization methodology." },
+      { step: 3, title: "R&D Director & Managing Director Viva", desc: "Final executive panel interview." }
     ]
   },
   {
-    id: "walton-supply-chain",
-    title: "Operations Associate — Supply Chain Management",
-    company: "Walton Hi-Tech Industries PLC",
-    location: "Gazipur / Dhaka, Bangladesh",
-    salary: "৳45,000 - ৳55,000 / mo",
+    id: "aarong-livestock-extension-officer",
+    title: "Livestock Extension Officer / Veterinary Doctor",
+    company: "Aarong Dairy",
+    location: "Northern Districts (Bogra, Rangpur), Bangladesh",
+    salary: "৳35,000 - ৳50,000 / mo",
+    type: "Full-time (Extension)",
+    experienceLevel: "1-3 Years",
+    deadline: "Aug 24, 2026",
+    logo: "🐄",
+    department: "Veterinary Services & Field Extension",
+    postedDate: "Aug 04, 2026",
+    description: "Enhance smallholder dairy cattle productivity, execute artificial insemination programs, manage mastitis prevention, and train micro-farmers.",
+    responsibilities: [
+      "Diagnose cattle diseases, manage vaccination schedules, and formulate cost-effective feed.",
+      "Conduct farmer training workshops on hygienic milk production and animal welfare.",
+      "Implement breed improvement programs and artificial insemination across milk sheds.",
+      "Reduce mastitis incidence in cooperative farms to ensure low somatic cell count milk."
+    ],
+    requirements: [
+      "Doctor of Veterinary Medicine (DVM) or B.Sc in Animal Husbandry.",
+      "1-3 years experience in cattle health, dairy extension, or livestock development.",
+      "Strong passion for rural empowerment and micro-farmer economic development."
+    ],
+    perks: [
+      "Motorcycle allowance and field travel subsidies",
+      "Direct integration with BRAC Ultra-Poor Graduation and Agribusiness programs",
+      "Comprehensive medical and life insurance coverage"
+    ],
+    stages: [
+      { step: 1, title: "Veterinary Credential Verification", desc: "Review of DVM registration and field extension work." },
+      { step: 2, title: "Practical Livestock Case Examination", desc: "Diagnosis and extension training simulation." },
+      { step: 3, title: "Head of Veterinary Services Viva", desc: "Final interview with Livestock Operations Director." }
+    ]
+  },
+  {
+    id: "aarong-distribution-incharge",
+    title: "Distribution Incharge",
+    company: "Aarong Dairy",
+    location: "Sales Centers, Bangladesh",
+    salary: "৳30,000 - ৳42,000 / mo",
     type: "Full-time",
-    experienceLevel: "0-2 Years",
+    experienceLevel: "Fresh Graduate / 0-2 Years",
+    deadline: "Aug 22, 2026",
+    logo: "🚛",
+    department: "Sales & Finance Operations",
+    postedDate: "Aug 09, 2026",
+    description: "Control daily product distribution, sales proceeds collection, bank deposits, inventory stock reconciliation, and cash book management.",
+    responsibilities: [
+      "Receive products from factory cold vehicles and inspect leakage or shortage.",
+      "Distribute products to sales representatives according to daily market demand.",
+      "Collect daily sales value, manage credit receivables, and deposit funds to bank.",
+      "Maintain cash book, DCR, and inventory registers in Excel and ERP software."
+    ],
+    requirements: [
+      "Graduation or Post-Graduation in Accounting or Finance.",
+      "Minimum 2nd class/division in all academic examinations.",
+      "Proficiency in MS Excel, ERP accounting software, and cash management."
+    ],
+    perks: [
+      "Sales center management allowance and festival bonuses",
+      "BRAC Enterprise career growth into Branch Operations Manager",
+      "Group medical insurance coverage"
+    ],
+    stages: [
+      { step: 1, title: "Accounting & Excel Aptitude Test", desc: "45-minute test on cash book entries and Excel formulas." },
+      { step: 2, title: "Operations & Audit Viva", desc: "Interview with Distribution Head & Internal Audit Lead." }
+    ]
+  },
+  {
+    id: "aarong-supply-chain-executive",
+    title: "Supply Chain & Logistics Executive",
+    company: "Aarong Dairy",
+    location: "Dhaka / Gazipur, Bangladesh",
+    salary: "৳32,000 - ৳48,000 / mo",
+    type: "Full-time",
+    experienceLevel: "2-4 Years",
+    deadline: "Aug 19, 2026",
+    logo: "⛓️",
+    department: "Supply Chain & Distribution",
+    postedDate: "Jul 29, 2026",
+    description: "Optimize temperature-controlled fleet logistics, perishable inventory rotation (FEFO), and chilling-center-to-factory transportation efficiency.",
+    responsibilities: [
+      "Manage cold-chain logistics routing from 20+ chilling centers to Gazipur processing plant.",
+      "Optimize refrigerated transport fleet scheduling using GPS tracking and SAP SCM.",
+      "Ensure FEFO perishable inventory rotation to reduce transit damage and product returns.",
+      "Conduct supplier quality audits for food-grade packaging materials and CIP chemicals."
+    ],
+    requirements: [
+      "B.Sc in Industrial & Production Engineering (IPE) or BBA in Supply Chain Management.",
+      "2-4 years experience in FMCG supply chain, cold storage logistics, or fleet tracking.",
+      "Familiarity with demand forecasting, SAP/Oracle ERP, and logistics optimization."
+    ],
+    perks: [
+      "Company transport facility between Dhaka office and Gazipur plant",
+      "Subsidized lunch, health insurance, and provident fund",
+      "Rapid career movement into Supply Chain Lead"
+    ],
+    stages: [
+      { step: 1, title: "Supply Chain & Quantitative Test", desc: "Logistics routing and FEFO inventory calculation test." },
+      { step: 2, title: "Supply Chain Director & HR Interview", desc: "Final technical panel interview." }
+    ]
+  },
+  {
+    id: "aarong-production-officer",
+    title: "Production Officer (Dairy Processing)",
+    company: "Aarong Dairy",
+    location: "Gazipur Plant, Bangladesh",
+    salary: "৳30,000 - ৳45,000 / mo",
+    type: "Full-time (Executive Level)",
+    experienceLevel: "2-4 Years",
     deadline: "Aug 16, 2026",
-    logo: "⚙️",
-    department: "Supply Chain & Procurement",
-    postedDate: "Jul 19, 2026",
-    description: "Manage raw material procurement, inventory warehousing, and distribution logistics for Bangladesh's largest electronics manufacturing plant.",
+    logo: "🏭",
+    department: "Manufacturing & Production",
+    postedDate: "Jul 29, 2026",
+    description: "Supervise automated UHT pasteurization lines, yogurt/butter manufacturing automation, OEE tracking, and mass balance production yield calculations.",
     responsibilities: [
-      "Coordinate international raw material imports, LC documentation, and customs clearing at Chittagong Port.",
-      "Optimize warehouse space utilization and safety stock levels using SAP SCM.",
-      "Monitor factory assembly line supply schedules and vendor delivery performance."
+      "Supervise shift operations across liquid milk pasteurization, aseptic filling, and yogurt fermenters.",
+      "Calculate daily production yield, mass balance, and OEE (Overall Equipment Effectiveness).",
+      "Enforce GMP (Good Manufacturing Practices) and sterile line sanitization protocols."
     ],
     requirements: [
-      "B.Sc in IPE, Supply Chain Management, Business Administration, or Engineering.",
-      "Understanding of MRP systems, inventory forecasting, and MS Excel.",
-      "Willingness to spend time at Gazipur manufacturing plant."
+      "B.Sc in Food Engineering, Dairy Technology, or Mechanical/Chemical Engineering.",
+      "2-4 years experience in FMCG automated food or dairy manufacturing plants."
     ],
     perks: [
-      "Company transport provided from Dhaka to Gazipur plant",
-      "Subsidized factory lunch, Provident Fund, and festival bonuses",
-      "Rapid career movement across international export divisions"
+      "Gazipur plant housing allowance and dining privileges",
+      "Festival bonuses and group insurance coverage"
     ],
     stages: [
-      { step: 1, title: "Written Supply Chain Test", desc: "Calculations on EOQ, lead times, and inventory turnover." },
-      { step: 2, title: "Factory Walkthrough & Plant Manager Viva", desc: "Site visit and interview with Supply Chain Director." }
+      { step: 1, title: "Technical Manufacturing Screening", desc: "Written test on mass balance and pasteurization technology." },
+      { step: 2, title: "Plant Production Head Interview", desc: "Technical interview at Gazipur Plant." }
     ]
   },
   {
-    id: "augmedix-ai-scribe",
-    title: "AI & Medical Scribe Trainee",
-    company: "Augmedix Bangladesh",
-    location: "Dhaka, Bangladesh",
-    salary: "৳35,000 - ৳45,000 / mo",
-    type: "Full-time",
-    experienceLevel: "Fresh Graduate",
-    deadline: "Aug 12, 2026",
-    logo: "🩺",
-    department: "Healthcare AI Operations",
-    postedDate: "Jul 15, 2026",
-    description: "Join US-listed Augmedix in Dhaka to assist American physicians using Ambient AI technology to structure electronic health records (EHR) in real-time.",
+    id: "aarong-brand-manager",
+    title: "Brand Manager / Assistant Brand Manager",
+    company: "Aarong Dairy",
+    location: "Dhaka HQ, Bangladesh",
+    salary: "৳55,000 - ৳85,000 / mo",
+    type: "Full-time (Marketing Level)",
+    experienceLevel: "3-6 Years",
+    deadline: "Aug 27, 2026",
+    logo: "📣",
+    department: "Marketing & Brand Management",
+    postedDate: "Aug 06, 2026",
+    description: "Lead ATL/BTL consumer brand marketing campaigns, nutritional positioning strategy, NPD (New Product Development) launches, and packaging redesign.",
     responsibilities: [
-      "Review ambient AI audio transcripts of doctor-patient consultations and edit clinical documentation.",
-      "Ensure HIPAA compliance and medical chart accuracy across electronic health record systems.",
-      "Collaborate with AI product teams to train ambient machine learning speech models."
+      "Develop 360-degree brand strategy for Aarong Dairy liquid milk, yogurt, and cheese lines.",
+      "Manage creative agency relationships, media buying budgets, and digital marketing ROI.",
+      "Lead market research on consumer nutritional preferences and competitor positioning."
     ],
     requirements: [
-      "Graduate in any discipline (English, Business, Pharmacy, Science preferred).",
-      "Native-level listening comprehension in American English accent.",
-      "Fast typing speed (50+ WPM) with strong attention to medical detail."
+      "BBA / MBA in Marketing from a top-tier university.",
+      "3-6 years experience in FMCG brand management or creative agency strategy."
     ],
     perks: [
-      "4-month paid medical terminology & EHR academy training",
-      "Fixed night shift transport drop-off service in Dhaka metro area",
-      "Bi-annual salary appraisal and global promotion tracks"
+      "Competitive executive salary package with corporate mobile/laptop support",
+      "Direct leadership of flagship social-enterprise FMCG brand"
     ],
     stages: [
-      { step: 1, title: "English Audio Comprehension Test", desc: "Listening comprehension and typing speed evaluation." },
-      { step: 2, title: "Medical Terminology Training Assessment", desc: "Basic medical vocabulary and chart editing exercise." },
-      { step: 3, title: "HR & Operations viva", desc: "Final interview with Country Operations Manager." }
+      { step: 1, title: "Brand Strategy Case Defense", desc: "Presentation of 360-degree brand campaign strategy." },
+      { step: 2, title: "Head of Marketing & HR Director Viva", desc: "Final executive panel interview." }
     ]
   }
 ];
@@ -467,4 +465,3 @@ export function convertGovJobToJobListing(govJob: any): JobListing {
     ]
   };
 }
-

@@ -1,4 +1,5 @@
-{
+[
+  {
     "dataset_name": "INSYT Corporate Government Research-Organization Job Intelligence Dataset — Batch 01",
     "scope": {
         "organizations": [
@@ -3004,30 +3005,8 @@
         "data_confidence"
     ],
     "critical_product_decision": "INSYT Corporate should treat recruitment circulars as structured career-intelligence data rather than simply as job listings. The valuable product is the chain: 'Who hires → for what role → with what degree → at what grade/salary → with what eligibility → with what skills → what should I learn before applying → what will I need after joining → what career path follows.'"
-}
-
-[
-    1
-]: https: //bari.teletalk.com.bd/bari_2026/ "Bangladesh Agricultural Research Institute - BARI | Powered By Teletalk"
-[
-    2
-]: https: //www.banglacyber.com/bina-job-circular/?utm_source=chatgpt.com "বাংলাদেশ পরমাণু কৃষি গবেষণা ইনস্টিটিউট নিয়োগ BINA job circular 2023"
-[
-    3
-]: https: //bjri.teletalk.com.bd/ "Bangladesh Jute Research Institute - BJRI | Powered By Teletalk"
-[
-    4
-]: https: //bjri.gov.bd/pages/static-pages/6922ddfa933eb65569e17688?utm_source=chatgpt.com "রসায়ন বিভাগ | পাতা | বাংলাদেশ পাট গবেষণা ইনস্টিটিউট (বিজেআরআই)"
-[
-    5
-]: https: //studyonlinebd.com/user/jobs-circular-details/?id=21873&utm_source=chatgpt.com "৪৯ পদে বাংলাদেশ ধান গবেষণা ইনস্টিটিউটের নতুন নিয়োগ বিজ্ঞপ্তি প্রকাশ -Study Online Bd"
-[
-    6
-]: https: //brri.gov.bd/pages/static-pages/6922dcdc933eb65569e1271c?utm_source=chatgpt.com "গবেষণা কার্যক্রম বিভাগসমূহ | পাতা | বাংলাদেশ ধান গবেষণা ইনস্টিটিউট"
-[
-    7
-]: https: //bsri.gov.bd/site/page/909d2256-65c3-43c4-ae00-78f37dc089fc/-?utm_source=chatgpt.com "পরিচিতি | পাতা | বাংলাদেশ সুগারক্রপ গবেষণা ইনস্টিটিউট"
-{
+  },
+  {
     "dataset_name": "INSYT Corporate Job Intelligence — Source Extraction Batch 02",
     "source_files": [
         {
@@ -4904,4 +4883,5 @@
         "BRRI_02": "The BRRI 3 PDF is a 3-page official circular; page 1 contains posts 1-19, page 2 contains posts 20-27 and application conditions, and page 3 contains additional online application instructions. ",
         "BRRI_01": "The BRRI 4 PDF is a 2-page official circular; page 1 contains the five job categories and page 2 contains application/payment instructions. "
     }
-}
+  }
+]

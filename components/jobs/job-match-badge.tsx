@@ -1,42 +1,56 @@
 "use client";
 
-import { useUser } from "@/components/providers/user-context";
+import { useState, useEffect } from "react";
 import { Sparkles } from "lucide-react";
 
 interface JobMatchBadgeProps {
-  jobTitle: string;
-  department: string;
-  requirements: string[];
+  jobId?: string;
+  jobTitle?: string;
+  department?: string;
+  requirements?: string[];
 }
 
-export function JobMatchBadge({ jobTitle, department, requirements }: JobMatchBadgeProps) {
-  const { state } = useUser();
-  const userSkills = state.passportProfile?.topSkills || [
-    "Financial Modeling", "Excel", "Power BI", "Data Analytics", "Management Trainee", "Communication"
-  ];
+export function JobMatchBadge({ jobId, jobTitle }: JobMatchBadgeProps) {
+  const [matchScore, setMatchScore] = useState<number | null>(null);
+  const targetId = jobId || jobTitle || "";
 
-  // Calculate dynamic skill overlap
-  let matchScore = 75; // baseline fit
-  const reqText = (jobTitle + " " + department + " " + requirements.join(" ")).toLowerCase();
-
-  userSkills.forEach((skill: string) => {
-    if (reqText.includes(skill.toLowerCase())) {
-      matchScore += 6;
+  const checkStoredFit = () => {
+    try {
+      const stored = localStorage.getItem(`insyt_cv_fit_${targetId}`);
+      if (stored) {
+        const parsed = JSON.parse(stored);
+        if (typeof parsed?.matchScore === "number") {
+          setMatchScore(parsed.matchScore);
+          return;
+        }
+      }
+    } catch {
+      /* ignore */
     }
-  });
+    setMatchScore(null);
+  };
 
-  matchScore = Math.min(Math.max(matchScore, 72), 98);
+  useEffect(() => {
+    checkStoredFit();
+
+    const handleUpdate = () => checkStoredFit();
+    window.addEventListener("insyt_fit_check_updated", handleUpdate);
+    return () => window.removeEventListener("insyt_fit_check_updated", handleUpdate);
+  }, [targetId]);
+
+  // Do not render anything by default unless fit check has actually been run
+  if (matchScore === null) return null;
 
   const getBadgeStyle = (score: number) => {
-    if (score >= 90) return "bg-emerald-500/10 text-emerald-600 border-emerald-500/30";
-    if (score >= 80) return "bg-blue-500/10 text-blue-600 border-blue-500/30";
-    return "bg-violet-500/10 text-violet-600 border-violet-500/30";
+    if (score >= 85) return "bg-blue-500/15 text-[#2563eb] border-2 border-blue-400";
+    if (score >= 70) return "bg-sky-500/15 text-sky-600 border-2 border-sky-400";
+    return "bg-amber-400 text-amber-950 border border-amber-500";
   };
 
   return (
-    <div className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold border ${getBadgeStyle(matchScore)}`}>
-      <Sparkles size={12} className="animate-pulse" />
-      <span>{matchScore}% AI Match Fit</span>
+    <div className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[10px] font-mono font-black uppercase ${getBadgeStyle(matchScore)}`}>
+      <Sparkles size={11} />
+      <span>{matchScore}% Verified Fit</span>
     </div>
   );
 }

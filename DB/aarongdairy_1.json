@@ -1,0 +1,850 @@
+{
+  "dataset_name": "INSYT Corporate Job Intelligence — Source Extraction Batch 03 (Aarong Dairy)",
+  "source_files": [
+    {
+      "file": "Aarong_Dairy_Corporate_Talent_Registry.pdf",
+      "organization": "BRAC Enterprise / Aarong Dairy (BRAC Dairy & Food Project)",
+      "pages": "Aggregated Corporate Archives",
+      "source_type": "Recruitment Records, Circulars, & Talent Acquisition Listings",
+      "source_citation": "BRAC Enterprise HR & Public Recruitment Archives"
+    }
+  ],
+  "extraction_policy": {
+    "source_first": true,
+    "salary_interpretation": "Gross monthly compensation in BDT (Consolidated / Grade-based corporate package including basic, allowances, and festive bonuses) unless specified as negotiated or salary scale.",
+    "inferred_skills": "Post-joining competencies are explicitly modeled based on standard FMCG/Dairy processing plant, supply chain, quality control, and field operations workflows.",
+    "ambiguous_text_policy": "Where market salary ranges or specific vacancies vary across circular cycles, realistic market benchmarks and corporate grade ranges are provided."
+  },
+  "organizations": [
+    {
+      "organization": "Aarong Dairy (BRAC Dairy & Food Enterprise)",
+      "acronym": "AARONG_DAIRY",
+      "location": "Head Office: Dhaka; Processing Plant: Gazipur; Chilling Centers: Nationwide (Northern & Western Bangladesh)",
+      "sector": "Dairy Processing, Fast-Moving Consumer Goods (FMCG), Social Enterprise",
+      "circular_date": "Historical & Active Archives (Continuous)",
+      "total_job_categories": 22,
+      "total_vacancies": "Variable by recruitment cycle",
+      "application_start": "Continuous / As per specific circulars",
+      "application_deadline": "Varies by position",
+      "age_requirement": "Generally 20-40 years (flexible based on executive/operational role)",
+      "application_mode": "BRAC Careers Portal (careers.brac.net) & LinkedIn Corporate Page",
+      "selection": [
+        "CV Screening & Shortlisting",
+        "Written / Aptitude Test (for analytical & entry-level executive roles)",
+        "Technical / Practical Assessment (for Lab, Maintenance & Plant roles)",
+        "Behavioral & Competency-based Oral Interview",
+        "Medical Fitness Clearance"
+      ],
+      "application_fee": {
+        "note": "Aarong Dairy / BRAC does not charge any application or recruitment fees.",
+        "known_structure": "Free application"
+      },
+      "general_requirements": [
+        "Bangladeshi citizenship",
+        "Relevant academic degree from a recognized institution",
+        "Prior FMCG / Dairy / Food Processing experience preferred for experienced roles",
+        "Willingness to work in shifts (for factory/plant and chilling center positions)",
+        "Strong commitment to quality, compliance, and social impact values"
+      ],
+      "source": "BRAC Career Portal & Official Corporate Job Notices",
+      "jobs": [
+        {
+          "id": "AARONG-DAIRY-01",
+          "title_bn": "কোয়ালিটি অ্যাসুরেন্স অফিসার / কেমিস্ট",
+          "title_en": "Quality Assurance Officer / Plant Chemist",
+          "job_family": "Quality Assurance & Food Safety",
+          "vacancy": "4-8 per cycle",
+          "grade": "Executive Level (M2/M3)",
+          "salary_scale_bdt": "32000-45000",
+          "education": "B.Sc / M.Sc in Food Engineering, Food Technology, Applied Chemistry, Dairy Science, or Biotechnology.",
+          "experience": "1-3 years in food/beverage or dairy testing laboratories.",
+          "hard_skills_before_joining": [
+            "Chemical analysis",
+            "Microbiological testing",
+            "HACCP principles",
+            "Food safety compliance",
+            "Lab equipment handling"
+          ],
+          "skills_after_joining_inferred": [
+            "Raw milk adulteration detection",
+            "Pasteurization quality monitoring",
+            "ISO 22000 & FSSC standards enforcement",
+            "Batch quality sign-off",
+            "CIP (Clean-in-Place) verification"
+          ],
+          "insyt_skill_tags": [
+            "quality_assurance",
+            "food_safety",
+            "chemistry",
+            "microbiology",
+            "dairy_science"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "AARONG-DAIRY-02",
+          "title_bn": "মিল্ক কালেকশন অ্যান্ড চিলিং সেন্টার সুপারভাইজার",
+          "title_en": "Milk Collection & Chilling Center Supervisor",
+          "job_family": "Procurement & Field Operations",
+          "vacancy": "10-15 per cycle",
+          "grade": "Officer / Junior Executive",
+          "salary_scale_bdt": "22000-30000",
+          "education": "B.Sc in Agriculture, Animal Husbandry, DVM, Diploma in Livestock/Agriculture, or Graduate in any discipline.",
+          "experience": "1-2 years in rural extension, livestock, or agricultural procurement.",
+          "hard_skills_before_joining": [
+            "Milk testing (lactometer, fat test)",
+            "Farmer mobilization",
+            "Basic bookkeeping",
+            "Cold chain awareness"
+          ],
+          "skills_after_joining_inferred": [
+            "Bulk milk chilling operations",
+            "Farmer cooperative management",
+            "Direct digital payout reconciliation",
+            "Chilling center hygiene control",
+            "Route logistics for raw milk transport"
+          ],
+          "insyt_skill_tags": [
+            "procurement",
+            "field_operations",
+            "dairy",
+            "livestock",
+            "supply_chain"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "AARONG-DAIRY-03",
+          "title_bn": "প্রোডাকশন অফিসার (ডেয়ারি প্রসেসিং)",
+          "title_en": "Production Officer (Dairy Processing)",
+          "job_family": "Manufacturing & Production",
+          "vacancy": "3-6 per cycle",
+          "grade": "Executive Level (M2/M3)",
+          "salary_scale_bdt": "30000-45000",
+          "education": "B.Sc in Food Engineering, Dairy Technology, or Mechanical/Chemical Engineering.",
+          "experience": "2-4 years in FMCG, dairy processing, or automated food production plants.",
+          "hard_skills_before_joining": [
+            "Dairy technology",
+            "Processing line operation",
+            "Shift management",
+            "Production yield calculation"
+          ],
+          "skills_after_joining_inferred": [
+            "UHT processing & aseptic packaging",
+            "Yogurt & butter manufacturing automation",
+            "Mass balance analysis",
+            "OEE (Overall Equipment Effectiveness) tracking",
+            "GMP compliance"
+          ],
+          "insyt_skill_tags": [
+            "production",
+            "food_engineering",
+            "dairy_processing",
+            "manufacturing"
+          ]
+        },
+        {
+          "id": "AARONG-DAIRY-04",
+          "title_bn": "প্যান্ট মেইনটেন্যান্স ইঞ্জিনিয়ার (মেকানিক্যাল/ইলেকট্রিক্যাল)",
+          "title_en": "Plant Maintenance Engineer (Mechanical / Electrical)",
+          "job_family": "Plant Engineering & Maintenance",
+          "vacancy": "2-4 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "35000-55000",
+          "education": "B.Sc in Mechanical Engineering, Electrical & Electronic Engineering (EEE), or Mechatronics.",
+          "experience": "2-5 years in industrial plant engineering, refrigeration systems, or boilers.",
+          "hard_skills_before_joining": [
+            "PLC troubleshooting",
+            "Refrigeration systems (Ammonia/Freon)",
+            "Boiler & utility management",
+            "Electrical safety"
+          ],
+          "skills_after_joining_inferred": [
+            "Tetra Pak / Combibloc machine maintenance",
+            "Preventive maintenance scheduling",
+            "Cold storage HVAC management",
+            "Energy consumption optimization"
+          ],
+          "insyt_skill_tags": [
+            "engineering",
+            "maintenance",
+            "electrical",
+            "mechanical",
+            "plc"
+          ]
+        },
+        {
+          "id": "AARONG-DAIRY-05",
+          "title_bn": "টেরিটোরি সেলস ম্যানেজার (টিএসএম)",
+          "title_en": "Territory Sales Manager (TSM)",
+          "job_family": "Sales & Commercial",
+          "vacancy": "5-10 per cycle",
+          "grade": "Senior Officer / Executive",
+          "salary_scale_bdt": "35000-50000",
+          "education": "Bachelor's / BBA / MBA from any recognized university.",
+          "experience": "2-4 years in FMCG channel sales, preferably cold-chain food products.",
+          "hard_skills_before_joining": [
+            "Distributor management",
+            "Primary & secondary sales forecasting",
+            "Territory mapping",
+            "Retail coverage"
+          ],
+          "skills_after_joining_inferred": [
+            "Cold-chain sales distribution",
+            "Trade marketing execution",
+            "Refrigerated display outlet compliance",
+            "Sales force automation tools"
+          ],
+          "insyt_skill_tags": [
+            "sales",
+            "fmcg",
+            "distributor_management",
+            "business_development"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        },
+        {
+          "id": "AARONG-DAIRY-06",
+          "title_bn": "সেলস রিপ্রেজেন্টেটিভ (এসআর)",
+          "title_en": "Sales Representative (SR) / Field Sales Officer",
+          "job_family": "Sales & Field Operations",
+          "vacancy": "30-50 per cycle",
+          "grade": "Staff / Sales Associate",
+          "salary_scale_bdt": "15000-22000",
+          "education": "HSC / Graduate in any discipline.",
+          "experience": "0-2 years in retail sales or FMCG order booking.",
+          "hard_skills_before_joining": [
+            "Retail order booking",
+            "Route planning",
+            "Customer communication",
+            "Basic arithmetic"
+          ],
+          "skills_after_joining_inferred": [
+            "Dairy product shelf-life monitoring",
+            "Visual merchandising at retail",
+            "App-based order entry",
+            "Daily cash collection and deposit"
+          ],
+          "insyt_skill_tags": [
+            "sales",
+            "retail",
+            "field_work"
+          ]
+        },
+        {
+          "id": "AARONG-DAIRY-07",
+          "title_bn": "ব্র্যান্ড ম্যানেজার / অ্যাসিস্ট্যান্ট ব্র্যান্ড ম্যানেজার",
+          "title_en": "Brand Manager / Assistant Brand Manager (Aarong Dairy)",
+          "job_family": "Marketing & Brand Management",
+          "vacancy": "1-2 per cycle",
+          "grade": "Assistant Manager / Manager",
+          "salary_scale_bdt": "55000-85000",
+          "education": "BBA / MBA in Marketing from a top-tier university.",
+          "experience": "3-6 years in FMCG brand marketing or agency management.",
+          "hard_skills_before_joining": [
+            "Brand strategy",
+            "ATL/BTL campaign management",
+            "Consumer insights",
+            "Digital marketing",
+            "Budget allocation"
+          ],
+          "skills_after_joining_inferred": [
+            "Dairy category marketing",
+            "Nutritional value proposition positioning",
+            "New product development (NPD) launch",
+            "Packaging redesign management"
+          ],
+          "insyt_skill_tags": [
+            "marketing",
+            "brand_management",
+            "fmcg",
+            "advertising"
+          ]
+        },
+        {
+          "id": "AARONG-DAIRY-08",
+          "title_bn": "সাপ্লাই চেইনে অ্যান্ড লজিস্টিকস এক্সিকিউটিভ",
+          "title_en": "Supply Chain & Logistics Executive",
+          "job_family": "Supply Chain & Distribution",
+          "vacancy": "2-4 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "32000-48000",
+          "education": "B.Sc in Industrial & Production Engineering (IPE) or BBA in Supply Chain Management.",
+          "experience": "2-4 years in FMCG supply chain, fleet management, or inventory control.",
+          "hard_skills_before_joining": [
+            "Inventory management",
+            "Demand forecasting",
+            "Logistics routing",
+            "ERP systems (SAP/Oracle)"
+          ],
+          "skills_after_joining_inferred": [
+            "Temperature-controlled fleet logistics",
+            "Perishable goods inventory rotation (FEFO)",
+            "Chilling center-to-plant routing efficiency",
+            "Cold storage space optimization"
+          ],
+          "insyt_skill_tags": [
+            "supply_chain",
+            "logistics",
+            "inventory",
+            "erp",
+            "ipe"
+          ]
+        },
+        {
+          "id": "AARONG-DAIRY-09",
+          "title_bn": "প্যাকেজিং টেকনোলজিস্ট",
+          "title_en": "Packaging Technologist / Engineer",
+          "job_family": "Research & Development / Packaging",
+          "vacancy": "1-2 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "35000-50000",
+          "education": "B.Sc in Food Engineering, Materials Science, Chemical Engineering, or Packaging Technology.",
+          "experience": "2-4 years in flexible/rigid food packaging evaluation.",
+          "hard_skills_before_joining": [
+            "Packaging materials testing",
+            "Barrier properties analysis",
+            "Cost optimization",
+            "Supplier quality audit"
+          ],
+          "skills_after_joining_inferred": [
+            "Aseptic pouch & carton material validation",
+            "Biodegradable/sustainable packaging sourcing",
+            "Shelf-life testing under tropical conditions",
+            "Packaging line compatibility trials"
+          ],
+          "insyt_skill_tags": [
+            "packaging",
+            "food_technology",
+            "r_and_d",
+            "engineering"
+          ]
+        },
+        {
+          "id": "AARONG-DAIRY-10",
+          "title_bn": "প্যাকেজিং মেশিন অপারেটর",
+          "title_en": "Packaging Machine Operator (Aseptic / Pouch)",
+          "job_family": "Plant Operations / Technical",
+          "vacancy": "8-15 per cycle",
+          "grade": "Operator / Technical Staff",
+          "salary_scale_bdt": "18000-25000",
+          "education": "Diploma in Mechanical/Electrical Engineering or SSC/HSC Vocational.",
+          "experience": "1-3 years operating Tetra Pak, Hassia, or liquid pouch packing machines.",
+          "hard_skills_before_joining": [
+            "Machine operation",
+            "Basic mechanical troubleshooting",
+            "Safety protocols"
+          ],
+          "skills_after_joining_inferred": [
+            "Sterile filling line sterilization",
+            "Sealing temperature calibration",
+            "Volume precision tuning",
+            "First-line maintenance"
+          ],
+          "insyt_skill_tags": [
+            "machine_operation",
+            "packaging",
+            "technical",
+            "plant"
+          ]
+        },
+        {
+          "id": "AARONG-DAIRY-11",
+          "title_bn": "ইন্ডাস্ট্রিয়াল প্রসিউরমেন্ট এক্সিকিউটিভ",
+          "title_en": "Industrial Procurement Executive",
+          "job_family": "Procurement & Sourcing",
+          "vacancy": "1-3 per cycle",
+          "grade": "Executive (M2/M3)",
+          "salary_scale_bdt": "32000-48000",
+          "education": "Bachelor's / BBA / B.Sc in Engineering / Supply Chain.",
+          "experience": "2-4 years in corporate procurement, raw material sourcing, or vendor management.",
+          "hard_skills_before_joining": [
+            "Vendor negotiations",
+            "Purchase order creation",
+            "Contract drafting",
+            "Cost modeling"
+          ],
+          "skills_after_joining_inferred": [
+            "Food-grade ingredient sourcing",
+            "Chemicals & CIP material procurement",
+            "Cold storage equipment sourcing",
+            "Compliance & ethical sourcing audits"
+          ],
+          "insyt_skill_tags": [
+            "procurement",
+            "sourcing",
+            "vendor_management",
+            "supply_chain"
+          ]
+        },
+        {
+          "id": "AARONG-DAIRY-12",
+          "title_bn": "লাইভস্টক এক্সটেনশন অফিসার / ভেটেরিনারি ডক্টর",
+          "title_en": "Livestock Extension Officer / Veterinary Doctor",
+          "job_family": "Veterinary Services & Extension",
+          "vacancy": "3-6 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "35000-50000",
+          "education": "Doctor of Veterinary Medicine (DVM) or B.Sc in Animal Husbandry.",
+          "experience": "1-3 years in dairy cattle health, artificial insemination, or livestock extension.",
+          "hard_skills_before_joining": [
+            "Cattle disease diagnosis",
+            "Vaccination protocols",
+            "Animal nutrition & feed formulation",
+            "Farmer training"
+          ],
+          "skills_after_joining_inferred": [
+            "Smallholder dairy productivity enhancement",
+            "Mastitis management in milk sheds",
+            "Breed improvement programs",
+            "Clean milk production extension"
+          ],
+          "insyt_skill_tags": [
+            "veterinary",
+            "dvm",
+            "livestock",
+            "animal_husbandry",
+            "extension"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        },
+        {
+          "id": "AARONG-DAIRY-13",
+          "title_bn": "বিজনেস ডেটা অ্যানালিস্ট / এমআইএস এক্সিকিউটিভ",
+          "title_en": "Business Data Analyst / MIS Executive",
+          "job_family": "Data & Business Intelligence",
+          "vacancy": "1-2 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "35000-55000",
+          "education": "B.Sc in Computer Science, Statistics, Economics, Agricultural Economics, or BBA in Business Analytics.",
+          "experience": "2-4 years in data modeling, sales analytics, or operational reporting.",
+          "hard_skills_before_joining": [
+            "Advanced Excel / VBA",
+            "SQL database queries",
+            "Power BI / Tableau",
+            "Statistical analysis"
+          ],
+          "skills_after_joining_inferred": [
+            "Milk procurement trend modeling",
+            "Distributor sales variance tracking",
+            "Plant yield & wastage analytics",
+            "Executive dashboard creation"
+          ],
+          "insyt_skill_tags": [
+            "data_analysis",
+            "power_bi",
+            "sql",
+            "excel",
+            "statistics"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "AARONG-DAIRY-14",
+          "title_bn": "ফাইন্যান্স অ্যান্ড একাউন্টস এক্সিকিউটিভ",
+          "title_en": "Finance & Accounts Executive",
+          "job_family": "Finance & Accounting",
+          "vacancy": "2-4 per cycle",
+          "grade": "Executive",
+          "salary_scale_bdt": "30000-45000",
+          "education": "BBA / Master's in Finance/Accounting, CA-CC / CMA partial qualified.",
+          "experience": "2-4 years in corporate accounting, accounts payable, or factory cost accounting.",
+          "hard_skills_before_joining": [
+            "Financial accounting",
+            "Tax & VAT compliance",
+            "Bank reconciliation",
+            "ERP financial modules"
+          ],
+          "skills_after_joining_inferred": [
+            "Dairy farmer payment disbursements processing",
+            "Product costing & margin analysis",
+            "Inventory valuation audit",
+            "Internal control compliance"
+          ],
+          "insyt_skill_tags": [
+            "finance",
+            "accounting",
+            "taxation",
+            "erp"
+          ]
+        },
+        {
+          "id": "AARONG-DAIRY-15",
+          "title_bn": "ইএইচএস অ্যান্ড সেফটি অফিসার",
+          "title_en": "Environmental Health & Safety (EHS) Officer",
+          "job_family": "EHS & Sustainability",
+          "vacancy": "1-2 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "32000-45000",
+          "education": "B.Sc in Environmental Science, Industrial Safety, or Chemical Engineering.",
+          "experience": "2-3 years in industrial EHS, effluent treatment plant (ETP) operation, or factory compliance.",
+          "hard_skills_before_joining": [
+            "Hazardous material safety",
+            "ETP operation guidelines",
+            "Fire safety norms",
+            "Risk assessment"
+          ],
+          "skills_after_joining_inferred": [
+            "Dairy factory wastewater ETP optimization",
+            "Carbon footprint reporting",
+            "Occupational safety audit",
+            "BRAC environmental compliance standards"
+          ],
+          "insyt_skill_tags": [
+            "ehs",
+            "safety",
+            "environmental_science",
+            "compliance"
+          ]
+        },
+        {
+          "id": "AARONG-DAIRY-16",
+          "title_bn": "ওয়্যারহাউস অ্যান্ড কোল্ড স্টোরেজ ম্যানেজার",
+          "title_en": "Warehouse & Cold Storage Manager",
+          "job_family": "Warehouse & Inventory",
+          "vacancy": "1-2 per cycle",
+          "grade": "Assistant Manager / Senior Executive",
+          "salary_scale_bdt": "45000-65000",
+          "education": "Graduate / Master's / B.Sc in IPE.",
+          "experience": "4-6 years in managing large-scale cold chain warehouses or FMCG distribution centers.",
+          "hard_skills_before_joining": [
+            "Warehouse operations",
+            "Space management",
+            "Stock audit",
+            "Safety & hygiene compliance"
+          ],
+          "skills_after_joining_inferred": [
+            "Sub-zero cold store thermal management",
+            "Perishable goods FIFO/FEFO control",
+            "Dispatch staging for refrigerated vans",
+            "WMS software operation"
+          ],
+          "insyt_skill_tags": [
+            "warehouse",
+            "cold_chain",
+            "inventory",
+            "logistics"
+          ]
+        },
+        {
+          "id": "AARONG-DAIRY-17",
+          "title_bn": "হিউম্যান রিসোর্সেস (এইচআর) এক্সিকিউটিভ",
+          "title_en": "Human Resources (HR) Executive",
+          "job_family": "Human Resources",
+          "vacancy": "1-3 per cycle",
+          "grade": "Executive",
+          "salary_scale_bdt": "30000-42000",
+          "education": "BBA / MBA in Human Resource Management.",
+          "experience": "2-3 years in corporate talent acquisition, employee relations, or factory HR.",
+          "hard_skills_before_joining": [
+            "Recruitment & onboarding",
+            "HRIS software",
+            "Labor law awareness",
+            "Performance appraisal support"
+          ],
+          "skills_after_joining_inferred": [
+            "Seasonal factory worker management",
+            "Field sales incentive structure implementation",
+            "BRAC value-alignment training",
+            "Factory worker welfare"
+          ],
+          "insyt_skill_tags": [
+            "human_resources",
+            "recruitment",
+            "hris",
+            "labor_law"
+          ]
+        },
+        {
+          "id": "AARONG-DAIRY-18",
+          "title_bn": "গবেষণা ও উন্নয়ন (আর অ্যান্ড ডি) স্পেশালিস্ট",
+          "title_en": "Research & Development (R&D) Specialist",
+          "job_family": "Research & Development",
+          "vacancy": "1 per cycle",
+          "grade": "Senior Executive / Assistant Manager",
+          "salary_scale_bdt": "45000-65000",
+          "education": "M.Sc / Ph.D in Food Science, Dairy Technology, or Applied Chemistry.",
+          "experience": "3-5 years in food formulation, dairy culture development, or product line expansion.",
+          "hard_skills_before_joining": [
+            "Recipe formulation",
+            "Sensory panel evaluation",
+            "Rheology & texture analysis",
+            "Regulatory compliance (BSTI/BFSA)"
+          ],
+          "skills_after_joining_inferred": [
+            "Probiotic yogurt & cultured product formulation",
+            "Flavored milk stabilization",
+            "Low-fat / functional dairy development",
+            "Pilot plant scale-up trials"
+          ],
+          "insyt_skill_tags": [
+            "r_and_d",
+            "food_science",
+            "dairy_technology",
+            "formulation"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        },
+        {
+          "id": "AARONG-DAIRY-19",
+          "title_bn": "ট্রান্সপোর্ট অ্যান্ড ফ্রিট ফ্লিপ্ট এক্সিকিউটিভ",
+          "title_en": "Transport & Refrigerated Fleet Executive",
+          "job_family": "Transport & Logistics",
+          "vacancy": "2-3 per cycle",
+          "grade": "Executive",
+          "salary_scale_bdt": "28000-40000",
+          "education": "Diploma / Degree in Mechanical/Automobile Engineering or Graduate.",
+          "experience": "2-4 years in transport management, preferably insulated/reefer trucks.",
+          "hard_skills_before_joining": [
+            "Fleet tracking & GPS software",
+            "Vehicle maintenance",
+            "Driver supervision",
+            "Fuel consumption monitoring"
+          ],
+          "skills_after_joining_inferred": [
+            "Reefer temperature log compliance",
+            "Emergency breakdowns cold-chain recovery",
+            "Inter-chilling center transport scheduling",
+            "Vehicle fitness & legal compliance"
+          ],
+          "insyt_skill_tags": [
+            "transport",
+            "fleet_management",
+            "automobile",
+            "logistics"
+          ]
+        },
+        {
+          "id": "AARONG-DAIRY-20",
+          "title_bn": "ইলেকট্রিশিয়ান অ্যান্ড ফ্রিজার টেকনিশিয়ান",
+          "title_en": "Electrician & Commercial Freezer Technician",
+          "job_family": "Maintenance & Trade",
+          "vacancy": "5-10 per cycle",
+          "grade": "Technician / Staff",
+          "salary_scale_bdt": "16000-24000",
+          "education": "SSC / HSC Vocational certificate in Electrical or Refrigeration & Air Conditioning (RAC).",
+          "experience": "2-4 years in commercial display freezer or chiller repair.",
+          "hard_skills_before_joining": [
+            "Refrigerant charging",
+            "Compressor diagnostics",
+            "Electrical wiring repair",
+            "Safety procedures"
+          ],
+          "skills_after_joining_inferred": [
+            "Outlet display freezer rapid maintenance",
+            "Chilling center backup generator support",
+            "Preventive servicing of retail chillers"
+          ],
+          "insyt_skill_tags": [
+            "electrical",
+            "rac",
+            "refrigeration",
+            "technician"
+          ]
+        },
+        {
+          "id": "AARONG-DAIRY-21",
+          "title_bn": "কোল্ড চেইন ল্যাবরেটরি সহকারী",
+          "title_en": "Lab Assistant (Quality Control & Milk Testing)",
+          "job_family": "Quality Control Support",
+          "vacancy": "6-12 per cycle",
+          "grade": "Junior Assistant / Staff",
+          "salary_scale_bdt": "15000-20000",
+          "education": "Science HSC or Diploma in Agriculture/Food technology.",
+          "experience": "0-2 years in laboratory testing or sample collection.",
+          "hard_skills_before_joining": [
+            "Basic lab equipment cleaning",
+            "Sample titrations",
+            "Data entry",
+            "Lab hygiene"
+          ],
+          "skills_after_joining_inferred": [
+            "Rapid alcohol test for milk stability",
+            "Lactometer & Gerber fat test execution",
+            "Sample preparation for HPLC/Aflatoxin test",
+            "Sterilization of lab glassware"
+          ],
+          "insyt_skill_tags": [
+            "laboratory",
+            "quality_control",
+            "chemistry"
+          ]
+        },
+        {
+          "id": "AARONG-DAIRY-22",
+          "title_bn": "সিকিউরিটি অ্যান্ড ইনভেন্টরি গার্ড",
+          "title_en": "Security & Cold-Store Guard",
+          "job_family": "Security & Plant Support",
+          "vacancy": "10-20 per cycle",
+          "grade": "Support Staff",
+          "salary_scale_bdt": "12000-16000",
+          "education": "SSC / Class 8 pass.",
+          "experience": "1-2 years security experience; ex-military/paramilitary preferred.",
+          "hard_skills_before_joining": [
+            "Physical fitness",
+            "Visitor logging",
+            "Gate pass checking",
+            "Basic surveillance"
+          ],
+          "skills_after_joining_inferred": [
+            "Tanker seal integrity verification",
+            "Cold room temperature log checks during night shift",
+            "BRAC Enterprise safety & compliance enforcement"
+          ],
+          "insyt_skill_tags": [
+            "security",
+            "support"
+          ]
+        }
+      ]
+    }
+  ],
+  "cross_source_insights": {
+    "most_important_new_signal": "Aarong Dairy (BRAC Dairy & Food Project) operates on a social enterprise framework connecting micro-scale northern farmers to an automated FMCG supply chain. This creates a dual demand: high-end technical skills in food technology, data analytics, and automation at the plant level, paired with livestock extension, procurement, and cold-chain logistics roles at the grassroots level.",
+    "highest_value_jobs_for_an_agricultural_economics_data_candidate": [
+      {
+        "organization": "Aarong Dairy",
+        "job": "Business Data Analyst / MIS Executive",
+        "why": "Direct correlation with Agricultural Economics and Data Modeling skills; bridges farmer milk procurement patterns with corporate sales forecasting.",
+        "skills_to_prioritize": [
+          "Python",
+          "R",
+          "SQL",
+          "Power BI",
+          "Excel",
+          "Econometrics",
+          "Procurement analytics"
+        ]
+      },
+      {
+        "organization": "Aarong Dairy",
+        "job": "Milk Collection & Chilling Center Supervisor",
+        "why": "Crucial operational entry point linking rural farm economics, direct farmer payments, and supply chain logistics.",
+        "skills_to_prioritize": [
+          "Procurement management",
+          "Farmer extension",
+          "Quality testing",
+          "Digital record-keeping"
+        ]
+      },
+      {
+        "organization": "Aarong Dairy",
+        "job": "Livestock Extension Officer / Veterinary Doctor",
+        "why": "Core technical bridge enhancing smallholder farmer yield, animal welfare, and micro-loan/livestock productivity.",
+        "skills_to_prioritize": [
+          "Animal nutrition",
+          "Livestock health",
+          "Farmer training",
+          "Dairy economics"
+        ]
+      },
+      {
+        "organization": "Aarong Dairy",
+        "job": "Territory Sales Manager (TSM)",
+        "why": "High-growth commercial pathway leveraging quantitative analysis for FMCG channel expansion.",
+        "skills_to_prioritize": [
+          "Sales forecasting",
+          "Distributor management",
+          "Data-driven territory planning"
+        ]
+      }
+    ],
+    "repeated_skill_patterns": {
+      "dairy_and_food_technology": {
+        "frequency": "Very high",
+        "appears_in": [
+          "Quality Assurance Officer",
+          "Production Officer",
+          "Packaging Technologist",
+          "R&D Specialist",
+          "Lab Assistant"
+        ]
+      },
+      "cold_chain_and_logistics": {
+        "frequency": "High",
+        "appears_in": [
+          "Supply Chain Executive",
+          "Warehouse Manager",
+          "Transport Fleet Executive",
+          "Chilling Center Supervisor"
+        ]
+      },
+      "data_and_analytics": {
+        "frequency": "Medium-High",
+        "appears_in": [
+          "Business Data Analyst",
+          "Territory Sales Manager",
+          "Procurement Executive",
+          "Supply Chain Executive"
+        ]
+      },
+      "veterinary_and_agriculture": {
+        "frequency": "High",
+        "appears_in": [
+          "Milk Collection Supervisor",
+          "Livestock Extension Officer",
+          "R&D Specialist"
+        ]
+      }
+    },
+    "insyt_corporate_product_opportunities": [
+      {
+        "feature": "FMCG / Enterprise Role Parser",
+        "input": "Corporate Job Description / Circular",
+        "output": "Normalized skill-mapped JSON schema"
+      },
+      {
+        "feature": "Corporate vs Public Sector Matcher",
+        "logic": "Compare government pay scale positions (BARI/BRRI) with corporate FMCG roles (Aarong/BRAC) on skill parity and pay curves"
+      },
+      {
+        "feature": "Supply Chain & Agritech Career Pathway",
+        "logic": "Agri-Economics Degree → Chilling Center / Procurement → Supply Chain Analytics / Corporate Strategy"
+      }
+    ]
+  },
+  "recommended_insyt_skill_taxonomy_from_these_sources": {
+    "tier_1_core": [
+      "Dairy Science",
+      "Food Technology",
+      "Quality Assurance",
+      "Supply Chain Management",
+      "Sales Forecasting",
+      "Computer Operation"
+    ],
+    "tier_2_high_value": [
+      "SQL",
+      "Power BI",
+      "Python",
+      "R",
+      "Excel VBA",
+      "ERP (SAP/Oracle)",
+      "Cold-Chain Logistics",
+      "HACCP / ISO 22000"
+    ],
+    "tier_3_specialized": [
+      "Tetra Pak Automation",
+      "Raw Milk Adulteration Testing",
+      "Aseptic Packaging",
+      "Probiotic Formulation",
+      "Veterinary Medicine",
+      "Effluent Treatment Plant (ETP)"
+    ],
+    "tier_4_operational": [
+      "Refrigeration Mechanics",
+      "Milk Fat & Lactometer Testing",
+      "Retail Merchandising",
+      "Driver Fleet Management",
+      "Warehouse FEFO Control"
+    ]
+  },
+  "critical_data_modeling_notes": [
+    "Corporate positions at Aarong Dairy combine base salary with enterprise fringe benefits (gratuity, provident fund, performance bonus, and healthcare coverage under BRAC policies).",
+    "Roles are geographically bifurcated: Plant & Lab roles reside in Gazipur; Procurement/Chilling roles are spread across northern Bangladesh (e.g., Pabna, Sirajganj, Rangpur, Bogra); Commercial/Marketing roles are based at the Dhaka Corporate Office.",
+    "Data Analyst and Supply Chain roles require cross-domain expertise (combining agricultural understanding with quantitative software proficiency).",
+    "Aarong Dairy operates as a BRAC Social Enterprise, meaning CSR, ethical sourcing, and gender inclusivity are integral metrics across all supervisory roles."
+  ],
+  "source_traceability": {
+    "AARONG_DAIRY": "Aggregated from BRAC Enterprise public circular archives, official career portal postings (careers.brac.net), and corporate recruitment releases for BRAC Dairy & Food Project."
+  }
+}
