@@ -10,7 +10,7 @@ import {
 import { useUser } from "@/components/providers/user-context";
 import { fetchWorkshops, fetchUserWorkshopBookings } from "@/lib/db";
 import { useAuth } from "@/components/providers/auth-provider";
-import { WORKSHOPS_DATA, WorkshopDetail } from "@/lib/data/workshops";
+import { WORKSHOPS_DATA, WorkshopDetail, normalizeWorkshopId } from "@/lib/data/workshops";
 import { WorkshopRegistrationModal } from "@/components/workshops/workshop-registration-modal";
 import Link from "next/link";
 
@@ -46,61 +46,43 @@ export default function WorkshopsPage() {
         user ? fetchUserWorkshopBookings(user.$id) : Promise.resolve([]),
       ]);
 
+      // Merge DB records onto local WORKSHOPS_DATA while preserving all local static definitions
+      const activeWorkshops = [...WORKSHOPS_DATA];
       if (dbWorkshops && dbWorkshops.length > 0) {
-        const mapped: WorkshopDetail[] = dbWorkshops.map((w: any, idx: number) => {
-          const wid = w.id || w.$id || WORKSHOPS_DATA[idx]?.id || "mto-assessment-masterclass";
-          const matchLocal = WORKSHOPS_DATA.find(
-            (item) => item.id === wid || item.id === w.id || item.title === w.title
-          );
-          if (matchLocal) return { ...matchLocal, id: matchLocal.id };
-
-          return {
-            id: wid,
-            title: w.title || "Corporate Executive Workshop",
-            tagline: w.description || "Interactive Executive Training Session",
-            category: w.level || "Corporate",
-            level: (w.level || "Intermediate") as any,
-            date: w.date || "Upcoming Saturday",
-            time: w.time ? `${w.time} (${w.duration || "2 Hours"})` : "7:30 PM (BST)",
-            duration: w.duration || "2.0 Hours",
-            status: "upcoming" as const,
-            spotsRemaining: w.spots || 20,
-            totalCapacity: 150,
-            xpReward: 100,
-            examXpReward: 150,
-            hostOrg: "BAU Business Club (BAUBC) x INSYT",
-            instructor: {
-              name: w.host || "Corporate Specialist",
-              role: "Executive Trainer",
-              company: "INSYT Partner Network",
-              avatar: "CT",
-              bio: "Senior corporate practitioner with extensive field experience.",
-            },
-            venue: "Live Zoom Executive Suite",
-            description: w.description || "",
-            agenda: [],
-            learningOutcomes: [],
-            credentialName: "BAUBC Verified Certificate",
-            examQuestions: [],
-          };
+        dbWorkshops.forEach((w: any) => {
+          const rawId = w.id || w.workshopId || w.$id || "";
+          const normId = normalizeWorkshopId(rawId);
+          const idx = activeWorkshops.findIndex((item) => item.id === normId || item.id === w.id || item.title === w.title);
+          if (idx !== -1) {
+            activeWorkshops[idx] = {
+              ...activeWorkshops[idx],
+              spotsRemaining: typeof w.spots === "number" ? w.spots : activeWorkshops[idx].spotsRemaining,
+            };
+          }
         });
-        setWorkshops(mapped);
-      } else {
-        setWorkshops(WORKSHOPS_DATA);
       }
+      setWorkshops(activeWorkshops);
 
-      const bookedSet = new Set<string>();
+      // Extract and normalize all booking IDs
+      const rawBookedSet = new Set<string>();
       userBookings.forEach((b: any) => {
-        if (b.workshopId) bookedSet.add(b.workshopId);
-        if (b.$id) bookedSet.add(b.$id);
+        if (b.workshopId) rawBookedSet.add(normalizeWorkshopId(b.workshopId));
       });
       try {
         const storedIds: string[] = JSON.parse(localStorage.getItem("insyt_booked_workshops") || "[]");
-        storedIds.forEach((id: string) => bookedSet.add(id));
+        storedIds.forEach((id: string) => rawBookedSet.add(normalizeWorkshopId(id)));
       } catch {
         /* fallback */
       }
-      setBookedIds(bookedSet);
+
+      // Keep only valid active workshop IDs
+      const validBookedSet = new Set<string>();
+      rawBookedSet.forEach((id) => {
+        if (activeWorkshops.some((w) => w.id === id)) {
+          validBookedSet.add(id);
+        }
+      });
+      setBookedIds(validBookedSet);
     } catch {
       setWorkshops(WORKSHOPS_DATA);
     } finally {

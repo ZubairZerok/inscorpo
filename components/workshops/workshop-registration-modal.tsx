@@ -213,6 +213,22 @@ export function WorkshopRegistrationModal({
                 </div>
               </div>
 
+              {workshop.registrationUrl && (
+                <div className="p-3 rounded-xl bg-amber-400/15 border border-amber-500/40 flex items-center justify-between gap-3 text-xs font-mono">
+                  <span className="font-bold text-amber-600 dark:text-amber-400">
+                    📌 Prefer the official BAUCC Google Form?
+                  </span>
+                  <a
+                    href={workshop.registrationUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-1.5 rounded-lg bg-amber-400 text-amber-950 font-black text-[11px] uppercase border border-amber-500 hover:bg-amber-300 transition-all flex items-center gap-1 flex-shrink-0"
+                  >
+                    Open Google Form ↗
+                  </a>
+                </div>
+              )}
+
               {/* Form Section 1: Candidate Identity */}
               <div className="space-y-3">
                 <div className="flex items-center gap-2 pb-1 border-b" style={{ borderColor: "var(--corp-border)" }}>

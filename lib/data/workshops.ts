@@ -290,6 +290,16 @@ export const WORKSHOPS_DATA: WorkshopDetail[] = [
   },
 ];
 
+export const LEGACY_WORKSHOP_ID_MAP: Record<string, string> = {
+  "mto-assessment-masterclass": "cv-writing-linkedin-hacks",
+};
+
+export function normalizeWorkshopId(id: string): string {
+  if (!id) return "cv-writing-linkedin-hacks";
+  return LEGACY_WORKSHOP_ID_MAP[id] || id;
+}
+
 export function getWorkshopById(id: string): WorkshopDetail | undefined {
-  return WORKSHOPS_DATA.find((w) => w.id === id);
+  const normId = normalizeWorkshopId(id);
+  return WORKSHOPS_DATA.find((w) => w.id === normId) || WORKSHOPS_DATA.find((w) => w.id === id);
 }

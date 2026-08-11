@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Ticket, Calendar, Clock, ArrowRight, CheckCircle2, Sparkles, ShieldCheck, Timer } from "lucide-react";
 import Link from "next/link";
-import { WORKSHOPS_DATA, WorkshopDetail } from "@/lib/data/workshops";
+import { WORKSHOPS_DATA, WorkshopDetail, normalizeWorkshopId } from "@/lib/data/workshops";
 import { fetchUserWorkshopBookings } from "@/lib/db";
 import { useAuth } from "@/components/providers/auth-provider";
 
@@ -53,17 +53,16 @@ export function DashboardRegisteredWorkshopsWidget() {
         const storedIds: string[] = JSON.parse(localStorage.getItem("insyt_booked_workshops") || "[]");
         const dbBookings = user ? await fetchUserWorkshopBookings(user.$id) : [];
 
-        const bookedSet = new Set<string>(storedIds);
+        const bookedSet = new Set<string>();
         dbBookings.forEach((b: any) => {
-          if (b.workshopId) bookedSet.add(b.workshopId);
-          if (b.$id) bookedSet.add(b.$id);
+          if (b.workshopId) bookedSet.add(normalizeWorkshopId(b.workshopId));
+        });
+        storedIds.forEach((id: string) => {
+          if (id) bookedSet.add(normalizeWorkshopId(id));
         });
 
-        // Match against WORKSHOPS_DATA
-        const matched = WORKSHOPS_DATA.filter((w) =>
-          bookedSet.has(w.id) ||
-          Array.from(bookedSet).some((id) => id.includes(w.id) || w.id.includes(id))
-        );
+        // Exact match against WORKSHOPS_DATA only
+        const matched = WORKSHOPS_DATA.filter((w) => bookedSet.has(w.id));
 
         setRegisteredWorkshops(matched);
       } catch {

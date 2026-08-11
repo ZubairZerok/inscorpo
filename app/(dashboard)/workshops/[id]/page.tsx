@@ -11,7 +11,7 @@ import {
 import { useUser } from "@/components/providers/user-context";
 import { useAuth } from "@/components/providers/auth-provider";
 import { fetchUserWorkshopBookings } from "@/lib/db";
-import { WORKSHOPS_DATA, getWorkshopById, WorkshopDetail } from "@/lib/data/workshops";
+import { WORKSHOPS_DATA, getWorkshopById, WorkshopDetail, normalizeWorkshopId } from "@/lib/data/workshops";
 import { WorkshopRegistrationModal } from "@/components/workshops/workshop-registration-modal";
 import Link from "next/link";
 
@@ -25,7 +25,7 @@ export default function IndividualWorkshopPage() {
   const { user } = useAuth();
 
   const rawId = Array.isArray(params.id) ? params.id[0] : params.id;
-  const workshopId = typeof rawId === "string" ? rawId : "mto-assessment-masterclass";
+  const workshopId = typeof rawId === "string" ? normalizeWorkshopId(rawId) : "cv-writing-linkedin-hacks";
   const workshop = getWorkshopById(workshopId) || WORKSHOPS_DATA[0];
 
   const [isRegistered, setIsRegistered] = useState(false);
@@ -42,13 +42,29 @@ export default function IndividualWorkshopPage() {
   // Check if user is registered for this workshop from Appwrite DB / Local state
   useEffect(() => {
     async function checkRegistration() {
+      let booked = false;
+      let code = "";
       if (user) {
         const bookings = await fetchUserWorkshopBookings(user.$id);
-        const match = bookings.find((b: any) => b.workshopId === workshop.id);
+        const match = bookings.find((b: any) => normalizeWorkshopId(b.workshopId) === workshop.id);
         if (match) {
-          setIsRegistered(true);
-          setTicketCode(match.ticketCode || `BAUBC-${workshop.id.substring(0, 4).toUpperCase()}-VERIFIED`);
+          booked = true;
+          code = match.ticketCode || `BAUBC-${workshop.id.substring(0, 4).toUpperCase()}-VERIFIED`;
         }
+      }
+      try {
+        const storedIds: string[] = JSON.parse(localStorage.getItem("insyt_booked_workshops") || "[]");
+        if (storedIds.some((id) => normalizeWorkshopId(id) === workshop.id)) {
+          booked = true;
+          if (!code) code = `BAUBC-${workshop.id.substring(0, 4).toUpperCase()}-VERIFIED`;
+        }
+      } catch {
+        /* fallback */
+      }
+
+      if (booked) {
+        setIsRegistered(true);
+        if (code) setTicketCode(code);
       }
     }
     checkRegistration();
