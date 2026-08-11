@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "sync:db": "node scripts/upload_db_to_cloud.js",
     "lint": "eslint"
   },
   "dependencies": {
