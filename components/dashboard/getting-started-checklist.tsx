@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  CheckCircle2, Circle, Sparkles, ChevronRight, Zap, Target,
-  ArrowRight, ShieldCheck, Award, BookOpen, Trophy
+import { 
+  CheckCircle2, Circle, Sparkles, ChevronRight, Zap, Target, 
+  ArrowRight, ShieldCheck, Award, BookOpen, Brain, Trophy 
 } from "lucide-react";
 import Link from "next/link";
 import { useUser } from "@/components/providers/user-context";

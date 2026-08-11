@@ -1,0 +1,3007 @@
+{
+  "dataset_name": "INSYT Corporate Government Research-Organization Job Intelligence Dataset — Batch 01",
+  "scope": {
+    "organizations": [
+      "BARI",
+      "BINA",
+      "BJRI",
+      "BRRI",
+      "BTRI",
+      "BSRI"
+    ],
+    "important_scope_note": "এই dataset-এ 'all jobs' বলতে আপনার দেওয়া recruitment circular/notice-গুলোতে পাওয়া সব distinct job category বোঝানো হয়েছে। এটি প্রতিষ্ঠানগুলোর sanctioned-post organogram-এর প্রতিটি পদ নয়। Salary হলো National Pay Scale/basic pay scale; take-home salary নয়। 'skills_after_joining' এবং কিছু 'career_insight' circular-এর সরাসরি requirement নয়—job function ও প্রতিষ্ঠানের research/work structure থেকে INSYT Corporate-এর জন্য inferred competency।",
+    "source_priority": [
+      "uploaded official recruitment circular/image",
+      "official institutional/Teletalk source",
+      "reliable web reproduction of the same circular",
+      "inference for post-joining skills and career intelligence"
+    ]
+  },
+  "insyt_corporate_schema": {
+    "job_seeker_should_see": [
+      "organization",
+      "job_title",
+      "job_family",
+      "vacancy",
+      "employment_type",
+      "grade",
+      "salary_scale",
+      "minimum_education",
+      "required_experience",
+      "age_limit",
+      "district_eligibility",
+      "mandatory_pre_joining_skills",
+      "preferred_skills",
+      "technical_skills_to_build_after_joining",
+      "likely_work_domains",
+      "career_path",
+      "exam_or_selection_process",
+      "application_fee",
+      "application_deadline",
+      "source_date",
+      "source_confidence"
+    ],
+    "insyt_features_recommended": [
+      "Job-to-degree matching",
+      "Job-to-skill matching",
+      "Skill-gap analysis",
+      "Eligibility checker",
+      "Government research-job tracker",
+      "Circular history",
+      "Salary-scale comparison",
+      "District eligibility filter",
+      "Experience requirement filter",
+      "Research-career pathway mapping",
+      "Post-joining competency roadmap",
+      "Exam-preparation roadmap",
+      "Institution-specific course recommendations",
+      "Career-readiness score",
+      "Research-organization skill taxonomy",
+      "Recurring recruitment-pattern detection"
+    ],
+    "skill_bundles": {
+      "research": "Research methodology, literature review, experimental thinking, scientific documentation and research ethics.",
+      "agri_research": "Agronomy, crop science, soil/crop management, field experimentation and agricultural technology depending on role.",
+      "statistics_data": "Statistics, data cleaning, Excel/spreadsheets, statistical interpretation and progressively R/Python/SQL for advanced roles.",
+      "scientific_lab": "Laboratory safety, sample handling, measurement, documentation, instrument handling and quality control.",
+      "field": "Field survey, trial management, crop observation, farmer interaction, field data collection and reporting.",
+      "scientific_writing": "Technical report writing, scientific paper structure, citation management, presentation and documentation.",
+      "engineering": "Engineering fundamentals, drawings/specifications, equipment maintenance, troubleshooting and safety.",
+      "computer": "Computer operation, MS Office, word processing, spreadsheets, data entry, file management and digital workflow.",
+      "typing": "Bangla/English typing, word processing and data-entry accuracy.",
+      "admin": "Office administration, records, correspondence, documentation, scheduling and government-office workflow.",
+      "finance": "Accounting basics, vouchers, ledgers, budgeting, audit documentation and financial controls.",
+      "statistics": "Descriptive/inferential statistics, data management, survey design and quantitative interpretation.",
+      "communication": "Professional communication, public relations, report writing, presentation and stakeholder communication.",
+      "library": "Cataloguing, classification, information retrieval, digital library systems and research-information management.",
+      "mechanical": "Mechanical systems, machinery operation, preventive maintenance and troubleshooting.",
+      "electrical": "Electrical systems, wiring, equipment maintenance, diagnostics and electrical safety.",
+      "civil": "Civil construction, measurement, estimation, drawings, site supervision and construction safety.",
+      "vehicle": "Safe vehicle operation, maintenance awareness, route discipline and equipment handling.",
+      "trade": "Role-specific hands-on trade skill, tool safety, preventive maintenance and practical troubleshooting.",
+      "support": "Workplace discipline, safety, cleaning/handling procedures, teamwork and institutional support operations.",
+      "leadership": "Team coordination, planning, supervision, decision-making and institutional management.",
+      "nuclear_agri": "Nuclear/agricultural science awareness, laboratory discipline, radiation-safety awareness where applicable, crop improvement and scientific data handling.",
+      "jute": "Jute agronomy, fibre science, textile physics, chemistry, breeding, field experimentation and post-harvest/industrial applications.",
+      "rice": "Rice breeding, agronomy, soil-water management, plant pathology, entomology, biotechnology, farm machinery, agricultural economics and statistics.",
+      "sugarcrop": "Sugarcane/sugarcrop agronomy, breeding, biotechnology, entomology, soil/nutrient management, sugar chemistry and socioeconomic/field research.",
+      "tea": "Tea agronomy, plantation management, tea research, soil science, botany, statistics, agricultural economics and tea-industry management."
+    }
+  },
+  "organizations": [
+    {
+      "organization": "Bangladesh Agricultural Research Institute",
+      "acronym": "BARI",
+      "type": "Autonomous government agricultural research institute",
+      "ministry": "Ministry of Agriculture",
+      "headquarters": "Gazipur-1701",
+      "latest_supplied_recruitment": {
+        "circular_date": "11-03-2026",
+        "published": "13-03-2026",
+        "vacancy_categories": 30,
+        "total_vacancies": 191,
+        "application_start": "15-03-2026 10:00",
+        "application_deadline": "26-04-2026 17:00",
+        "age": "18-32 years; circular reference date 10-10-2025",
+        "application_mode": "Online via Teletalk",
+        "application_fee": "56/112/168/223 BDT depending on grade",
+        "selection": "Written; practical where applicable; oral",
+        "source": "The supplied BARI circular contains the full 30-category table; the official BARI Teletalk portal confirms circular ref 12.21.0000.000.005.11.0004.25.3447 dated 11-03-2026 and application dates.  ([Bari Teletalk][1])"
+      },
+      "institutional_career_intelligence": {
+        "high_value_degree_domains": [
+          "Agriculture",
+          "Agricultural Economics",
+          "Agricultural Engineering",
+          "Agricultural Statistics",
+          "Crop Science",
+          "Soil Science",
+          "Entomology",
+          "Plant Pathology",
+          "Biotechnology",
+          "Statistics",
+          "Computer Science/Science",
+          "Electrical Engineering",
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Library Science"
+        ],
+        "insyt_priority": "VERY_HIGH",
+        "why": "BARI provides one of the broadest job spectra in Bangladesh agricultural research: scientific, agricultural, engineering, computing, statistical, administrative, laboratory, vehicle, machinery and support jobs."
+      },
+      "jobs": [
+        {
+          "id": "BARI-01",
+          "title": "গ্রন্থাগারিক",
+          "family": "Library / Research Information",
+          "vacancy": 1,
+          "grade": 10,
+          "salary_scale_bdt": "16000-38640",
+          "requirements": "Library Science-এ minimum second class/equivalent CGPA Bachelor's (Honours) বা equivalent; অথবা Bachelor's/equivalent-এর সঙ্গে Library Science diploma.",
+          "before_skills": [
+            "library",
+            "computer",
+            "research"
+          ],
+          "after_skills_inferred": [
+            "digital_library",
+            "research_information_management",
+            "cataloguing",
+            "reference_services"
+          ],
+          "experience": "Not specifically required",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-02",
+          "title": "উপ-সহকারী প্রকৌশলী (বিদ্যুৎ)",
+          "family": "Electrical Engineering",
+          "vacancy": 1,
+          "grade": 10,
+          "salary_scale_bdt": "16000-38640",
+          "requirements": "Electrical Engineering diploma with minimum second class/equivalent CGPA.",
+          "before_skills": [
+            "electrical",
+            "engineering"
+          ],
+          "after_skills_inferred": [
+            "equipment_maintenance",
+            "electrical_diagnostics",
+            "preventive_maintenance",
+            "safety"
+          ],
+          "experience": "Not specifically required",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-03",
+          "title": "এস্টিমেটর",
+          "family": "Civil / Estimation",
+          "vacancy": 1,
+          "grade": 10,
+          "salary_scale_bdt": "16000-38640",
+          "requirements": "Civil Engineering diploma with minimum second class/equivalent CGPA.",
+          "before_skills": [
+            "civil",
+            "engineering",
+            "computer"
+          ],
+          "after_skills_inferred": [
+            "quantity_estimation",
+            "BOQ",
+            "construction_documentation",
+            "site_measurement"
+          ],
+          "experience": "Not specifically required",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-04",
+          "title": "ফোরম্যান",
+          "family": "Mechanical / Workshop",
+          "vacancy": 1,
+          "grade": 10,
+          "salary_scale_bdt": "16000-38640",
+          "requirements": "Mechanical Engineering diploma with minimum second class/equivalent CGPA.",
+          "before_skills": [
+            "mechanical",
+            "engineering",
+            "trade"
+          ],
+          "after_skills_inferred": [
+            "workshop_supervision",
+            "machinery_maintenance",
+            "troubleshooting",
+            "team_coordination"
+          ],
+          "experience": "Not specifically required",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-05",
+          "title": "বৈজ্ঞানিক সহকারী",
+          "family": "Agricultural Technical / Scientific",
+          "vacancy": 55,
+          "grade": 11,
+          "salary_scale_bdt": "12500-30230",
+          "requirements": "Agriculture diploma of four years from recognized board/institute with minimum second class/equivalent CGPA.",
+          "before_skills": [
+            "agri_research",
+            "field",
+            "scientific_lab",
+            "computer"
+          ],
+          "after_skills_inferred": [
+            "field_trial_execution",
+            "crop_observation",
+            "sample_collection",
+            "research_data_management"
+          ],
+          "experience": "Not specifically required",
+          "source_confidence": "source_exact",
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "BARI-06",
+          "title": "কম্পিউটার অপারেটর",
+          "family": "IT / Data Operations",
+          "vacancy": 3,
+          "grade": 13,
+          "salary_scale_bdt": "11000-26590",
+          "requirements": "Science Bachelor's/Honours or equivalent plus qualifying examination under Government Computer Personnel Recruitment Rules 2019.",
+          "before_skills": [
+            "computer",
+            "data",
+            "typing"
+          ],
+          "after_skills_inferred": [
+            "database_operations",
+            "digital_records",
+            "data_processing",
+            "office_automation"
+          ],
+          "experience": "As per applicable government rules",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-07",
+          "title": "অফিস সহকারী-কাম-কম্পিউটার মুদ্রাক্ষরিক",
+          "family": "Administration / Data Entry",
+          "vacancy": 8,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "HSC/equivalent with minimum second division/equivalent GPA; Bangla typing minimum 25 wpm and English 30 wpm.",
+          "before_skills": [
+            "computer",
+            "typing",
+            "admin"
+          ],
+          "after_skills_inferred": [
+            "document_management",
+            "data_entry",
+            "digital_correspondence",
+            "office_automation"
+          ],
+          "experience": "Not specifically required",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-08",
+          "title": "অফিস সহকারী-কাম-হিসাব রক্ষক",
+          "family": "Administration / Accounts",
+          "vacancy": 5,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "HSC in Commerce with minimum second division/equivalent GPA; Bangla 25 wpm and English 30 wpm typing.",
+          "before_skills": [
+            "finance",
+            "computer",
+            "typing",
+            "admin"
+          ],
+          "after_skills_inferred": [
+            "voucher_processing",
+            "accounts_records",
+            "spreadsheet_accounting",
+            "office_workflow"
+          ],
+          "experience": "Not specifically required",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-09",
+          "title": "অফিস সহকারী",
+          "family": "Administration",
+          "vacancy": 1,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "HSC/equivalent with minimum second division/equivalent GPA; computer word processing, data entry and typing; Bangla 25 wpm, English 30 wpm.",
+          "before_skills": [
+            "computer",
+            "typing",
+            "admin"
+          ],
+          "after_skills_inferred": [
+            "records",
+            "correspondence",
+            "office_automation"
+          ],
+          "experience": "Not specifically required",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-10",
+          "title": "স্টোর কিপার-কাম-অফিস সহকারী",
+          "family": "Store / Administration",
+          "vacancy": 4,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "HSC/equivalent with minimum second division/equivalent GPA; computer operation including Microsoft Office.",
+          "before_skills": [
+            "computer",
+            "admin"
+          ],
+          "after_skills_inferred": [
+            "inventory_management",
+            "stock_records",
+            "procurement_support",
+            "spreadsheet_tracking"
+          ],
+          "experience": "Not specifically required",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-11",
+          "title": "ভাণ্ডার রক্ষক",
+          "family": "Store / Inventory",
+          "vacancy": 4,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "HSC/equivalent with minimum second division/equivalent GPA; computer operation including Microsoft Office.",
+          "before_skills": [
+            "computer",
+            "admin"
+          ],
+          "after_skills_inferred": [
+            "inventory",
+            "stock_control",
+            "asset_records"
+          ],
+          "experience": "Not specifically required",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-12",
+          "title": "পরিসংখ্যান সহকারী",
+          "family": "Statistics / Data",
+          "vacancy": 1,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "HSC/equivalent including Mathematics or Statistics with minimum second division/equivalent GPA; MS Office/computer skill.",
+          "before_skills": [
+            "statistics",
+            "computer",
+            "data"
+          ],
+          "after_skills_inferred": [
+            "data_cleaning",
+            "descriptive_statistics",
+            "research_data_support",
+            "spreadsheet_analysis"
+          ],
+          "experience": "Not specifically required",
+          "source_confidence": "source_exact",
+          "insyt_priority": "HIGH"
+        },
+        {
+          "id": "BARI-13",
+          "title": "ইলেকট্রিশিয়ান",
+          "family": "Electrical Trade",
+          "vacancy": 1,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "HSC/equivalent plus minimum six-month relevant trade course.",
+          "before_skills": [
+            "electrical",
+            "trade"
+          ],
+          "after_skills_inferred": [
+            "electrical_maintenance",
+            "fault_diagnosis",
+            "safety"
+          ],
+          "experience": "Not specifically required",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-14",
+          "title": "বুলডোজার ড্রাইভার",
+          "family": "Heavy Equipment",
+          "vacancy": 1,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "HSC/equivalent, heavy driving licence and minimum three years relevant experience.",
+          "before_skills": [
+            "vehicle",
+            "trade"
+          ],
+          "after_skills_inferred": [
+            "heavy_equipment_operation",
+            "preventive_maintenance",
+            "worksite_safety"
+          ],
+          "experience": "3 years",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-15",
+          "title": "গাড়িচালক",
+          "family": "Transport",
+          "vacancy": 17,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "HSC/equivalent, light driving licence and minimum three years relevant experience.",
+          "before_skills": [
+            "vehicle"
+          ],
+          "after_skills_inferred": [
+            "safe_driving",
+            "vehicle_care",
+            "route_management"
+          ],
+          "experience": "3 years",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-16",
+          "title": "ট্রাক্টর ড্রাইভার",
+          "family": "Agricultural Machinery",
+          "vacancy": 2,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "HSC/equivalent, valid driving licence and minimum three years relevant experience.",
+          "before_skills": [
+            "vehicle",
+            "agri_research"
+          ],
+          "after_skills_inferred": [
+            "tractor_operation",
+            "farm_machinery_care",
+            "field_safety"
+          ],
+          "experience": "3 years",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-17",
+          "title": "টিলার ড্রাইভার",
+          "family": "Agricultural Machinery",
+          "vacancy": 7,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "HSC/equivalent, valid light driving licence and minimum three years relevant experience.",
+          "before_skills": [
+            "vehicle",
+            "agri_research"
+          ],
+          "after_skills_inferred": [
+            "tiller_operation",
+            "field_machinery",
+            "maintenance"
+          ],
+          "experience": "3 years",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-18",
+          "title": "পাওয়ার টিলার ড্রাইভার",
+          "family": "Agricultural Machinery",
+          "vacancy": 1,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "HSC/equivalent, valid light driving licence and minimum three years relevant experience.",
+          "before_skills": [
+            "vehicle",
+            "agri_research"
+          ],
+          "after_skills_inferred": [
+            "power_tiller_operation",
+            "maintenance",
+            "field_safety"
+          ],
+          "experience": "3 years",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-19",
+          "title": "উঃ পাম্প অপারেটর",
+          "family": "Utilities / Machinery",
+          "vacancy": 2,
+          "grade": 17,
+          "salary_scale_bdt": "9000-21800",
+          "requirements": "HSC Vocational/equivalent plus relevant minimum six-month trade course.",
+          "before_skills": [
+            "trade",
+            "mechanical"
+          ],
+          "after_skills_inferred": [
+            "pump_operation",
+            "preventive_maintenance",
+            "water_system_safety"
+          ],
+          "experience": "Not specifically required",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-20",
+          "title": "পেইন্টার",
+          "family": "Trade / Maintenance",
+          "vacancy": 1,
+          "grade": 18,
+          "salary_scale_bdt": "8800-21310",
+          "requirements": "SSC Vocational/equivalent plus minimum one year relevant experience.",
+          "before_skills": [
+            "trade"
+          ],
+          "after_skills_inferred": [
+            "surface_preparation",
+            "industrial_painting",
+            "workplace_safety"
+          ],
+          "experience": "1 year",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-21",
+          "title": "ম্যাশন",
+          "family": "Construction Trade",
+          "vacancy": 1,
+          "grade": 18,
+          "salary_scale_bdt": "8800-21310",
+          "requirements": "SSC/equivalent plus minimum two years relevant experience.",
+          "before_skills": [
+            "trade",
+            "civil"
+          ],
+          "after_skills_inferred": [
+            "masonry",
+            "construction_safety",
+            "maintenance"
+          ],
+          "experience": "2 years",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-22",
+          "title": "প্লাম্বার",
+          "family": "Plumbing Trade",
+          "vacancy": 1,
+          "grade": 18,
+          "salary_scale_bdt": "8800-21310",
+          "requirements": "SSC/equivalent plus relevant trade course.",
+          "before_skills": [
+            "trade"
+          ],
+          "after_skills_inferred": [
+            "plumbing",
+            "water_system_maintenance",
+            "leak_diagnosis"
+          ],
+          "experience": "Not specifically required",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-23",
+          "title": "ল্যাবরেটরি এটেনডেন্ট",
+          "family": "Laboratory Support",
+          "vacancy": 17,
+          "grade": 18,
+          "salary_scale_bdt": "8800-21310",
+          "requirements": "Science SSC/equivalent plus minimum two years relevant experience.",
+          "before_skills": [
+            "scientific_lab",
+            "support"
+          ],
+          "after_skills_inferred": [
+            "sample_handling",
+            "lab_cleanliness",
+            "equipment_support",
+            "safety"
+          ],
+          "experience": "2 years",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-24",
+          "title": "প্রিপেয়ারার",
+          "family": "Laboratory / Preparation",
+          "vacancy": 2,
+          "grade": 19,
+          "salary_scale_bdt": "8500-20570",
+          "requirements": "Science SSC/equivalent with minimum second division/equivalent GPA.",
+          "before_skills": [
+            "scientific_lab",
+            "support"
+          ],
+          "after_skills_inferred": [
+            "sample_preparation",
+            "lab_protocols",
+            "safety"
+          ],
+          "experience": "Not specifically required",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-25",
+          "title": "লাইব্রেরি এটেনডেন্ট",
+          "family": "Library Support",
+          "vacancy": 1,
+          "grade": 19,
+          "salary_scale_bdt": "8500-20570",
+          "requirements": "SSC/equivalent plus two years relevant experience.",
+          "before_skills": [
+            "library",
+            "computer"
+          ],
+          "after_skills_inferred": [
+            "shelving",
+            "catalogue_support",
+            "document_retrieval"
+          ],
+          "experience": "2 years",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-26",
+          "title": "রুম অ্যাটেনডেন্ট",
+          "family": "Institutional Support",
+          "vacancy": 1,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "SSC/equivalent.",
+          "before_skills": [
+            "support"
+          ],
+          "after_skills_inferred": [
+            "facility_support",
+            "workplace_safety"
+          ],
+          "experience": "Not specifically required",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-27",
+          "title": "হ্যামারম্যান",
+          "family": "Workshop Trade",
+          "vacancy": 1,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "SSC/equivalent plus one year relevant experience.",
+          "before_skills": [
+            "trade",
+            "mechanical"
+          ],
+          "after_skills_inferred": [
+            "workshop_tools",
+            "equipment_support",
+            "safety"
+          ],
+          "experience": "1 year",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-28",
+          "title": "ট্রাক্টর মেট",
+          "family": "Agricultural Machinery Support",
+          "vacancy": 2,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "SSC/equivalent plus one year relevant experience.",
+          "before_skills": [
+            "agri_research",
+            "trade"
+          ],
+          "after_skills_inferred": [
+            "tractor_support",
+            "farm_equipment",
+            "maintenance"
+          ],
+          "experience": "1 year",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-29",
+          "title": "অফিস সহায়ক",
+          "family": "Institutional Support",
+          "vacancy": 31,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "SSC/equivalent plus one year relevant experience.",
+          "before_skills": [
+            "support",
+            "admin"
+          ],
+          "after_skills_inferred": [
+            "office_support",
+            "document_handling",
+            "workplace_discipline"
+          ],
+          "experience": "1 year",
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BARI-30",
+          "title": "নিরাপত্তা প্রহরী",
+          "family": "Security",
+          "vacancy": 17,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "SSC/equivalent plus one year relevant experience.",
+          "before_skills": [
+            "support"
+          ],
+          "after_skills_inferred": [
+            "security_procedures",
+            "incident_reporting",
+            "workplace_safety"
+          ],
+          "experience": "1 year",
+          "source_confidence": "source_exact"
+        }
+      ]
+    },
+    {
+      "organization": "Bangladesh Institute of Nuclear Agriculture",
+      "acronym": "BINA",
+      "type": "Autonomous government agricultural research institute",
+      "ministry": "Ministry of Agriculture",
+      "headquarters": "BAU Campus, Mymensingh",
+      "latest_supplied_recruitment": {
+        "circular_year": 2023,
+        "categories": 13,
+        "total_vacancies": 47,
+        "age": "18-30 generally; specified quota relaxations",
+        "application_mode": "Online via Teletalk",
+        "source": "Supplied BINA circular and independent reproduction both show 13 categories and 47 vacancies.  ([Bangla Cyber][2])"
+      },
+      "institutional_career_intelligence": {
+        "high_value_degree_domains": [
+          "Agriculture",
+          "Agricultural Science",
+          "Plant Breeding",
+          "Biotechnology",
+          "Nuclear Agriculture",
+          "Science",
+          "Electrical Engineering",
+          "Civil Engineering",
+          "Mechanical Engineering",
+          "Automobile Engineering",
+          "Statistics",
+          "Computer Science",
+          "Accounting"
+        ],
+        "insyt_priority": "VERY_HIGH",
+        "specialization": "BINA is particularly important for nuclear-agriculture, mutation breeding, crop improvement, scientific laboratory, instrumentation and agricultural-science career pathways."
+      },
+      "jobs": [
+        {
+          "id": "BINA-01",
+          "title": "সহকারী গ্রন্থাগারিক",
+          "family": "Library / Research Information",
+          "vacancy": 1,
+          "grade": 10,
+          "salary_scale_bdt": "16000-38640",
+          "requirements": "Library Science Bachelor's/equivalent or Bachelor's/equivalent with Library Science diploma.",
+          "before_skills": [
+            "library",
+            "computer",
+            "research"
+          ],
+          "after_skills_inferred": [
+            "digital_library",
+            "research_information_management",
+            "cataloguing"
+          ],
+          "experience": "Not specifically required"
+        },
+        {
+          "id": "BINA-02",
+          "title": "উপ-সহকারী প্রকৌশলী",
+          "family": "Civil / Electrical Engineering",
+          "vacancy": 3,
+          "grade": 10,
+          "salary_scale_bdt": "16000-38640",
+          "requirements": "Civil Engineering or Electrical Engineering diploma.",
+          "before_skills": [
+            "engineering",
+            "civil",
+            "electrical"
+          ],
+          "after_skills_inferred": [
+            "facility_engineering",
+            "equipment_maintenance",
+            "safety"
+          ]
+        },
+        {
+          "id": "BINA-03",
+          "title": "প্রকর্মী-১ (টেকনিশিয়ান-১)",
+          "family": "Technical / Engineering",
+          "vacancy": 1,
+          "grade": 12,
+          "salary_scale_bdt": "11300-27300",
+          "requirements": "Diploma in Electrical, Automobile, Mechanical or Water Supply.",
+          "before_skills": [
+            "engineering",
+            "mechanical",
+            "electrical",
+            "trade"
+          ],
+          "after_skills_inferred": [
+            "equipment_maintenance",
+            "troubleshooting",
+            "laboratory/facility_support"
+          ]
+        },
+        {
+          "id": "BINA-04",
+          "title": "কম্পিউটার অপারেটর",
+          "family": "IT / Data Operations",
+          "vacancy": 1,
+          "grade": 13,
+          "salary_scale_bdt": "11000-26590",
+          "requirements": "Bachelor/equivalent plus required computer-operation competency; circular specifies word processing, data entry and typing.",
+          "before_skills": [
+            "computer",
+            "typing",
+            "data"
+          ],
+          "after_skills_inferred": [
+            "data_processing",
+            "digital_records",
+            "office_automation"
+          ]
+        },
+        {
+          "id": "BINA-05",
+          "title": "সাঁটলিপিকার কাম-কম্পিউটার অপারেটর",
+          "family": "Administration / Executive Support",
+          "vacancy": 1,
+          "grade": 13,
+          "salary_scale_bdt": "11000-26590",
+          "requirements": "Bachelor/equivalent; shorthand Bangla 50 wpm, English 80 wpm; typing Bangla 25 wpm, English 30 wpm.",
+          "before_skills": [
+            "typing",
+            "computer",
+            "admin",
+            "communication"
+          ],
+          "after_skills_inferred": [
+            "executive_support",
+            "minutes",
+            "official_correspondence",
+            "document_management"
+          ]
+        },
+        {
+          "id": "BINA-06",
+          "title": "হিসাব সহকারী / Accounts Assistant / UDA-cum-Cashier",
+          "family": "Finance / Administration",
+          "vacancy": 9,
+          "grade": 13,
+          "salary_scale_bdt": "11000-26590",
+          "requirements": "Commerce Bachelor's/equivalent with minimum second division/class/equivalent CGPA throughout education.",
+          "before_skills": [
+            "finance",
+            "computer",
+            "admin"
+          ],
+          "after_skills_inferred": [
+            "government_accounting",
+            "voucher_processing",
+            "budget_records",
+            "audit_support"
+          ]
+        },
+        {
+          "id": "BINA-07",
+          "title": "বৈজ্ঞানিক সহকারী-১",
+          "family": "Scientific / Agricultural Research",
+          "vacancy": 6,
+          "grade": 13,
+          "salary_scale_bdt": "11000-26590",
+          "requirements": "Science Bachelor's/equivalent with minimum second class/equivalent CGPA OR Agriculture diploma.",
+          "before_skills": [
+            "research",
+            "nuclear_agri",
+            "scientific_lab",
+            "field"
+          ],
+          "after_skills_inferred": [
+            "experimental_support",
+            "sample_handling",
+            "research_data",
+            "field_trials"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "BINA-08",
+          "title": "বৈজ্ঞানিক সহকারী-২",
+          "family": "Scientific / Agricultural Research",
+          "vacancy": 12,
+          "grade": 14,
+          "salary_scale_bdt": "10200-24680",
+          "requirements": "Science Bachelor's/equivalent with minimum second class/equivalent CGPA OR Agriculture diploma.",
+          "before_skills": [
+            "research",
+            "nuclear_agri",
+            "scientific_lab",
+            "field"
+          ],
+          "after_skills_inferred": [
+            "laboratory_support",
+            "field_data",
+            "experimental_protocols",
+            "scientific_documentation"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "BINA-09",
+          "title": "পিএ",
+          "family": "Executive Administration",
+          "vacancy": 1,
+          "grade": 14,
+          "salary_scale_bdt": "10200-24680",
+          "requirements": "Bachelor/equivalent; shorthand Bangla 50 wpm, English 80 wpm; typing Bangla 25 wpm, English 30 wpm.",
+          "before_skills": [
+            "admin",
+            "typing",
+            "communication",
+            "computer"
+          ],
+          "after_skills_inferred": [
+            "executive_coordination",
+            "calendar_management",
+            "official_correspondence",
+            "meeting_support"
+          ]
+        },
+        {
+          "id": "BINA-10",
+          "title": "টেকনিশিয়ান-২",
+          "family": "Electrical Technical",
+          "vacancy": 2,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "HSC Vocational in Electrical.",
+          "before_skills": [
+            "electrical",
+            "trade"
+          ],
+          "after_skills_inferred": [
+            "equipment_maintenance",
+            "electrical_safety",
+            "troubleshooting"
+          ]
+        },
+        {
+          "id": "BINA-11",
+          "title": "মেকানিক",
+          "family": "Mechanical / Automobile",
+          "vacancy": 1,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "HSC Vocational in Mechanical/Automobile.",
+          "before_skills": [
+            "mechanical",
+            "trade"
+          ],
+          "after_skills_inferred": [
+            "machine_maintenance",
+            "diagnostics",
+            "preventive_maintenance"
+          ]
+        },
+        {
+          "id": "BINA-12",
+          "title": "অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক",
+          "family": "Administration / Data Entry",
+          "vacancy": 8,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "HSC/equivalent; Bangla and English typing minimum 20 wpm each.",
+          "before_skills": [
+            "computer",
+            "typing",
+            "admin"
+          ],
+          "after_skills_inferred": [
+            "records",
+            "data_entry",
+            "official_documents"
+          ]
+        },
+        {
+          "id": "BINA-13",
+          "title": "ওয়েল্ডার",
+          "family": "Technical Trade",
+          "vacancy": 1,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "SSC in Welding or Electrical plus two years practical welding experience.",
+          "before_skills": [
+            "trade",
+            "electrical"
+          ],
+          "after_skills_inferred": [
+            "welding",
+            "fabrication",
+            "equipment_repair",
+            "safety"
+          ],
+          "experience": "2 years"
+        }
+      ]
+    },
+    {
+      "organization": "Bangladesh Jute Research Institute",
+      "acronym": "BJRI",
+      "type": "Autonomous government jute research institute",
+      "ministry": "Ministry of Agriculture",
+      "headquarters": "Dhaka",
+      "latest_supplied_recruitment": {
+        "circular_year": 2026,
+        "categories": 11,
+        "total_vacancies": 41,
+        "application_start": "21-07-2026 10:00",
+        "application_deadline": "20-08-2026 16:00",
+        "age": "18-32 years on 20-08-2026",
+        "district": "All districts",
+        "application_mode": "Online",
+        "source": "The supplied 2026 re-recruitment circular and official BJRI Teletalk portal align on the 2026 recruitment; Teletalk currently shows the 2026 re-advertisement with deadline 20 August 2026.  ([Bangladesh Jute Research Institute][3])"
+      },
+      "institutional_career_intelligence": {
+        "high_value_degree_domains": [
+          "Agriculture",
+          "Agricultural Engineering",
+          "Jute/Fibre Science",
+          "Textile Engineering",
+          "Textile Physics",
+          "Chemistry",
+          "Botany",
+          "Plant Breeding",
+          "Agricultural Economics",
+          "Statistics",
+          "Mechanical Engineering",
+          "Library Science",
+          "Accounting"
+        ],
+        "research_domains_verified_online": [
+          "Fibre Chemistry",
+          "Industrial Chemistry",
+          "Textile Physics",
+          "Physical and mechanical properties of natural/artificial fibres and composites"
+        ],
+        "source": "BJRI's official pages describe Fibre Chemistry/Industrial Chemistry and Textile Physics research, including physical, chemical and mechanical properties of fibres and composites. ([Bangladesh Judicial Service Commission][4])",
+        "insyt_priority": "EXTREMELY_HIGH"
+      },
+      "jobs": [
+        {
+          "id": "BJRI-01",
+          "title": "উপ-সহকারী প্রকৌশলী (মেশিন ডিজাইন এন্ড ডেভেলপমেন্ট)",
+          "family": "Engineering",
+          "vacancy": 1,
+          "grade": 10,
+          "salary_scale_bdt": "16000-38640",
+          "requirements": "SSC/equivalent plus relevant diploma.",
+          "before_skills": [
+            "engineering",
+            "mechanical"
+          ],
+          "after_skills_inferred": [
+            "machine_design",
+            "maintenance",
+            "engineering_documentation",
+            "safety"
+          ]
+        },
+        {
+          "id": "BJRI-02",
+          "title": "সহকারী লাইব্রেরীয়ান",
+          "family": "Library / Research Information",
+          "vacancy": 1,
+          "grade": 11,
+          "salary_scale_bdt": "12500-30230",
+          "requirements": "Diploma in Library Science.",
+          "before_skills": [
+            "library",
+            "computer"
+          ],
+          "after_skills_inferred": [
+            "research_information_management",
+            "cataloguing",
+            "digital_library"
+          ]
+        },
+        {
+          "id": "BJRI-03",
+          "title": "বৈজ্ঞানিক সহকারী",
+          "family": "Scientific / Fibre Research",
+          "vacancy": 5,
+          "grade": 13,
+          "salary_scale_bdt": "11000-26590",
+          "requirements": "At least second-class BSc OR diploma in weaving/textile/engineering OR weaving-course certificate with two years' experience.",
+          "before_skills": [
+            "jute",
+            "scientific_lab",
+            "research",
+            "engineering"
+          ],
+          "after_skills_inferred": [
+            "fibre_testing",
+            "sample_preparation",
+            "experimental_data",
+            "textile_research"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "BJRI-04",
+          "title": "জুনিয়র মাঠ সহকারী",
+          "family": "Agricultural Field Research",
+          "vacancy": 12,
+          "grade": 14,
+          "salary_scale_bdt": "10200-24680",
+          "requirements": "Agriculture diploma/certificate/HSC Agriculture; agriculture diploma holders receive preference.",
+          "before_skills": [
+            "jute",
+            "field",
+            "agri_research"
+          ],
+          "after_skills_inferred": [
+            "jute_field_trials",
+            "crop_observation",
+            "farmer_data",
+            "field_sampling"
+          ],
+          "insyt_priority": "HIGH"
+        },
+        {
+          "id": "BJRI-05",
+          "title": "উচ্চমান সহকারী",
+          "family": "Administration",
+          "vacancy": 3,
+          "grade": 14,
+          "salary_scale_bdt": "10200-24680",
+          "requirements": "Graduate.",
+          "before_skills": [
+            "admin",
+            "computer"
+          ],
+          "after_skills_inferred": [
+            "office_workflow",
+            "records",
+            "correspondence",
+            "spreadsheet"
+          ]
+        },
+        {
+          "id": "BJRI-06",
+          "title": "উচ্চমান সহকারী-কাম-ক্যাশিয়ার",
+          "family": "Administration / Finance",
+          "vacancy": 1,
+          "grade": 14,
+          "salary_scale_bdt": "10200-24680",
+          "requirements": "Graduate.",
+          "before_skills": [
+            "finance",
+            "admin",
+            "computer"
+          ],
+          "after_skills_inferred": [
+            "cash_handling",
+            "government_accounts",
+            "records",
+            "audit_support"
+          ]
+        },
+        {
+          "id": "BJRI-07",
+          "title": "স্টোর কিপার",
+          "family": "Store / Inventory",
+          "vacancy": 1,
+          "grade": 14,
+          "salary_scale_bdt": "10200-24680",
+          "requirements": "Graduate/equivalent.",
+          "before_skills": [
+            "computer",
+            "admin"
+          ],
+          "after_skills_inferred": [
+            "inventory",
+            "stock_control",
+            "procurement_records"
+          ]
+        },
+        {
+          "id": "BJRI-08",
+          "title": "সাঁট-মুদ্রাক্ষরিক কাম কম্পিউটার অপারেটর",
+          "family": "Executive Support / Data",
+          "vacancy": 3,
+          "grade": 14,
+          "salary_scale_bdt": "10200-24680",
+          "requirements": "HSC; shorthand English 60 and Bangla 40 wpm; typing English 30 and Bangla 25 wpm.",
+          "before_skills": [
+            "typing",
+            "computer",
+            "admin"
+          ],
+          "after_skills_inferred": [
+            "executive_support",
+            "minutes",
+            "official_correspondence",
+            "data_entry"
+          ]
+        },
+        {
+          "id": "BJRI-09",
+          "title": "অডিটর",
+          "family": "Finance / Audit",
+          "vacancy": 1,
+          "grade": 14,
+          "salary_scale_bdt": "10200-24680",
+          "requirements": "Graduate.",
+          "before_skills": [
+            "finance",
+            "computer",
+            "statistics"
+          ],
+          "after_skills_inferred": [
+            "internal_audit",
+            "financial_controls",
+            "government_rules",
+            "audit_reporting"
+          ]
+        },
+        {
+          "id": "BJRI-10",
+          "title": "জুনিয়র ফিল্ড অ্যাসিস্ট্যান্ট",
+          "family": "Agricultural Field",
+          "vacancy": 1,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "Agriculture diploma/certificate/HSC Agriculture; diploma holders preferred.",
+          "before_skills": [
+            "field",
+            "jute",
+            "agri_research"
+          ],
+          "after_skills_inferred": [
+            "field_sampling",
+            "crop_monitoring",
+            "data_collection"
+          ]
+        },
+        {
+          "id": "BJRI-11",
+          "title": "অফিস সহায়ক",
+          "family": "Institutional Support",
+          "vacancy": 12,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "Class 5 or equivalent with practical experience.",
+          "before_skills": [
+            "support"
+          ],
+          "after_skills_inferred": [
+            "office_support",
+            "document_handling",
+            "workplace_discipline"
+          ],
+          "experience": "Practical experience"
+        }
+      ]
+    },
+    {
+      "organization": "Bangladesh Rice Research Institute",
+      "acronym": "BRRI",
+      "type": "Autonomous government rice research institute",
+      "ministry": "Ministry of Agriculture",
+      "headquarters": "Gazipur",
+      "latest_supplied_recruitment": {
+        "circular": "No. 02 (2025-2026)",
+        "circular_date": "October 2025",
+        "total_vacancies": 50,
+        "categories": 27,
+        "age": "18-32 years on 30-10-2025",
+        "application_start": "07-10-2025",
+        "application_deadline": "30-10-2025 17:00",
+        "source": "Supplied BRRI circular image and independent reproduction identify 27 job categories and the same role structure.  ([Studyonline BD][5])"
+      },
+      "institutional_career_intelligence": {
+        "research_domains": [
+          "Plant Breeding",
+          "Hybrid Rice",
+          "Biotechnology",
+          "Genetic Resources and Seed",
+          "Grain Quality and Nutrition",
+          "Agronomy",
+          "Soil Science",
+          "Irrigation and Water Management",
+          "Plant Physiology",
+          "Plant Pathology",
+          "Entomology",
+          "Rice-based Farming Systems",
+          "Farm Machinery and Postharvest Technology",
+          "Factory Machinery and Maintenance",
+          "Agricultural Economics",
+          "Agricultural Statistics",
+          "Farm Management",
+          "Applied Research",
+          "Training"
+        ],
+        "source": "BRRI officially lists these research divisions; its Agricultural Economics division evaluates effectiveness and impact of rice technologies, while Agricultural Statistics supports experimental design, data collection, analysis and interpretation. ([Bangladesh Rice Research Institute][6])",
+        "insyt_priority": "EXTREMELY_HIGH",
+        "special_note": "For Agricultural Economics/Data Science users, BRRI is one of the most valuable organizations in this dataset because its official research structure explicitly includes Agricultural Economics and Agricultural Statistics."
+      },
+      "jobs": [
+        {
+          "id": "BRRI-01",
+          "title": "সাব এসিসটেন্ট ইঞ্জিনিয়ার (স্থায়ী)",
+          "family": "Civil Engineering",
+          "vacancy": 1,
+          "grade": 10,
+          "salary_scale_bdt": "16000-38680",
+          "requirements": "Civil Engineering diploma plus minimum three years practical relevant experience.",
+          "before_skills": [
+            "civil",
+            "engineering"
+          ],
+          "after_skills_inferred": [
+            "site_supervision",
+            "construction_maintenance",
+            "engineering_documentation"
+          ],
+          "experience": "3 years"
+        },
+        {
+          "id": "BRRI-02",
+          "title": "সাব এসিসটেন্ট ইঞ্জিনিয়ার (অস্থায়ী)",
+          "family": "Civil Engineering",
+          "vacancy": 4,
+          "grade": 10,
+          "salary_scale_bdt": "16000-38680",
+          "requirements": "Civil Engineering diploma plus minimum three years practical relevant experience.",
+          "before_skills": [
+            "civil",
+            "engineering"
+          ],
+          "after_skills_inferred": [
+            "site_supervision",
+            "construction_maintenance",
+            "engineering_documentation"
+          ],
+          "experience": "3 years"
+        },
+        {
+          "id": "BRRI-03",
+          "title": "ডাটা এনালিস্ট",
+          "family": "Data / Agricultural Statistics",
+          "vacancy": 1,
+          "grade": 10,
+          "salary_scale_bdt": "16000-38680",
+          "requirements": "Postgraduate/equivalent in Statistics/Geography/Mathematics plus minimum two years practical experience in data processing and computer operation.",
+          "before_skills": [
+            "statistics_data",
+            "computer",
+            "statistics"
+          ],
+          "after_skills_inferred": [
+            "research_data_pipeline",
+            "statistical_analysis",
+            "data_visualization",
+            "experimental_data_management"
+          ],
+          "experience": "2 years",
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "BRRI-04",
+          "title": "ট্রান্সপোর্ট সুপারভাইজার",
+          "family": "Transport Management",
+          "vacancy": 1,
+          "grade": 10,
+          "salary_scale_bdt": "16000-38680",
+          "requirements": "Diploma in Automobile Engineering plus minimum three years relevant practical experience.",
+          "before_skills": [
+            "vehicle",
+            "engineering"
+          ],
+          "after_skills_inferred": [
+            "fleet_management",
+            "vehicle_maintenance",
+            "transport_planning"
+          ],
+          "experience": "3 years"
+        },
+        {
+          "id": "BRRI-05",
+          "title": "এসএ (ফিল্ডম্যান)",
+          "family": "Agricultural Field Research",
+          "vacancy": 4,
+          "grade": 11,
+          "salary_scale_bdt": "12500-30230",
+          "requirements": "SSC/equivalent plus three-year Agriculture diploma.",
+          "before_skills": [
+            "rice",
+            "field",
+            "agri_research"
+          ],
+          "after_skills_inferred": [
+            "rice_field_trials",
+            "crop_observation",
+            "field_data_collection"
+          ]
+        },
+        {
+          "id": "BRRI-06",
+          "title": "এসিসটেন্ট লাইব্রেরিয়ান",
+          "family": "Library / Research Information",
+          "vacancy": 1,
+          "grade": 13,
+          "salary_scale_bdt": "11000-26590",
+          "requirements": "Graduate/equivalent plus diploma in Library and Information Science and three years' library-management experience.",
+          "before_skills": [
+            "library",
+            "computer",
+            "research"
+          ],
+          "after_skills_inferred": [
+            "digital_library",
+            "research_information_management",
+            "cataloguing"
+          ],
+          "experience": "3 years"
+        },
+        {
+          "id": "BRRI-07",
+          "title": "ইউডি কাম একাউনটেন্ট",
+          "family": "Finance / Administration",
+          "vacancy": 2,
+          "grade": 14,
+          "salary_scale_bdt": "10200-24680",
+          "requirements": "Commerce graduate/equivalent plus three years relevant experience.",
+          "before_skills": [
+            "finance",
+            "admin",
+            "computer"
+          ],
+          "after_skills_inferred": [
+            "government_accounting",
+            "financial_reporting",
+            "audit_support"
+          ],
+          "experience": "3 years"
+        },
+        {
+          "id": "BRRI-08",
+          "title": "অডিটর",
+          "family": "Audit",
+          "vacancy": 1,
+          "grade": 14,
+          "salary_scale_bdt": "10200-24680",
+          "requirements": "Commerce graduate/equivalent plus three years relevant experience.",
+          "before_skills": [
+            "finance",
+            "computer"
+          ],
+          "after_skills_inferred": [
+            "audit",
+            "financial_controls",
+            "compliance_reporting"
+          ],
+          "experience": "3 years"
+        },
+        {
+          "id": "BRRI-09",
+          "title": "ইউডিএ কাম ক্যাশিয়ার",
+          "family": "Finance / Administration",
+          "vacancy": 1,
+          "grade": 14,
+          "salary_scale_bdt": "10200-24680",
+          "requirements": "Commerce graduate/equivalent plus three years relevant experience.",
+          "before_skills": [
+            "finance",
+            "admin",
+            "computer"
+          ],
+          "after_skills_inferred": [
+            "cash_management",
+            "accounts",
+            "records",
+            "audit_support"
+          ],
+          "experience": "3 years"
+        },
+        {
+          "id": "BRRI-10",
+          "title": "স্টেনো টাইপিষ্ট (সাঁট মুদ্রাক্ষরিক কাম কম্পিউটার অপারেটর)",
+          "family": "Executive Support / Data",
+          "vacancy": 1,
+          "grade": 14,
+          "salary_scale_bdt": "10200-24680",
+          "requirements": "HSC/equivalent; shorthand Bangla 50 wpm, English 80 wpm; typing Bangla 20 wpm, English 28 wpm; practical computer experience.",
+          "before_skills": [
+            "typing",
+            "computer",
+            "admin"
+          ],
+          "after_skills_inferred": [
+            "minutes",
+            "official_correspondence",
+            "executive_support",
+            "data_entry"
+          ],
+          "experience": "Practical computer experience"
+        },
+        {
+          "id": "BRRI-11",
+          "title": "এগ্রোমেট্রোলজিক্যাল এসিসটেন্ট",
+          "family": "Agrometeorology / Data",
+          "vacancy": 1,
+          "grade": 14,
+          "salary_scale_bdt": "10200-24680",
+          "requirements": "Graduate/equivalent in Geography, Statistics, Chemistry, Physics or Mathematics plus relevant practical experience.",
+          "before_skills": [
+            "statistics_data",
+            "research",
+            "computer"
+          ],
+          "after_skills_inferred": [
+            "weather_data",
+            "agrometeorological_analysis",
+            "crop_weather_relationships",
+            "data_management"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "BRRI-12",
+          "title": "বেঞ্চ মেকানিক (ওয়ার্কশপ)",
+          "family": "Mechanical Workshop",
+          "vacancy": 1,
+          "grade": 14,
+          "salary_scale_bdt": "10200-24680",
+          "requirements": "SSC/equivalent plus General Mechanic trade-course certificate and three years relevant experience.",
+          "before_skills": [
+            "mechanical",
+            "trade"
+          ],
+          "after_skills_inferred": [
+            "workshop_maintenance",
+            "machine_repair",
+            "diagnostics"
+          ],
+          "experience": "3 years"
+        },
+        {
+          "id": "BRRI-13",
+          "title": "ড্রাইভার",
+          "family": "Transport",
+          "vacancy": 3,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "SSC/equivalent, valid light/heavy driving licence and three years relevant experience.",
+          "before_skills": [
+            "vehicle"
+          ],
+          "after_skills_inferred": [
+            "safe_driving",
+            "vehicle_care",
+            "route_management"
+          ],
+          "experience": "3 years"
+        },
+        {
+          "id": "BRRI-14",
+          "title": "বিল ক্লার্ক",
+          "family": "Finance / Administration",
+          "vacancy": 1,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "SSC/equivalent plus relevant practical experience.",
+          "before_skills": [
+            "finance",
+            "computer",
+            "admin"
+          ],
+          "after_skills_inferred": [
+            "bill_processing",
+            "records",
+            "financial_documentation"
+          ]
+        },
+        {
+          "id": "BRRI-15",
+          "title": "ট্রাক্টর ড্রাইভার",
+          "family": "Agricultural Machinery",
+          "vacancy": 1,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "SSC/equivalent, valid light/heavy driving licence and two years relevant experience.",
+          "before_skills": [
+            "vehicle",
+            "agri_research"
+          ],
+          "after_skills_inferred": [
+            "tractor_operation",
+            "farm_machinery",
+            "field_safety"
+          ],
+          "experience": "2 years"
+        },
+        {
+          "id": "BRRI-16",
+          "title": "প্লাম্বার",
+          "family": "Trade",
+          "vacancy": 2,
+          "grade": 18,
+          "salary_scale_bdt": "8800-21310",
+          "requirements": "SSC/equivalent plus relevant plumbing trade course and practical experience.",
+          "before_skills": [
+            "trade"
+          ],
+          "after_skills_inferred": [
+            "plumbing",
+            "water_system_maintenance"
+          ]
+        },
+        {
+          "id": "BRRI-17",
+          "title": "পাম্প অপারেটর",
+          "family": "Utilities / Machinery",
+          "vacancy": 3,
+          "grade": 18,
+          "salary_scale_bdt": "8800-21310",
+          "requirements": "SSC/equivalent plus Electrical trade course and three years pump-operation experience.",
+          "before_skills": [
+            "trade",
+            "electrical"
+          ],
+          "after_skills_inferred": [
+            "pump_operation",
+            "electrical_safety",
+            "maintenance"
+          ],
+          "experience": "3 years"
+        },
+        {
+          "id": "BRRI-18",
+          "title": "এসিসটেন্ট কুক",
+          "family": "Institutional Support",
+          "vacancy": 1,
+          "grade": 18,
+          "salary_scale_bdt": "8800-21310",
+          "requirements": "SSC/equivalent plus three years relevant practical experience.",
+          "before_skills": [
+            "support"
+          ],
+          "after_skills_inferred": [
+            "food_safety",
+            "institutional_kitchen_work"
+          ]
+        },
+        {
+          "id": "BRRI-19",
+          "title": "ল্যাবরেটরি এ্যাটেনডেন্ট",
+          "family": "Laboratory Support",
+          "vacancy": 1,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "SSC/equivalent plus three years laboratory cleaning/maintenance experience.",
+          "before_skills": [
+            "scientific_lab",
+            "support"
+          ],
+          "after_skills_inferred": [
+            "lab_safety",
+            "equipment_cleaning",
+            "sample_support"
+          ],
+          "experience": "3 years"
+        },
+        {
+          "id": "BRRI-20",
+          "title": "দপ্তরী",
+          "family": "Office Support",
+          "vacancy": 1,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "SSC/equivalent, three years experience and bicycle proficiency.",
+          "before_skills": [
+            "support"
+          ],
+          "after_skills_inferred": [
+            "office_delivery",
+            "document_movement",
+            "institutional_support"
+          ],
+          "experience": "3 years"
+        },
+        {
+          "id": "BRRI-21",
+          "title": "ওয়ার্কশপ এ্যাটেনডেন্ট",
+          "family": "Workshop Support",
+          "vacancy": 2,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "SSC/equivalent.",
+          "before_skills": [
+            "trade",
+            "support"
+          ],
+          "after_skills_inferred": [
+            "workshop_safety",
+            "tool_handling",
+            "equipment_support"
+          ]
+        },
+        {
+          "id": "BRRI-22",
+          "title": "এমএলএসএস (অফিস সহায়ক)",
+          "family": "Office Support",
+          "vacancy": 6,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "SSC/equivalent.",
+          "before_skills": [
+            "support",
+            "admin"
+          ],
+          "after_skills_inferred": [
+            "office_support",
+            "document_handling"
+          ]
+        },
+        {
+          "id": "BRRI-23",
+          "title": "ইলেকট্রিক এটেনডেন্ট",
+          "family": "Electrical Support",
+          "vacancy": 1,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "SSC/equivalent.",
+          "before_skills": [
+            "electrical",
+            "trade"
+          ],
+          "after_skills_inferred": [
+            "electrical_support",
+            "equipment_safety"
+          ]
+        },
+        {
+          "id": "BRRI-24",
+          "title": "গার্ড কাম কুক",
+          "family": "Security / Support",
+          "vacancy": 3,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "SSC/equivalent; relevant experience preferred.",
+          "before_skills": [
+            "support"
+          ],
+          "after_skills_inferred": [
+            "security",
+            "food_safety",
+            "institutional_support"
+          ]
+        },
+        {
+          "id": "BRRI-25",
+          "title": "সিকিউরিটি গার্ড (নিরাপত্তা প্রহরী)",
+          "family": "Security",
+          "vacancy": 3,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "SSC/equivalent.",
+          "before_skills": [
+            "support"
+          ],
+          "after_skills_inferred": [
+            "security_procedures",
+            "incident_reporting",
+            "workplace_safety"
+          ]
+        },
+        {
+          "id": "BRRI-26",
+          "title": "ক্যাটল কিপার",
+          "family": "Farm / Livestock Support",
+          "vacancy": 1,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "Class 8/equivalent and physically fit.",
+          "before_skills": [
+            "field",
+            "support"
+          ],
+          "after_skills_inferred": [
+            "animal_handling",
+            "farm_support",
+            "biosecurity"
+          ]
+        },
+        {
+          "id": "BRRI-27",
+          "title": "সুইপার (পরিচ্ছন্নতাকর্মী)",
+          "family": "Institutional Support",
+          "vacancy": 1,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "Class 8/equivalent; professional sweepers preferred.",
+          "before_skills": [
+            "support"
+          ],
+          "after_skills_inferred": [
+            "hygiene",
+            "biosecurity",
+            "workplace_safety"
+          ]
+        }
+      ]
+    },
+    {
+      "organization": "Bangladesh Tea Research Institute / Bangladesh Tea Board",
+      "acronym": "BTRI",
+      "parent_organization": "Bangladesh Tea Board",
+      "type": "Government tea research institute under Bangladesh Tea Board",
+      "headquarters": "Srimangal, Moulvibazar",
+      "source_scope": "The supplied BTRI material contains older Tea Board/BTRI recruitment notices, especially 2017 and image-based older notices. Therefore these are historical recruitment examples rather than current vacancies.",
+      "source": "The supplied Tea Board circular dated 06-08-2017 explicitly covers Bangladesh Tea Board HQ and Bangladesh Tea Research Institute, Srimangal. ",
+      "institutional_career_intelligence": {
+        "high_value_degree_domains": [
+          "Agricultural Economics",
+          "Forestry",
+          "Statistics",
+          "Mathematics",
+          "Management",
+          "Marketing",
+          "Botany",
+          "Soil Science",
+          "Agronomy",
+          "Agricultural Engineering",
+          "Civil Engineering"
+        ],
+        "insyt_priority": "HIGH",
+        "important_insight": "BTRI is not only an agriculture-science employer. The supplied notices show direct demand for statistics, agricultural economics, forestry, management/marketing, botany, soil science, agronomy and civil engineering."
+      },
+      "jobs": [
+        {
+          "id": "BTRI-01",
+          "title": "পরিসংখ্যান কর্মকর্তা",
+          "family": "Statistics / Planning",
+          "vacancy": 1,
+          "grade": 9,
+          "salary_scale_bdt": "22000-53060",
+          "requirements": "Statistics, Economics or Mathematics Honours plus Master's; at least second class in both Honours and Master's. Planning/development experience preferred.",
+          "before_skills": [
+            "statistics",
+            "statistics_data",
+            "communication"
+          ],
+          "after_skills_inferred": [
+            "institutional_statistics",
+            "planning_analysis",
+            "survey_design",
+            "policy_reporting"
+          ],
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BTRI-02",
+          "title": "গবেষণা কর্মকর্তা",
+          "family": "Agricultural Economics / Research",
+          "vacancy": 1,
+          "grade": 9,
+          "salary_scale_bdt": "22000-53060",
+          "requirements": "Agricultural Economics/Forestry Honours plus Master's; second class in both. Planning/development experience preferred.",
+          "before_skills": [
+            "tea",
+            "research",
+            "statistics",
+            "communication"
+          ],
+          "after_skills_inferred": [
+            "tea_economics",
+            "research_design",
+            "policy_analysis",
+            "impact_assessment"
+          ],
+          "source_confidence": "source_exact",
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "BTRI-03",
+          "title": "সহকারী পরিচালক (বাণিজ্য)",
+          "family": "Management / Marketing",
+          "vacancy": 1,
+          "grade": 9,
+          "salary_scale_bdt": "22000-53060",
+          "requirements": "Management or Marketing Honours plus Master's; second class in both; export administration experience preferred.",
+          "before_skills": [
+            "communication",
+            "leadership",
+            "admin"
+          ],
+          "after_skills_inferred": [
+            "tea_business",
+            "export_management",
+            "marketing",
+            "stakeholder_management"
+          ]
+        },
+        {
+          "id": "BTRI-04",
+          "title": "বৈজ্ঞানিক কর্মকর্তা (উদ্ভিদ বিজ্ঞান)",
+          "family": "Plant Science",
+          "vacancy": 1,
+          "grade": 9,
+          "salary_scale_bdt": "22000-53060",
+          "requirements": "Second-class Honours in relevant subject plus at least second-class MSc/BSc Agriculture/BSc Engineering or equivalent relevant degree.",
+          "before_skills": [
+            "tea",
+            "research",
+            "scientific_lab",
+            "field"
+          ],
+          "after_skills_inferred": [
+            "tea_botany",
+            "plant_experiments",
+            "field_trials",
+            "scientific_writing"
+          ]
+        },
+        {
+          "id": "BTRI-05",
+          "title": "বৈজ্ঞানিক কর্মকর্তা (মৃত্তিকা বিজ্ঞান)",
+          "family": "Soil Science",
+          "vacancy": 2,
+          "grade": 9,
+          "salary_scale_bdt": "22000-53060",
+          "requirements": "Second-class Honours in relevant subject plus relevant Master's/BSc Agriculture/Engineering qualification.",
+          "before_skills": [
+            "tea",
+            "field",
+            "research",
+            "scientific_lab"
+          ],
+          "after_skills_inferred": [
+            "tea_soil_management",
+            "soil_testing",
+            "nutrient_management",
+            "field_trials"
+          ],
+          "insyt_priority": "HIGH"
+        },
+        {
+          "id": "BTRI-06",
+          "title": "বৈজ্ঞানিক কর্মকর্তা (কৃষিতত্ত্ব/ফসলবিজ্ঞান)",
+          "family": "Agronomy",
+          "vacancy": 1,
+          "grade": 9,
+          "salary_scale_bdt": "22000-53060",
+          "requirements": "Second-class Honours in relevant subject plus relevant Master's/BSc Agriculture/Engineering qualification.",
+          "before_skills": [
+            "tea",
+            "field",
+            "agri_research"
+          ],
+          "after_skills_inferred": [
+            "tea_agronomy",
+            "plantation_management",
+            "field_experimentation",
+            "yield_analysis"
+          ]
+        },
+        {
+          "id": "BTRI-07",
+          "title": "সহকারী প্রকৌশলী (পূর্ত)",
+          "family": "Civil Engineering",
+          "vacancy": 1,
+          "grade": 9,
+          "salary_scale_bdt": "22000-53060",
+          "requirements": "BSc Engineering in Civil Engineering.",
+          "before_skills": [
+            "civil",
+            "engineering"
+          ],
+          "after_skills_inferred": [
+            "infrastructure_management",
+            "site_supervision",
+            "construction_maintenance"
+          ]
+        },
+        {
+          "id": "BTRI-08",
+          "title": "কুক",
+          "family": "Institutional Support",
+          "vacancy": 1,
+          "grade": 19,
+          "salary_scale_bdt": "8500-20570",
+          "requirements": "SSC/equivalent or relevant technical training; cooking proficiency and good health.",
+          "before_skills": [
+            "support"
+          ],
+          "after_skills_inferred": [
+            "food_safety",
+            "institutional_kitchen_operations"
+          ]
+        }
+      ]
+    },
+    {
+      "organization": "Bangladesh Sugarcrop Research Institute",
+      "acronym": "BSRI",
+      "type": "Autonomous government sugarcrop research institute",
+      "ministry": "Ministry of Agriculture",
+      "headquarters": "Ishwardi, Pabna",
+      "current_2026_recruitment": {
+        "vacancies": [
+          {
+            "title": "মেডিক্যাল অফিসার",
+            "vacancy": 1,
+            "grade": 6,
+            "salary_scale_bdt": "35500-67010",
+            "age": "maximum 35",
+            "requirements": "MBBS plus minimum five years government/semi-government service."
+          },
+          {
+            "title": "বৈজ্ঞানিক কর্মকর্তা",
+            "vacancy": 14,
+            "grade": 9,
+            "salary_scale_bdt": "22000-53060",
+            "age": "maximum 32",
+            "requirements": "BSc/BSc Agriculture in Agricultural Science/Agricultural Economics/Agricultural Engineering OR Master's in Agricultural Statistics OR Honours plus Master's in Chemistry/Applied Chemistry/Botany/Statistics; minimum second division/class throughout education."
+          },
+          {
+            "title": "সহকারী পরিচালক (প্রশাসন)",
+            "vacancy": 1,
+            "grade": 9,
+            "salary_scale_bdt": "22000-53060",
+            "age": "maximum 32",
+            "requirements": "Any subject Bachelor's Honours plus Master's meeting the stated second-class conditions, or four-year second-class Honours."
+          },
+          {
+            "title": "সংরক্ষণ প্রকৌশলী",
+            "vacancy": 1,
+            "grade": 9,
+            "salary_scale_bdt": "22000-53060",
+            "age": "maximum 32",
+            "requirements": "Mechanical/Electrical Engineering Bachelor's plus required academic conditions."
+          }
+        ],
+        "source": "Supplied BSRI 2026 notice dated 08-01-2026. "
+      },
+      "historical_2023_recruitment": {
+        "source": "The supplied BSRI 2023 circular contains Medical Officer plus 31 additional categories, and a separate 2023 circular contains 10 Scientific Assistant posts.  "
+      },
+      "institutional_career_intelligence": {
+        "research_domains": [
+          "Sugarcane",
+          "Sugarbeet",
+          "Palm",
+          "Date palm",
+          "Golpata",
+          "Stevia",
+          "Biotechnology",
+          "Agronomy and Farming Systems",
+          "Soil and Nutrient Management",
+          "Entomology",
+          "Field Research",
+          "Plant Physiology",
+          "Sugar Chemistry",
+          "Research Technology Transfer",
+          "Socioeconomic Research"
+        ],
+        "source": "BSRI officially describes research on sugarcane, palm, date palm, golpata and sugarbeet; its Agronomy/Farming Systems department works on crop management, fertilizer, cropping systems and socioeconomic improvement, while its Biotechnology department researches multiple sugarcrops. ([BSRI][7])",
+        "insyt_priority": "EXTREMELY_HIGH"
+      },
+      "jobs": [
+        {
+          "id": "BSRI-2026-01",
+          "title": "মেডিক্যাল অফিসার",
+          "family": "Medical",
+          "vacancy": 1,
+          "grade": 6,
+          "salary_scale_bdt": "35500-67010",
+          "requirements": "MBBS plus minimum five years government/semi-government service.",
+          "before_skills": [
+            "communication",
+            "leadership"
+          ],
+          "after_skills_inferred": [
+            "occupational_health",
+            "employee_healthcare",
+            "medical_documentation"
+          ],
+          "experience": "5 years"
+        },
+        {
+          "id": "BSRI-2026-02",
+          "title": "বৈজ্ঞানিক কর্মকর্তা",
+          "family": "Agricultural Research",
+          "vacancy": 14,
+          "grade": 9,
+          "salary_scale_bdt": "22000-53060",
+          "requirements": "Agricultural Science/Agricultural Economics/Agricultural Engineering degree, Agricultural Statistics Master's, or Chemistry/Applied Chemistry/Botany/Statistics Honours plus Master's under stated academic conditions.",
+          "before_skills": [
+            "sugarcrop",
+            "research",
+            "statistics_data",
+            "scientific_writing"
+          ],
+          "after_skills_inferred": [
+            "crop_research",
+            "experimental_design",
+            "data_analysis",
+            "scientific_publication",
+            "technology_transfer"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "BSRI-2026-03",
+          "title": "সহকারী পরিচালক (প্রশাসন)",
+          "family": "Administration / Management",
+          "vacancy": 1,
+          "grade": 9,
+          "salary_scale_bdt": "22000-53060",
+          "requirements": "Relevant Bachelor's/Master's or four-year Honours meeting stated second-class conditions.",
+          "before_skills": [
+            "admin",
+            "communication",
+            "leadership"
+          ],
+          "after_skills_inferred": [
+            "government_administration",
+            "HR_workflow",
+            "procurement",
+            "institutional_planning"
+          ]
+        },
+        {
+          "id": "BSRI-2026-04",
+          "title": "সংরক্ষণ প্রকৌশলী",
+          "family": "Mechanical / Electrical Engineering",
+          "vacancy": 1,
+          "grade": 9,
+          "salary_scale_bdt": "22000-53060",
+          "requirements": "Mechanical/Electrical Engineering Bachelor's with required academic conditions.",
+          "before_skills": [
+            "engineering",
+            "mechanical",
+            "electrical"
+          ],
+          "after_skills_inferred": [
+            "equipment_maintenance",
+            "facility_engineering",
+            "preventive_maintenance",
+            "safety"
+          ]
+        },
+        {
+          "id": "BSRI-2023-01",
+          "title": "মেডিক্যাল অফিসার",
+          "family": "Medical",
+          "vacancy": 1,
+          "grade": 6,
+          "salary_scale_bdt": "35500-67010",
+          "requirements": "MBBS plus five years government/semi-government service.",
+          "before_skills": [
+            "communication",
+            "leadership"
+          ],
+          "after_skills_inferred": [
+            "occupational_health",
+            "medical_documentation"
+          ]
+        },
+        {
+          "id": "BSRI-2023-02",
+          "title": "বৈজ্ঞানিক কর্মকর্তা",
+          "family": "Agricultural Research",
+          "vacancy": 30,
+          "grade": 9,
+          "salary_scale_bdt": "22000-53060",
+          "requirements": "Agriculture Science/Agricultural Economics/Agricultural Engineering or Agricultural Statistics Master's, or Chemistry/Applied Chemistry/Botany/Statistics Honours plus Master's; minimum second class throughout.",
+          "before_skills": [
+            "sugarcrop",
+            "research",
+            "statistics_data",
+            "scientific_writing"
+          ],
+          "after_skills_inferred": [
+            "crop_research",
+            "experimental_design",
+            "research_data",
+            "scientific_publication"
+          ]
+        },
+        {
+          "id": "BSRI-2023-03",
+          "title": "জনসংযোগ কর্মকর্তা",
+          "family": "Communications / Research Outreach",
+          "vacancy": 1,
+          "grade": 9,
+          "salary_scale_bdt": "22000-53060",
+          "requirements": "Agricultural Science Bachelor's or Journalism/Mass Communication qualification; for journalism route, experience in agricultural research reporting/journal/publication management.",
+          "before_skills": [
+            "communication",
+            "scientific_writing",
+            "agri_research"
+          ],
+          "after_skills_inferred": [
+            "science_communication",
+            "research_outreach",
+            "media_relations",
+            "publication_management"
+          ],
+          "insyt_priority": "HIGH"
+        },
+        {
+          "id": "BSRI-2023-04",
+          "title": "সহকারী শিক্ষক, পদার্থ বিজ্ঞান",
+          "family": "Education",
+          "vacancy": 2,
+          "grade": 10,
+          "salary_scale_bdt": "16000-38640",
+          "requirements": "Relevant Bachelor's plus B.Ed; minimum second division/class throughout.",
+          "before_skills": [
+            "communication",
+            "research"
+          ],
+          "after_skills_inferred": [
+            "teaching",
+            "lesson_planning",
+            "student_assessment"
+          ]
+        },
+        {
+          "id": "BSRI-2023-05",
+          "title": "মৌলভী",
+          "family": "Religious/Educational Support",
+          "vacancy": 1,
+          "grade": 10,
+          "salary_scale_bdt": "16000-38640",
+          "requirements": "Kamil degree, minimum second class.",
+          "before_skills": [
+            "communication"
+          ],
+          "after_skills_inferred": [
+            "institutional_community_support"
+          ]
+        },
+        {
+          "id": "BSRI-2023-06",
+          "title": "নির্মাণ ওভারশিয়ার",
+          "family": "Civil Construction",
+          "vacancy": 1,
+          "grade": 11,
+          "salary_scale_bdt": "12500-30230",
+          "requirements": "SSC/equivalent plus three years relevant experience.",
+          "before_skills": [
+            "civil",
+            "engineering"
+          ],
+          "after_skills_inferred": [
+            "construction_supervision",
+            "site_measurement",
+            "maintenance"
+          ],
+          "experience": "3 years"
+        },
+        {
+          "id": "BSRI-2023-07",
+          "title": "অফিস সহকারী",
+          "family": "Administration",
+          "vacancy": 1,
+          "grade": 12,
+          "salary_scale_bdt": "11300-27300",
+          "requirements": "Bachelor's plus three years relevant experience and minimum second class throughout.",
+          "before_skills": [
+            "admin",
+            "computer"
+          ],
+          "after_skills_inferred": [
+            "records",
+            "correspondence",
+            "office_workflow"
+          ],
+          "experience": "3 years"
+        },
+        {
+          "id": "BSRI-2023-08",
+          "title": "দপ্তর সহকারী",
+          "family": "Administration",
+          "vacancy": 1,
+          "grade": 12,
+          "salary_scale_bdt": "11300-27300",
+          "requirements": "Bachelor's plus three years relevant experience and minimum second class throughout.",
+          "before_skills": [
+            "admin",
+            "computer"
+          ],
+          "after_skills_inferred": [
+            "office_workflow",
+            "documentation",
+            "records"
+          ],
+          "experience": "3 years"
+        },
+        {
+          "id": "BSRI-2023-09",
+          "title": "স্টোর কিপার",
+          "family": "Store / Inventory",
+          "vacancy": 1,
+          "grade": 12,
+          "salary_scale_bdt": "11300-27300",
+          "requirements": "Bachelor/equivalent OR HSC/equivalent plus three years relevant experience.",
+          "before_skills": [
+            "admin",
+            "computer"
+          ],
+          "after_skills_inferred": [
+            "inventory",
+            "stock_control",
+            "procurement_records"
+          ]
+        },
+        {
+          "id": "BSRI-2023-10",
+          "title": "হিসাব সহকারী",
+          "family": "Finance",
+          "vacancy": 1,
+          "grade": 12,
+          "salary_scale_bdt": "11300-27300",
+          "requirements": "Commerce Bachelor's/equivalent plus two years relevant experience and minimum second class throughout.",
+          "before_skills": [
+            "finance",
+            "computer"
+          ],
+          "after_skills_inferred": [
+            "government_accounting",
+            "voucher_processing",
+            "audit_support"
+          ],
+          "experience": "2 years"
+        },
+        {
+          "id": "BSRI-2023-11",
+          "title": "কৃষি ওভারশিয়ার",
+          "family": "Agricultural Field",
+          "vacancy": 1,
+          "grade": 12,
+          "salary_scale_bdt": "11300-27300",
+          "requirements": "Science Bachelor's plus Agriculture diploma.",
+          "before_skills": [
+            "sugarcrop",
+            "field",
+            "agri_research"
+          ],
+          "after_skills_inferred": [
+            "field_supervision",
+            "crop_management",
+            "technology_transfer"
+          ]
+        },
+        {
+          "id": "BSRI-2023-12",
+          "title": "অডিওভিজুয়াল সহকারী",
+          "family": "Media / Research Communication",
+          "vacancy": 1,
+          "grade": 12,
+          "salary_scale_bdt": "11300-27300",
+          "requirements": "Bachelor's plus minimum three years experience with audiovisual equipment.",
+          "before_skills": [
+            "communication",
+            "computer"
+          ],
+          "after_skills_inferred": [
+            "video_production",
+            "event_documentation",
+            "science_communication"
+          ],
+          "experience": "3 years"
+        },
+        {
+          "id": "BSRI-2023-13",
+          "title": "পরিসংখ্যান সহকারী",
+          "family": "Statistics / Research Data",
+          "vacancy": 1,
+          "grade": 12,
+          "salary_scale_bdt": "11300-27300",
+          "requirements": "Science Bachelor's plus two years relevant experience and minimum second class throughout.",
+          "before_skills": [
+            "statistics",
+            "computer",
+            "research"
+          ],
+          "after_skills_inferred": [
+            "research_data_management",
+            "statistical_analysis",
+            "survey_data"
+          ],
+          "experience": "2 years",
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "BSRI-2023-14",
+          "title": "স্টেনো-টাইপিস্ট / সাঁট-মুদ্রাক্ষরিক কাম-কম্পিউটার অপারেটর",
+          "family": "Executive Support",
+          "vacancy": 1,
+          "grade": 14,
+          "salary_scale_bdt": "10200-24680",
+          "requirements": "HSC/equivalent; Bangla shorthand 60, typing 25; English shorthand 80, typing 30; computer-operation experience preferred.",
+          "before_skills": [
+            "typing",
+            "computer",
+            "admin"
+          ],
+          "after_skills_inferred": [
+            "executive_support",
+            "minutes",
+            "official_correspondence"
+          ]
+        },
+        {
+          "id": "BSRI-2023-15",
+          "title": "ক্যাশিয়ার গ্রেড-২",
+          "family": "Finance",
+          "vacancy": 2,
+          "grade": 15,
+          "salary_scale_bdt": "9700-23490",
+          "requirements": "HSC in Commerce/equivalent plus professional trade certificate in relevant subject.",
+          "before_skills": [
+            "finance",
+            "computer"
+          ],
+          "after_skills_inferred": [
+            "cash_management",
+            "accounts_records",
+            "financial_controls"
+          ]
+        },
+        {
+          "id": "BSRI-2023-16",
+          "title": "করণিক-কাম-মুদ্রাক্ষরিক / অফিস সহকারী-কাম-কম্পিউটার অপারেটর",
+          "family": "Administration / Data Entry",
+          "vacancy": 1,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "HSC/equivalent minimum second division; Bangla typing 20 wpm and English 25 wpm.",
+          "before_skills": [
+            "typing",
+            "computer",
+            "admin"
+          ],
+          "after_skills_inferred": [
+            "data_entry",
+            "office_documents",
+            "digital_records"
+          ]
+        },
+        {
+          "id": "BSRI-2023-17",
+          "title": "টাইপিস্ট / scan-confirmation required",
+          "family": "Data Entry",
+          "vacancy": 1,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "The supplied scan identifies a typing-related Grade-16 post; exact title should be normalized from original notice before production use.",
+          "before_skills": [
+            "typing",
+            "computer"
+          ],
+          "after_skills_inferred": [
+            "data_entry",
+            "document_processing"
+          ],
+          "source_confidence": "image_low_confidence"
+        },
+        {
+          "id": "BSRI-2023-18",
+          "title": "টাইপিস্ট",
+          "family": "Data Entry",
+          "vacancy": 2,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "HSC/equivalent; Bangla typing minimum 20 wpm and English 25 wpm.",
+          "before_skills": [
+            "typing",
+            "computer"
+          ],
+          "after_skills_inferred": [
+            "data_entry",
+            "document_processing"
+          ],
+          "source_confidence": "source_exact"
+        },
+        {
+          "id": "BSRI-2023-19",
+          "title": "টাইপিস্ট গ্রেড-২",
+          "family": "Data Entry",
+          "vacancy": 1,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "HSC/equivalent; Bangla typing minimum 20 wpm and English 25 wpm.",
+          "before_skills": [
+            "typing",
+            "computer"
+          ],
+          "after_skills_inferred": [
+            "data_entry",
+            "document_processing"
+          ]
+        },
+        {
+          "id": "BSRI-2023-20",
+          "title": "কার্পেন্টার",
+          "family": "Trade / Maintenance",
+          "vacancy": 1,
+          "grade": 16,
+          "salary_scale_bdt": "9300-22490",
+          "requirements": "SSC/equivalent plus relevant trade certificate.",
+          "before_skills": [
+            "trade"
+          ],
+          "after_skills_inferred": [
+            "woodwork",
+            "facility_maintenance",
+            "tool_safety"
+          ]
+        },
+        {
+          "id": "BSRI-2023-21",
+          "title": "ড্রাইভার",
+          "family": "Transport",
+          "vacancy": 4,
+          "grade": "15/16",
+          "salary_scale_bdt": "9700-23490 / 9300-22490",
+          "requirements": "HSC/equivalent; valid light/heavy licence; minimum five years practical driving experience.",
+          "before_skills": [
+            "vehicle"
+          ],
+          "after_skills_inferred": [
+            "safe_driving",
+            "vehicle_care",
+            "fleet_support"
+          ],
+          "experience": "5 years"
+        },
+        {
+          "id": "BSRI-2023-22",
+          "title": "পরীক্ষাগার পরিচর",
+          "family": "Laboratory Support",
+          "vacancy": 2,
+          "grade": 19,
+          "salary_scale_bdt": "8500-20570",
+          "requirements": "SSC/equivalent; relevant experience preferred.",
+          "before_skills": [
+            "scientific_lab",
+            "support"
+          ],
+          "after_skills_inferred": [
+            "lab_cleanliness",
+            "sample_support",
+            "safety"
+          ]
+        },
+        {
+          "id": "BSRI-2023-23",
+          "title": "বাবুর্চি",
+          "family": "Institutional Support",
+          "vacancy": 1,
+          "grade": 19,
+          "salary_scale_bdt": "8500-20570",
+          "requirements": "Class 8 plus minimum three years cooking/food preparation experience.",
+          "before_skills": [
+            "support"
+          ],
+          "after_skills_inferred": [
+            "food_safety",
+            "institutional_kitchen_operations"
+          ],
+          "experience": "3 years"
+        },
+        {
+          "id": "BSRI-2023-24",
+          "title": "পিয়ন / অফিস সহায়ক",
+          "family": "Office Support",
+          "vacancy": 4,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "SSC/equivalent.",
+          "before_skills": [
+            "support"
+          ],
+          "after_skills_inferred": [
+            "office_support",
+            "document_movement"
+          ]
+        },
+        {
+          "id": "BSRI-2023-25",
+          "title": "রন্ধন সহকারী",
+          "family": "Institutional Support",
+          "vacancy": 1,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "Class 8.",
+          "before_skills": [
+            "support"
+          ],
+          "after_skills_inferred": [
+            "food_safety",
+            "kitchen_support"
+          ]
+        },
+        {
+          "id": "BSRI-2023-26",
+          "title": "নিরাপত্তা প্রহরী",
+          "family": "Security",
+          "vacancy": 1,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "Class 8; physically fit; retired military/police/Ansar members preferred.",
+          "before_skills": [
+            "support"
+          ],
+          "after_skills_inferred": [
+            "security",
+            "incident_reporting",
+            "workplace_safety"
+          ]
+        },
+        {
+          "id": "BSRI-2023-27",
+          "title": "অতিথি ভবন পরিচর",
+          "family": "Institutional Support",
+          "vacancy": 1,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "SSC/equivalent.",
+          "before_skills": [
+            "support"
+          ],
+          "after_skills_inferred": [
+            "facility_support",
+            "hospitality_operations"
+          ]
+        },
+        {
+          "id": "BSRI-2023-28",
+          "title": "ম্যাসেঞ্জার / বার্তা বাহক",
+          "family": "Office Support",
+          "vacancy": 1,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "Class 8.",
+          "before_skills": [
+            "support"
+          ],
+          "after_skills_inferred": [
+            "document_delivery",
+            "office_support"
+          ]
+        },
+        {
+          "id": "BSRI-2023-29",
+          "title": "দপ্তরী",
+          "family": "Office Support",
+          "vacancy": 2,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "SSC/equivalent.",
+          "before_skills": [
+            "support"
+          ],
+          "after_skills_inferred": [
+            "office_support",
+            "document_handling"
+          ]
+        },
+        {
+          "id": "BSRI-2023-30",
+          "title": "হোস্টেল বেয়ারার",
+          "family": "Hospitality / Institutional Support",
+          "vacancy": 2,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "SSC/equivalent.",
+          "before_skills": [
+            "support"
+          ],
+          "after_skills_inferred": [
+            "hospitality",
+            "facility_support",
+            "food_service"
+          ]
+        },
+        {
+          "id": "BSRI-2023-31",
+          "title": "রান্না সহকারী",
+          "family": "Institutional Support",
+          "vacancy": 1,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "Class 8.",
+          "before_skills": [
+            "support"
+          ],
+          "after_skills_inferred": [
+            "kitchen_support",
+            "food_safety"
+          ]
+        },
+        {
+          "id": "BSRI-2023-32",
+          "title": "সুইপার / পরিচ্ছন্নতা কর্মী",
+          "family": "Institutional Support",
+          "vacancy": 1,
+          "grade": 20,
+          "salary_scale_bdt": "8250-20010",
+          "requirements": "Class 8.",
+          "before_skills": [
+            "support"
+          ],
+          "after_skills_inferred": [
+            "hygiene",
+            "biosecurity",
+            "workplace_safety"
+          ]
+        },
+        {
+          "id": "BSRI-2023-33",
+          "title": "বৈজ্ঞানিক সহকারী",
+          "family": "Agricultural Scientific Research",
+          "vacancy": 10,
+          "grade": 12,
+          "salary_scale_bdt": "11300-27300",
+          "requirements": "Science Bachelor's minimum second class OR Agriculture diploma.",
+          "before_skills": [
+            "sugarcrop",
+            "research",
+            "scientific_lab",
+            "field"
+          ],
+          "after_skills_inferred": [
+            "experimental_support",
+            "field_trials",
+            "sample_collection",
+            "research_data"
+          ],
+          "source": "Separate supplied BSRI 2023 circular.",
+          "insyt_priority": "EXTREMELY_HIGH"
+        }
+      ]
+    }
+  ],
+  "cross_company_insyt_intelligence": {
+    "highest_value_job_families_for_insyt_corporate": [
+      {
+        "family": "Scientific Officer / Scientific Assistant",
+        "organizations": [
+          "BARI",
+          "BINA",
+          "BJRI",
+          "BRRI",
+          "BSRI",
+          "BTRI"
+        ],
+        "why": "This is the dominant research-career family across the six organizations.",
+        "recommended_insyt_learning_path": [
+          "Research Methodology",
+          "Statistics",
+          "Experimental Design",
+          "Scientific Writing",
+          "Excel",
+          "R",
+          "Python",
+          "Research Data Management",
+          "Domain-specific Agriculture"
+        ]
+      },
+      {
+        "family": "Agricultural Economics / Research Economics",
+        "organizations": [
+          "BARI",
+          "BTRI",
+          "BRRI",
+          "BSRI",
+          "BINA"
+        ],
+        "why": "Agricultural Economics appears directly or through research/planning functions and is especially explicit in BRRI and BTRI.",
+        "recommended_insyt_learning_path": [
+          "Microeconomics",
+          "Production Economics",
+          "Agricultural Policy",
+          "Econometrics",
+          "R",
+          "Stata/Python",
+          "Survey Design",
+          "Impact Evaluation",
+          "GIS"
+        ]
+      },
+      {
+        "family": "Statistics / Data Analyst",
+        "organizations": [
+          "BARI",
+          "BRRI",
+          "BSRI",
+          "BTRI"
+        ],
+        "why": "Statistics and data-processing roles are recurring and directly connected to research.",
+        "recommended_insyt_learning_path": [
+          "Statistics",
+          "Excel",
+          "R",
+          "Python",
+          "SQL",
+          "Data Visualization",
+          "Experimental Design",
+          "Survey Sampling"
+        ]
+      },
+      {
+        "family": "Agricultural Field Research",
+        "organizations": [
+          "BARI",
+          "BINA",
+          "BJRI",
+          "BRRI",
+          "BSRI",
+          "BTRI"
+        ],
+        "why": "Field assistants, scientific assistants, fieldmen and agricultural overseers are recurring operational research roles.",
+        "recommended_insyt_learning_path": [
+          "Crop Science",
+          "Field Experimentation",
+          "Data Collection",
+          "GPS/GIS",
+          "Survey Tools",
+          "Research Documentation"
+        ]
+      },
+      {
+        "family": "Engineering / Agricultural Machinery",
+        "organizations": [
+          "BARI",
+          "BINA",
+          "BJRI",
+          "BRRI",
+          "BSRI",
+          "BTRI"
+        ],
+        "why": "Every research institute requires engineering, machinery, infrastructure or maintenance personnel.",
+        "recommended_insyt_learning_path": [
+          "Engineering Fundamentals",
+          "CAD",
+          "Maintenance",
+          "IoT",
+          "Sensors",
+          "Safety",
+          "Technical Documentation"
+        ]
+      }
+    ],
+    "most_important_skill_gaps_to_model": [
+      "R",
+      "Python",
+      "SQL",
+      "Excel",
+      "Power BI/Tableau",
+      "GIS/QGIS",
+      "Statistics",
+      "Econometrics",
+      "Experimental Design",
+      "Survey Design",
+      "Research Methodology",
+      "Scientific Writing",
+      "Literature Review",
+      "Reference Management",
+      "Data Visualization",
+      "Data Cleaning",
+      "Machine Learning",
+      "Agricultural Domain Knowledge",
+      "Technical Communication",
+      "Government Office Procedure"
+    ],
+    "key_insyt_corporate_product_logic": {
+      "candidate_profile": "Degree + major + CGPA/class + experience + certificates + technical skills + soft skills + district + age + research interests.",
+      "job_profile": "Organization + department + job family + title + grade + salary + vacancy + education + experience + mandatory skills + preferred skills + district restrictions + selection method + date.",
+      "matching_engine": "Hard-filter eligibility first; then calculate skill match; then calculate degree/domain match; then calculate experience match; finally generate missing-skill learning plan.",
+      "skill_gap_engine": "Example: B.Sc Agricultural Economics → BRRI Data Analyst → hard eligibility check → Statistics gap → R/Python gap → Data Processing gap → Experimental Design gap → Research Data Management gap → personalized course sequence.",
+      "post_joining_engine": "After matching a job, INSYT Corporate should not stop at 'get hired'; it should generate a 90-day and 12-month competency roadmap for succeeding after joining.",
+      "career_graph": "Degree → eligible organizations → eligible job families → current vacancies → required skills → courses → projects → research portfolio → application → exam → interview → joining → post-joining competency → promotion pathway."
+    },
+    "strongest_opportunity_for_user_profile": {
+      "note": "For an Agricultural Economics/Data/Research-oriented candidate, BRRI, BTRI, BSRI and BARI are particularly valuable because the supplied/web-verified material contains explicit economics, statistics, data, research and field-research pathways.",
+      "priority_skill_stack": [
+        "Agricultural Economics",
+        "Econometrics",
+        "Statistics",
+        "R",
+        "Python",
+        "SQL",
+        "Excel",
+        "GIS",
+        "Research Methodology",
+        "Experimental Design",
+        "Survey/Data Collection",
+        "Scientific Writing",
+        "Data Visualization"
+      ],
+      "highest_value_portfolio_projects": [
+        "Rice price forecasting",
+        "Weather shock → agricultural price analysis",
+        "Rice productivity econometrics",
+        "Sugarcane production economics",
+        "Tea plantation profitability analysis",
+        "Jute value-chain analysis",
+        "Agricultural field-trial data dashboard",
+        "GIS-based crop productivity map",
+        "Agricultural research literature database",
+        "Government research-job eligibility engine"
+      ]
+    }
+  },
+  "data_quality": {
+    "high_confidence": [
+      "BARI 2026 job list, salary and core eligibility",
+      "BINA 2023 job list and salary",
+      "BJRI 2026 job list and salary",
+      "BRRI 2025-2026 job list and salary",
+      "BTRI 2017 job list and salary",
+      "BSRI 2026 job list and salary"
+    ],
+    "medium_confidence": [
+      "Some historical BSRI job titles where the scanned image required visual interpretation"
+    ],
+    "low_confidence_items": [
+      "BSRI 2023 row 17 exact job title is not cleanly machine-readable from the supplied scan and is intentionally marked scan-confirmation-required rather than silently guessed.",
+      "Older BTRI image-only notices contain additional historical recruitment information but were not merged into the main normalized job list where the exact title/grade could not be reliably recovered."
+    ],
+    "important_rule_for_production": "INSYT Corporate should store source_original_text separately from normalized_title. Never overwrite an ambiguous circular term with a guessed job title. Store OCR text, normalized title, confidence and source page."
+  },
+  "recommended_database_tables": [
+    "organizations",
+    "organization_departments",
+    "job_posts",
+    "job_requirements",
+    "job_skill_requirements",
+    "degree_requirements",
+    "experience_requirements",
+    "salary_scales",
+    "district_eligibility",
+    "recruitment_cycles",
+    "application_process",
+    "selection_process",
+    "skills",
+    "skill_aliases",
+    "degree_aliases",
+    "job_skill_gap",
+    "learning_paths",
+    "courses",
+    "projects",
+    "career_paths",
+    "source_documents",
+    "source_pages",
+    "extracted_evidence",
+    "data_confidence"
+  ],
+  "critical_product_decision": "INSYT Corporate should treat recruitment circulars as structured career-intelligence data rather than simply as job listings. The valuable product is the chain: 'Who hires → for what role → with what degree → at what grade/salary → with what eligibility → with what skills → what should I learn before applying → what will I need after joining → what career path follows.'"
+}

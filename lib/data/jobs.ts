@@ -431,3 +431,40 @@ export const jobsData: JobListing[] = [
     ]
   }
 ];
+
+export function convertGovJobToJobListing(govJob: any): JobListing {
+  return {
+    id: govJob.id,
+    title: govJob.title,
+    company: `${govJob.organizationAcronym} (${govJob.organizationName})`,
+    location: "Govt Research Institute",
+    salary: `৳${govJob.salary_scale_bdt} (Grade ${govJob.grade})`,
+    type: "Govt Research Circular",
+    experienceLevel: govJob.experience || "Per Circular",
+    deadline: govJob.applicationDeadline || "Active",
+    logo: "🏛️",
+    department: govJob.family || "Research & Scientific",
+    postedDate: "Govt Circular 2026",
+    description: `Official Government Research Job Circular for ${govJob.title} at ${govJob.organizationName}. Category: ${govJob.family}, Grade ${govJob.grade}. Total Vacancies: ${govJob.vacancy}.`,
+    responsibilities: [
+      `Execute ${govJob.family} tasks and research assignments for ${govJob.organizationAcronym}.`,
+      `Apply pre-joining competencies: ${(govJob.before_skills || []).join(", ")}.`,
+      `Develop post-joining inferred skills: ${(govJob.after_skills_inferred || []).join(", ")}.`
+    ],
+    requirements: [
+      govJob.requirements,
+      `Pre-joining Skills: ${(govJob.before_skills || []).join(", ")}`,
+      `Grade ${govJob.grade} under National Pay Scale 2015.`
+    ],
+    perks: [
+      "Government National Pay Scale & Allowances",
+      "Institutional Research Infrastructure & Pension Eligibility",
+      "Career Growth Pathway in Government Research Cadre"
+    ],
+    stages: [
+      { step: 1, title: "Online Application via Teletalk", desc: govJob.applicationMode || "Teletalk Online Application Portal" },
+      { step: 2, title: "Selection & Viva Process", desc: govJob.selectionProcess || "Written, Practical (where applicable), and Oral Examination" }
+    ]
+  };
+}
+
