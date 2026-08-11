@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   ShieldAlert, Landmark, Award, Users, Calendar,
-  BarChart3, Settings, LogOut, Sun, Moon
+  BarChart3, Settings, LogOut, Sun, Moon, Database, RefreshCw
 } from "lucide-react";
 import { useTheme } from "@/components/providers/theme-provider";
 
@@ -17,64 +17,57 @@ export default function AdminLayout({
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="flex h-screen overflow-hidden" style={{ background: "var(--corp-bg)" }}>
+    <div className="flex h-screen overflow-hidden font-mono bg-corp-bg text-corp-text">
       {/* Side Navigation bar */}
-      <aside className="w-64 flex flex-col h-screen flex-shrink-0 bg-corp-surface border-r"
-        style={{ background: "var(--corp-surface)", borderColor: "var(--corp-border)" }}
-      >
-        <div className="flex items-center gap-2.5 p-4 border-b h-16" style={{ borderColor: "var(--corp-border)" }}>
-          <div className="w-8 h-8 rounded-lg bg-corp-accent flex items-center justify-center flex-shrink-0">
-            <span className="text-white font-bold text-sm">A</span>
+      <aside className="w-64 flex flex-col h-screen flex-shrink-0 bg-corp-surface border-r-2 border-blue-400/40">
+        <div className="flex items-center gap-3 p-4 border-b-2 border-blue-400/40 h-16">
+          <div className="w-9 h-9 rounded-full bg-[#2563eb] text-white font-black text-sm flex items-center justify-center flex-shrink-0 border-2 border-blue-300 shadow-sm">
+            IN
           </div>
           <div className="flex flex-col">
-            <span className="text-[14px] font-semibold tracking-tight" style={{ color: "var(--corp-text)" }}>INSYT Admin</span>
-            <span className="text-[9px] font-medium tracking-[0.2em] uppercase text-corp-text-tertiary">Platform Controls</span>
+            <span className="text-sm font-black uppercase tracking-wider text-corp-text">INSYT Admin</span>
+            <span className="text-[10px] font-extrabold tracking-widest uppercase text-[#2563eb]">Control Center</span>
           </div>
         </div>
 
-        <nav className="flex-1 px-3 py-4 space-y-1">
+        <nav className="flex-1 px-3 py-4 space-y-1.5 overflow-y-auto">
           {[
-            { label: "Overview Analytics", icon: BarChart3, href: "/admin" },
-            { label: "System Users", icon: Users, href: "/admin/users" },
-            { label: "Course Management", icon: Landmark, href: "/admin/courses" },
-            { label: "Certifications Log", icon: Award, href: "/admin/certificates" },
-            { label: "Workshop Events", icon: Calendar, href: "/admin/events" },
-            { label: "Global Settings", icon: Settings, href: "/admin/settings" }
+            { label: "Cloud Sync & Overview", icon: Database, href: "/admin" },
+            { label: "Platform Tasks & Events", icon: RefreshCw, href: "/admin#tasks" },
+            { label: "Return to SAAS Hub", icon: LogOut, href: "/jobs" },
           ].map((item) => {
             const active = pathname === item.href;
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-[13px] font-medium transition-colors"
-                style={{
-                  color: active ? "var(--corp-accent)" : "var(--corp-text-secondary)",
-                  background: active ? "var(--corp-accent-light)" : "transparent"
-                }}
+                className={`flex items-center gap-3 px-3.5 py-2.5 rounded-sm text-xs font-black uppercase transition-all cursor-pointer border ${
+                  active
+                    ? "bg-[#2563eb] text-white border-blue-300 shadow-[2px_2px_0px_0px_#1e3a8a]"
+                    : "bg-corp-bg-secondary text-corp-text border-transparent hover:border-blue-400/40 hover:bg-corp-surface"
+                }`}
               >
-                <item.icon size={18} />
+                <item.icon size={16} />
                 <span>{item.label}</span>
               </Link>
             );
           })}
         </nav>
 
-        <div className="p-3 border-t space-y-1" style={{ borderColor: "var(--corp-border)" }}>
+        <div className="p-3 border-t-2 border-blue-400/40 space-y-2">
           <button
             onClick={toggleTheme}
-            className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-[13px] font-medium transition-colors hover:bg-corp-bg-secondary"
-            style={{ color: "var(--corp-text-secondary)" }}
+            className="w-full flex items-center gap-3 px-3.5 py-2.5 rounded-full text-xs font-black uppercase transition-all cursor-pointer border border-blue-400/40 bg-corp-bg-secondary hover:bg-corp-surface text-corp-text"
           >
-            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+            {theme === "dark" ? <Sun size={16} className="text-amber-400" /> : <Moon size={16} className="text-blue-500" />}
             <span>{theme === "dark" ? "Light Mode" : "Dark Mode"}</span>
           </button>
 
           <Link
-            href="/dashboard"
-            className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-[13px] font-medium transition-colors hover:bg-corp-bg-secondary"
-            style={{ color: "var(--corp-text-secondary)" }}
+            href="/jobs"
+            className="w-full flex items-center gap-3 px-3.5 py-2.5 rounded-full text-xs font-black uppercase bg-[#2563eb] text-white hover:bg-blue-600 border border-blue-300 shadow-sm transition-all cursor-pointer"
           >
-            <LogOut size={18} />
+            <LogOut size={16} />
             <span>Return to App</span>
           </Link>
         </div>
@@ -83,24 +76,22 @@ export default function AdminLayout({
       {/* Main Content panel */}
       <div className="flex-1 flex flex-col overflow-hidden">
         {/* Top controls */}
-        <header className="h-16 flex items-center justify-between px-6 border-b"
-          style={{ background: "var(--corp-surface)", borderColor: "var(--corp-border)" }}
-        >
-          <div className="flex items-center gap-2 text-[13px]" style={{ color: "var(--corp-text-tertiary)" }}>
-            <span>INSYT.OS</span>
+        <header className="h-16 flex items-center justify-between px-6 border-b-2 border-blue-400/40 bg-corp-surface">
+          <div className="flex items-center gap-2 text-xs font-bold text-corp-text-tertiary">
+            <span className="text-[#2563eb]">INSYT.OS</span>
             <span>{"//"}</span>
-            <span className="font-semibold text-corp-text">Admin Command</span>
+            <span className="font-extrabold uppercase text-corp-text">Super Administrator Command</span>
           </div>
 
           <div className="flex items-center gap-2">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-semibold bg-rose-500/10 text-rose-600">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black uppercase bg-blue-500/10 text-[#2563eb] border border-blue-400/40">
               <ShieldAlert size={13} />
               Super Administrator
             </span>
           </div>
         </header>
 
-        <main className="flex-1 overflow-y-auto p-6">
+        <main className="flex-1 overflow-y-auto p-6 bg-corp-bg">
           {children}
         </main>
       </div>
