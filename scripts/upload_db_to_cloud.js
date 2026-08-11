@@ -29,6 +29,16 @@ async function uploadDBFolderToCloud() {
     try {
       const parsedData = JSON.parse(contentStr);
       const datasetName = parsedData.dataset_name || filename;
+      let rolesCount = 0;
+
+      if (Array.isArray(parsedData)) {
+        rolesCount = parsedData.length;
+      } else if (parsedData && typeof parsedData === "object") {
+        if (Array.isArray(parsedData.jobs)) rolesCount = parsedData.jobs.length;
+        else if (Array.isArray(parsedData.organizations)) {
+          rolesCount = parsedData.organizations.reduce((acc, org) => acc + (org.jobs?.length || 0), 0);
+        }
+      }
 
       // Attempt Appwrite Document / Storage Upload endpoint call
       const res = await fetch(`${APPWRITE_ENDPOINT}/databases/${APPWRITE_DATABASE_ID}/collections/jobs/documents`, {
@@ -42,6 +52,7 @@ async function uploadDBFolderToCloud() {
           data: {
             filename,
             datasetName,
+            rolesCount,
             uploadedAt: new Date().toISOString(),
             rawJSON: contentStr.substring(0, 10000), // Cloud string slice
           },

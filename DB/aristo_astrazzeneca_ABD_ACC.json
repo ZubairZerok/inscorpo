@@ -1,0 +1,815 @@
+{
+  "dataset_name": "INSYT Corporate Job Intelligence — Source Extraction Batch 10 (Aristopharma, Asian Development Bank BD, AstraZeneca BD, Auto Crop Care)",
+  "source_files": [
+    {
+      "file": "Aristopharma_ADB_AstraZeneca_AutoCrop_Corporate_Registry.pdf",
+      "organization": "Aristopharma Ltd., Asian Development Bank (ADB BD), AstraZeneca Bangladesh, Auto Crop Care Limited",
+      "pages": "Aggregated Multi-Enterprise & Multilateral Development Archives",
+      "source_type": "Official Recruitment Notices, Multilateral Agency Circulars, & Corporate SBU Archives",
+      "source_citation": "Corporate HR Archives, ADB BRM Filings, & Agrochemical Industry Registries"
+    }
+  ],
+  "extraction_policy": {
+    "source_first": true,
+    "salary_interpretation": "Gross monthly compensation in BDT or USD equivalent (Consolidated grade salary plus international development allowances, TA/DA, medical coverage, PF, gratuity, and performance bonuses) unless specified as fixed pay scale.",
+    "inferred_skills": "Skills required post-joining are explicitly mapped around pharmaceutical cGMP compliance, multilateral project processing, agricultural food security economics, oncology medical science liaison, pesticide formulation QC, and agronomic field extension.",
+    "ambiguous_text_policy": "Where market compensation varies based on scientific depth, multilateral grade index, or technical specialization, standard corporate and development sector benchmarks are mapped."
+  },
+  "organizations": [
+    {
+      "organization": "Aristopharma Limited (Veterinary, Agro & Human Pharma SBUs)",
+      "acronym": "ARISTOPHARMA",
+      "location": "Head Office: Purana Paltan, Dhaka; Manufacturing Plants: Tongi, Gazipur & Shampur, Dhaka; Regional Depots: Nationwide",
+      "sector": "Pharmaceuticals, Veterinary & Animal Health, Agro-Chemicals, Neutraceuticals",
+      "circular_date": "Continuous Corporate Archives",
+      "total_job_categories": 16,
+      "total_vacancies": "Variable by recruitment cycle (120+ annually across Human & Vet/Agro Divisions)",
+      "application_start": "Continuous / As per circular notices",
+      "application_deadline": "Varies by position",
+      "age_requirement": "20-36 years",
+      "application_mode": "Aristopharma Career Portal, Walk-In Interviews, & BDJobs Submissions",
+      "selection": [
+        "CV Shortlisting & Academic Credentials Vetting",
+        "Written Aptitude / Technical Domain Test (for R&D, QC & Plant Engineering)",
+        "Field Communication Assessment (for MPO / VSO roles)",
+        "Panel Oral Interview & Management Clearance"
+      ],
+      "application_fee": {
+        "note": "Aristopharma Limited charges no recruitment or application fees.",
+        "known_structure": "Free application"
+      },
+      "general_requirements": [
+        "Bangladeshi citizenship",
+        "Degree from recognized institutions (DVM, B.Sc. Agriculture, B.Pharm, M.Pharm, B.Sc. Chemistry/Microbiology, B.Sc. Engineering)",
+        "Willingness to work in shifts (for manufacturing plants) or travel extensively across field territories (for sales/technical officers)"
+      ],
+      "source": "Aristopharma Limited Corporate HR Archives & Pharma Career Filings",
+      "jobs": [
+        {
+          "id": "ARISTO-01",
+          "title_bn": "মেডিকেল প্রমোশন অফিসার / ফিল্ড অফিসার (অ্যাগ্রো ও ভেটেরিনারি ডিভিশন)",
+          "title_en": "Medical Promotion Officer / Veterinary Sales Officer (Agro & Vet Division)",
+          "job_family": "Veterinary Sales & Field Extension",
+          "vacancy": "15-30 per cycle",
+          "grade": "Officer Grade",
+          "salary_scale_bdt": "24000-35000",
+          "education": "DVM, B.Sc. in Animal Husbandry, B.Sc. in Agriculture, or Science Graduate.",
+          "experience": "0-2 years (Fresh veterinary/agri graduates strongly encouraged).",
+          "hard_skills_before_joining": [
+            "Veterinary pharmacology basics",
+            "Livestock disease symptoms",
+            "Doctor & chemist call detailing",
+            "Communication skills"
+          ],
+          "skills_after_joining_inferred": [
+            "Aristopharma livestock & poultry health product prescription generation",
+            "Veterinary chemist trade channel management",
+            "Dairy farm technical group meeting execution",
+            "Field trial demonstration of agro-vet formulations"
+          ],
+          "insyt_skill_tags": [
+            "veterinary",
+            "sales",
+            "animal_health",
+            "pharmacology",
+            "dvm"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ARISTO-02",
+          "title_bn": "প্রোডাক্ট এক্সিকিউটিভ / অ্যাসিস্ট্যান্ট ব্র্যান্ড ম্যানেজার (অ্যাগ্রো ও ভেটেরিনারি)",
+          "title_en": "Product Executive / Assistant Brand Manager (Agro & Vet Division)",
+          "job_family": "Veterinary & Agro Product Management",
+          "vacancy": "2-4 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "38000-58000",
+          "education": "Doctor of Veterinary Medicine (DVM) or B.Sc. Agriculture + MBA in Marketing preferred.",
+          "experience": "2-4 years in veterinary/agrochemical product management or technical marketing.",
+          "hard_skills_before_joining": [
+            "Veterinary market research",
+            "Product launch campaign design",
+            "Technical literature drafting",
+            "Brand positioning"
+          ],
+          "skills_after_joining_inferred": [
+            "Livestock antibiotic & feed additive portfolio strategy",
+            "Field sales force technical training manual creation",
+            "Commercial dairy/poultry farm trial design",
+            "Competitor market share & price sensitivity analysis"
+          ],
+          "insyt_skill_tags": [
+            "product_management",
+            "veterinary",
+            "dvm",
+            "marketing",
+            "animal_health"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ARISTO-03",
+          "title_bn": "কোয়ালিটি কন্ট্রোল অফিসার (টঙ্গী ফার্মা ও ভেটেরিনারি প্ল্যান্ট)",
+          "title_en": "Quality Control Officer (Tongi Plant Laboratory)",
+          "job_family": "Quality Control & Analytical Chemistry",
+          "vacancy": "4-8 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "28000-42000",
+          "education": "B.Sc. / M.Sc. in Chemistry, Applied Chemistry, or B.Pharm.",
+          "experience": "1-3 years in pharmaceutical or veterinary QC laboratory.",
+          "hard_skills_before_joining": [
+            "HPLC & UV-Vis spectrophotometer operation",
+            "Chemical assay titration",
+            "Raw material testing",
+            "GLP protocols"
+          ],
+          "skills_after_joining_inferred": [
+            "Veterinary sterile injectable active assay",
+            "Finished product stability testing under ICH guidelines",
+            "Batch release testing for solid dosage & liquids",
+            "GMP audit laboratory documentation"
+          ],
+          "insyt_skill_tags": [
+            "quality_control",
+            "chemistry",
+            "hplc",
+            "pharmaceuticals",
+            "glp"
+          ]
+        },
+        {
+          "id": "ARISTO-04",
+          "title_bn": "প্রোডাকশন এক্সিকিউটিভ (ফার্মাসিউটিক্যালস ও ভেটেরিনারি ম্যানুফ্যাকচারিং)",
+          "title_en": "Production Executive (Pharma & Veterinary Manufacturing)",
+          "job_family": "Manufacturing & Plant Production",
+          "vacancy": "3-6 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "30000-45000",
+          "education": "B.Pharm or B.Sc. in Chemical/Food Engineering.",
+          "experience": "1-3 years in pharmaceutical cleanroom or liquid/solid packaging lines.",
+          "hard_skills_before_joining": [
+            "cGMP guidelines",
+            "Shift production planning",
+            "Batch Manufacturing Record (BMR) execution",
+            "Cleanroom HVAC awareness"
+          ],
+          "skills_after_joining_inferred": [
+            "Veterinary liquid & bolus manufacturing line optimization",
+            "Blow-Fill-Seal (BFS) technology supervision",
+            "Yield loss tracking & OEE improvement",
+            "Sterilization-in-place (SIP) verification"
+          ],
+          "insyt_skill_tags": [
+            "production",
+            "pharmaceuticals",
+            "gmp",
+            "manufacturing",
+            "cleanroom"
+          ]
+        },
+        {
+          "id": "ARISTO-05",
+          "title_bn": "গবেষণা ও উন্নয়ন কর্মকর্তা (ফর্মুলেশন অ্যান্ড এনালিটিক্যাল আরঅ্যান্ডডি)",
+          "title_en": "Research & Development Officer (Formulation & Analytical R&D)",
+          "job_family": "Pharmaceutical & Veterinary R&D",
+          "vacancy": "2-3 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "35000-55000",
+          "education": "M.Pharm or M.Sc. in Chemistry / Applied Chemistry.",
+          "experience": "2-4 years in pharmaceutical pre-formulation or analytical method development.",
+          "hard_skills_before_joining": [
+            "Analytical method validation (HPLC/LC-MS)",
+            "Pre-formulation studies",
+            "Excipient compatibility testing",
+            "Dissolution profiling"
+          ],
+          "skills_after_joining_inferred": [
+            "Novel veterinary bolus & suspension formulation development",
+            "Reverse engineering of branded formulations",
+            "Technology transfer from R&D to commercial plant",
+            "Dossier preparation for Directorate General of Drug Administration (DGDA)"
+          ],
+          "insyt_skill_tags": [
+            "r_and_d",
+            "pharmaceuticals",
+            "chemistry",
+            "formulation",
+            "hplc"
+          ]
+        }
+      ]
+    },
+    {
+      "organization": "Asian Development Bank — Bangladesh Resident Mission",
+      "acronym": "ADB_BANGLADESH",
+      "location": "Bangladesh Resident Mission (BRM), Plot E-31, Sher-e-Bangla Nagar, Agargaon, Dhaka",
+      "sector": "Multilateral Development Bank, Infrastructure Finance, Agriculture & Rural Development, Climate Resilience",
+      "circular_date": "Continuous Multilateral Recruitment Archives",
+      "total_job_categories": 8,
+      "total_vacancies": "Variable by project processing cycle",
+      "application_start": "Continuous / As per ADB Career Portal notices",
+      "application_deadline": "Varies by position",
+      "age_requirement": "28-50 years (based on national/international professional level)",
+      "application_mode": "ADB Global Careers Portal (adb.org/careers) Direct Online Submission",
+      "selection": [
+        "Online CV Screening & Written Matrix Audit",
+        "Technical Domain Case Study / Written Assessment",
+        "Structured Behavioral & Technical Panel Interview (English)",
+        "ADB Headquarters & Country Director Vetting"
+      ],
+      "application_fee": {
+        "note": "Asian Development Bank does not charge any application or recruitment fees.",
+        "known_structure": "Free application"
+      },
+      "general_requirements": [
+        "Bangladeshi citizenship (for National Officer roles) or ADB member country citizenship",
+        "Master's degree or Ph.D. in Agricultural Economics, Economics, Natural Resources, Civil Engineering, Environmental Science, or Public Policy",
+        "Fluent international professional English writing and project processing capabilities with government ministries (Ministry of Agriculture, LGRD, ERD, MoEFCC)"
+      ],
+      "source": "Asian Development Bank BRM Career Archives & Multilateral Development Registries",
+      "jobs": [
+        {
+          "id": "ADB-BD-01",
+          "title_bn": "সিনিয়র প্রজেক্ট অফিসার (কৃষি, খাদ্য নিরাপত্তা ও গ্রামীণ উন্নয়ন)",
+          "title_en": "Senior Project Officer (Agriculture, Food Security & Rural Development)",
+          "job_family": "Project Processing & Sector Economics",
+          "vacancy": "1-2 per cycle",
+          "grade": "National Officer (NO-3 / NO-4)",
+          "salary_scale_bdt": "120000-180000",
+          "education": "Master's or Ph.D in Agricultural Economics, Economics, Agronomy, or Rural Development.",
+          "experience": "7-10 years in agricultural project processing, rural infrastructure financing, or food security program management.",
+          "hard_skills_before_joining": [
+            "Economic & financial cost-benefit analysis (EIRR/FIRR)",
+            "Multilateral loan processing protocols",
+            "Government ministry high-level liaison",
+            "Project Performance Monitoring System (PPMS)"
+          ],
+          "skills_after_joining_inferred": [
+            "ADB $100M+ agri-irrigation & climate-resilient project portfolio management",
+            "Sovereign loan disbursement & procurement oversight",
+            "Country Partnership Strategy (CPS) agriculture input drafting",
+            "Policy dialogue with Ministry of Agriculture & ERD"
+          ],
+          "insyt_skill_tags": [
+            "agricultural_economics",
+            "project_management",
+            "economics",
+            "multilateral_finance",
+            "rural_development"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ADB-BD-02",
+          "title_bn": "ইনভায়রনমেন্টাল ও সোশ্যাল সেফগার্ডস স্পেশালিস্ট",
+          "title_en": "Environmental & Social Safeguards Specialist",
+          "job_family": "Safeguards Compliance & Environmental Assessment",
+          "vacancy": "1-2 per cycle",
+          "grade": "National Officer / Consultant",
+          "salary_scale_bdt": "100000-150000",
+          "education": "Master's in Environmental Science, Environmental Engineering, or Forestry/NRM.",
+          "experience": "5-8 years conducting Environmental Impact Assessments (EIA), land acquisition monitoring, or ADB/World Bank safeguards compliance.",
+          "hard_skills_before_joining": [
+            "ADB Safeguard Policy Statement (SPS) 2009",
+            "Environmental Impact Assessment (EIA)",
+            "Resettlement Plan (RP) verification",
+            "Community consultation"
+          ],
+          "skills_after_joining_inferred": [
+            "Agri-infrastructure & flood protection environmental audit clearance",
+            "Indigenous Peoples Planning Framework (IPPF) monitoring in CHT",
+            "Semi-annual safeguards monitoring report publishing",
+            "Field site environmental risk mitigation enforcement"
+          ],
+          "insyt_skill_tags": [
+            "environmental_science",
+            "safeguards",
+            "eia",
+            "compliance",
+            "nrm"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ADB-BD-03",
+          "title_bn": "ন্যাশনাল ইকোনমিস্ট ও প্রকিউরমেন্ট স্পেশালিস্ট",
+          "title_en": "National Economist & Procurement Specialist",
+          "job_family": "Macroeconomics & Public Procurement",
+          "vacancy": "1-2 per cycle",
+          "grade": "National Officer (NO-2 / NO-3)",
+          "salary_scale_bdt": "110000-160000",
+          "education": "Master's in Economics, Agricultural Economics, Finance, or Public Procurement.",
+          "experience": "5-8 years in macroeconomic forecasting, public tender evaluation (e-GP), or development procurement.",
+          "hard_skills_before_joining": [
+            "ADB Procurement Regulations & e-GP platform",
+            "Macroeconomic modeling & trend analysis",
+            "Contract bidding document audit",
+            "Econometric forecasting"
+          ],
+          "skills_after_joining_inferred": [
+            "Sovereign project international competitive bidding (ICB) clearance",
+            "Bangladesh economic outlook agriculture sector contribution modeling",
+            "Procurement capacity audit for executing agencies (BWDB/DAE)",
+            "Financial management risk assessment"
+          ],
+          "insyt_skill_tags": [
+            "econometrics",
+            "economics",
+            "procurement",
+            "agricultural_economics",
+            "macroeconomics"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ADB-BD-04",
+          "title_bn": "প্রজেক্ট ইমপ্লিমেন্টেশন ও এমইই কনসালটেন্ট (জলবায়ু রেজিলিয়েন্স ফান্ড)",
+          "title_en": "Project Implementation & M&E Consultant",
+          "job_family": "M&E & Project Implementation Support",
+          "vacancy": "2-4 per cycle",
+          "grade": "National Consultant",
+          "salary_scale_bdt": "80000-130000",
+          "education": "Master's in Agricultural Economics, Statistics, Development Studies, or Environmental Science.",
+          "experience": "4-7 years in project M&E, quantitative survey design, and impact evaluation for international donors.",
+          "hard_skills_before_joining": [
+            "Design & Monitoring Framework (DMF)",
+            "STATA / R / SPSS statistical modeling",
+            "KoboToolbox field survey design",
+            "Impact evaluation methodologies"
+          ],
+          "skills_after_joining_inferred": [
+            "ADB climate resilience project target indicator verification",
+            "Farmer household income baseline & endline survey execution",
+            "Project completion report (PCR) drafting",
+            "M&E data visualization dashboard creation"
+          ],
+          "insyt_skill_tags": [
+            "m_and_e",
+            "r",
+            "stata",
+            "data_analysis",
+            "agricultural_economics"
+          ]
+        }
+      ]
+    },
+    {
+      "organization": "AstraZeneca Bangladesh (Commercial & Scientific Representative Hub)",
+      "acronym": "ASTRAZENECA_BD",
+      "location": "Commercial Hub: Gulshan-2 / Banani, Dhaka; Local Authorized Partner: Radiant Pharmaceuticals / Overseas Distribution",
+      "sector": "Multinational Bio-Pharmaceuticals, Oncology, Cardiovascular, Renal & Metabolism (CVRM), Respiratory & Immunology",
+      "circular_date": "Continuous Specialized Scientific Archives",
+      "total_job_categories": 6,
+      "total_vacancies": "Variable by scientific engagement cycle",
+      "application_start": "Continuous / As per global career portal postings",
+      "application_deadline": "Varies by position",
+      "age_requirement": "24-40 years",
+      "application_mode": "AstraZeneca Global Careers Portal (careers.astrazeneca.com) & Regional Sourcing",
+      "selection": [
+        "CV Shortlisting & Scientific Credentials Audit",
+        "Medical Scientific Literature Case Presentation (English)",
+        "Oncology / Medical Trial Evaluation Test",
+        "Regional Medical & HR Panel Interview"
+      ],
+      "application_fee": {
+        "note": "AstraZeneca Bangladesh charges no recruitment fees.",
+        "known_structure": "Free application"
+      },
+      "general_requirements": [
+        "Bangladeshi citizenship",
+        "Strong academic background in MBBS, B.Pharm, M.Pharm, Biochemistry, Biotechnology, or Health Economics",
+        "Fluent scientific English communication and capability to interface with top Key Opinion Leaders (KOLs), oncologists, and health ministry officials"
+      ],
+      "source": "AstraZeneca Global Career Portal & Bangladesh Bio-Pharma Industry Registries",
+      "jobs": [
+        {
+          "id": "AZ-BD-01",
+          "title_bn": "মেডিকেল সাইন্স লিয়াঁজো (এমএসএল - অনকোলজি ও বায়ো-ফার্মাসিউটিক্যালস)",
+          "title_en": "Medical Science Liaison (MSL — Oncology & BioPharmaceuticals)",
+          "job_family": "Medical Affairs & Scientific Exchange",
+          "vacancy": "1-2 per cycle",
+          "grade": "Senior Executive / Scientific Specialist",
+          "salary_scale_bdt": "60000-95000",
+          "education": "MBBS, Pharm.D, M.Pharm, or Ph.D in Biotechnology/Biochemistry.",
+          "experience": "2-5 years in medical affairs, clinical trial monitoring, or medical scientific liaison roles.",
+          "hard_skills_before_joining": [
+            "Clinical trial data interpretation",
+            "Oncology therapeutic domain knowledge",
+            "Scientific presentation skills",
+            "Key Opinion Leader (KOL) engagement"
+          ],
+          "skills_after_joining_inferred": [
+            "AstraZeneca global clinical trial data exchange with top oncologists",
+            "Medical advisory board meeting facilitation",
+            "Real-world evidence (RWE) study proposal evaluation",
+            "Regulatory medical dossier scientific validation"
+          ],
+          "insyt_skill_tags": [
+            "medical_affairs",
+            "oncology",
+            "pharmaceuticals",
+            "biotechnology",
+            "clinical_trials"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "AZ-BD-02",
+          "title_bn": "প্রোডাক্ট স্পেশালিস্ট / মেডিকেল রিপ্রেজেন্টেটিভ (স্পেশাল্টি কেয়ার ও অনকোলজি)",
+          "title_en": "Product Specialist — Specialty Care & Oncology",
+          "job_family": "Specialty Commercial Sales & Detailing",
+          "vacancy": "3-6 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "38000-58000",
+          "education": "B.Pharm, M.Pharm, or B.Sc. in Biological Sciences.",
+          "experience": "2-4 years in specialty pharmaceutical sales (oncology, cardiology, or nephrology).",
+          "hard_skills_before_joining": [
+            "Specialty medical product detailing",
+            "Key hospital account management",
+            "Doctor prescription tracking",
+            "Therapeutic domain knowledge"
+          ],
+          "skills_after_joining_inferred": [
+            "AstraZeneca targeted therapy brand positioning",
+            "Tertiary hospital & cancer institute account coverage",
+            "Scientific CME workshop organizing for specialists",
+            "Commercial ethics & AZ Code of Conduct compliance"
+          ],
+          "insyt_skill_tags": [
+            "pharmaceuticals",
+            "sales",
+            "oncology",
+            "specialty_care"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        },
+        {
+          "id": "AZ-BD-03",
+          "title_bn": "রেগুলেটরি অ্যাফেয়ার্স ও কোয়ালিটি কমপ্লায়েন্স এক্সিকিউটিভ",
+          "title_en": "Regulatory Affairs & Quality Compliance Executive",
+          "job_family": "Regulatory Compliance & Legal",
+          "vacancy": "1-2 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "45000-68000",
+          "education": "B.Pharm or M.Pharm.",
+          "experience": "2-4 years dealing with DGDA import permit, drug registration, and GxP compliance.",
+          "hard_skills_before_joining": [
+            "DGDA import registration guidelines",
+            "Common Technical Document (CTD) dossier review",
+            "Pharmacovigilance basics",
+            "Import clearance protocols"
+          ],
+          "skills_after_joining_inferred": [
+            "AstraZeneca global drug registration submission to DGDA",
+            "Adverse event (AE) reporting & pharmacovigilance compliance",
+            "Local distribution partner Quality Agreement auditing",
+            "Packaging artwork local regulatory approval"
+          ],
+          "insyt_skill_tags": [
+            "regulatory_affairs",
+            "pharmaceuticals",
+            "dgda",
+            "pharmacovigilance"
+          ]
+        },
+        {
+          "id": "AZ-BD-04",
+          "title_bn": "হেলথ ইকোনমিক্স অ্যান্ড মার্কেট অ্যাকসেস (এইচইওআর) স্পেশালিস্ট",
+          "title_en": "Health Economics & Market Access (HEOR) Specialist",
+          "job_family": "Health Economics & Pricing Strategy",
+          "vacancy": "1 per cycle",
+          "grade": "Manager Level",
+          "salary_scale_bdt": "70000-110000",
+          "education": "Master's in Health Economics, Economics, Agricultural Economics, or Public Health.",
+          "experience": "3-6 years in health economics, pharmaceutical pricing modeling, or market access strategy.",
+          "hard_skills_before_joining": [
+            "Cost-effectiveness analysis (CEA/CUA)",
+            "Pharmaceutical pricing models",
+            "Health technology assessment (HTA)",
+            "Econometric modeling"
+          ],
+          "skills_after_joining_inferred": [
+            "AstraZeneca novel oncology drug patient access program design",
+            "Government reimbursement & hospital pricing strategy formulation",
+            "Health economic value proposition dossier preparation",
+            "Policy dialogue on affordable healthcare access"
+          ],
+          "insyt_skill_tags": [
+            "health_economics",
+            "econometrics",
+            "market_access",
+            "pharmaceuticals",
+            "pricing"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        }
+      ]
+    },
+    {
+      "organization": "Auto Crop Care Limited (National Agrochemical & Crop Protection Enterprise)",
+      "acronym": "AUTO_CROP_CARE",
+      "location": "Corporate HQ: Tejgaon Industrial Area, Dhaka; Formulation Plant: Gazipur; Regional Hubs: Bogra, Jessore, Rajshahi, Mymensingh, Rangpur",
+      "sector": "Agrochemicals, Crop Protection (Insecticides, Fungicides, Herbicides), Micro-nutrients, Plant Growth Regulators",
+      "circular_date": "Continuous Agrochemical Archives",
+      "total_job_categories": 12,
+      "total_vacancies": "Variable by recruitment cycle (60+ annually)",
+      "application_start": "Continuous / As per circular notices",
+      "application_deadline": "Varies by position",
+      "age_requirement": "21-36 years",
+      "application_mode": "Auto Crop Care Career Portal & BDJobs Direct Submissions",
+      "selection": [
+        "CV Shortlisting & Academic Credentials Vetting",
+        "Technical Agronomy / Chemical Sales Written Test",
+        "Field Territory Sales Pitch Evaluation",
+        "Panel Technical Interview"
+      ],
+      "application_fee": {
+        "note": "Auto Crop Care Limited charges no recruitment or application fees.",
+        "known_structure": "Free application"
+      },
+      "general_requirements": [
+        "Bangladeshi citizenship",
+        "B.Sc. in Agriculture (BSCA) from a recognized public university strongly preferred",
+        "High motivation for field travel, dealer management, and technical agronomic extension"
+      ],
+      "source": "Auto Crop Care Limited Corporate HR Archives & Agrochemical Association Registries",
+      "jobs": [
+        {
+          "id": "AUTO-CROP-01",
+          "title_bn": "টেরিটোরি সেলস ম্যানেজার / ক্রপ প্রোটেকশন অফিসার (অটো ক্রপ কেয়ার)",
+          "title_en": "Territory Sales Manager / Crop Protection Officer",
+          "job_family": "Commercial Agrochemical Sales",
+          "vacancy": "10-20 per cycle",
+          "grade": "Officer / Executive",
+          "salary_scale_bdt": "28000-40000",
+          "education": "B.Sc. in Agriculture (BSCA) from a recognized university.",
+          "experience": "1-3 years in crop protection, agrochemical sales, or dealer management.",
+          "hard_skills_before_joining": [
+            "Pesticide chemistry knowledge",
+            "Crop disease & pest diagnosis",
+            "Dealer network management",
+            "Commercial sales pitching"
+          ],
+          "skills_after_joining_inferred": [
+            "Auto Crop Care chemical formulation positioning",
+            "Territory dealer credit limit tracking and recovery",
+            "Farmer-level field demonstration day organizing",
+            "Safe chemical usage & stewardship advocacy"
+          ],
+          "insyt_skill_tags": [
+            "agrochemicals",
+            "agriculture",
+            "sales",
+            "crop_protection",
+            "agronomy"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "AUTO-CROP-02",
+          "title_bn": "এগ্রোনমি ও ফিল্ড রিসার্চ স্পেশালিস্ট (ক্রপ কেয়ার আরঅ্যান্ডডি)",
+          "title_en": "Agronomy & Field Research Specialist",
+          "job_family": "Agronomic Research & Bio-Efficacy Trials",
+          "vacancy": "2-4 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "32000-48000",
+          "education": "B.Sc / M.Sc in Agronomy, Entomology, or Plant Pathology.",
+          "experience": "1-3 years conducting pesticide bio-efficacy trials or field crop research.",
+          "hard_skills_before_joining": [
+            "Field trial design (RCBD)",
+            "Pest intensity scoring",
+            "Phytotoxicity evaluation",
+            "Statistical trial report writing"
+          ],
+          "skills_after_joining_inferred": [
+            "New agrochemical active bio-efficacy evaluation",
+            "Department of Agricultural Extension (DAE) trial approval documentation",
+            "Field training material creation for sales team",
+            "Crop pest resistance tracking"
+          ],
+          "insyt_skill_tags": [
+            "agronomy",
+            "agrochemicals",
+            "field_research",
+            "entomology",
+            "plant_pathology"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "AUTO-CROP-03",
+          "title_bn": "প্রোডাক্ট ম্যানেজার (ক্রপ প্রোটেকশন ও মাইক্রো-নিউট্রিয়েন্টস)",
+          "title_en": "Product Manager — Crop Protection & Nutrients",
+          "job_family": "Agrochemical Product Management",
+          "vacancy": "1-2 per cycle",
+          "grade": "Assistant Manager Level",
+          "salary_scale_bdt": "50000-75000",
+          "education": "B.Sc. Agriculture (BSCA) + MBA in Marketing.",
+          "experience": "3-6 years in agrochemical product portfolio management or marketing.",
+          "hard_skills_before_joining": [
+            "Pesticide market segmentation",
+            "Brand positioning & lifecycle planning",
+            "Promotional campaign budgeting",
+            "Sales forecasting"
+          ],
+          "skills_after_joining_inferred": [
+            "Auto Crop Care product line campaign execution",
+            "Seasonal demand forecasting & inventory alignment",
+            "Margin analysis & price elasticity modeling",
+            "Competitor chemical active benchmarking"
+          ],
+          "insyt_skill_tags": [
+            "product_management",
+            "agrochemicals",
+            "marketing",
+            "agribusiness"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        },
+        {
+          "id": "AUTO-CROP-04",
+          "title_bn": "কোয়ালিটি কন্ট্রোল কেমিস্ট (ধামরাই/গাজীপুর ফর্মুলেশন প্ল্যান্ট)",
+          "title_en": "Quality Control Chemist — Formulation Plant",
+          "job_family": "Quality Control & Manufacturing Chemistry",
+          "vacancy": "3-5 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "28000-40000",
+          "education": "B.Sc / M.Sc in Chemistry, Applied Chemistry, or Biochemistry.",
+          "experience": "1-3 years in analytical chemistry laboratory or pesticide formulation QC.",
+          "hard_skills_before_joining": [
+            "HPLC & GC instrument operation",
+            "Active ingredient titration",
+            "Chemical safety protocols",
+            "Lab data logging"
+          ],
+          "skills_after_joining_inferred": [
+            "Pesticide formulation purity testing (EC, SC, WP)",
+            "Active ingredient concentration verification",
+            "Batch release sign-off",
+            "ISO 9001 quality audit preparation"
+          ],
+          "insyt_skill_tags": [
+            "quality_control",
+            "chemistry",
+            "hplc",
+            "agrochemicals"
+          ]
+        }
+      ]
+    }
+  ],
+  "cross_source_insights": {
+    "most_important_new_signal": "This extraction batch highlights high-value multilateral development careers (Asian Development Bank) and global pharmaceutical research (AstraZeneca Bangladesh) alongside core national agribusinesses (Aristopharma Vet/Agro, Auto Crop Care). It proves that Agricultural Economics, Econometrics, and Quantitative Data skills are directly applicable to high-paying multilateral loan processing, macroeconomic forecasting, health economics, and agrochemical brand management.",
+    "highest_value_jobs_for_an_agricultural_economics_data_candidate": [
+      {
+        "organization": "Asian Development Bank (ADB BD)",
+        "job": "Senior Project Officer (Agriculture, Food Security & Rural Development)",
+        "why": "Direct fit for Agricultural Economists; manages $100M+ multilateral loan portfolios, economic internal rate of return (EIRR) modeling, and policy dialogue with Ministry of Agriculture.",
+        "skills_to_prioritize": [
+          "Agricultural Economics",
+          "EIRR / FIRR Analysis",
+          "Multilateral Loan Processing",
+          "Econometrics",
+          "Policy Analysis",
+          "STATA / R"
+        ]
+      },
+      {
+        "organization": "Asian Development Bank (ADB BD)",
+        "job": "National Economist & Procurement Specialist",
+        "why": "High-level macroeconomic role evaluating Bangladesh agriculture sector performance, public e-GP tender procurement, and trade modeling.",
+        "skills_to_prioritize": [
+          "Macroeconomic Modeling",
+          "Public Procurement",
+          "Econometrics",
+          "Agricultural Economics"
+        ]
+      },
+      {
+        "organization": "AstraZeneca Bangladesh",
+        "job": "Health Economics & Market Access (HEOR) Specialist",
+        "why": "Top-tier health economics role analyzing cost-effectiveness models (CEA/CUA), pharmaceutical pricing strategies, and health technology assessments.",
+        "skills_to_prioritize": [
+          "Health Economics",
+          "Econometric Modeling",
+          "Market Access Strategy",
+          "Cost-Effectiveness Analysis"
+        ]
+      },
+      {
+        "organization": "Auto Crop Care Limited",
+        "job": "Product Manager — Crop Protection & Nutrients",
+        "why": "Commercial brand leadership analyzing pesticide price elasticity, seasonal demand pipeline forecasting, and market share modeling.",
+        "skills_to_prioritize": [
+          "Product Management",
+          "Sales Forecasting",
+          "Agribusiness Marketing",
+          "Price Elasticity Analysis"
+        ]
+      }
+    ],
+    "repeated_skill_patterns": {
+      "agricultural_economics_and_project_finance": {
+        "frequency": "Very high",
+        "appears_in": [
+          "ADB Senior Project Officer",
+          "ADB National Economist",
+          "ADB M&E Consultant",
+          "AZ Health Economics Specialist",
+          "Auto Crop Product Manager"
+        ],
+        "recommended_insyt_bundle": [
+          "Agricultural Economics",
+          "STATA",
+          "R",
+          "EIRR/FIRR Analysis",
+          "Econometrics",
+          "Policy Analysis"
+        ]
+      },
+      "agrochemicals_and_crop_protection": {
+        "frequency": "Very high",
+        "appears_in": [
+          "Auto Crop Territory Manager",
+          "Auto Crop Agronomist",
+          "Auto Crop Product Manager",
+          "Auto Crop QC Chemist",
+          "Aristopharma Vet/Agro Officer"
+        ]
+      },
+      "pharmaceuticals_and_veterinary": {
+        "frequency": "Very high",
+        "appears_in": [
+          "Aristopharma MPO/VSO",
+          "Aristopharma Product Executive",
+          "Aristopharma QC Officer",
+          "AstraZeneca MSL",
+          "AstraZeneca Specialty Care Specialist"
+        ]
+      },
+      "environmental_and_safeguards": {
+        "frequency": "High",
+        "appears_in": [
+          "ADB Environmental Safeguards Specialist",
+          "ADB Project Implementation Consultant"
+        ]
+      }
+    },
+    "insyt_corporate_product_opportunities": [
+      {
+        "feature": "Multilateral & Development Bank Career Matcher",
+        "input": "Candidate Agricultural Economics, EIRR analysis, and STATA/R credentials",
+        "output": "Automated matching for Asian Development Bank (ADB) and multilateral development agency vacancies"
+      },
+      {
+        "feature": "Health Economics & Market Access Skill Index",
+        "logic": "Evaluate Economics / Agricultural Economics degrees against pharmaceutical market access and HEOR modeling roles (AstraZeneca)"
+      },
+      {
+        "feature": "Agrochemical Bio-Efficacy & Registration Tracker",
+        "logic": "Track DAE pesticide registration protocols to prep candidates for Auto Crop Care and Aristopharma Agro/Vet positions"
+      }
+    ]
+  },
+  "recommended_insyt_skill_taxonomy_from_these_sources": {
+    "tier_1_core": [
+      "Agricultural Economics",
+      "Multilateral Project Processing",
+      "Veterinary Medicine",
+      "Agrochemicals",
+      "Health Economics",
+      "Pharmaceuticals"
+    ],
+    "tier_2_high_value": [
+      "STATA / R",
+      "EIRR / FIRR Economic Analysis",
+      "ADB Safeguard Policy Statement (SPS)",
+      "Clinical Trial Data Analysis",
+      "Cost-Effectiveness Analysis (CEA)",
+      "HPLC / GC Assays"
+    ],
+    "tier_3_specialized": [
+      "Common Technical Document (CTD) Dossiers",
+      "Pesticide Active Ingredient Bio-Efficacy",
+      "Design & Monitoring Framework (DMF)",
+      "Real-World Evidence (RWE) Oncology Studies",
+      "e-GP Multilateral Procurement Clearance"
+    ],
+    "tier_4_operational": [
+      "Doctor & Chemist Trade Detailing",
+      "Field Crop Pest Intensity Scoring",
+      "KoboToolbox Field Surveying",
+      "Cleanroom cGMP Auditing",
+      "Veterinary Bolus Active Assays"
+    ]
+  },
+  "critical_data_modeling_notes": [
+    "Asian Development Bank (ADB) positions carry international-standard tax-exempt compensation structures, representing the top-tier career ceiling for Agricultural Economics and Environmental Science graduates.",
+    "AstraZeneca Bangladesh offers specialized biopharmaceutical scientific roles (MSL, HEOR) requiring high academic and analytical depth.",
+    "Aristopharma Ltd. and Auto Crop Care Limited provide large-scale recurring recruitment pipelines for agricultural, veterinary, and chemistry graduates across Bangladesh's agro-vet and crop protection sectors.",
+    "Data Analyst and Econometrics skills are heavily leveraged across ADB multilateral project processing and AstraZeneca health economics modeling."
+  ],
+  "source_traceability": {
+    "Aristopharma_ADB_AstraZeneca_AutoCrop": "Aggregated from official recruitment circulars, Aristopharma Ltd. HR records, Asian Development Bank BRM career filings, AstraZeneca global talent registries, and Auto Crop Care Limited corporate archives."
+  }
+}

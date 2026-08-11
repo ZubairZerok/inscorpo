@@ -1,0 +1,850 @@
+{
+  "dataset_name": "INSYT Corporate Job Intelligence — Source Extraction Batch 08 (Agromars, Agroshift, Akij Dairy, Alltech Bangladesh)",
+  "source_files": [
+    {
+      "file": "Agromars_Agroshift_AkijDairy_Alltech_Corporate_Registry.pdf",
+      "organization": "Agromars Ltd., Agroshift Technologies, Akij Dairy Ltd., Alltech Biotechnology Bangladesh Ltd.",
+      "pages": "Aggregated Multi-Enterprise Recruitment Archives",
+      "source_type": "Official Recruitment Notices, Agri-Tech Talent Filings, & Corporate SBU Archives",
+      "source_citation": "Corporate HR Archives, Startup Talent Registers, & SBU Strategic Filings"
+    }
+  ],
+  "extraction_policy": {
+    "source_first": true,
+    "salary_interpretation": "Gross monthly compensation in BDT (Consolidated grade salary plus sales incentives, tech allowances, mobile allowances, TA/DA, PF, gratuity, and performance bonuses) unless specified as fixed pay scale.",
+    "inferred_skills": "Skills required post-joining are explicitly mapped around B2B agritech supply chain management, micro-fulfillment, dairy processing automation, raw milk procurement, organic trace mineral nutrition, and mycotoxin risk management.",
+    "ambiguous_text_policy": "Where market compensation varies based on technical specialization, software proficiency, or field territory, standard corporate grade benchmarks and realistic industry ranges are mapped."
+  },
+  "organizations": [
+    {
+      "organization": "Agromars Ltd. (Agromars Agro & Feed Division)",
+      "acronym": "AGROMARS",
+      "location": "Head Office: Dhanmondi / Uttara, Dhaka; Feed Mills & Integrated Farms: Gazipur, Mymensingh, Bogra",
+      "sector": "Poultry & Aqua Feed Manufacturing, Agrochemicals, Commercial Farming, Agro-Trading",
+      "circular_date": "Continuous Corporate Archives",
+      "total_job_categories": 12,
+      "total_vacancies": "Variable by recruitment cycle (40+ annually across divisions)",
+      "application_start": "Continuous / As per circular notices",
+      "application_deadline": "Varies by position",
+      "age_requirement": "20-35 years",
+      "application_mode": "Agromars HR Portal & BDJobs Direct Submissions",
+      "selection": [
+        "Academic & CV Shortlisting",
+        "Technical Written / Field Aptitude Assessment",
+        "Field Territory Sales Pitch Evaluation",
+        "Panel Interview & Management Clearance"
+      ],
+      "application_fee": {
+        "note": "Agromars Ltd. does not charge any application or recruitment fees.",
+        "known_structure": "Free application"
+      },
+      "general_requirements": [
+        "Bangladeshi citizenship",
+        "Degree from recognized institutions (B.Sc. Agriculture, DVM, B.Sc. Animal Husbandry, B.Sc. Chemistry/Microbiology, BBA/MBA)",
+        "Willingness to travel extensively for feed distribution, dealer networking, and farm technical support"
+      ],
+      "source": "Agromars Ltd. Corporate HR Archives & Agribusiness Career Filings",
+      "jobs": [
+        {
+          "id": "AGROMARS-01",
+          "title_bn": "টেরিটোরি সেলস এক্সিকিউটিভ (পোল্ট্রি ও অ্যাকুয়া ফিড)",
+          "title_en": "Territory Sales Executive (Poultry & Aqua Feed)",
+          "job_family": "Commercial Feed Sales",
+          "vacancy": "8-15 per cycle",
+          "grade": "Officer / Executive",
+          "salary_scale_bdt": "25000-38000",
+          "education": "B.Sc. in Agriculture, DVM, B.Sc. in Animal Husbandry/Fisheries, or Science Graduate.",
+          "experience": "1-3 years in commercial feed, DOC, or aqua-input sales.",
+          "hard_skills_before_joining": [
+            "Feed Conversion Ratio (FCR) understanding",
+            "Dealer network expansion",
+            "Farmer meeting organization",
+            "Commercial sales pitching"
+          ],
+          "skills_after_joining_inferred": [
+            "Agromars feed brand market share expansion",
+            "Dealer credit limit tracking and recovery",
+            "Commercial farm feed trial demonstrations",
+            "Competitor feed price benchmarking"
+          ],
+          "insyt_skill_tags": [
+            "sales",
+            "poultry",
+            "feed",
+            "agriculture",
+            "dealer_management"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "AGROMARS-02",
+          "title_bn": "ফার্ম অপারেন্স ম্যানেজার (লেয়ার ও ব্রয়লার প্রজেক্ট)",
+          "title_en": "Farm Operations Manager (Commercial Poultry)",
+          "job_family": "Farm Operations & Livestock Management",
+          "vacancy": "2-4 per cycle",
+          "grade": "Assistant Manager Level",
+          "salary_scale_bdt": "38000-55000",
+          "education": "DVM or B.Sc. in Animal Husbandry.",
+          "experience": "3-5 years managing commercial layer or broiler farms.",
+          "hard_skills_before_joining": [
+            "Poultry disease diagnosis",
+            "Shed ventilation management",
+            "Biosecurity enforcement",
+            "Flock mortality logging"
+          ],
+          "skills_after_joining_inferred": [
+            "Commercial egg & meat production cost optimization",
+            "Automated feed & water distribution monitoring",
+            "Vaccination & medication regimen enforcement",
+            "Farm labor productivity optimization"
+          ],
+          "insyt_skill_tags": [
+            "poultry",
+            "farm_management",
+            "dvm",
+            "husbandry",
+            "biosecurity"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        },
+        {
+          "id": "AGROMARS-03",
+          "title_bn": "কোয়ালিটি কন্ট্রোল অফিসার (ফিড মিল ল্যাবরেটরি)",
+          "title_en": "Quality Control Officer (Feed Mill Laboratory)",
+          "job_family": "Quality Control & Feed Chemistry",
+          "vacancy": "2-3 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "26000-38000",
+          "education": "B.Sc / M.Sc in Chemistry, Biochemistry, or Food Technology.",
+          "experience": "1-3 years testing poultry/aqua feed raw materials.",
+          "hard_skills_before_joining": [
+            "Proximate analysis (Protein, Fat, Fiber)",
+            "Moisture testing",
+            "Aflatoxin kit testing",
+            "Lab safety protocols"
+          ],
+          "skills_after_joining_inferred": [
+            "Maize & soybean raw load adulteration detection",
+            "Finished feed pellet durability index (PDI) control",
+            "NIR spectrometer rapid testing protocols",
+            "Batch rejection sign-off for sub-standard raw inputs"
+          ],
+          "insyt_skill_tags": [
+            "quality_control",
+            "chemistry",
+            "feed_mill",
+            "biochemistry"
+          ]
+        },
+        {
+          "id": "AGROMARS-04",
+          "title_bn": "গ্রেইন প্রকিউরমেন্ট ও সোর্সিং অফিসার",
+          "title_en": "Grain Procurement & Sourcing Officer",
+          "job_family": "Procurement & Raw Material Sourcing",
+          "vacancy": "2-4 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "28000-42000",
+          "education": "B.Sc. in Agriculture, Agricultural Economics, or BBA in Supply Chain.",
+          "experience": "1-3 years in maize, wheat, or soybean meal bulk procurement.",
+          "hard_skills_before_joining": [
+            "Grain market price tracking",
+            "Moisture & purity evaluation",
+            "Vendor relationship management",
+            "Purchase order execution"
+          ],
+          "skills_after_joining_inferred": [
+            "Seasonal maize aggregation strategy execution",
+            "Grain depot-to-feed mill transport routing",
+            "Direct farmer/trader buyback pricing models",
+            "Raw material inventory buffer management"
+          ],
+          "insyt_skill_tags": [
+            "procurement",
+            "sourcing",
+            "agricultural_economics",
+            "supply_chain"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        }
+      ]
+    },
+    {
+      "organization": "Agroshift Technologies Ltd. (Agri-Tech B2B Supply Chain)",
+      "acronym": "AGROSHIFT",
+      "location": "Head Office: Mohakhali / Gulshan, Dhaka; Micro-Fulfillment Centers (MFCs) & Sourcing Hubs: Bogra, Rangpur, Natore, Jessore",
+      "sector": "Agri-Tech, B2B Agritech Supply Chain, Farm-to-Factory / Farm-to-Retail Digital Logistics, Fresh Produce Aggregation",
+      "circular_date": "Continuous Agri-Tech Sourcing Filings",
+      "total_job_categories": 12,
+      "total_vacancies": "Variable by startup growth cycle",
+      "application_start": "Continuous / As per tech portal postings",
+      "application_deadline": "Varies by position",
+      "age_requirement": "21-35 years",
+      "application_mode": "Agroshift Career Portal, LinkedIn Jobs, & Direct Tech Sourcing",
+      "selection": [
+        "CV Screening & Portfolio Review",
+        "Technical Analytics / Data Case Study Test (for Data/Tech roles)",
+        "Supply Chain Operations Case Presentation",
+        "Founder & Executive Panel Interview"
+      ],
+      "application_fee": {
+        "note": "Agroshift Technologies Ltd. charges no recruitment fees.",
+        "known_structure": "Free application"
+      },
+      "general_requirements": [
+        "Bangladeshi citizenship",
+        "Degree in Computer Science, Data Analytics, Agricultural Economics, Industrial & Production Engineering (IPE), Supply Chain, or BBA",
+        "High adaptability for fast-paced tech startup environment, data-driven decision making, and field-to-tech integration"
+      ],
+      "source": "Agroshift Corporate HR & Startup Ecosystem Recruitment Registers",
+      "jobs": [
+        {
+          "id": "AGROSHIFT-01",
+          "title_bn": "বিজনেস ডেটা অ্যানালিস্ট ও এসসিএম ইন্টেলিজেন্স এক্সিকিউটিভ",
+          "title_en": "Business Data Analyst & SCM Intelligence Executive",
+          "job_family": "Data Analytics & Supply Chain Intelligence",
+          "vacancy": "2-4 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "40000-65000",
+          "education": "B.Sc. in Agricultural Economics, Computer Science, Statistics, Data Science, or BBA in Business Analytics.",
+          "experience": "2-4 years in agritech data analytics, supply chain intelligence, or econometric modeling.",
+          "hard_skills_before_joining": [
+            "SQL & relational databases",
+            "Python / R data analytical packages",
+            "Power BI / Tableau dashboarding",
+            "Advanced Excel & VBA",
+            "Price variance modeling"
+          ],
+          "skills_after_joining_inferred": [
+            "Farm-to-factory fresh produce price margin modeling",
+            "Demand forecasting algorithm tuning for RMG factory canteens",
+            "Micro-fulfillment center (MFC) wastage tracking analytics",
+            "Farmer sourcing pricing intelligence dashboard creation"
+          ],
+          "insyt_skill_tags": [
+            "data_analysis",
+            "sql",
+            "python",
+            "r",
+            "power_bi",
+            "agricultural_economics",
+            "supply_chain"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "AGROSHIFT-02",
+          "title_bn": "মাইক্রো-ফুলফিলমেন্ট সেন্টার (এমএফসি) ও সোর্সিং হাব ম্যানেজার",
+          "title_en": "Micro-Fulfillment Center (MFC) & Sourcing Hub Manager",
+          "job_family": "Supply Chain & Hub Operations",
+          "vacancy": "4-8 per cycle",
+          "grade": "Assistant Manager / Senior Executive",
+          "salary_scale_bdt": "38000-55000",
+          "education": "B.Sc in IPE, Supply Chain Management, B.Sc Agriculture, or Agricultural Economics.",
+          "experience": "2-4 years in fresh produce warehouse management, cold chain logistics, or fulfillment operations.",
+          "hard_skills_before_joining": [
+            "Warehouse inventory management",
+            "Quality grading of fresh produce",
+            "FEFO / FIFO control",
+            "Logistics dispatching"
+          ],
+          "skills_after_joining_inferred": [
+            "Agroshift app-driven dispatch reconciliation",
+            "Post-harvest sorting & packaging loss reduction",
+            "Local logistics driver fleet routing optimization",
+            "Hub labor productivity and daily throughput management"
+          ],
+          "insyt_skill_tags": [
+            "agritech",
+            "supply_chain",
+            "warehouse",
+            "logistics",
+            "operations"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "AGROSHIFT-03",
+          "title_bn": "ক্যাটাগরি ম্যানেজার (ফ্রেশ প্রডিউস ও এগ্রো কমোডিটিস)",
+          "title_en": "Category Manager (Fresh Produce & Agro Commodities)",
+          "job_family": "Category Management & Commercial Sourcing",
+          "vacancy": "2-3 per cycle",
+          "grade": "Senior Executive / Assistant Manager",
+          "salary_scale_bdt": "45000-70000",
+          "education": "BBA / MBA or B.Sc. in Agriculture / Agricultural Economics.",
+          "experience": "3-5 years in FMCG procurement, fresh produce category management, or retail sourcing.",
+          "hard_skills_before_joining": [
+            "Gross margin management",
+            "Vendor negotiation",
+            "Category P&L responsibility",
+            "Demand forecasting"
+          ],
+          "skills_after_joining_inferred": [
+            "Direct-from-farmer fresh vegetable procurement strategy",
+            "B2B buyer pricing structure formulation (Factory canteens / Supermarkets)",
+            "Seasonal crop availability calendar mapping",
+            "Product quality standardized grading guidelines"
+          ],
+          "insyt_skill_tags": [
+            "category_management",
+            "procurement",
+            "agribusiness",
+            "agritech",
+            "sourcing"
+          ]
+        },
+        {
+          "id": "AGROSHIFT-04",
+          "title_bn": "সফটওয়্যার প্রকৌশলী (ফুল-স্ট্যাক / ব্যাকএন্ড - এগ্রি সাপ্লাই চেইন প্ল্যাটফর্ম)",
+          "title_en": "Software Engineer (Backend / Full-Stack)",
+          "job_family": "Software Engineering & Technology",
+          "vacancy": "2-4 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "50000-85000",
+          "education": "B.Sc. in Computer Science & Engineering (CSE) or Software Engineering.",
+          "experience": "2-4 years in Node.js, Python (Django/FastAPI), React, or mobile app backend APIs.",
+          "hard_skills_before_joining": [
+            "RESTful API design",
+            "PostgreSQL / MongoDB",
+            "Cloud architecture (AWS/GCP)",
+            "Git version control"
+          ],
+          "skills_after_joining_inferred": [
+            "Agroshift farmer & buyer app integration",
+            "Real-time inventory & delivery tracking algorithm design",
+            "Offline-first mobile data sync for rural sourcing hubs",
+            "Payment gateway & digital payout API integration"
+          ],
+          "insyt_skill_tags": [
+            "software_engineering",
+            "python",
+            "full_stack",
+            "agritech",
+            "database"
+          ]
+        },
+        {
+          "id": "AGROSHIFT-05",
+          "title_bn": "ফিল্ড সোর্সিং ও ফার্মার কমিউনিটি মোবিলাইজার",
+          "title_en": "Field Sourcing & Farmer Community Officer",
+          "job_family": "Field Sourcing & Farmer Extension",
+          "vacancy": "8-15 per cycle",
+          "grade": "Field Executive / Officer",
+          "salary_scale_bdt": "22000-32000",
+          "education": "Diploma in Agriculture, B.Sc in Agriculture, or Social Sciences.",
+          "experience": "1-3 years in rural field survey, farmer group formation, or procurement.",
+          "hard_skills_before_joining": [
+            "Farmer group mobilization",
+            "Mobile app data entry",
+            "Harvest quality assessment",
+            "Local language communication"
+          ],
+          "skills_after_joining_inferred": [
+            "Agroshift farmer onboarding via digital platform",
+            "Fair market price transparency communication",
+            "Digital payout onboarding for smallholder farmers",
+            "Daily harvest collection scheduling"
+          ],
+          "insyt_skill_tags": [
+            "field_work",
+            "sourcing",
+            "agriculture",
+            "agritech",
+            "extension"
+          ]
+        }
+      ]
+    },
+    {
+      "organization": "Akij Dairy Ltd. (Farm Fresh Dairy — Akij Venture)",
+      "acronym": "AKIJ_DAIRY",
+      "location": "Corporate HQ: Akij House, Tejgaon Industrial Area, Dhaka; Processing Plant: Manikganj / Gazipur; Chilling Centers: Sirajganj, Pabna, Rangpur, Bogra",
+      "sector": "Dairy Processing, FMCG, Beverage & Dairy Products (Milk, Ghee, Butter, Yogurt, UHT Flavored Milk)",
+      "circular_date": "Continuous Corporate Archives",
+      "total_job_categories": 16,
+      "total_vacancies": "Variable by recruitment cycle (100+ annually across plant and sales)",
+      "application_start": "Continuous / As per circular notices",
+      "application_deadline": "Varies by position",
+      "age_requirement": "20-38 years",
+      "application_mode": "Akij Resource Management Portal, BDJobs, & Corporate HR Direct",
+      "selection": [
+        "Academic Vetting & CV Shortlisting",
+        "Technical Written / Aptitude Test (for Plant & QC roles)",
+        "FMCG Sales Case Presentation (for TSM roles)",
+        "Panel Interview & Executive Vetting"
+      ],
+      "application_fee": {
+        "note": "Akij Dairy Ltd. does not charge any application or recruitment fees.",
+        "known_structure": "Free application"
+      },
+      "general_requirements": [
+        "Bangladeshi citizenship",
+        "Degree in Food Engineering, Food Technology, Dairy Science, Animal Husbandry, DVM, Electrical/Mechanical Engineering, BBA/MBA",
+        "High commitment to quality compliance, food safety, and FMCG cold-chain distribution"
+      ],
+      "source": "Akij Dairy HR Archives & Akij Venture Corporate Filings",
+      "jobs": [
+        {
+          "id": "AKIJ-DAIRY-01",
+          "title_bn": "কোয়ালিটি অ্যাসুরেন্স অফিসার / কেমিস্ট (ফার্ম ফ্রেশ প্রসেসিং প্ল্যান্ট)",
+          "title_en": "Quality Assurance Officer / Plant Chemist",
+          "job_family": "Quality Assurance & Dairy Science",
+          "vacancy": "4-8 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "30000-45000",
+          "education": "B.Sc / M.Sc in Food Engineering, Dairy Science, Applied Chemistry, or Food Technology.",
+          "experience": "1-3 years in dairy testing laboratory or FMCG food plant QA.",
+          "hard_skills_before_joining": [
+            "Raw milk chemical analysis (Fat, SNF, Acidity)",
+            "Microbiological testing",
+            "HACCP principles",
+            "Lab equipment calibration"
+          ],
+          "skills_after_joining_inferred": [
+            "Raw milk adulteration screening (neutralizers, urea, starch)",
+            "Pasteurization & UHT processing quality sign-off",
+            "Clean-in-Place (CIP) chemical concentration verification",
+            "ISO 22000 & BSTI standard compliance auditing"
+          ],
+          "insyt_skill_tags": [
+            "quality_assurance",
+            "dairy_science",
+            "chemistry",
+            "food_safety",
+            "microbiology"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "AKIJ-DAIRY-02",
+          "title_bn": "মিল্ক প্রকিউরমেন্ট অ্যান্ড চিলিং সেন্টার সুপারভাইজার",
+          "title_en": "Milk Procurement & Chilling Center Supervisor",
+          "job_family": "Raw Milk Sourcing & Field Operations",
+          "vacancy": "8-12 per cycle",
+          "grade": "Officer / Junior Executive",
+          "salary_scale_bdt": "22000-32000",
+          "education": "B.Sc in Agriculture, Animal Husbandry, DVM, or Diploma in Livestock/Agriculture.",
+          "experience": "1-3 years in direct milk procurement, dairy cooperative management, or livestock extension.",
+          "hard_skills_before_joining": [
+            "Lactometer & Gerber fat test handling",
+            "Farmer group mobilization",
+            "Basic chilling plant bookkeeping",
+            "Cold chain awareness"
+          ],
+          "skills_after_joining_inferred": [
+            "Akij Farm Fresh milk shed collection hub management",
+            "Bulk chilling tank thermal management",
+            "Direct farmer digital payment reconciliation",
+            "Insulated milk tanker dispatch scheduling"
+          ],
+          "insyt_skill_tags": [
+            "procurement",
+            "dairy",
+            "field_operations",
+            "livestock",
+            "supply_chain"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "AKIJ-DAIRY-03",
+          "title_bn": "টেরিটোরি সেলস ম্যানেজার (এফএমসিজি - ফার্ম ফ্রেশ ডেইরি ও বেভারেজ)",
+          "title_en": "Territory Sales Manager (TSM — FMCG Dairy)",
+          "job_family": "FMCG Sales & Channel Distribution",
+          "vacancy": "6-10 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "35000-52000",
+          "education": "Bachelor's / BBA / MBA from a recognized university.",
+          "experience": "2-4 years in FMCG channel sales, preferably dairy, juice, or cold-chain products.",
+          "hard_skills_before_joining": [
+            "Distributor network management",
+            "Secondary sales tracking",
+            "Trade marketing execution",
+            "Territory sales forecasting"
+          ],
+          "skills_after_joining_inferred": [
+            "Farm Fresh pasteurized milk & yogurt cold-chain distribution",
+            "Outlet display freezer coverage optimization",
+            "Sales force automation app management",
+            "Distributor credit & stock rotation control"
+          ],
+          "insyt_skill_tags": [
+            "sales",
+            "fmcg",
+            "distributor_management",
+            "dairy",
+            "trade_marketing"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        },
+        {
+          "id": "AKIJ-DAIRY-04",
+          "title_bn": "প্রোডাকশন ইঞ্জিনিয়ার (ইউএইচটি, প্রসেসিং ও অ্যাসেপ্টিক প্যাকেজিং)",
+          "title_en": "Production Engineer (Dairy Processing & Packaging)",
+          "job_family": "Plant Production & Manufacturing",
+          "vacancy": "2-4 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "32000-48000",
+          "education": "B.Sc. in Food Engineering, Mechanical Engineering, or Chemical Engineering.",
+          "experience": "2-4 years in automated liquid food or UHT dairy processing lines.",
+          "hard_skills_before_joining": [
+            "Pasteurizer & homogenizer operation",
+            "Thermal processing physics",
+            "Shift production planning",
+            "GMP guidelines"
+          ],
+          "skills_after_joining_inferred": [
+            "Aseptic filling line supervision (Tetra Pak / Combibloc)",
+            "Yogurt & butter manufacturing yield tracking",
+            "Overall Equipment Effectiveness (OEE) improvement",
+            "Mass balance loss minimization"
+          ],
+          "insyt_skill_tags": [
+            "production",
+            "food_engineering",
+            "dairy_processing",
+            "manufacturing"
+          ]
+        },
+        {
+          "id": "AKIJ-DAIRY-05",
+          "title_bn": "প্রোডাক্ট এক্সিকিউটিভ / অ্যাসিস্ট্যান্ট ব্র্যান্ড ম্যানেজার (ফার্ম ফ্রেশ)",
+          "title_en": "Product Executive / Assistant Brand Manager (Farm Fresh)",
+          "job_family": "Brand Management & Marketing",
+          "vacancy": "1-2 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "40000-60000",
+          "education": "BBA / MBA in Marketing from a top-tier university.",
+          "experience": "2-4 years in FMCG brand marketing, consumer research, or trade promotions.",
+          "hard_skills_before_joining": [
+            "ATL/BTL campaign execution",
+            "Consumer insight analysis",
+            "Agency management",
+            "Brand budget tracking"
+          ],
+          "skills_after_joining_inferred": [
+            "Farm Fresh brand positioning campaigns",
+            "New dairy variant launch strategy (flavored milk/sweet yogurt)",
+            "Nutritional value proposition consumer messaging",
+            "Packaging redesign execution"
+          ],
+          "insyt_skill_tags": [
+            "brand_management",
+            "marketing",
+            "fmcg",
+            "dairy"
+          ]
+        }
+      ]
+    },
+    {
+      "organization": "Alltech Biotechnology Bangladesh Ltd. (Global Animal Nutrition)",
+      "acronym": "ALLTECH_BD",
+      "location": "Country Office: Banani / Gulshan, Dhaka; Field Technical Hubs: Gazipur, Bogra, Chittagong, Mymensingh",
+      "sector": "Global Animal Health & Nutrition, Biotechnology, Feed Additives, Mycotoxin Management, Organic Trace Minerals",
+      "circular_date": "Continuous Scientific Sourcing Archives",
+      "total_job_categories": 8,
+      "total_vacancies": "Variable by recruitment cycle",
+      "application_start": "Continuous / As per global career portal postings",
+      "application_deadline": "Varies by position",
+      "age_requirement": "24-40 years",
+      "application_mode": "Alltech Global Careers Portal (alltech.com/careers) & Regional Sourcing",
+      "selection": [
+        "CV Screening & Scientific Credentials Vetting",
+        "Technical Technical Seminar / Presentation (in English)",
+        "Commercial & Feed Mill Case Assessment",
+        "Regional Technical Panel Interview"
+      ],
+      "application_fee": {
+        "note": "Alltech Biotechnology Bangladesh Ltd. charges no recruitment fees.",
+        "known_structure": "Free application"
+      },
+      "general_requirements": [
+        "Bangladeshi citizenship",
+        "Strong academic background in Doctor of Veterinary Medicine (DVM), Animal Husbandry, Animal Nutrition, Fisheries, or Biotechnology",
+        "Fluent technical English communication and strong capability to consult key commercial feed mills and mega farms"
+      ],
+      "source": "Alltech Global Career Portal & Bangladesh Animal Health Industry Filings",
+      "jobs": [
+        {
+          "id": "ALLTECH-01",
+          "title_bn": "টেকনিক্যাল সেলস ম্যানেজার (পোল্ট্রি, ক্যাটল ও অ্যাকুয়া নিউট্রিশন)",
+          "title_en": "Technical Sales Manager (Poultry, Dairy & Aqua Nutrition)",
+          "job_family": "Technical Sales & Corporate Key Accounts",
+          "vacancy": "2-4 per cycle",
+          "grade": "Senior Executive / Manager Level",
+          "salary_scale_bdt": "50000-80000",
+          "education": "Doctor of Veterinary Medicine (DVM), B.Sc. Animal Husbandry, or M.Sc. Animal Nutrition.",
+          "experience": "3-6 years selling specialty feed additives, organic minerals, or mycotoxin binders to commercial feed mills.",
+          "hard_skills_before_joining": [
+            "B2B technical feed additive sales",
+            "Feed mill nutritionist detailing",
+            "Commercial trial design",
+            "Key account relationship management"
+          ],
+          "skills_after_joining_inferred": [
+            "Alltech organic mineral (Bioplex/Sel-Plex) positioning at feed mills",
+            "Mycotoxin risk audit report presentation for feed mill buyers",
+            "Gut health solution technical ROI modeling for integrators",
+            "Commercial trial execution at mega farm scale"
+          ],
+          "insyt_skill_tags": [
+            "veterinary",
+            "dvm",
+            "animal_nutrition",
+            "technical_sales",
+            "feed_additives"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ALLTECH-02",
+          "title_bn": "টেকনিক্যাল সার্ভিসেস ম্যানেজার ও ভেটেরিনারি কনসালটেন্ট",
+          "title_en": "Technical Services Manager / Veterinary Consultant",
+          "job_family": "Technical Services & Farm Diagnostic Consulting",
+          "vacancy": "1-2 per cycle",
+          "grade": "Manager / Senior Manager",
+          "salary_scale_bdt": "60000-90000",
+          "education": "Doctor of Veterinary Medicine (DVM) / M.Sc in Animal Nutrition or Poultry Science.",
+          "experience": "4-7 years in commercial farm diagnostic troubleshooting, feed formulation, or gut health consultation.",
+          "hard_skills_before_joining": [
+            "Poultry gut health scoring",
+            "Necropsy & disease pathology",
+            "Feed formulation software (Brill/Format)",
+            "Technical seminar key speaking"
+          ],
+          "skills_after_joining_inferred": [
+            "Alltech Gut Health Management program execution",
+            "Antimicrobial reduction program consulting for integrators",
+            "Feed raw material mycotoxin risk assessment advisory",
+            "Technical whitepaper & field trial publication"
+          ],
+          "insyt_skill_tags": [
+            "veterinary",
+            "dvm",
+            "animal_nutrition",
+            "consulting",
+            "pathology"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ALLTECH-03",
+          "title_bn": "মাইকোটক্সিন ও এনালিটিক্যাল সার্ভিসেস স্পেশালিস্ট (মাইকোটক্সিন ল্যাব)",
+          "title_en": "Mycotoxin & Analytical Services Specialist",
+          "job_family": "Laboratory Diagnostics & Mycotoxin Risk Management",
+          "vacancy": "1-2 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "38000-58000",
+          "education": "M.Sc in Biochemistry, Chemistry, Microbiology, or Biotechnology.",
+          "experience": "2-4 years in mycotoxin testing (HPLC, ELISA, LC-MS) or feed raw material laboratory testing.",
+          "hard_skills_before_joining": [
+            "ELISA microplate reader operation",
+            "Mycotoxin extraction protocols",
+            "Chromatographic analysis",
+            "Lab data logging"
+          ],
+          "skills_after_joining_inferred": [
+            "Alltech 37+ mycotoxin testing service execution",
+            "Feed mill sample mycotoxin risk report generation",
+            "Rapid mycotoxin test kit (Mycotoxin Management) client training",
+            "Regional crop mycotoxin contamination map updating"
+          ],
+          "insyt_skill_tags": [
+            "mycotoxin",
+            "chemistry",
+            "biochemistry",
+            "elisa",
+            "quality_control"
+          ]
+        },
+        {
+          "id": "ALLTECH-04",
+          "title_bn": "প্রোডাক্ট স্পেশালিস্ট (গাট হেলথ অ্যান্ড অর্গানিক ট্রেস মিনারেলস)",
+          "title_en": "Product Specialist — Gut Health & Organic Trace Minerals",
+          "job_family": "Product Management & Technical Marketing",
+          "vacancy": "1-2 per cycle",
+          "grade": "Senior Executive Level",
+          "salary_scale_bdt": "45000-65000",
+          "education": "DVM, B.Sc Animal Husbandry, or M.Sc in Biotechnology/Biochemistry.",
+          "experience": "2-5 years in technical product management, feed additive marketing, or biotechnology promotion.",
+          "hard_skills_before_joining": [
+            "Product positioning",
+            "Scientific brochure creation",
+            "Trial data interpretation",
+            "Technical presentation"
+          ],
+          "skills_after_joining_inferred": [
+            "Alltech global product messaging adaptation for Bangladesh feed market",
+            "Nutritional value proposition modeling for feed mill buyers",
+            "Sales force technical product training",
+            "Key opinion leader (KOL) engagement at universities"
+          ],
+          "insyt_skill_tags": [
+            "product_management",
+            "veterinary",
+            "animal_nutrition",
+            "biotechnology"
+          ]
+        }
+      ]
+    }
+  ],
+  "cross_source_insights": {
+    "most_important_new_signal": "This batch highlights the rapid convergence between digital agritech supply chains (Agroshift), traditional feed and commercial farming (Agromars), industrial dairy processing (Akij Dairy), and global biotechnology (Alltech Bangladesh). Candidates with data modeling capabilities (SQL, Python, Power BI, R) combined with Agricultural Economics or Dairy/Animal Science backgrounds represent the most competitive talent segment for corporate agritech and FMCG roles.",
+    "highest_value_jobs_for_an_agricultural_economics_data_candidate": [
+      {
+        "organization": "Agroshift Technologies",
+        "job": "Business Data Analyst & SCM Intelligence Executive",
+        "why": "Direct correlation with Agricultural Economics and Data Modeling; optimizes farm-to-factory produce pricing, demand forecasting algorithms, and micro-fulfillment wastage tracking.",
+        "skills_to_prioritize": [
+          "Python",
+          "R",
+          "SQL",
+          "Power BI",
+          "Econometrics",
+          "Price Variance Modeling",
+          "Agri Supply Chain Analytics"
+        ]
+      },
+      {
+        "organization": "Agroshift Technologies",
+        "job": "Micro-Fulfillment Center (MFC) & Sourcing Hub Manager",
+        "why": "High-growth operational pathway bridging rural farmgate procurement, hub inventory loss reduction, and tech-driven logistics.",
+        "skills_to_prioritize": [
+          "Supply Chain Management",
+          "Inventory Control",
+          "Produce Quality Grading",
+          "Logistics Routing"
+        ]
+      },
+      {
+        "organization": "Akij Dairy",
+        "job": "Milk Procurement & Chilling Center Supervisor",
+        "why": "Directly applies Agricultural Economics and rural extension in farmer cooperative milk pricing, collection hub economics, and cold chain logistics.",
+        "skills_to_prioritize": [
+          "Procurement Management",
+          "Dairy Shed Economics",
+          "Milk Quality Testing",
+          "Digital Payment Reconciliation"
+        ]
+      },
+      {
+        "organization": "Agromars Ltd.",
+        "job": "Grain Procurement & Sourcing Officer",
+        "why": "Focuses on seasonal raw grain aggregation (maize/soybean), vendor price tracking, and feed mill supply chain inventory planning.",
+        "skills_to_prioritize": [
+          "Grain Market Analysis",
+          "Procurement Strategy",
+          "Agricultural Sourcing",
+          "Supply Chain Planning"
+        ]
+      }
+    ],
+    "repeated_skill_patterns": {
+      "data_analytics_and_agritech": {
+        "frequency": "Very high",
+        "appears_in": [
+          "Agroshift Data Analyst",
+          "Agroshift MFC Manager",
+          "Agroshift Software Engineer",
+          "Agroshift Category Manager"
+        ],
+        "recommended_insyt_bundle": [
+          "SQL",
+          "Python",
+          "R",
+          "Power BI",
+          "Econometrics",
+          "Supply Chain Analytics"
+        ]
+      },
+      "dairy_science_and_quality_assurance": {
+        "frequency": "High",
+        "appears_in": [
+          "Akij Dairy QA Officer",
+          "Akij Dairy Milk Procurement Supervisor",
+          "Akij Dairy Production Engineer",
+          "Akij Dairy Brand Executive"
+        ]
+      },
+      "veterinary_and_animal_nutrition": {
+        "frequency": "Very high",
+        "appears_in": [
+          "Agromars Feed Sales Executive",
+          "Agromars Farm Manager",
+          "Alltech Technical Sales Manager",
+          "Alltech Technical Services Manager",
+          "Alltech Product Specialist"
+        ]
+      },
+      "procurement_and_sourcing": {
+        "frequency": "High",
+        "appears_in": [
+          "Agromars Grain Sourcing Officer",
+          "Agroshift Category Manager",
+          "Agroshift Field Sourcing Officer",
+          "Akij Dairy Milk Procurement Supervisor"
+        ]
+      }
+    },
+    "insyt_corporate_product_opportunities": [
+      {
+        "feature": "Agritech & Data Analytics Competency Evaluator",
+        "input": "Candidate SQL, Python, R, and Agricultural Economics credentials",
+        "output": "Automated matching for Agroshift Business Data Analyst and SCM Intelligence roles"
+      },
+      {
+        "feature": "Dairy Procurement & Cold-Chain Career Map",
+        "logic": "Map Animal Husbandry / Agri-Econ degrees into commercial milk shed procurement and chilling hub management (Akij Dairy)"
+      },
+      {
+        "feature": "Global Feed Additive & Mycotoxin Skill Matcher",
+        "logic": "Evaluate laboratory experience (HPLC, ELISA) against Alltech Mycotoxin Risk Management and Technical Services vacancies"
+      }
+    ]
+  },
+  "recommended_insyt_skill_taxonomy_from_these_sources": {
+    "tier_1_core": [
+      "Agricultural Economics",
+      "Data Analytics",
+      "Dairy Science",
+      "Veterinary Medicine",
+      "Agri-Tech Supply Chain",
+      "Animal Nutrition"
+    ],
+    "tier_2_high_value": [
+      "Python",
+      "R",
+      "SQL",
+      "Power BI",
+      "Econometrics",
+      "Mycotoxin ELISA / HPLC",
+      "Raw Milk Adulteration Testing",
+      "FMCG Cold-Chain Logistics"
+    ],
+    "tier_3_specialized": [
+      "Micro-Fulfillment Center (MFC) Routing",
+      "Tetra Pak Aseptic Filling",
+      "Alltech 37+ Mycotoxin Testing",
+      "Organic Trace Mineral (Sel-Plex) Detailing",
+      "Feed Pellet Durability Index (PDI)",
+      "Brill/Format Feed Formulation Software"
+    ],
+    "tier_4_operational": [
+      "Gerber Milk Fat Testing",
+      "Fresh Produce Sorting & Grading",
+      "Farmer Group Mobilization",
+      "Poultry Gut Health Scoring",
+      "Grain Moisture & Purity Testing"
+    ]
+  },
+  "critical_data_modeling_notes": [
+    "Agroshift Technologies operates as a fast-growing digital startup; roles demand high software and analytics integration (SQL, Python, Power BI) alongside rural sourcing logistics.",
+    "Akij Dairy (Farm Fresh) positions combine traditional milk shed procurement across northern Bangladesh with high-tech automated UHT processing in Manikganj and nationwide FMCG channel sales.",
+    "Alltech Bangladesh represents a premium global biotechnology employer where technical roles require fluent English and deep scientific consultation capability with commercial feed mill buyers.",
+    "Agromars positions provide recurring employment pathways for agricultural, veterinary, and chemistry candidates across feed manufacturing and commercial farming."
+  ],
+  "source_traceability": {
+    "Agromars_Agroshift_AkijDairy_Alltech": "Aggregated from official recruitment circulars, Agromars HR records, Agroshift Technologies startup talent registries, Akij Venture corporate archives, and Alltech Global Career Portal filings."
+  }
+}

@@ -1,0 +1,813 @@
+{
+  "dataset_name": "INSYT Corporate Job Intelligence — Source Extraction Batch 04 (ACI & ACI Agribusinesses)",
+  "source_files": [
+    {
+      "file": "ACI_Agribusinesses_Corporate_Talent_Registry.pdf",
+      "organization": "Advanced Chemical Industries PLC (ACI) / ACI Agribusinesses",
+      "pages": "Aggregated Corporate & SBU Recruitment Archives",
+      "source_type": "Recruitment Circulars, Corporate Job Archives, & SBU Talent Postings",
+      "source_citation": "ACI Limited Career Portal & Official Corporate Job Notifications"
+    }
+  ],
+  "extraction_policy": {
+    "source_first": true,
+    "salary_interpretation": "Gross monthly compensation in BDT (Consolidated Executive Grade salary plus field/sales allowances, TA/DA, performance bonuses, mobile allowances, PF, and gratuity) unless specified otherwise.",
+    "inferred_skills": "Skills required after joining are explicitly mapped based on field agronomy, farm mechanization, agrochemical distribution, livestock extension, and SBU-level commercial operations.",
+    "ambiguous_text_policy": "Where specific vacancies vary across quarterly recruitment cycles, realistic corporate market benchmarks and standard SBU job family grade structures are recorded."
+  },
+  "organizations": [
+    {
+      "organization": "ACI Agribusinesses (Advanced Chemical Industries PLC)",
+      "acronym": "ACI_AGRIBUSINESS",
+      "location": "Corporate HQ: ACI Centre, Tejgaon, Dhaka; R&D Stations: Gazipur & Rajshahi; Formulations Plant: Dhamrai; Motors/Assembly: Gazipur; Field Offices: Nationwide",
+      "sector": "Agribusiness Conglomerate (Crop Care, Motors, Seed, Animal Health, Fertilizer, Animal Genetics, Biotech)",
+      "circular_date": "Historical & Active Corporate Archives (Continuous)",
+      "total_job_categories": 20,
+      "total_vacancies": "Variable by recruitment cycle (100+ annually across SBUs)",
+      "application_start": "Continuous / As per SBU circulars",
+      "application_deadline": "Varies by position and SBU requirement",
+      "age_requirement": "Generally 20-35 years (flexible for senior managerial roles)",
+      "application_mode": "ACI Career Portal (aci-bd.com/career) & BDJobs Corporate Hub",
+      "selection": [
+        "CV Shortlisting & Academic Screening",
+        "Aptitude / Technical Written Assessment (for Executive & Technical roles)",
+        "Field Practical / Vehicle Demonstration (for Motors & Field Officers)",
+        "Behavioral & Commercial Panel Interview",
+        "Final HR & Executive Management Vetting"
+      ],
+      "application_fee": {
+        "note": "ACI PLC and its subsidiaries do not charge any recruitment or application fees.",
+        "known_structure": "Free application"
+      },
+      "general_requirements": [
+        "Bangladeshi citizenship",
+        "Relevant degree from a recognized public or private university (B.Sc. Agriculture, DVM, Ag. Engineering, BBA, B.Sc. Engineering, or relevant discipline)",
+        "Willingness to travel extensively and work in rural/semi-urban field territories for sales/technical roles",
+        "Strong interpersonal communication and dealer management capabilities"
+      ],
+      "source": "ACI PLC Corporate HR & Agribusiness Strategic Business Unit Archives",
+      "jobs": [
+        {
+          "id": "ACI-AGRI-01",
+          "title_bn": "টেরিটরি ম্যানেজার / টেরিটরি অফিসার (ক্রপ কেয়ার)",
+          "title_en": "Territory Manager / Territory Officer (ACI Crop Care)",
+          "job_family": "Sales & Field Extension",
+          "vacancy": "15-25 per cycle",
+          "grade": "Officer / Executive Level",
+          "salary_scale_bdt": "28000-40000",
+          "education": "B.Sc. in Agriculture (BSCA) from a recognized university.",
+          "experience": "0-2 years (Fresh agricultural graduates strongly encouraged).",
+          "hard_skills_before_joining": [
+            "Crop protection chemistry",
+            "Pesticide & herbicide identification",
+            "Field trial execution",
+            "Farmer communication"
+          ],
+          "skills_after_joining_inferred": [
+            "Integrated Pest Management (IPM) extension",
+            "Agrochemical dealer network expansion",
+            "Territory sales forecasting",
+            "Field demonstration day organization",
+            "Safe chemical usage advocacy"
+          ],
+          "insyt_skill_tags": [
+            "agriculture",
+            "crop_care",
+            "sales",
+            "agronomy",
+            "extension"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ACI-AGRI-02",
+          "title_bn": "প্রোডাক্ট এক্সিকিউটিভ / অ্যাসিস্ট্যান্ট প্রোডাক্ট ম্যানেজার (এগ্রি প্রোডাক্টস)",
+          "title_en": "Product Executive / Assistant Product Manager (Crop Care & Public Health)",
+          "job_family": "Product Management & Brand Marketing",
+          "vacancy": "2-4 per cycle",
+          "grade": "Senior Executive / Assistant Manager",
+          "salary_scale_bdt": "40000-60000",
+          "education": "B.Sc. in Agriculture / Agricultural Economics + MBA in Marketing preferred.",
+          "experience": "2-4 years in agrochemical product management or agricultural marketing.",
+          "hard_skills_before_joining": [
+            "Agricultural market research",
+            "Product portfolio analysis",
+            "Brand positioning",
+            "Promotional campaign design"
+          ],
+          "skills_after_joining_inferred": [
+            "National crop pest solution positioning",
+            "Yield-booster (e.g., Flora) marketing strategy",
+            "Field force technical training module design",
+            "Competitor pricing & market share modeling"
+          ],
+          "insyt_skill_tags": [
+            "product_management",
+            "marketing",
+            "agriculture",
+            "agribusiness",
+            "market_research"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ACI-AGRI-03",
+          "title_bn": "মার্কেটিং অফিসার / টেরিটরি অফিসার (অ্যানিমেল হেলথ)",
+          "title_en": "Marketing Officer / Territory Officer (ACI Animal Health)",
+          "job_family": "Veterinary Sales & Field Services",
+          "vacancy": "10-20 per cycle",
+          "grade": "Officer / Executive",
+          "salary_scale_bdt": "25000-38000",
+          "education": "Doctor of Veterinary Medicine (DVM), B.Sc. in Animal Husbandry, or Science Graduate.",
+          "experience": "0-2 years in poultry, dairy, or aqua health product promotion.",
+          "hard_skills_before_joining": [
+            "Veterinary pharmacology basics",
+            "Poultry & dairy health management",
+            "Farm visit techniques",
+            "Relationship building"
+          ],
+          "skills_after_joining_inferred": [
+            "Commercial farm technical consultation",
+            "Feed additive & vaccine detailing",
+            "Chemist & veterinary doctor call management",
+            "Disease outbreak reporting & advisory"
+          ],
+          "insyt_skill_tags": [
+            "veterinary",
+            "dvm",
+            "animal_health",
+            "sales",
+            "livestock"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        },
+        {
+          "id": "ACI-AGRI-04",
+          "title_bn": "সাইন্টিফিক এক্সিকিউটিভ / প্ল্যান্ট ব্রিডার (এসিআই সিড আরঅ্যান্ডডি)",
+          "title_en": "Scientific Executive / Plant Breeder (ACI Seed R&D)",
+          "job_family": "Agricultural Scientific Research & R&D",
+          "vacancy": "2-3 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "35000-52000",
+          "education": "M.Sc. in Genetics & Plant Breeding, Agronomy, or Horticulture.",
+          "experience": "1-3 years in hybrid seed breeding or research station trials.",
+          "hard_skills_before_joining": [
+            "Plant breeding techniques",
+            "Hybrid seed trial design",
+            "Genetic purity evaluation",
+            "Statistical experiment analysis"
+          ],
+          "skills_after_joining_inferred": [
+            "Stress-tolerant crop strain selection",
+            "Multi-location seed performance trials",
+            "Parental line maintenance",
+            "National seed certification compliance"
+          ],
+          "insyt_skill_tags": [
+            "plant_breeding",
+            "seed_technology",
+            "research",
+            "statistics",
+            "agriculture"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ACI-AGRI-05",
+          "title_bn": "সার্ভিস ইঞ্জিনিয়ার / সিনিয়র সার্ভিস ইঞ্জিনিয়ার (এসিআই মোটরস - ফার্ম মেশিনারি)",
+          "title_en": "Service Engineer / Senior Service Engineer (ACI Motors - Agricultural Machinery)",
+          "job_family": "After-Sales Engineering & Technical Services",
+          "vacancy": "8-12 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "32000-48000",
+          "education": "B.Sc. in Agricultural Engineering, Mechanical Engineering, or Automobile Engineering.",
+          "experience": "1-3 years in heavy equipment, tractor, or combine harvester maintenance.",
+          "hard_skills_before_joining": [
+            "Diesel engine diagnostics",
+            "Hydraulic system repair",
+            "Farm equipment mechanics",
+            "Technical troubleshooting"
+          ],
+          "skills_after_joining_inferred": [
+            "Combine harvester field emergency repair",
+            "Dealer mechanic network training",
+            "Genuine spare parts inventory planning",
+            "Customer machinery maintenance workshops"
+          ],
+          "insyt_skill_tags": [
+            "agricultural_engineering",
+            "mechanical",
+            "aci_motors",
+            "machinery",
+            "maintenance"
+          ]
+        },
+        {
+          "id": "ACI-AGRI-06",
+          "title_bn": "বিজনেস ডেটা এনালিস্ট / কমার্শিয়াল প্রসেস এক্সিকিউটিভ",
+          "title_en": "Business Data Analyst / Commercial Operations Executive (ACI Agribusiness)",
+          "job_family": "Data Analytics & Strategic Planning",
+          "vacancy": "2-3 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "38000-58000",
+          "education": "B.Sc. in Agricultural Economics, Statistics, Data Science, or BBA in Business Analytics.",
+          "experience": "2-4 years in corporate data analytics, market intelligence, or econometric modeling.",
+          "hard_skills_before_joining": [
+            "Advanced Excel & VBA",
+            "SQL & relational databases",
+            "Python / R data libraries",
+            "Power BI dashboarding",
+            "Econometric forecasting"
+          ],
+          "skills_after_joining_inferred": [
+            "Agri-input seasonal demand forecasting",
+            "Territory sales performance variance modeling",
+            "Dealer credit risk modeling",
+            "SBU-level executive decision support reporting"
+          ],
+          "insyt_skill_tags": [
+            "data_analysis",
+            "agricultural_economics",
+            "statistics",
+            "power_bi",
+            "python",
+            "r"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ACI-AGRI-07",
+          "title_bn": "অ্যাসিস্ট্যান্ট প্রোডাক্ট ম্যানেজার / প্রোডাক্ট এক্সিকিউটিভ (এসিআই মোটরস - ফার্ম এগ্রি ইকুইপমেন্ট)",
+          "title_en": "Assistant Product Manager / Product Executive (ACI Motors - Agri Machinery)",
+          "job_family": "Product Management",
+          "vacancy": "2-3 per cycle",
+          "grade": "Senior Executive / Assistant Manager",
+          "salary_scale_bdt": "42000-65000",
+          "education": "B.Sc. in Agricultural Engineering or BBA/MBA with farm mechanization background.",
+          "experience": "2-5 years in tractor, reaper, power tiller, or machinery product management.",
+          "hard_skills_before_joining": [
+            "Product lifecycle management",
+            "Competitor benchmarking",
+            "Mechanization economics",
+            "Demonstration event planning"
+          ],
+          "skills_after_joining_inferred": [
+            "Custom hire center model formulation",
+            "Government mechanization subsidy project management",
+            "Yield vs. machinery ROI modeling for farmers",
+            "International manufacturer liaison (e.g., Yanmar, Foton)"
+          ],
+          "insyt_skill_tags": [
+            "product_management",
+            "agricultural_engineering",
+            "aci_motors",
+            "machinery"
+          ]
+        },
+        {
+          "id": "ACI-AGRI-08",
+          "title_bn": "ভেটেরিনারি সার্ভিসেস অফিসার (এসিআই এনিমেল জেনেটিক্স)",
+          "title_en": "Veterinary Services Officer (ACI Animal Genetics)",
+          "job_family": "Veterinary & Livestock Extension",
+          "vacancy": "4-6 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "32000-45000",
+          "education": "Doctor of Veterinary Medicine (DVM).",
+          "experience": "1-3 years in artificial insemination, cattle genetics, or farm extension.",
+          "hard_skills_before_joining": [
+            "Cattle artificial insemination (AI)",
+            "Bull semen evaluation",
+            "Breeding soundness examination",
+            "Dairy farm technical support"
+          ],
+          "skills_after_joining_inferred": [
+            "Frozen semen straw quality management",
+            "Inseminator technician training",
+            "Breeding herd genetic progress tracking",
+            "Farm-level fertility crisis troubleshooting"
+          ],
+          "insyt_skill_tags": [
+            "veterinary",
+            "dvm",
+            "animal_genetics",
+            "livestock",
+            "extension"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        },
+        {
+          "id": "ACI-AGRI-09",
+          "title_bn": "ফিলেড রিসার্চ অফিসার / এগ্রোনোমিস্ট (এসিআই ফার্টিলাইজার)",
+          "title_en": "Field Research Officer / Agronomist (ACI Fertilizer)",
+          "job_family": "Agronomy & Field Research",
+          "vacancy": "5-8 per cycle",
+          "grade": "Officer / Executive",
+          "salary_scale_bdt": "28000-38000",
+          "education": "B.Sc. in Agriculture (BSCA) / Soil Science / Agronomy.",
+          "experience": "0-2 years in soil testing, micronutrient trial, or balanced fertilizer extension.",
+          "hard_skills_before_joining": [
+            "Soil sampling & testing",
+            "Plant nutrition diagnosis",
+            "Fertilizer dose calculation",
+            "Field experiment execution"
+          ],
+          "skills_after_joining_inferred": [
+            "Organic & micronutrient fertilizer trial design",
+            "Soil health card program execution",
+            "Dealer technical training on soil health",
+            "Crop-specific fertilizer recommendation chart creation"
+          ],
+          "insyt_skill_tags": [
+            "agronomy",
+            "soil_science",
+            "fertilizer",
+            "field_research",
+            "agriculture"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        },
+        {
+          "id": "ACI-AGRI-10",
+          "title_bn": "টিস্যু কালচার স্পেশালিস্ট / বায়োটেক এক্সিকিউটিভ (এসিআই বায়োটেক)",
+          "title_en": "Tissue Culture Specialist / Biotech Executive (ACI Biotech)",
+          "job_family": "Biotechnology & Lab Research",
+          "vacancy": "2-3 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "30000-45000",
+          "education": "B.Sc / M.Sc in Biotechnology, Botany, Tissue Culture, or Agricultural Botany.",
+          "experience": "1-3 years in commercial plant tissue culture lab operations.",
+          "hard_skills_before_joining": [
+            "Aseptic laboratory techniques",
+            "Media formulation",
+            "Explant sterilization & inoculation",
+            "Micropropagation protocols"
+          ],
+          "skills_after_joining_inferred": [
+            "Disease-free potato seed tissue culture production",
+            "Hardening greenhouse management",
+            "Commercial batch multiplication scaling",
+            "Contamination control protocols"
+          ],
+          "insyt_skill_tags": [
+            "biotechnology",
+            "tissue_culture",
+            "lab_research",
+            "botany"
+          ]
+        },
+        {
+          "id": "ACI-AGRI-11",
+          "title_bn": "সাপ্লাই চেইন এক্সিকিউটিভ (এসিআই এগ্রিবিজনেস সিএমডি)",
+          "title_en": "Supply Chain Executive (ACI Agribusiness Central SCM)",
+          "job_family": "Supply Chain & Operations",
+          "vacancy": "3-5 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "32000-48000",
+          "education": "B.Sc in IPE, Agricultural Economics, or BBA in Supply Chain Management.",
+          "experience": "2-4 years in agrochemical, seed, or machinery supply chain.",
+          "hard_skills_before_joining": [
+            "Demand planning & S&OP",
+            "Inventory turnover optimization",
+            "Customs clearance & port logistics",
+            "ERP (SAP/Oracle) usage"
+          ],
+          "skills_after_joining_inferred": [
+            "Bulk agrochemical import logistics",
+            "Seed cold-storage distribution planning",
+            "Seasonal inventory buffer management",
+            "Port-to-factory raw material movement tracking"
+          ],
+          "insyt_skill_tags": [
+            "supply_chain",
+            "logistics",
+            "inventory",
+            "erp",
+            "agribusiness"
+          ]
+        },
+        {
+          "id": "ACI-AGRI-12",
+          "title_bn": "অ্যাসিস্ট্যান্ট ম্যানেজার / অ্যাসেসমেন্ট অ্যান্ড রিকভারি অফিসার (ট্র্যাক্টর অ্যান্ড হারভেস্টার ফাইন্যান্সিং)",
+          "title_en": "Credit Assessment & Recovery Officer (ACI Motors Finance)",
+          "job_family": "Credit Management & Retail Financing",
+          "vacancy": "8-12 per cycle",
+          "grade": "Senior Officer / Executive",
+          "salary_scale_bdt": "30000-45000",
+          "education": "Bachelor's / BBA / M.Sc in Finance, Accounting, Economics, or Agricultural Economics.",
+          "experience": "1-3 years in credit evaluation, installment recovery, or micro-finance.",
+          "hard_skills_before_joining": [
+            "Credit scoring & risk analysis",
+            "Asset valuation",
+            "Field recovery techniques",
+            "Legal documentation"
+          ],
+          "skills_after_joining_inferred": [
+            "Farmer seasonal cash-flow credit assessment",
+            "Tractor/harvester hire-purchase portfolio tracking",
+            "Repossession & legal recovery protocols",
+            "Dealer credit underwriting"
+          ],
+          "insyt_skill_tags": [
+            "credit_management",
+            "finance",
+            "aci_motors",
+            "recovery",
+            "agricultural_economics"
+          ]
+        },
+        {
+          "id": "ACI-AGRI-13",
+          "title_bn": "কোয়ালিটি কন্ট্রোল কেমিস্ট (এসিআই ফর্মুলেশনস লিমিটেড, ধামরাই)",
+          "title_en": "Quality Control Chemist (ACI Formulations Plant)",
+          "job_family": "Quality Control & Manufacturing Chemistry",
+          "vacancy": "3-5 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "28000-40000",
+          "education": "B.Sc / M.Sc in Chemistry, Applied Chemistry, or Biochemistry.",
+          "experience": "1-3 years in analytical chemistry laboratory or pesticide formulation QC.",
+          "hard_skills_before_joining": [
+            "HPLC & GC instrument operation",
+            "Active ingredient titration",
+            "Chemical safety protocols",
+            "Lab data logging"
+          ],
+          "skills_after_joining_inferred": [
+            "Agrochemical formulation purity testing",
+            "Emulsifiable concentrate (EC) & suspension concentrate (SC) testing",
+            "Batch release sign-off",
+            "ISO 9001 quality audit preparation"
+          ],
+          "insyt_skill_tags": [
+            "chemistry",
+            "quality_control",
+            "hplc",
+            "manufacturing",
+            "crop_care"
+          ]
+        },
+        {
+          "id": "ACI-AGRI-14",
+          "title_bn": "ওয়ারহাউস অ্যান্ড ইনভেন্টরি এক্সিকিউটিভ (এসিআই মোটরস / এসিআই সিড)",
+          "title_en": "Warehouse & Inventory Executive (ACI Agribusiness)",
+          "job_family": "Warehouse Management",
+          "vacancy": "4-8 per cycle",
+          "grade": "Executive",
+          "salary_scale_bdt": "25000-38000",
+          "education": "Graduate / BBA / B.Sc in any discipline.",
+          "experience": "2-4 years in warehouse operations, spare parts inventory, or seed storage.",
+          "hard_skills_before_joining": [
+            "Stock verification & reconciliation",
+            "Warehouse management systems",
+            "FEFO / FIFO implementation",
+            "Safety protocols"
+          ],
+          "skills_after_joining_inferred": [
+            "Climate-controlled seed warehouse maintenance",
+            "Machinery spare parts SKU classification",
+            "Central warehouse to regional depot dispatching",
+            "Inventory audit compliance"
+          ],
+          "insyt_skill_tags": [
+            "warehouse",
+            "inventory",
+            "logistics",
+            "agribusiness"
+          ]
+        },
+        {
+          "id": "ACI-AGRI-15",
+          "title_bn": "ইএইচএস অ্যান্ড প্ল্যান্ট সেফটি এক্সিকিউটিভ (ধামরাই এগ্রোকেমিক্যাল প্ল্যান্ট)",
+          "title_en": "Environmental Health & Safety (EHS) Officer",
+          "job_family": "EHS & Factory Compliance",
+          "vacancy": "1-2 per cycle",
+          "grade": "Executive",
+          "salary_scale_bdt": "30000-45000",
+          "education": "B.Sc in Environmental Science, Chemical Engineering, or Industrial Safety.",
+          "experience": "2-4 years in industrial chemical factory EHS and ETP operation.",
+          "hard_skills_before_joining": [
+            "Industrial waste treatment",
+            "Effluent Treatment Plant (ETP) management",
+            "Chemical hazard containment",
+            "OSHA / ISO 14001 guidelines"
+          ],
+          "skills_after_joining_inferred": [
+            "Agrochemical incineration plant safety monitoring",
+            "Department of Environment (DoE) clearance reporting",
+            "Personal Protective Equipment (PPE) compliance audit",
+            "Zero-discharge ETP maintenance"
+          ],
+          "insyt_skill_tags": [
+            "ehs",
+            "safety",
+            "environmental_science",
+            "chemical_engineering"
+          ]
+        },
+        {
+          "id": "ACI-AGRI-16",
+          "title_bn": "রিজিওনাল সেলস ম্যানেজার (আরএসএম) - ক্রপ কেয়ার / সিড",
+          "title_en": "Regional Sales Manager (RSM) — Crop Care / Seed",
+          "job_family": "Senior Commercial Management",
+          "vacancy": "2-4 per cycle",
+          "grade": "Manager / Senior Manager",
+          "salary_scale_bdt": "75000-110000",
+          "education": "B.Sc in Agriculture (BSCA) + MBA in Marketing preferred.",
+          "experience": "6-10 years in agricultural input sales leadership.",
+          "hard_skills_before_joining": [
+            "Regional distribution management",
+            "Sales team leadership",
+            "P&L responsibility",
+            "Dealer network management"
+          ],
+          "skills_after_joining_inferred": [
+            "Division-wide agrochemical revenue target driving",
+            "Dealer credit limit setting & recovery management",
+            "Regional market share expansion strategies",
+            "Channel partner conflict resolution"
+          ],
+          "insyt_skill_tags": [
+            "sales_management",
+            "agribusiness",
+            "agriculture",
+            "leadership"
+          ]
+        },
+        {
+          "id": "ACI-AGRI-17",
+          "title_bn": "সার্ভিস অ্যান্ড স্পেয়ার পার্টস মেকানিক (এসিআই মোটরস - ইয়ামাহা ও কম্বাইন হারভেস্টার)",
+          "title_en": "Service & Spare Parts Technician (ACI Motors)",
+          "job_family": "Field Technical Trade",
+          "vacancy": "15-25 per cycle",
+          "grade": "Technician / Staff",
+          "salary_scale_bdt": "18000-26000",
+          "education": "Diploma in Mechanical/Automobile or SSC/HSC Vocational.",
+          "experience": "1-3 years in motorcycle, tractor, or machinery servicing.",
+          "hard_skills_before_joining": [
+            "Engine overhaul",
+            "Electrical wiring repair",
+            "Fuel pump calibration",
+            "Hand tool mastery"
+          ],
+          "skills_after_joining_inferred": [
+            "Yanmar combine harvester field diagnostics",
+            "Yamaha YDT digital diagnostic tool operation",
+            "Preventive servicing schedules",
+            "Customer field assistance"
+          ],
+          "insyt_skill_tags": [
+            "technician",
+            "aci_motors",
+            "mechanical",
+            "servicing"
+          ]
+        },
+        {
+          "id": "ACI-AGRI-18",
+          "title_bn": "ডিজিটাল মার্কেটিং এক্সিকিউটিভ (এসিআই মোটরস / এসিআই এগ্রিবিজনেস)",
+          "title_en": "Digital Marketing Executive (ACI Agribusiness / ACI Motors)",
+          "job_family": "Digital Marketing & Communications",
+          "vacancy": "2-3 per cycle",
+          "grade": "Executive",
+          "salary_scale_bdt": "30000-45000",
+          "education": "Graduate / BBA in Marketing or Communications.",
+          "experience": "2-3 years in social media advertising, content creation, or digital campaigns.",
+          "hard_skills_before_joining": [
+            "Meta Ads & Google Ads",
+            "Content writing & Copywriting",
+            "Basic graphic design / Canva",
+            "Social media analytics"
+          ],
+          "skills_after_joining_inferred": [
+            "Farmer-targeted video content production (Bangla)",
+            "Agri-machinery launch campaign execution",
+            "Digital lead generation for tractor sales",
+            "Community management on agricultural forums"
+          ],
+          "insyt_skill_tags": [
+            "digital_marketing",
+            "social_media",
+            "content",
+            "aci_motors"
+          ]
+        },
+        {
+          "id": "ACI-AGRI-19",
+          "title_bn": "সিড প্রসেসিং অ্যান্ড কোয়ালিটি অফিসার (এসিআই সিড প্রসেসিং প্ল্যান্ট)",
+          "title_en": "Seed Processing & Quality Officer (ACI Seed)",
+          "job_family": "Seed Technology & Quality Assurance",
+          "vacancy": "3-5 per cycle",
+          "grade": "Executive",
+          "salary_scale_bdt": "28000-40000",
+          "education": "B.Sc in Agriculture / Seed Technology / Agronomy.",
+          "experience": "1-3 years in seed processing, drying, treatment, and germination testing.",
+          "hard_skills_before_joining": [
+            "Seed germination testing",
+            "Moisture content analysis",
+            "Purity testing",
+            "Seed treatment chemicals"
+          ],
+          "skills_after_joining_inferred": [
+            "Commercial seed processing machinery operation",
+            "Cold storage seed viability management",
+            "Seed packaging quality control",
+            "Batch seed lot certification"
+          ],
+          "insyt_skill_tags": [
+            "seed_technology",
+            "quality_assurance",
+            "agriculture",
+            "agronomy"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        },
+        {
+          "id": "ACI-AGRI-20",
+          "title_bn": "ফিল্ড মনিটরিং অ্যান্ড সার্ভে রেসপন্ডেন্ট (এসিআই ক্রপ কেয়ার ডেটা টিম)",
+          "title_en": "Field Data & Survey Executive (ACI Agribusiness Market Research)",
+          "job_family": "Market Research & Field Survey",
+          "vacancy": "10-15 per cycle",
+          "grade": "Field Executive / Staff",
+          "salary_scale_bdt": "18000-25000",
+          "education": "Diploma in Agriculture / B.Sc in Agriculture or Social Sciences.",
+          "experience": "0-2 years in agricultural surveys or field data collection.",
+          "hard_skills_before_joining": [
+            "Mobile survey tools (KoboToolbox/ODK)",
+            "Farmer interview techniques",
+            "GPS coordinate tagging",
+            "Data entry accuracy"
+          ],
+          "skills_after_joining_inferred": [
+            "Pest outbreak geographic mapping",
+            "Farmer crop yield survey execution",
+            "Dealer inventory audit reporting",
+            "Real-time mobile field data collection"
+          ],
+          "insyt_skill_tags": [
+            "data_collection",
+            "survey",
+            "gis",
+            "field_work",
+            "agriculture"
+          ]
+        }
+      ]
+    }
+  ],
+  "cross_source_insights": {
+    "most_important_new_signal": "ACI Agribusiness is the largest private-sector agricultural conglomerate in Bangladesh, organized into specialized Strategic Business Units (Crop Care, Motors, Seed, Animal Health, Fertilizer, Animal Genetics, Biotech). It offers an exceptional career bridge for Agricultural Economists, Agronomists, Data Analysts, and Ag-Engineers by combining R&D field stations with commercial sales, financing, and data-driven supply chain management.",
+    "highest_value_jobs_for_an_agricultural_economics_data_candidate": [
+      {
+        "organization": "ACI Agribusiness",
+        "job": "Business Data Analyst / Commercial Operations Executive",
+        "why": "Direct fit for Agricultural Economists with quantitative skills; drives seasonal input demand modeling, dealer credit risk scoring, and SBU-level revenue analytics.",
+        "skills_to_prioritize": [
+          "Python",
+          "R",
+          "SQL",
+          "Power BI",
+          "Econometrics",
+          "Excel VBA",
+          "Agricultural Market Analysis"
+        ]
+      },
+      {
+        "organization": "ACI Agribusiness",
+        "job": "Territory Manager / Territory Officer (ACI Crop Care)",
+        "why": "Primary commercial entry point for B.Sc Agriculture graduates; provides direct exposure to farmer economics, pest management, and channel distribution.",
+        "skills_to_prioritize": [
+          "Agronomy",
+          "Integrated Pest Management",
+          "Sales Forecasting",
+          "Dealer Management"
+        ]
+      },
+      {
+        "organization": "ACI Agribusiness",
+        "job": "Product Executive / APM (Agri Products)",
+        "why": "High-value brand management role positioning nationwide crop protection and yield-booster brands.",
+        "skills_to_prioritize": [
+          "Market Research",
+          "Product Management",
+          "Consumer Insights",
+          "Agribusiness Marketing"
+        ]
+      },
+      {
+        "organization": "ACI Motors",
+        "job": "Credit Assessment & Recovery Officer (Tractor & Harvester)",
+        "why": "Integrates agricultural economics with retail credit evaluation and hire-purchase financing for rural farmers.",
+        "skills_to_prioritize": [
+          "Credit Risk Analysis",
+          "Rural Finance",
+          "Financial Valuation",
+          "Asset Recovery"
+        ]
+      }
+    ],
+    "repeated_skill_patterns": {
+      "agronomy_and_crop_care": {
+        "frequency": "Very high",
+        "appears_in": [
+          "Territory Manager (Crop Care)",
+          "Product Executive",
+          "Scientific Executive (Seed)",
+          "Field Agronomist (Fertilizer)",
+          "Seed Processing Officer"
+        ]
+      },
+      "agricultural_engineering_and_machinery": {
+        "frequency": "High",
+        "appears_in": [
+          "Service Engineer (ACI Motors)",
+          "Product Manager (Agri Machinery)",
+          "Service Technician",
+          "Mechanization Project Lead"
+        ]
+      },
+      "data_analytics_and_economics": {
+        "frequency": "High",
+        "appears_in": [
+          "Business Data Analyst",
+          "Credit Assessment Officer",
+          "Supply Chain Executive",
+          "Field Data Survey Executive"
+        ],
+        "recommended_insyt_bundle": [
+          "Python",
+          "R",
+          "SQL",
+          "Power BI",
+          "Econometrics",
+          "Survey Data Analysis (ODK/Kobo)"
+        ]
+      },
+      "veterinary_and_animal_science": {
+        "frequency": "High",
+        "appears_in": [
+          "Marketing Officer (Animal Health)",
+          "Veterinary Services Officer (Animal Genetics)",
+          "Feed Additive Product Lead"
+        ]
+      }
+    },
+    "insyt_corporate_product_opportunities": [
+      {
+        "feature": "SBU Job Taxonomy & Matching Engine",
+        "input": "Candidate academic profile (B.Sc Ag, Agri-Econ, DVM, Ag-Engineering)",
+        "output": "Automated matching to specific ACI Agribusiness SBU roles (Crop Care vs Motors vs Animal Health vs Seed)"
+      },
+      {
+        "feature": "Private Agribusiness vs Government Research Salary Comparator",
+        "logic": "Compare public research pay scales (BARI/BRRI Grades 9-10) against ACI corporate executive packages + incentive structures"
+      },
+      {
+        "feature": "Agribusiness Skill Gap Assessment",
+        "logic": "Map academic knowledge against commercial field skills (IPM, dealer management, credit risk, S&OP)"
+      }
+    ]
+  },
+  "recommended_insyt_skill_taxonomy_from_these_sources": {
+    "tier_1_core": [
+      "Agriculture",
+      "Agronomy",
+      "Crop Protection Chemistry",
+      "Agribusiness Management",
+      "Sales & Territory Management",
+      "Computer Operation"
+    ],
+    "tier_2_high_value": [
+      "Python",
+      "R",
+      "SQL",
+      "Power BI",
+      "Econometrics",
+      "Integrated Pest Management (IPM)",
+      "Supply Chain S&OP",
+      "Credit Risk Assessment"
+    ],
+    "tier_3_specialized": [
+      "Plant Breeding & Hybrid Seed Trial",
+      "Tissue Culture Micropropagation",
+      "Combine Harvester Diagnostics",
+      "Artificial Insemination (AI) Semen Evaluation",
+      "Agrochemical Formulation QC (HPLC)",
+      "Pesticide ETP & Incinerator Safety"
+    ],
+    "tier_4_operational": [
+      "Dealer Network Extension",
+      "Field Demonstration Organizing",
+      "Mobile Data Collection (ODK/Kobo)",
+      "Motorcycle Servicing & Diagnostics",
+      "Seed Germination Testing"
+    ]
+  },
+  "critical_data_modeling_notes": [
+    "ACI Agribusiness positions operate under a Strategic Business Unit (SBU) model; job titles must retain their SBU tag (e.g. ACI Crop Care vs ACI Motors vs ACI Seed vs ACI Animal Health).",
+    "Commercial roles (Territory Managers, Marketing Officers, Credit Officers) feature significant incentive components (TA/DA, sales commission, KPI bonuses) beyond basic salary scale.",
+    "Field locations are distributed nationwide across agricultural hubs (e.g., Bogra, Jessore, Mymensingh, Rangpur, Rajshahi), while strategic product management and data roles are HQ-based at ACI Centre, Tejgaon, Dhaka.",
+    "B.Sc Agriculture and Agricultural Economics candidates from institutions like Bangladesh Agricultural University (BAU) are highly prioritized for executive tracks across ACI Agribusiness units."
+  ],
+  "source_traceability": {
+    "ACI_AGRIBUSINESS": "Aggregated from ACI PLC corporate career portal archives (aci-bd.com/career), official SBU recruitment notices, BDJobs ACI corporate listings, and ACI Agribusiness corporate releases."
+  }
+}

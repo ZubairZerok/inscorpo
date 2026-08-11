@@ -1,0 +1,712 @@
+{
+  "dataset_name": "INSYT Corporate Job Intelligence — Source Extraction Batch 05 (ACI Agrolink, Animal Health & Biosciences)",
+  "source_files": [
+    {
+      "file": "ACI_Agrolink_AnimalHealth_Biosciences_Talent_Registry.pdf",
+      "organization": "Advanced Chemical Industries PLC (ACI) — Agrolink, Animal Health & Biosciences SBUs",
+      "pages": "Aggregated Specialized SBU Recruitment Archives",
+      "source_type": "Specialized SBU Circulars, R&D Lab Registers, & Corporate Talent Listings",
+      "source_citation": "ACI PLC Corporate HR & SBU Strategic Intelligence Archives"
+    }
+  ],
+  "extraction_policy": {
+    "source_first": true,
+    "salary_interpretation": "Gross monthly compensation in BDT (Executive consolidated package including SBU allowances, field/lab incentives, mobile allowance, PF, and performance bonus) unless explicitly stated as salary scale.",
+    "inferred_skills": "Post-joining skills are explicitly modeled around export compliance, international trade standards, molecular diagnostics, bio-processing, veterinary pharmacology, and contract farming workflows.",
+    "ambiguous_text_policy": "Where specialized scientific or export positions have variable market compensation based on candidate expertise, realistic corporate grade ranges and market benchmarks are applied."
+  },
+  "organizations": [
+    {
+      "organization": "ACI Agribusinesses — Specialized SBUs (Agrolink, Animal Health & Biosciences)",
+      "acronym": "ACI_SPECIALIZED_SBUS",
+      "location": "Corporate HQ: ACI Centre, Tejgaon, Dhaka; Export Processing Plants: Satkhira & Gazipur; Biotech Labs: Rajshahi & Gazipur; R&D & Field Centers: Nationwide",
+      "sector": "Agro-Processing & Exports, Veterinary Biologicals & Pharmaceuticals, Plant Biotechnology & Molecular Diagnostics",
+      "circular_date": "Continuous Specialized Recruitment Archives",
+      "total_job_categories": 20,
+      "total_vacancies": "Variable by recruitment cycle (Specialized technical & commercial roles)",
+      "application_start": "Continuous / As per specialized SBU circulars",
+      "application_deadline": "Varies by SBU and specialized role",
+      "age_requirement": "22-38 years (flexible based on scientific/technical depth or managerial seniority)",
+      "application_mode": "ACI Corporate Portal (aci-bd.com/career) & Specialized Talent Sourcing",
+      "selection": [
+        "CV Screening & Portfolio Review",
+        "Technical Domain Assessment / Laboratory Practical Test (for Biotech & QC roles)",
+        "Commercial & Case-Study Presentation (for Export & Product Management roles)",
+        "SBU Head & Panel Technical Interview",
+        "Final Corporate HR Clearance"
+      ],
+      "application_fee": {
+        "note": "ACI PLC charges no recruitment or processing fees.",
+        "known_structure": "Free application"
+      },
+      "general_requirements": [
+        "Bangladeshi citizenship",
+        "Degree from recognized institutions in relevant specialized fields (B.Sc./M.Sc. in Biotechnology, DVM, Animal Husbandry, Food Engineering, Agribusiness, International Trade, Chemistry, or Microbiology)",
+        "High level of compliance awareness for international export markets (EU, US FDA, HACCP) or advanced laboratory protocols"
+      ],
+      "source": "ACI PLC Corporate HR, ACI Agrolink, ACI Animal Health, and ACI Biosciences Archives",
+      "jobs": [
+        {
+          "id": "ACI-AGROLINK-01",
+          "title_bn": "ইন্টারন্যাশনাল এক্সপোর্ট এক্সিকিউটিভ (এগ্রো অ্যান্ড সীফুড Commodities)",
+          "title_en": "International Export Executive (Agro & Seafood Commodities)",
+          "job_family": "International Trade & Exports",
+          "vacancy": "2-4 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "38000-58000",
+          "education": "BBA / MBA in International Business, Supply Chain, or B.Sc. in Fisheries / Food Engineering.",
+          "experience": "2-4 years in agro-commodity export, seafood shipping, or international trade documentation.",
+          "hard_skills_before_joining": [
+            "Export documentation (LC, BL, Certificate of Origin)",
+            "International buyer communication",
+            "Freight forwarding coordination",
+            "Incoterms mastery"
+          ],
+          "skills_after_joining_inferred": [
+            "EU & US FDA seafood export compliance",
+            "International agro-commodity price hedging",
+            "Global trade fair client negotiation",
+            "Customs port clearance optimization"
+          ],
+          "insyt_skill_tags": [
+            "export",
+            "international_trade",
+            "seafood",
+            "supply_chain",
+            "agribusiness"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ACI-AGROLINK-02",
+          "title_bn": "কনট্র্যাক্ট ফার্মিং অ্যান্ড সোর্সিং সুপারভাইজার (গ্রেইন অ্যান্ড স্পাইস প্রকিউরমেন্ট)",
+          "title_en": "Contract Farming & Direct Sourcing Supervisor",
+          "job_family": "Agronomy Procurement & Contract Farming",
+          "vacancy": "5-8 per cycle",
+          "grade": "Officer / Junior Executive",
+          "salary_scale_bdt": "26000-36000",
+          "education": "B.Sc. in Agriculture, Diploma in Agriculture, or Agricultural Economics.",
+          "experience": "1-3 years in direct farmer sourcing, grain aggregation, or contract farming.",
+          "hard_skills_before_joining": [
+            "Farmer group mobilization",
+            "Crop quality evaluation",
+            "Moisture & purity testing",
+            "Local grain market price tracking"
+          ],
+          "skills_after_joining_inferred": [
+            "ACI contract farming model management",
+            "Traceability compliance for export-grade crops",
+            "Buyback agreement execution",
+            "Post-harvest loss reduction at collection hubs"
+          ],
+          "insyt_skill_tags": [
+            "contract_farming",
+            "procurement",
+            "agriculture",
+            "sourcing",
+            "agronomy"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ACI-AGROLINK-03",
+          "title_bn": "প্রসেসিং প্ল্যান্ট কোয়ালিটি অ্যাসুরেন্স ম্যানেজার (ফুড সেফটি অ্যান্ড এক্সপোর্ট)",
+          "title_en": "Processing Plant QA Manager (Food Safety & Export Compliance)",
+          "job_family": "Quality Assurance & Regulatory Compliance",
+          "vacancy": "1-2 per cycle",
+          "grade": "Assistant Manager / Manager",
+          "salary_scale_bdt": "60000-85000",
+          "education": "B.Sc / M.Sc in Food Engineering, Food Technology, or Microbiology.",
+          "experience": "4-7 years in agro-processing or seafood export plant quality management.",
+          "hard_skills_before_joining": [
+            "HACCP & ISO 22000 lead auditor certification",
+            "Traceability systems",
+            "Microbiological risk assessment",
+            "Chemical residue analysis"
+          ],
+          "skills_after_joining_inferred": [
+            "US FDA / BRCGS audit clearance",
+            "Plant-wide sanitation & CIP protocols",
+            "Export batch rejection risk mitigation",
+            "Heavy metal & antibiotic residue testing"
+          ],
+          "insyt_skill_tags": [
+            "quality_assurance",
+            "food_safety",
+            "haccp",
+            "export_compliance",
+            "microbiology"
+          ]
+        },
+        {
+          "id": "ACI-AGROLINK-04",
+          "title_bn": "অ্যাকুয়া সোর্সিং অ্যান্ড প্রসেসিং স্পেশালিস্ট (শ্রিম্প অ্যান্ড ফিশ সাপ্লাই চেইন)",
+          "title_en": "Aqua Sourcing & Processing Specialist",
+          "job_family": "Aquaculture & Seafood Supply Chain",
+          "vacancy": "2-4 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "35000-50000",
+          "education": "B.Sc. / M.Sc. in Fisheries, Aquaculture, or Food Technology.",
+          "experience": "2-4 years in Black Tiger / Vannamei shrimp sourcing and processing plant operations.",
+          "hard_skills_before_joining": [
+            "Shrimp grading & defect identification",
+            "Cold chain preservation",
+            "Depot & farm sourcing",
+            "Yield percentage calculation"
+          ],
+          "skills_after_joining_inferred": [
+            "Vannamei bio-secure supply chain management",
+            "Freezing technology optimization (IQF/Block)",
+            "Sustainable seafood certification (ASC/BAP)",
+            "Direct farmer cluster purchasing"
+          ],
+          "insyt_skill_tags": [
+            "fisheries",
+            "aquaculture",
+            "seafood",
+            "sourcing",
+            "processing"
+          ]
+        },
+        {
+          "id": "ACI-AGROLINK-05",
+          "title_bn": "ফুড প্রসেস ইঞ্জিনিয়ার (এগ্রো-প্রসেসিং অ্যান্ড প্যাকেটজাতকরণ প্ল্যান্ট)",
+          "title_en": "Food Process Engineer (Agro-Processing & Packaging Plant)",
+          "job_family": "Plant Engineering & Food Processing",
+          "vacancy": "2-3 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "32000-48000",
+          "education": "B.Sc. in Food Engineering, Chemical Engineering, or Agricultural Engineering.",
+          "experience": "2-4 years in commercial food drying, milling, optical sorting, or extrusion plant operations.",
+          "hard_skills_before_joining": [
+            "Processing machinery operation",
+            "Thermal processing physics",
+            "Mass & energy balance",
+            "Plant safety maintenance"
+          ],
+          "skills_after_joining_inferred": [
+            "Automated color sorter calibration for grains",
+            "Spices de-sterilization & grinding technology",
+            "Shelf-life extension nitrogen-flushing lines",
+            "Plant yield loss minimization"
+          ],
+          "insyt_skill_tags": [
+            "food_engineering",
+            "processing",
+            "engineering",
+            "agribusiness"
+          ]
+        },
+        {
+          "id": "ACI-ANIMAL-01",
+          "title_bn": "প্রোডাক্ট ম্যানেজার (পোল্ট্রি বায়োলজিক্যালস অ্যান্ড ভ্যাকসিনস)",
+          "title_en": "Product Manager — Poultry Biologicals & Vaccines",
+          "job_family": "Veterinary Product Management",
+          "vacancy": "1-2 per cycle",
+          "grade": "Assistant Manager / Manager",
+          "salary_scale_bdt": "55000-85000",
+          "education": "Doctor of Veterinary Medicine (DVM) + MBA in Marketing preferred.",
+          "experience": "3-6 years in poultry vaccine product management or technical marketing.",
+          "hard_skills_before_joining": [
+            "Poultry immunology & vaccinology",
+            "Cold chain biosecurity",
+            "Market segment sizing",
+            "Brand strategy formulation"
+          ],
+          "skills_after_joining_inferred": [
+            "International vaccine manufacturer technical liaison (e.g., Ceva, Boehringer)",
+            "Commercial farm vaccination failure auditing",
+            "Serological titer data interpretation",
+            "National poultry health campaign execution"
+          ],
+          "insyt_skill_tags": [
+            "veterinary",
+            "dvm",
+            "vaccines",
+            "poultry",
+            "product_management"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ACI-ANIMAL-02",
+          "title_bn": "কি অ্যাকাউন্ট ম্যানেজার (কমার্শিয়াল মেগা ফার্মস - পোল্ট্রি ও ডেয়ারি)",
+          "title_en": "Key Account Manager — Commercial Mega Farms",
+          "job_family": "Corporate Sales & Key Account Management",
+          "vacancy": "2-4 per cycle",
+          "grade": "Senior Executive / Assistant Manager",
+          "salary_scale_bdt": "45000-65000",
+          "education": "Doctor of Veterinary Medicine (DVM) or B.Sc. in Animal Husbandry.",
+          "experience": "3-5 years selling directly to large commercial poultry integrators and mega dairy farms.",
+          "hard_skills_before_joining": [
+            "B2B corporate sales",
+            "Farm-level ROI presentation",
+            "Technical product detailing",
+            "Contract negotiation"
+          ],
+          "skills_after_joining_inferred": [
+            "Integrator feed mill additive custom solutions",
+            "Autogenous vaccine customization protocol",
+            "Annual corporate procurement contract closing",
+            "Mega farm biosecurity consultation"
+          ],
+          "insyt_skill_tags": [
+            "key_account_management",
+            "veterinary",
+            "dvm",
+            "b2b_sales",
+            "poultry"
+          ]
+        },
+        {
+          "id": "ACI-ANIMAL-03",
+          "title_bn": "ভেটেরিনারি টেকনিক্যাল সার্ভিসেস এক্সিকিউটিভ (ফিল্ড ডায়াগনস্টিকস)",
+          "title_en": "Veterinary Technical Services Executive",
+          "job_family": "Field Technical Services & Diagnostics",
+          "vacancy": "6-10 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "32000-45000",
+          "education": "Doctor of Veterinary Medicine (DVM).",
+          "experience": "1-3 years in post-mortem examination, farm diagnostic troubleshooting, or field practice.",
+          "hard_skills_before_joining": [
+            "Necropsy / post-mortem analysis",
+            "Disease differential diagnosis",
+            "Sample collection for PCR/ELISA",
+            "Prescription audit"
+          ],
+          "skills_after_joining_inferred": [
+            "Field disease outbreak investigation reporting",
+            "Antimicrobial sensitivity testing advice",
+            "Farmer technical seminar key speaking",
+            "Diagnostic mobile lab operation"
+          ],
+          "insyt_skill_tags": [
+            "veterinary",
+            "dvm",
+            "diagnostics",
+            "technical_services",
+            "pathology"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        },
+        {
+          "id": "ACI-ANIMAL-04",
+          "title_bn": "অ্যাকুয়া হেলথ টেরিটোরি ম্যানেজার (অ্যাকুয়াকালচার ও ফিশ মেডিসিন)",
+          "title_en": "Aqua Health Territory Manager",
+          "job_family": "Aquaculture Field Sales & Advisory",
+          "vacancy": "8-12 per cycle",
+          "grade": "Officer / Executive",
+          "salary_scale_bdt": "26000-38000",
+          "education": "B.Sc / M.Sc in Fisheries, Aquaculture, or Marine Science.",
+          "experience": "1-3 years in aquaculture chemical, probiotic, or feed additive sales.",
+          "hard_skills_before_joining": [
+            "Water parameter testing (pH, DO, Ammonia)",
+            "Fish & shrimp disease identification",
+            "Dealer network management",
+            "Pond preparation protocols"
+          ],
+          "skills_after_joining_inferred": [
+            "Intensive biofloc / RAS pond health advisory",
+            "Aqua-probiotic application mapping",
+            "Commercial fish hatchery technical detailing",
+            "Territory sales credit control"
+          ],
+          "insyt_skill_tags": [
+            "fisheries",
+            "aquaculture",
+            "sales",
+            "aqua_health",
+            "water_quality"
+          ]
+        },
+        {
+          "id": "ACI-ANIMAL-05",
+          "title_bn": "ফিড অ্যাডোটিভ অ্যান্ড নিউট্রিশন স্পেশালিস্ট (ফর্মুলেশন অ্যান্ড সেলস)",
+          "title_en": "Feed Additive & Nutrition Specialist",
+          "job_family": "Animal Nutrition & Product Technical Support",
+          "vacancy": "2-3 per cycle",
+          "grade": "Senior Executive / Assistant Manager",
+          "salary_scale_bdt": "40000-60000",
+          "education": "B.Sc / M.Sc in Animal Nutrition, Animal Husbandry, or DVM.",
+          "experience": "2-5 years in feed mill formulation, premix formulation, or nutrition consulting.",
+          "hard_skills_before_joining": [
+            "Least-cost feed formulation software (format/Brill/Bestmix)",
+            "Nutritional requirement matrix",
+            "Feed raw material analysis",
+            "Mycotoxin binder evaluation"
+          ],
+          "skills_after_joining_inferred": [
+            "Feed mill custom premix design",
+            "Enzyme activity optimization in poultry feed",
+            "Gut health booster positioning",
+            "Commercial trial design at feed mill scale"
+          ],
+          "insyt_skill_tags": [
+            "animal_nutrition",
+            "feed_formulation",
+            "veterinary",
+            "husbandry"
+          ]
+        },
+        {
+          "id": "ACI-ANIMAL-06",
+          "title_bn": "কোয়ালিটি কন্ট্রোল এক্সিকিউটিভ (ভেটেরিনারি ফর্মুলেশনস প্রসেসিং প্ল্যান্ট)",
+          "title_en": "Quality Control Executive (Veterinary Formulations)",
+          "job_family": "QC Laboratory & Veterinary Chemistry",
+          "vacancy": "2-4 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "28000-42000",
+          "education": "B.Sc / M.Sc in Chemistry, Applied Chemistry, or Pharmacy.",
+          "experience": "1-3 years in pharmaceutical or veterinary medicine QC lab.",
+          "hard_skills_before_joining": [
+            "Dissolution testing",
+            "Spectrophotometry (UV-Vis)",
+            "Titrimetric analysis",
+            "Good Laboratory Practice (GLP)"
+          ],
+          "skills_after_joining_inferred": [
+            "Veterinary oral liquid & powder active assay",
+            "Stability testing according to ICH guidelines",
+            "Sterility testing for veterinary injectables",
+            "GMP batch release documentation"
+          ],
+          "insyt_skill_tags": [
+            "chemistry",
+            "quality_control",
+            "pharmacy",
+            "glp",
+            "veterinary"
+          ]
+        },
+        {
+          "id": "ACI-BIOTECH-01",
+          "title_bn": "সিনিয়র সায়েন্টিস্ট - প্ল্যান্ট মলিকুলার বায়োলজি অ্যান্ড মার্কার-অ্যাসিস্টেড সিলেকশন",
+          "title_en": "Senior Scientist — Plant Molecular Biology & MAS",
+          "job_family": "Biotechnology R&D & Genetic Research",
+          "vacancy": "1-2 per cycle",
+          "grade": "Senior Executive / Assistant Manager",
+          "salary_scale_bdt": "50000-75000",
+          "education": "M.Sc. / Ph.D in Biotechnology, Molecular Biology, Genetics, or Plant Breeding.",
+          "experience": "3-6 years in DNA marker extraction, PCR, gel electrophoresis, or MAS crop breeding.",
+          "hard_skills_before_joining": [
+            "DNA/RNA extraction & quantification",
+            "SSR / SNP marker profiling",
+            "PCR & qPCR operation",
+            "Bioinformatics sequence alignment"
+          ],
+          "skills_after_joining_inferred": [
+            "Salinity/submergence gene introduction verification",
+            "Hybrid seed purity testing via molecular markers",
+            "Pathogen-resistant plant line screening",
+            "IP & patent documentation for novel lines"
+          ],
+          "insyt_skill_tags": [
+            "biotechnology",
+            "molecular_biology",
+            "genetics",
+            "pcr",
+            "research"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ACI-BIOTECH-02",
+          "title_bn": "কমার্শিয়াল টিস্যু কালচার ল্যাবরেটরি ইন-চার্জ",
+          "title_en": "Commercial Tissue Culture Laboratory In-Charge",
+          "job_family": "Plant Micropropagation & Lab Management",
+          "vacancy": "1-2 per cycle",
+          "grade": "Manager Level",
+          "salary_scale_bdt": "55000-80000",
+          "education": "M.Sc / Ph.D in Biotechnology, Botany, or Tissue Culture.",
+          "experience": "4-7 years managing commercial-scale plant tissue culture production (Potato, Banana, Gerbera).",
+          "hard_skills_before_joining": [
+            "Mass micropropagation protocols",
+            "Cleanroom air filtration (HEPA) management",
+            "Lab contamination troubleshooting",
+            "Media batch preparation"
+          ],
+          "skills_after_joining_inferred": [
+            "Million-unit potato mini-tuber tissue production scaling",
+            "Hardening shade-house mortality minimization",
+            "Lab technician labor productivity management",
+            "Cost-per-plantlet minimization modeling"
+          ],
+          "insyt_skill_tags": [
+            "tissue_culture",
+            "biotechnology",
+            "lab_management",
+            "micropropagation",
+            "botany"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ACI-BIOTECH-03",
+          "title_bn": "বায়ো-পেস্টিসাইড অ্যান্ড বায়ো-ফার্টিলাইজার ফর্মুলেশন স্পেশালিস্ট",
+          "title_en": "Bio-Pesticide & Bio-Fertilizer Formulation Specialist",
+          "job_family": "Bio-Process Development & Product R&D",
+          "vacancy": "1-3 per cycle",
+          "grade": "Senior Executive Level",
+          "salary_scale_bdt": "40000-60000",
+          "education": "M.Sc. in Microbiology, Biotechnology, or Soil Science.",
+          "experience": "2-5 years in beneficial microbe isolation (Trichoderma, Rhizobium, Pseudomonas) and bio-formulation.",
+          "hard_skills_before_joining": [
+            "Microbial culture isolation & strain selection",
+            "Fermentation culture media design",
+            "CFU count optimization",
+            "Carrier material carrier compatibility"
+          ],
+          "skills_after_joining_inferred": [
+            "Trichoderma-based bio-fungicide commercial formulation",
+            "Mass fermentation scaling in bioreactors",
+            "Bio-fertilizer carrier shelf-life extension",
+            "Field bio-efficacy trial evaluation"
+          ],
+          "insyt_skill_tags": [
+            "microbiology",
+            "biotechnology",
+            "bio_fertilizer",
+            "fermentation",
+            "r_and_d"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        },
+        {
+          "id": "ACI-BIOTECH-04",
+          "title_bn": "বায়ো-প্রসেস ইঞ্জিনিয়ার (ফারমেন্টেশন অ্যান্ড মাইক্রো-অর্গানিজম প্রোডাকশন)",
+          "title_en": "Bio-Process Engineer (Fermentation & Scale-Up)",
+          "job_family": "Bio-Manufacturing & Fermentation Engineering",
+          "vacancy": "1-2 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "38000-55000",
+          "education": "B.Sc. in Chemical Engineering, Bio-Process Engineering, or Biotechnology.",
+          "experience": "2-4 years operating pilot/industrial bioreactors, fermenters, or downstream processing units.",
+          "hard_skills_before_joining": [
+            "Bioreactor parameter control (pH, DO, temperature, agitation)",
+            "Downstream separation & filtration",
+            "Sterilization-in-place (SIP) protocols",
+            "Process mass transfer"
+          ],
+          "skills_after_joining_inferred": [
+            "Industrial microbial fermentation scale-up (100L to 5000L)",
+            "Centrifugation & spray drying of bio-actives",
+            "Batch yield consistency troubleshooting",
+            "Cleanroom utility engineering"
+          ],
+          "insyt_skill_tags": [
+            "bioprocess",
+            "engineering",
+            "fermentation",
+            "biotechnology",
+            "chemical_engineering"
+          ]
+        },
+        {
+          "id": "ACI-BIOTECH-05",
+          "title_bn": "মলিকুলার ডায়াগনস্টিকস স্পেশালিস্ট (প্ল্যান্ট অ্যান্ড লাইভস্টক ডায়াগনস্টিকস)",
+          "title_en": "Molecular Diagnostics Specialist (Plant & Livestock Diagnostics)",
+          "job_family": "Diagnostic Laboratory & Pathogen Detection",
+          "vacancy": "2-3 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "32000-48000",
+          "education": "M.Sc. in Biotechnology, Microbiology, Biochemistry, or Virology.",
+          "experience": "1-3 years in real-time PCR (qPCR), ELISA, or viral/bacterial diagnostic testing.",
+          "hard_skills_before_joining": [
+            "Real-time PCR assay setup",
+            "ELISA microplate reader operation",
+            "Primer design basics",
+            "Pathogen DNA/RNA extraction protocols"
+          ],
+          "skills_after_joining_inferred": [
+            "Rapid plant virus diagnostic kit development (e.g. Potato Virus Y)",
+            "Livestock viral pathogen screening (Avian Influenza, FMD)",
+            "Diagnostic accuracy & false-positive validation",
+            "Commercial diagnostic service lab management"
+          ],
+          "insyt_skill_tags": [
+            "diagnostics",
+            "molecular_biology",
+            "pcr",
+            "microbiology",
+            "biotechnology"
+          ]
+        },
+        {
+          "id": "ACI-BIOTECH-06",
+          "title_bn": "কোয়ালিটি অ্যাসুরেন্স এক্সিকিউটিভ (বাইওটেক অ্যান্ড টিস্যু কালচার প্ল্যান্টস)",
+          "title_en": "QA Executive (Biotech & Tissue Culture Microplants)",
+          "job_family": "Quality Assurance & Genetic Purity",
+          "vacancy": "2-3 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "30000-42000",
+          "education": "B.Sc / M.Sc in Biotechnology, Botany, or Agriculture.",
+          "experience": "1-3 years in biological laboratory quality auditing, cleanroom monitoring, or seed QA.",
+          "hard_skills_before_joining": [
+            "Cleanroom particle count auditing",
+            "Somaclonal variation detection",
+            "Sterility audit protocols",
+            "Lab documentation"
+          ],
+          "skills_after_joining_inferred": [
+            "Tissue culture plantlet genetic fidelity testing",
+            "Zero-virus certification for foundation potato seed",
+            "Greenhouse acclimatization quality scoring",
+            "SOP enforcement in micropropagation facilities"
+          ],
+          "insyt_skill_tags": [
+            "quality_assurance",
+            "biotechnology",
+            "tissue_culture",
+            "micropropagation"
+          ]
+        }
+      ]
+    }
+  ],
+  "cross_source_insights": {
+    "most_important_new_signal": "ACI Agrolink, ACI Animal Health, and ACI Biosciences represent the most advanced technological and export-oriented frontiers of ACI PLC. They transition ACI from a traditional agri-input seller into a high-tech bio-enterprise dealing with molecular breeding, industrial fermentation, export-compliant seafood processing, and specialized livestock biologicals.",
+    "highest_value_jobs_for_an_agricultural_economics_data_candidate": [
+      {
+        "organization": "ACI Agrolink",
+        "job": "International Export Executive (Agro & Seafood Commodities)",
+        "why": "Integrates agricultural commodity economics with international trade, foreign exchange hedging, and global supply chain logistics.",
+        "skills_to_prioritize": [
+          "International Trade",
+          "Commodity Price Analysis",
+          "Export Documentation",
+          "Supply Chain Management",
+          "Financial Hedging"
+        ]
+      },
+      {
+        "organization": "ACI Agrolink",
+        "job": "Contract Farming & Direct Sourcing Supervisor",
+        "why": "Direct application of Agricultural Economics in farmer group economics, price margin distribution, and post-harvest supply chain loss reduction.",
+        "skills_to_prioritize": [
+          "Contract Farming Models",
+          "Farmer Price Analysis",
+          "Procurement Strategy",
+          "Rural Surveying"
+        ]
+      },
+      {
+        "organization": "ACI Animal Health",
+        "job": "Product Manager — Poultry Biologicals & Vaccines",
+        "why": "High-value commercial brand leadership bridging epidemiology, veterinary technology, and market segment sizing.",
+        "skills_to_prioritize": [
+          "Product Portfolio Management",
+          "Market Segment Sizing",
+          "B2B Technical Sales",
+          "Epidemiological Data Modeling"
+        ]
+      },
+      {
+        "organization": "ACI Biosciences",
+        "job": "Commercial Tissue Culture Laboratory In-Charge",
+        "why": "High-level operational leadership evaluating unit economics, cost-per-plantlet minimization, and large-scale bio-manufacturing.",
+        "skills_to_prioritize": [
+          "Bio-Manufacturing Operations",
+          "Cost Modeling",
+          "Labor Productivity Optimization",
+          "Biotech Operations Management"
+        ]
+      }
+    ],
+    "repeated_skill_patterns": {
+      "biotechnology_and_molecular_biology": {
+        "frequency": "Very high",
+        "appears_in": [
+          "Senior Scientist (MAS)",
+          "Commercial Tissue Culture In-Charge",
+          "Molecular Diagnostics Specialist",
+          "Bio-Process Engineer",
+          "Biotech QA Executive"
+        ]
+      },
+      "veterinary_and_animal_health": {
+        "frequency": "High",
+        "appears_in": [
+          "Product Manager (Vaccines)",
+          "Key Account Manager (Mega Farms)",
+          "Technical Services Executive",
+          "Feed Additive Specialist"
+        ]
+      },
+      "export_compliance_and_food_safety": {
+        "frequency": "High",
+        "appears_in": [
+          "International Export Executive",
+          "Processing Plant QA Manager",
+          "Aqua Sourcing Specialist",
+          "Food Process Engineer"
+        ]
+      },
+      "agronomy_and_farmer_sourcing": {
+        "frequency": "High",
+        "appears_in": [
+          "Contract Farming Supervisor",
+          "Aqua Health Territory Manager",
+          "Bio-Pesticide Formulation Specialist"
+        ]
+      }
+    },
+    "insyt_corporate_product_opportunities": [
+      {
+        "feature": "Export & Biotech Career Pathway Engine",
+        "input": "Academic background (Biotech, Food Engineering, Fisheries, DVM, Ag-Econ)",
+        "output": "Targeted career trajectory matching ACI's specialized export and scientific SBUs"
+      },
+      {
+        "feature": "Molecular & Quality Assurance Competency Evaluator",
+        "logic": "Map university lab skills (PCR, HPLC, Tissue Culture, HACCP) directly to ACI Biosciences and Agrolink recruitment criteria"
+      },
+      {
+        "feature": "Value Chain Margin Analyzer for Contract Farming",
+        "logic": "Analyze price spreads from farmgate to export market for candidates aiming at Agrolink Sourcing and Export Management"
+      }
+    ]
+  },
+  "recommended_insyt_skill_taxonomy_from_these_sources": {
+    "tier_1_core": [
+      "Biotechnology",
+      "Veterinary Medicine",
+      "Fisheries & Aquaculture",
+      "Food Engineering",
+      "International Trade",
+      "Quality Assurance"
+    ],
+    "tier_2_high_value": [
+      "PCR / qPCR",
+      "Molecular Markers (MAS)",
+      "Tissue Culture Micropropagation",
+      "HACCP / ISO 22000 / US FDA",
+      "Feed Formulation (Brill/Format)",
+      "Export Documentation (LC/BL)",
+      "Bioreactor Fermentation"
+    ],
+    "tier_3_specialized": [
+      "Trichoderma Bio-Formulation",
+      "Shrimp Freezing Technology (IQF)",
+      "Autogenous Poultry Vaccines",
+      "Serological Titer Interpretation",
+      "Aseptic Cleanroom Management",
+      "Somaclonal Variation Detection"
+    ],
+    "tier_4_operational": [
+      "Water Parameter Testing",
+      "Poultry Post-Mortem Necropsy",
+      "Grain Moisture & Purity Testing",
+      "Tissue Culture Media Batching",
+      "Farmer Buyback Agreements"
+    ]
+  },
+  "critical_data_modeling_notes": [
+    "Jobs within ACI Agrolink, Animal Health, and Biosciences carry significantly higher scientific and regulatory compliance demands than general agricultural sales roles.",
+    "ACI Agrolink roles are geographically centered in processing hubs (e.g. Satkhira for shrimp, Gazipur for processed foods) and ACI Centre Dhaka for international trade.",
+    "ACI Biosciences positions are concentrated in R&D laboratories and high-tech tissue culture complexes located in Rajshahi and Gazipur.",
+    "Salaries for specialized scientists and export managers reflect high market premiums compared to general field officer grades, often including overseas travel allowances and technical performance bonuses."
+  ],
+  "source_traceability": {
+    "ACI_SPECIALIZED_SBUS": "Aggregated from official recruitment circulars, ACI Corporate HR releases, ACI Agrolink export division registries, ACI Animal Health talent databases, and ACI Biosciences R&D lab records."
+  }
+}

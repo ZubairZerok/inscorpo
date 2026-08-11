@@ -1,0 +1,867 @@
+{
+  "dataset_name": "INSYT Corporate Job Intelligence — Source Extraction Batch 07 (ACME Laboratories, ADAMA Bangladesh, Aftab Bahumukhi Farms, Agilent Technologies)",
+  "source_files": [
+    {
+      "file": "ACME_ADAMA_Aftab_Agilent_Corporate_Registry.pdf",
+      "organization": "ACME Laboratories Ltd., ADAMA Bangladesh Ltd., Aftab Bahumukhi Farms Ltd., Agilent Technologies",
+      "pages": "Aggregated Multi-Enterprise Recruitment Archives",
+      "source_type": "Official Recruitment Notices, Technical Service Circulars, & Corporate Talent Registries",
+      "source_citation": "Corporate HR Archives, BDJobs Executive Filings, & Technical SBU Notices"
+    }
+  ],
+  "extraction_policy": {
+    "source_first": true,
+    "salary_interpretation": "Gross monthly compensation in BDT (Consolidated grade salary plus TA/DA, field incentives, professional allowances, PF, gratuity, and performance bonuses) unless specified as fixed pay scale.",
+    "inferred_skills": "Post-joining skills are explicitly modeled around pharmaceutical GMP compliance, crop protection formulation, poultry feed conversion ratio (FCR) optimization, analytical chromatography (HPLC/LC-MS), and field technical extension.",
+    "ambiguous_text_policy": "Where market compensation varies based on technical specialization or location, standard corporate grade benchmarks and realistic industry ranges are mapped."
+  },
+  "organizations": [
+    {
+      "organization": "The ACME Laboratories Ltd. (Veterinary & Human Pharma SBUs)",
+      "acronym": "ACME_LABS",
+      "location": "Head Office: Kallayanpur, Mirpur Road, Dhaka; Plant: Dhulivita, Dhamrai, Dhaka; Depot Network: Nationwide",
+      "sector": "Pharmaceuticals, Animal Health & Veterinary Products, Herbal & Neutraceuticals",
+      "circular_date": "Continuous Corporate Archives",
+      "total_job_categories": 18,
+      "total_vacancies": "Variable by recruitment cycle (150+ annually across Human & Vet Divisions)",
+      "application_start": "Continuous / As per circular notices",
+      "application_deadline": "Varies by position",
+      "age_requirement": "20-35 years (flexible for senior executive or R&D roles)",
+      "application_mode": "ACME Career Portal (acmeglobal.com/career) & Walk-in / BDJobs Submissions",
+      "selection": [
+        "Academic & CV Shortlisting",
+        "Written Aptitude / Technical Domain Test (for R&D, QC & Engineering)",
+        "Field Communication Assessment (for MPO / VSO roles)",
+        "Panel Interview & Vetting"
+      ],
+      "application_fee": {
+        "note": "ACME Laboratories Ltd. does not charge any application or recruitment fees.",
+        "known_structure": "Free application"
+      },
+      "general_requirements": [
+        "Bangladeshi citizenship",
+        "Relevant degree (DVM, B.Sc. Agriculture, B.Pharm, M.Pharm, B.Sc. Chemistry/Microbiology, B.Sc. Engineering)",
+        "Willingness to work in shifts (for manufacturing plant) or travel extensively across field territories (for sales/technical officers)"
+      ],
+      "source": "ACME Laboratories Corporate Career Archives & BDJobs Filings",
+      "jobs": [
+        {
+          "id": "ACME-LABS-01",
+          "title_bn": "মেডিকেল প্রমোশন অফিসার / ফিল্ড অফিসার (ভেটেরিনারি ইউনিট)",
+          "title_en": "Medical Promotion Officer / Veterinary Sales Officer (Veterinary Unit)",
+          "job_family": "Veterinary Sales & Extension",
+          "vacancy": "20-35 per cycle",
+          "grade": "Officer Grade",
+          "salary_scale_bdt": "22000-32000",
+          "education": "DVM, B.Sc. in Animal Husbandry, B.Sc. in Agriculture, or Science Graduate.",
+          "experience": "0-2 years (Fresh veterinary/agri graduates strongly encouraged).",
+          "hard_skills_before_joining": [
+            "Veterinary pharmacology basics",
+            "Livestock disease symptoms",
+            "Doctor & chemist call detailing",
+            "Communication skills"
+          ],
+          "skills_after_joining_inferred": [
+            "Cattle & poultry health product prescription generation",
+            "Veterinary chemist trade channel management",
+            "Dairy farm technical group meeting execution",
+            "Field trial demonstration of ACME vet products"
+          ],
+          "insyt_skill_tags": [
+            "veterinary",
+            "sales",
+            "animal_health",
+            "pharmacology",
+            "dvm"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ACME-LABS-02",
+          "title_bn": "প্রোডাক্ট এক্সিকিউটিভ / অ্যাসিস্ট্যান্ট ব্র্যান্ড ম্যানেজার (ভেটেরিনারি সার্ভিসেস)",
+          "title_en": "Product Executive / Assistant Brand Manager (Veterinary Division)",
+          "job_family": "Veterinary Product Management",
+          "vacancy": "2-3 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "38000-58000",
+          "education": "Doctor of Veterinary Medicine (DVM) + MBA in Marketing preferred.",
+          "experience": "2-4 years in veterinary product management or livestock technical marketing.",
+          "hard_skills_before_joining": [
+            "Veterinary market research",
+            "Product launch campaign design",
+            "Technical literature drafting",
+            "Brand positioning"
+          ],
+          "skills_after_joining_inferred": [
+            "Livestock antibiotic & feed additive portfolio management",
+            "Field sales force technical training manual creation",
+            "Commercial dairy/poultry farm trial design",
+            "Competitor market share & price sensitivity analysis"
+          ],
+          "insyt_skill_tags": [
+            "product_management",
+            "veterinary",
+            "dvm",
+            "marketing",
+            "animal_health"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ACME-LABS-03",
+          "title_bn": "কোয়ালিটি কন্ট্রোল অফিসার (ফার্মাসিউটিক্যাল ও ভেটেরিনারি প্ল্যান্ট, ধামরাই)",
+          "title_en": "Quality Control Officer (Dhamrai Manufacturing Plant)",
+          "job_family": "Quality Control & Analytical Chemistry",
+          "vacancy": "5-10 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "28000-42000",
+          "education": "B.Sc. / M.Sc. in Chemistry, Applied Chemistry, or B.Pharm.",
+          "experience": "1-3 years in pharmaceutical or veterinary QC laboratory.",
+          "hard_skills_before_joining": [
+            "HPLC & UV-Vis spectrophotometer operation",
+            "Chemical assay titration",
+            "Raw material testing",
+            "GLP protocols"
+          ],
+          "skills_after_joining_inferred": [
+            "Veterinary sterile injectable active assay",
+            "Finished product stability testing under ICH guidelines",
+            "Batch release testing for solid dosage & liquids",
+            "GMP audit laboratory documentation"
+          ],
+          "insyt_skill_tags": [
+            "quality_control",
+            "chemistry",
+            "hplc",
+            "pharmaceuticals",
+            "glp"
+          ]
+        },
+        {
+          "id": "ACME-LABS-04",
+          "title_bn": "প্রোডাকশন এক্সিকিউটিভ (স্টেরাইল / লিকুইড / ভেটেরিনারি ইউনিট)",
+          "title_en": "Production Executive (Sterile BFS / Veterinary Unit)",
+          "job_family": "Manufacturing & Operations",
+          "vacancy": "4-8 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "30000-45000",
+          "education": "B.Pharm or B.Sc. in Chemical/Food Engineering.",
+          "experience": "1-3 years in pharmaceutical cleanroom or liquid packaging lines.",
+          "hard_skills_before_joining": [
+            "cGMP guidelines",
+            "Shift production planning",
+            "Batch Manufacturing Record (BMR) execution",
+            "Cleanroom HVAC awareness"
+          ],
+          "skills_after_joining_inferred": [
+            "Blow-Fill-Seal (BFS) technology line supervision",
+            "Veterinary liquid & bolus manufacturing optimization",
+            "Yield loss tracking & OEE improvement",
+            "Sterilization-in-place (SIP) verification"
+          ],
+          "insyt_skill_tags": [
+            "production",
+            "pharmaceuticals",
+            "gmp",
+            "manufacturing",
+            "cleanroom"
+          ]
+        },
+        {
+          "id": "ACME-LABS-05",
+          "title_bn": "গবেষণা ও উন্নয়ন কর্মকর্তা (ফর্মুলেশন অ্যান্ড অ্যানালিটিক্যাল আরঅ্যান্ডডি)",
+          "title_en": "Research & Development Officer (Formulation & Analytical R&D)",
+          "job_family": "Pharmaceutical & Veterinary R&D",
+          "vacancy": "2-4 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "35000-55000",
+          "education": "M.Pharm or M.Sc. in Chemistry / Applied Chemistry.",
+          "experience": "2-4 years in pharmaceutical pre-formulation or method development.",
+          "hard_skills_before_joining": [
+            "Analytical method validation (HPLC/LC-MS)",
+            "Pre-formulation studies",
+            "Excipient compatibility testing",
+            "Dissolution profiling"
+          ],
+          "skills_after_joining_inferred": [
+            "Novel veterinary bolus & suspension formulation development",
+            "Reverse engineering of branded formulations",
+            "Technology transfer from R&D to commercial plant",
+            "Dossier preparation for Drug Administration submission"
+          ],
+          "insyt_skill_tags": [
+            "r_and_d",
+            "pharmaceuticals",
+            "chemistry",
+            "formulation",
+            "hplc"
+          ]
+        }
+      ]
+    },
+    {
+      "organization": "ADAMA Bangladesh Limited (Global Crop Protection Giant)",
+      "acronym": "ADAMA_BD",
+      "location": "Corporate HQ: Banani / Gulshan, Dhaka; Regional Depots & Field Hubs: Bogra, Rajshahi, Mymensingh, Jessore, Rangpur",
+      "sector": "Agrochemicals, Crop Protection (Insecticides, Herbicides, Fungicides, Plant Growth Regulators)",
+      "circular_date": "Continuous Agrochemical Archives",
+      "total_job_categories": 10,
+      "total_vacancies": "Variable by recruitment cycle",
+      "application_start": "Continuous / As per circular notices",
+      "application_deadline": "Varies by position",
+      "age_requirement": "22-38 years",
+      "application_mode": "ADAMA Global Careers Portal & Corporate HR Direct Sourcing",
+      "selection": [
+        "CV Screening & Agronomic Qualification Vetting",
+        "Commercial & Agronomy Written Assessment",
+        "Territory Sales Case Presentation",
+        "Panel Technical Interview"
+      ],
+      "application_fee": {
+        "note": "ADAMA Bangladesh Limited does not charge any application or recruitment fees.",
+        "known_structure": "Free application"
+      },
+      "general_requirements": [
+        "Bangladeshi citizenship",
+        "B.Sc. in Agriculture (BSCA) from a recognized public university strongly preferred",
+        "High motivation for field travel, dealer management, and technical agronomic extension"
+      ],
+      "source": "ADAMA Agricultural Solutions Archives & Bangladesh Agrochemical Industry Registries",
+      "jobs": [
+        {
+          "id": "ADAMA-BD-01",
+          "title_bn": "টেরিটোরি সেলস এক্সিকিউটিভ / ক্রপ প্রোটেকশন অফিসার",
+          "title_en": "Territory Sales Executive / Crop Protection Officer",
+          "job_family": "Commercial Agrochemical Sales",
+          "vacancy": "8-15 per cycle",
+          "grade": "Officer / Executive",
+          "salary_scale_bdt": "30000-45000",
+          "education": "B.Sc. in Agriculture (BSCA) from a recognized university.",
+          "experience": "1-3 years in crop protection, agrochemical sales, or dealer management.",
+          "hard_skills_before_joining": [
+            "Pesticide chemistry knowledge",
+            "Crop disease & pest diagnosis",
+            "Dealer network management",
+            "Commercial sales pitching"
+          ],
+          "skills_after_joining_inferred": [
+            "ADAMA proprietary chemical formulation positioning",
+            "Territory dealer credit risk & collection control",
+            "Farmer-level field demonstration day organizing",
+            "Safe chemical usage & stewardship advocacy"
+          ],
+          "insyt_skill_tags": [
+            "agrochemicals",
+            "agriculture",
+            "sales",
+            "crop_protection",
+            "agronomy"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ADAMA-BD-02",
+          "title_bn": "প্রোডাক্ট ডেভেলপমেন্ট ও এগ্রোনমি স্পেশালিস্ট",
+          "title_en": "Product Development & Agronomy Specialist",
+          "job_family": "Agronomic R&D & Field Evaluation",
+          "vacancy": "2-3 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "38000-58000",
+          "education": "B.Sc / M.Sc in Agronomy, Entomology, or Plant Pathology.",
+          "experience": "2-4 years conducting pesticide efficacy trials, bio-efficacy evaluation, or field research.",
+          "hard_skills_before_joining": [
+            "Field trial design (RCBD)",
+            "Pest intensity scoring",
+            "Phytotoxicity evaluation",
+            "Statistical trial report writing"
+          ],
+          "skills_after_joining_inferred": [
+            "Global ADAMA chemical molecule local bio-efficacy testing",
+            "DAE / Ministry trial approval documentation",
+            "Agronomic field training manual creation for sales team",
+            "Crop disease resistance tracking"
+          ],
+          "insyt_skill_tags": [
+            "agronomy",
+            "agrochemicals",
+            "field_research",
+            "entomology",
+            "plant_pathology"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ADAMA-BD-03",
+          "title_bn": "প্রোডাক্ট ম্যানেজার (ক্রপ প্রোটেকশন অ্যান্ড ইয়েল্ড সলিউশনস)",
+          "title_en": "Product Manager — Crop Protection",
+          "job_family": "Agrochemical Product Management",
+          "vacancy": "1-2 per cycle",
+          "grade": "Assistant Manager / Manager",
+          "salary_scale_bdt": "55000-85000",
+          "education": "B.Sc. Agriculture (BSCA) + MBA in Marketing.",
+          "experience": "3-6 years in agrochemical product portfolio management or marketing.",
+          "hard_skills_before_joining": [
+            "Pesticide market segmentation",
+            "Brand positioning & lifecycle planning",
+            "Promotional campaign budgeting",
+            "Sales forecasting"
+          ],
+          "skills_after_joining_inferred": [
+            "Herbicide & fungicide campaign national execution",
+            "Global product launch adaptation for Bangladesh market",
+            "Margin analysis & price elasticity modeling",
+            "Competitor chemical active ingredient benchmarking"
+          ],
+          "insyt_skill_tags": [
+            "product_management",
+            "agrochemicals",
+            "marketing",
+            "agribusiness"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        },
+        {
+          "id": "ADAMA-BD-04",
+          "title_bn": "রেগুলেটরি অ্যাফেয়ার্স ও রেজিস্ট্রেশন ম্যানেজার",
+          "title_en": "Regulatory Affairs & Registration Manager",
+          "job_family": "Regulatory Compliance & Legal",
+          "vacancy": "1 per cycle",
+          "grade": "Manager / Senior Manager",
+          "salary_scale_bdt": "70000-100000",
+          "education": "B.Sc / M.Sc in Agriculture, Chemistry, or Environmental Science.",
+          "experience": "5-8 years dealing with Department of Agricultural Extension (DAE), Pesticide Technical Advisory Committee (PTAC), and chemical registration.",
+          "hard_skills_before_joining": [
+            "Pesticide Act & Rules compliance",
+            "Registration dossier compilation",
+            "Toxicology & environmental safety documentation",
+            "Government liaison"
+          ],
+          "skills_after_joining_inferred": [
+            "New active ingredient AP-form clearance management",
+            "Import license renewal & customs clearing permit coordination",
+            "Label text & precautionary safety text approval",
+            "Chemical safety & environmental compliance audit"
+          ],
+          "insyt_skill_tags": [
+            "regulatory_affairs",
+            "agrochemicals",
+            "compliance",
+            "dae"
+          ]
+        },
+        {
+          "id": "ADAMA-BD-05",
+          "title_bn": "সাপ্লাই চেইন ও ডিস্ট্রিবিউশন লজিস্টিকস অফিসার",
+          "title_en": "Supply Chain & Distribution Logistics Officer",
+          "job_family": "Supply Chain & Warehouse Operations",
+          "vacancy": "2-4 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "30000-45000",
+          "education": "Graduate / BBA / B.Sc in IPE or Supply Chain.",
+          "experience": "2-4 years in hazardous chemical logistics, port customs clearance, or regional depot warehousing.",
+          "hard_skills_before_joining": [
+            "Warehouse management systems",
+            "Hazardous material storage safety",
+            "Customs port clearance",
+            "Inventory reconciliation"
+          ],
+          "skills_after_joining_inferred": [
+            "Imported agrochemical bulk distribution to regional depots",
+            "Peak farming season buffer stock routing",
+            "Dangerous goods transport safety protocol enforcement",
+            "ERP-based inventory tracking"
+          ],
+          "insyt_skill_tags": [
+            "supply_chain",
+            "logistics",
+            "agrochemicals",
+            "inventory"
+          ]
+        }
+      ]
+    },
+    {
+      "organization": "Aftab Bahumukhi Farms Ltd. (Islam Group Agro-SBU)",
+      "acronym": "AFTAB_FARMS",
+      "location": "HQ: Jahangir Tower, Karwan Bazar, Dhaka; Integrated Farms & Feed Mills: Kishoreganj (Bhairab/Bajitpur), Gazipur & Nationwide",
+      "sector": "Integrated Poultry, Feed Mill, Day-Old Chicks (DOC), Contract Farming, Aqua Feed, Processed Food (Aftab Foods)",
+      "circular_date": "Continuous Agro-Industrial Archives",
+      "total_job_categories": 15,
+      "total_vacancies": "Variable by recruitment cycle (80+ annually across divisions)",
+      "application_start": "Continuous / As per circular notices",
+      "application_deadline": "Varies by position",
+      "age_requirement": "22-38 years",
+      "application_mode": "BDJobs Corporate Listing & Aftab HR Portal Direct Application",
+      "selection": [
+        "CV Shortlisting & Academic Vetting",
+        "Technical Domain Written / Field Knowledge Test",
+        "Technical Seminar / Operational Report Evaluation",
+        "Panel Oral Interview & Vetting"
+      ],
+      "application_fee": {
+        "note": "Aftab Bahumukhi Farms Ltd. does not charge any application or recruitment fees.",
+        "known_structure": "Free application"
+      },
+      "general_requirements": [
+        "Bangladeshi citizenship",
+        "Relevant degree (DVM, B.Sc. Animal Husbandry, B.Sc. Fisheries, Mechanical/Electrical Engineering, Agricultural Economics)",
+        "Willingness to live and work at farm/feed mill site locations in rural/semi-urban Bangladesh"
+      ],
+      "source": "Aftab Bahumukhi Farms HR Postings & BDJobs Executive Registry",
+      "jobs": [
+        {
+          "id": "AFTAB-FARM-01",
+          "title_bn": "সিনিয়র এক্সিকিউটিভ / এক্সিকিউটিভ (টেকনিক্যাল সার্ভিসেস - পোল্ট্রি ও ক্যাটল)",
+          "title_en": "Executive / Senior Executive — Technical Services (Poultry & Cattle)",
+          "job_family": "Technical Extension & Veterinary Health",
+          "vacancy": "5-10 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "32000-48000",
+          "education": "Doctor of Veterinary Medicine (DVM) or B.Sc. in Animal Husbandry.",
+          "experience": "1-3 years in commercial poultry/cattle farm technical service, disease diagnosis, or feed FCR analysis.",
+          "hard_skills_before_joining": [
+            "Poultry disease post-mortem diagnosis",
+            "Feed Conversion Ratio (FCR) tracking",
+            "Farmer technical seminar organizing",
+            "Dealer technical communication"
+          ],
+          "skills_after_joining_inferred": [
+            "Aftab feed & DOC technical brand switching execution",
+            "Contract farmer flock mortality management",
+            "Competitor feed FCR benchmarking report preparation",
+            "Field disease outbreak diagnostic advisory"
+          ],
+          "insyt_skill_tags": [
+            "veterinary",
+            "dvm",
+            "poultry",
+            "technical_services",
+            "feed_fcr"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "AFTAB-FARM-02",
+          "title_bn": "পোল্ট্রি ফার্ম ম্যানেজার / হ্যাচারি ইন-চার্জ (প্যারেন্ট স্টক ও বি ব্রিডিং)",
+          "title_en": "Poultry Farm Manager / Hatchery In-Charge",
+          "job_family": "Farm Operations & Hatchery Management",
+          "vacancy": "3-6 per cycle",
+          "grade": "Assistant Manager Level",
+          "salary_scale_bdt": "40000-60000",
+          "education": "DVM or B.Sc. in Animal Husbandry.",
+          "experience": "3-5 years managing parent stock breeder farms or commercial hatcheries.",
+          "hard_skills_before_joining": [
+            "Incubation & hatchability parameters",
+            "Breeder flock biosecurity",
+            "Egg grading & storage",
+            "Farm labor management"
+          ],
+          "skills_after_joining_inferred": [
+            "Day-Old Chick (DOC) hatchability rate optimization (>85%)",
+            "Vaccination schedule enforcement in breeder sheds",
+            "Climate-controlled shed automated ventilation management",
+            "Bio-secure farm audit compliance"
+          ],
+          "insyt_skill_tags": [
+            "poultry",
+            "farm_management",
+            "hatchery",
+            "dvm",
+            "husbandry"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "AFTAB-FARM-03",
+          "title_bn": "ফিড মিল অপারেন্স ও মেইনটেন্যান্স ইঞ্জিনিয়ার (মেকানিক্যাল / ইলেকট্রিক্যাল)",
+          "title_en": "Feed Mill Operations & Maintenance Engineer",
+          "job_family": "Feed Mill Engineering & Operations",
+          "vacancy": "2-4 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "32000-48000",
+          "education": "B.Sc. in Mechanical or Electrical Engineering.",
+          "experience": "2-4 years in commercial poultry/aqua feed mill machinery operations (pellet mill, conditioner, extruder).",
+          "hard_skills_before_joining": [
+            "Pellet mill machine maintenance",
+            "Steam boiler operations",
+            "Electrical PLC control panels",
+            "Preventive maintenance scheduling"
+          ],
+          "skills_after_joining_inferred": [
+            "High-capacity feed mill tonnage rate optimization",
+            "Pellet durability index (PDI) mechanical control",
+            "Boiler fuel efficiency optimization",
+            "Emergency breakdown repair under continuous shifts"
+          ],
+          "insyt_skill_tags": [
+            "engineering",
+            "feed_mill",
+            "mechanical",
+            "electrical",
+            "operations"
+          ]
+        },
+        {
+          "id": "AFTAB-FARM-04",
+          "title_bn": "কনট্র্যাক্ট ফার্মিং অ্যান্ড প্রকিউরমেন্ট স্পেশালিস্ট (ব্রয়লার অ্যান্ড লেয়ার)",
+          "title_en": "Contract Farming & Procurement Specialist",
+          "job_family": "Contract Farming & Agrarian Sourcing",
+          "vacancy": "4-8 per cycle",
+          "grade": "Officer / Executive",
+          "salary_scale_bdt": "28000-40000",
+          "education": "B.Sc. in Agriculture, DVM, B.Sc. Animal Husbandry, or Agricultural Economics.",
+          "experience": "1-3 years in contract farming model supervision, broiler buying, or farmer group management.",
+          "hard_skills_before_joining": [
+            "Contract farming agreement drafting",
+            "Farmer credit risk assessment",
+            "Live bird weight grading",
+            "Local bird market price tracking"
+          ],
+          "skills_after_joining_inferred": [
+            "Aftab integrated contract farmer buyback execution",
+            "DOC & feed input distribution to contract farms",
+            "Seasonal mortality loss compensation modeling",
+            "Direct farmer payment reconciliation"
+          ],
+          "insyt_skill_tags": [
+            "contract_farming",
+            "poultry",
+            "procurement",
+            "agricultural_economics",
+            "extension"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        },
+        {
+          "id": "AFTAB-FARM-05",
+          "title_bn": "কোয়ালিটি কন্ট্রোল কেমিস্ট (ফিড মিল নিউট্রিশন ও র মেটেরিয়ালস)",
+          "title_en": "Quality Control Chemist — Feed Mill Laboratory",
+          "job_family": "Quality Control & Feed Chemistry",
+          "vacancy": "2-4 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "26000-38000",
+          "education": "B.Sc / M.Sc in Chemistry, Biochemistry, or Food Technology.",
+          "experience": "1-3 years testing feed raw materials (maize, soybean meal) and finished feed.",
+          "hard_skills_before_joining": [
+            "Proximate analysis (Protein, Fat, Fiber, Ash)",
+            "Mycotoxin / Aflatoxin testing kits",
+            "Moisture testing",
+            "Lab glassware safety"
+          ],
+          "skills_after_joining_inferred": [
+            "NIR spectrometer rapid feed raw material analysis",
+            "Aflatoxin B1 level rejection sign-off for maize loads",
+            "Finished feed amino acid profile validation",
+            "Adulteration check in soybean meal batches"
+          ],
+          "insyt_skill_tags": [
+            "quality_control",
+            "chemistry",
+            "feed_mill",
+            "biochemistry",
+            "food_technology"
+          ]
+        }
+      ]
+    },
+    {
+      "organization": "Agilent Technologies (Analytical Instrumentation & Life Sciences)",
+      "acronym": "AGILENT_TECH",
+      "location": "Dhaka Regional Sales & Application Support Hub (Tejgaon / Banani) & Authorized Channel Partners (Trade House / Overseas Trading)",
+      "sector": "Life Sciences, Applied Chemical Markets, Analytical Instruments (HPLC, LC-MS, GC-MS, ICP-MS, Spectroscopy, Lab Automation)",
+      "circular_date": "Continuous Specialized Scientific Archives",
+      "total_job_categories": 8,
+      "total_vacancies": "Variable by recruitment cycle (Highly specialized technical roles)",
+      "application_start": "Continuous / As per global and regional notices",
+      "application_deadline": "Varies by position",
+      "age_requirement": "24-40 years",
+      "application_mode": "Agilent Careers Portal (careers.agilent.com) & Channel Partner Sourcing",
+      "selection": [
+        "CV Shortlisting & Scientific Credentials Audit",
+        "Instrument Handling / Practical Application Test",
+        "Technical Customer Presentation Assessment",
+        "Regional Technical Panel Interview (English)"
+      ],
+      "application_fee": {
+        "note": "Agilent Technologies and its authorized partners do not charge any recruitment fees.",
+        "known_structure": "Free application"
+      },
+      "general_requirements": [
+        "Bangladeshi citizenship",
+        "Strong academic background in Chemistry, Applied Chemistry, Biochemistry, Biotechnology, Pharmacy, or Electrical/Mechanical Engineering",
+        "Fluent technical English communication skills and high willingness for technical troubleshooting at pharma & research labs"
+      ],
+      "source": "Agilent Technologies Global Career Portal & Bangladesh Authorized Partner Registries",
+      "jobs": [
+        {
+          "id": "AGILENT-01",
+          "title_bn": "ফিল্ড অ্যাপ্লিকেশন স্পেশালিস্ট (ক্রোমাটোগ্রাফি অ্যান্ড মাস স্পেকট্রোমেট্রি - HPLC/LC-MS/GC-MS)",
+          "title_en": "Field Application Specialist (Chromatography & Mass Spectrometry)",
+          "job_family": "Scientific Application & Product Support",
+          "vacancy": "2-3 per cycle",
+          "grade": "Senior Executive / Specialist Level",
+          "salary_scale_bdt": "50000-80000",
+          "education": "M.Sc. / Ph.D in Chemistry, Applied Chemistry, Biochemistry, or Biotechnology.",
+          "experience": "3-6 years operating and developing methods on HPLC, UHPLC, GC-MS, or LC-MS instruments.",
+          "hard_skills_before_joining": [
+            "Chromatographic method development",
+            "Mass spectrometry spectrum interpretation",
+            "Quantitation & qualitative analysis",
+            "Troubleshooting peak tailing & pressure drops"
+          ],
+          "skills_after_joining_inferred": [
+            "Pharma & university research lab method demonstration",
+            "Agilent ChemStation / OpenLab CDS software training for clients",
+            "Application note drafting for food safety residue testing (e.g. pesticide/aflatoxin)",
+            "Client analytical query troubleshooting"
+          ],
+          "insyt_skill_tags": [
+            "hplc",
+            "mass_spectrometry",
+            "chemistry",
+            "chromatography",
+            "biotechnology"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "AGILENT-02",
+          "title_bn": "ফিল্ড সার্ভিস ইঞ্জিনিয়ার (অ্যানালিটিক্যাল ইন্সট্রুমেন্টস অ্যান্ড ল্যাব অটোমেশন)",
+          "title_en": "Field Service Engineer (Analytical Instrumentation)",
+          "job_family": "Instrument Maintenance & Hardware Engineering",
+          "vacancy": "3-5 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "45000-70000",
+          "education": "B.Sc. in Electrical & Electronic Engineering (EEE), Applied Physics, or Mechanical Engineering.",
+          "experience": "2-5 years installing, calibrating, and maintaining high-end analytical equipment (HPLC, GC, AAS, ICP-MS).",
+          "hard_skills_before_joining": [
+            "PCB board troubleshooting",
+            "Precision optical & vacuum system repair",
+            "Calibration & IQ/OQ qualification protocols",
+            "Electronic circuit reading"
+          ],
+          "skills_after_joining_inferred": [
+            "Agilent hardware installation at pharma plants & university labs",
+            "Annual Maintenance Contract (AMC) service execution",
+            "Vacuum pump & autosampler mechanical repair",
+            "Emergency client laboratory downtime resolution"
+          ],
+          "insyt_skill_tags": [
+            "engineering",
+            "field_service",
+            "eee",
+            "instrumentation",
+            "calibration"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "AGILENT-03",
+          "title_bn": "টেরিটোরি অ্যাকাউন্ট ম্যানেজার / অ্যানালিটিক্যাল সোকস এক্সিকিউটিভ",
+          "title_en": "Territory Account Manager — Analytical Sales",
+          "job_family": "B2B Technical Sales & Account Management",
+          "vacancy": "2-4 per cycle",
+          "grade": "Senior Executive / Assistant Manager",
+          "salary_scale_bdt": "55000-85000",
+          "education": "B.Sc / M.Sc in Chemistry, Pharmacy, or BBA/MBA with scientific instrument sales background.",
+          "experience": "3-6 years selling high-value analytical instruments to pharmaceutical companies, research institutes (BCSIR, BARI, BRRI), or testing labs.",
+          "hard_skills_before_joining": [
+            "B2B capital equipment sales",
+            "Public tender (e-GP) proposal drafting",
+            "Key account management",
+            "Commercial quotation negotiation"
+          ],
+          "skills_after_joining_inferred": [
+            "Pharma QA/QC laboratory procurement deal closing",
+            "Government research institute budget tracking & tender winning",
+            "Instrument consumable & column sales growth",
+            "Agilent brand competitive advantage presentation"
+          ],
+          "insyt_skill_tags": [
+            "sales",
+            "b2b_sales",
+            "instrumentation",
+            "chemistry",
+            "key_account_management"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        },
+        {
+          "id": "AGILENT-04",
+          "title_bn": "বায়ো-অ্যানালিটিক্যাল সাপোর্ট ও মেথড ভ্যালিডেশন স্পেশালিস্ট",
+          "title_en": "Bio-Analytical Support & Method Validation Specialist",
+          "job_family": "Analytical Method Validation & Compliance",
+          "vacancy": "1-2 per cycle",
+          "grade": "Specialist / Senior Specialist",
+          "salary_scale_bdt": "50000-75000",
+          "education": "M.Sc. in Chemistry, Biochemistry, or Pharmacy.",
+          "experience": "3-5 years in pharmaceutical analytical method validation under US FDA / EU GMP guidelines.",
+          "hard_skills_before_joining": [
+            "ICH Q2(R1) method validation guidelines",
+            "Linearity, precision, accuracy & LOD/LOQ calculation",
+            "Dissolution profile testing",
+            "Data integrity compliance"
+          ],
+          "skills_after_joining_inferred": [
+            "Pharma client analytical method transfer assistance",
+            "Agilent OpenLab 21 CFR Part 11 data integrity audit support",
+            "Impurity profiling assay development for active pharma ingredients",
+            "Client lab audit readiness preparation"
+          ],
+          "insyt_skill_tags": [
+            "chemistry",
+            "method_validation",
+            "pharmaceuticals",
+            "compliance",
+            "biochemistry"
+          ]
+        }
+      ]
+    }
+  ],
+  "cross_source_insights": {
+    "most_important_new_signal": "This extraction batch links upstream chemical/analytical capabilities (Agilent Technologies, ACME Laboratories) with downstream crop protection and livestock integration (ADAMA Bangladesh, Aftab Bahumukhi Farms). Candidates possessing dual competence—such as Agricultural Economics with data modeling, or Chemistry/Microbiology with analytical software proficiency—command significant career acceleration across these enterprises.",
+    "highest_value_jobs_for_an_agricultural_economics_data_candidate": [
+      {
+        "organization": "Aftab Bahumukhi Farms",
+        "job": "Contract Farming & Procurement Specialist",
+        "why": "Directly applies Agricultural Economics in farmer credit risk evaluation, broiler buyback pricing models, and supply chain loss reduction.",
+        "skills_to_prioritize": [
+          "Contract Farming Models",
+          "Farmer Credit Risk Scoring",
+          "Econometrics",
+          "Procurement Analytics"
+        ]
+      },
+      {
+        "organization": "ADAMA Bangladesh",
+        "job": "Product Manager — Crop Protection",
+        "why": "High-value commercial brand leadership analyzing pesticide price elasticity, seasonal demand forecasting, and market share modeling.",
+        "skills_to_prioritize": [
+          "Market Research",
+          "Sales Forecasting",
+          "Agribusiness Marketing",
+          "Price Sensitivity Analysis"
+        ]
+      },
+      {
+        "organization": "ACME Laboratories",
+        "job": "Product Executive / Assistant Brand Manager (Veterinary Division)",
+        "why": "Strategic marketing role evaluating livestock market trends, competitor price positioning, and veterinary channel dynamics.",
+        "skills_to_prioritize": [
+          "Brand Management",
+          "Market Segmentation",
+          "Veterinary Market Economics",
+          "Product Portfolio Strategy"
+        ]
+      },
+      {
+        "organization": "Agilent Technologies",
+        "job": "Territory Account Manager — Analytical Sales",
+        "why": "Commercial leadership position driving high-value B2B tender evaluations, public research lab budget tracking, and capital equipment sales.",
+        "skills_to_prioritize": [
+          "B2B Sales Strategy",
+          "Public Tender Analytics (e-GP)",
+          "Financial Valuation",
+          "Key Account Management"
+        ]
+      }
+    ],
+    "repeated_skill_patterns": {
+      "analytical_chemistry_and_hplc": {
+        "frequency": "Very high",
+        "appears_in": [
+          "ACME QC Officer",
+          "ACME R&D Officer",
+          "Agilent Application Specialist",
+          "Agilent Bio-Analytical Specialist",
+          "ADAMA Agronomy Specialist"
+        ]
+      },
+      "veterinary_and_poultry_health": {
+        "frequency": "Very high",
+        "appears_in": [
+          "ACME Vet Promotion Officer",
+          "ACME Vet Product Executive",
+          "Aftab Technical Services Executive",
+          "Aftab Farm Manager",
+          "Aftab Contract Farming Specialist"
+        ]
+      },
+      "agrochemicals_and_agronomy": {
+        "frequency": "High",
+        "appears_in": [
+          "ADAMA Sales Executive",
+          "ADAMA Product Development Specialist",
+          "ADAMA Product Manager",
+          "ADAMA Regulatory Affairs Manager"
+        ]
+      },
+      "engineering_and_maintenance": {
+        "frequency": "High",
+        "appears_in": [
+          "Aftab Feed Mill Engineer",
+          "Agilent Field Service Engineer",
+          "ACME Production Executive"
+        ]
+      }
+    },
+    "insyt_corporate_product_opportunities": [
+      {
+        "feature": "Analytical Instrument & Lab Skill Matcher",
+        "input": "University laboratory experience (HPLC, GC-MS, UV-Vis, Spectrophotometry)",
+        "output": "Direct vacancy matching for ACME QC/R&D, Aftab Feed Lab, and Agilent Application Specialist positions"
+      },
+      {
+        "feature": "Poultry & Livestock Career Integration Map",
+        "logic": "Map DVM / Animal Husbandry academic pathways into commercial corporate roles (Aftab Farms, ACME Vet)"
+      },
+      {
+        "feature": "Agrochemical Regulatory & Compliance Tracker",
+        "logic": "Track DAE pesticide registration protocols to prep candidates for ADAMA Regulatory & Agronomy roles"
+      }
+    ]
+  },
+  "recommended_insyt_skill_taxonomy_from_these_sources": {
+    "tier_1_core": [
+      "Veterinary Medicine",
+      "Agronomy",
+      "Agrochemicals",
+      "Pharmaceuticals",
+      "Analytical Chemistry",
+      "Poultry Science"
+    ],
+    "tier_2_high_value": [
+      "HPLC / LC-MS / GC-MS",
+      "Crop Protection Bio-Efficacy",
+      "Feed Conversion Ratio (FCR)",
+      "Contract Farming Models",
+      "cGMP / GLP Compliance",
+      "Pesticide Act & DAE Regulations"
+    ],
+    "tier_3_specialized": [
+      "OpenLab CDS / ChemStation Software",
+      "Parent Stock Hatchability Optimization",
+      "NIR Feed Raw Material Spectrometry",
+      "ICH Q2(R1) Method Validation",
+      "Pellet Mill PDI Control",
+      "21 CFR Part 11 Data Integrity"
+    ],
+    "tier_4_operational": [
+      "Poultry Post-Mortem Necropsy",
+      "Field Crop Pest Intensity Scoring",
+      "Feed Raw Material Proximate Analysis",
+      "PCB Board Instrumentation Repair",
+      "Doctor & Chemist Trade Detailing"
+    ]
+  },
+  "critical_data_modeling_notes": [
+    "ACME Laboratories veterinary positions represent a direct commercial pathway for DVM and Agricultural Science graduates seeking pharmaceutical corporate careers.",
+    "ADAMA Bangladesh roles demand high agronomic technical knowledge (B.Sc. Agriculture) paired with commercial territory sales capability.",
+    "Aftab Bahumukhi Farms operates fully integrated poultry and feed operations; positions are mostly farm-site based in Kishoreganj, Gazipur, and regional hubs.",
+    "Agilent Technologies positions require high technical literacy in analytical chemistry or hardware engineering, serving high-end pharmaceutical QA/QC labs and national research institutes."
+  ],
+  "source_traceability": {
+    "ACME_ADAMA_Aftab_Agilent": "Aggregated from official recruitment circulars, ACME Laboratories HR records, ADAMA Bangladesh commercial notices, Aftab Bahumukhi Farms BDJobs postings, and Agilent Technologies global career registries."
+  }
+}

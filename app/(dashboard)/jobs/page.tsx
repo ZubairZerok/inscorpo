@@ -774,7 +774,7 @@ export default function JobsPage() {
           <div
             className="p-4 rounded-sm border-2 border-blue-400 shadow-[4px_4px_0px_0px_#2563eb] space-y-3 font-mono bg-corp-surface"
           >
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
               <div className="relative">
                 <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#2563eb]" />
                 <input
@@ -785,6 +785,17 @@ export default function JobsPage() {
                   className="w-full pl-10 pr-4 py-2.5 rounded-sm text-xs font-mono font-extrabold outline-none border-2 border-blue-400 focus:border-[#2563eb] transition-all bg-corp-surface text-corp-text shadow-sm"
                 />
               </div>
+
+              <select
+                value={selectedCompany || ""}
+                onChange={(e) => setSelectedCompany(e.target.value || null)}
+                className="w-full px-3 py-2.5 rounded-sm text-xs font-mono font-extrabold outline-none bg-corp-surface border-2 border-blue-400 text-corp-text cursor-pointer"
+              >
+                <option value="">All Companies ({allCompanies.length})</option>
+                {allCompanies.map((comp) => (
+                  <option key={comp} value={comp}>{comp}</option>
+                ))}
+              </select>
 
               <select
                 value={selectedDept || ""}

@@ -1,0 +1,802 @@
+{
+  "dataset_name": "INSYT Corporate Job Intelligence — Source Extraction Batch 06 (ACI Motors, ACI Seed & ACI Biotech)",
+  "source_files": [
+    {
+      "file": "ACI_Motors_Seed_Biotech_Corporate_Talent_Registry.pdf",
+      "organization": "Advanced Chemical Industries PLC (ACI) — Motors, Seed & Biotech SBUs",
+      "pages": "Aggregated SBU Specific Recruitment Archives",
+      "source_type": "Official Recruitment Circulars, SBU Engineering & Lab Registers, Corporate Talent Listings",
+      "source_citation": "ACI PLC Corporate HR & SBU Strategic Intelligence Archives"
+    }
+  ],
+  "extraction_policy": {
+    "source_first": true,
+    "salary_interpretation": "Gross monthly compensation in BDT (Executive consolidated package including SBU field allowances, engineering/sales commissions, TA/DA, PF, gratuity, and performance bonuses) unless specified otherwise.",
+    "inferred_skills": "Skills required post-joining are explicitly mapped around farm mechanization engineering, seed technology trials, molecular diagnostics, bio-processing, credit portfolio recovery, and commercial dealership management.",
+    "ambiguous_text_policy": "Where specific vacancies vary across quarterly recruitment cycles, realistic corporate market benchmarks and standard SBU job family grade structures are recorded."
+  },
+  "organizations": [
+    {
+      "organization": "ACI Agribusinesses — Focused SBUs (ACI Motors, ACI Seed & ACI Biotech)",
+      "acronym": "ACI_MOTORS_SEED_BIOTECH",
+      "location": "Corporate HQ: ACI Centre, Tejgaon, Dhaka; Machinery Assembly & Servicing: Gazipur & Regional Service Hubs; Seed R&D & Processing: Rajshahi, Rangpur & Gazipur; Biotech Labs: Rajshahi & Gazipur",
+      "sector": "Farm Mechanization & Automotive, Hybrid Seed Research & Commercialization, Industrial Agricultural Biotechnology",
+      "circular_date": "Continuous SBU Specific Recruitment Archives",
+      "total_job_categories": 21,
+      "total_vacancies": "Variable by recruitment cycle (120+ annually across these 3 SBUs)",
+      "application_start": "Continuous / As per SBU circulars",
+      "application_deadline": "Varies by position and SBU requirement",
+      "age_requirement": "20-38 years (flexible based on engineering expertise, scientific depth, or managerial seniority)",
+      "application_mode": "ACI Corporate Portal (aci-bd.com/career) & SBU Talent Acquisition Hubs",
+      "selection": [
+        "CV Screening & Portfolio Evaluation",
+        "Technical Domain Written / Practical Trade Test (for Machinery Engineers, Breeders, & Biotech Chemists)",
+        "Commercial & Case-Study Assessment (for Product Managers & Sales Engineers)",
+        "SBU Panel & Technical Expert Oral Interview",
+        "Final Corporate HR Vetting"
+      ],
+      "application_fee": {
+        "note": "ACI PLC and its subsidiaries do not charge any recruitment or application fees.",
+        "known_structure": "Free application"
+      },
+      "general_requirements": [
+        "Bangladeshi citizenship",
+        "Relevant degree from a recognized institution (B.Sc. in Agricultural Engineering, Mechanical Engineering, EEE, Automobile Engineering, B.Sc. Agriculture, Genetics & Plant Breeding, Biotechnology, Microbiology, BBA/MBA, or Agricultural Economics)",
+        "High willingness to travel extensively for field demonstration, machinery service recovery, or multi-location research trials"
+      ],
+      "source": "ACI PLC Corporate HR, ACI Motors, ACI Seed, and ACI Biotech Archives",
+      "jobs": [
+        {
+          "id": "ACI-MOTORS-01",
+          "title_bn": "টেরিটোরি সেলস ম্যানেজার (এগ্রি মেকার্স অ্যান্ড ফার্ম মেকানাইজেশন)",
+          "title_en": "Territory Sales Manager — Farm Machinery (ACI Motors)",
+          "job_family": "Machinery Commercial Sales",
+          "vacancy": "10-15 per cycle",
+          "grade": "Officer / Executive Level",
+          "salary_scale_bdt": "32000-48000",
+          "education": "B.Sc. in Agricultural Engineering, Mechanical Engineering, or BBA/Graduate in any discipline.",
+          "experience": "1-3 years in tractor, combine harvester, or heavy equipment sales.",
+          "hard_skills_before_joining": [
+            "Machinery sales forecasting",
+            "Dealer network management",
+            "Field demonstration organizing",
+            "Commercial proposal drafting"
+          ],
+          "skills_after_joining_inferred": [
+            "Yanmar & Foton machinery product positioning",
+            "Custom hiring center operator network expansion",
+            "Government mechanization subsidy documentation",
+            "Territory market share expansion against competitors"
+          ],
+          "insyt_skill_tags": [
+            "aci_motors",
+            "agricultural_engineering",
+            "sales",
+            "farm_machinery",
+            "dealer_management"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ACI-MOTORS-02",
+          "title_bn": "সার্ভিস ইঞ্জিনিয়ার / এরিয়া সার্ভিস ম্যানেজার (কম্বাইন হারভেস্টার ও ট্র্যাক্টর)",
+          "title_en": "Service Engineer / Area Service Manager — Farm Machinery",
+          "job_family": "After-Sales Engineering & Technical Support",
+          "vacancy": "8-12 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "35000-52000",
+          "education": "B.Sc. in Agricultural Engineering or Mechanical Engineering.",
+          "experience": "2-4 years in diesel engine troubleshooting, hydraulics, or heavy agricultural machinery servicing.",
+          "hard_skills_before_joining": [
+            "Hydraulic circuit reading",
+            "Diesel engine overhaul",
+            "Field troubleshooting",
+            "Technical team supervision"
+          ],
+          "skills_after_joining_inferred": [
+            "Yanmar combine harvester paddy harvesting season emergency repair",
+            "Regional mechanic network skill upskilling",
+            "Warranty claim auditing & technical reporting",
+            "Spare parts demand forecasting at regional service centers"
+          ],
+          "insyt_skill_tags": [
+            "aci_motors",
+            "agricultural_engineering",
+            "mechanical",
+            "servicing",
+            "hydraulics"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ACI-MOTORS-03",
+          "title_bn": "ক্রেডিট অ্যাসেসমেন্ট অ্যান্ড রিকভারি এক্সিকিউটিভ (হারভেস্টার ও ট্র্যাক্টর ফাইন্যান্সিং)",
+          "title_en": "Credit Assessment & Installment Recovery Executive",
+          "job_family": "Retail Credit & Hire-Purchase Financing",
+          "vacancy": "10-20 per cycle",
+          "grade": "Officer / Executive",
+          "salary_scale_bdt": "28000-42000",
+          "education": "Bachelor's / BBA / M.Sc in Finance, Agricultural Economics, Economics, or Accounting.",
+          "experience": "1-3 years in tractor credit evaluation, micro-finance recovery, or banking installment collections.",
+          "hard_skills_before_joining": [
+            "Credit scoring & risk analysis",
+            "Rural financial evaluation",
+            "Field installment collection",
+            "Legal documentation awareness"
+          ],
+          "skills_after_joining_inferred": [
+            "Farmer seasonal crop-cash cycle credit underwriting",
+            "Machinery re-possession & legal recovery execution",
+            "Hire-purchase agreement portfolio tracking",
+            "Dealer credit risk limit evaluation"
+          ],
+          "insyt_skill_tags": [
+            "aci_motors",
+            "credit_management",
+            "agricultural_economics",
+            "finance",
+            "recovery"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        },
+        {
+          "id": "ACI-MOTORS-04",
+          "title_bn": "প্রোডাক্ট এক্সিকিউটিভ / অ্যাসিস্ট্যান্ট প্রোডাক্ট ম্যানেজার (ফার্ম মেকানাইজেশন)",
+          "title_en": "Product Executive / Assistant Product Manager (Farm Machinery)",
+          "job_family": "Product Lifecycle Management",
+          "vacancy": "2-3 per cycle",
+          "grade": "Senior Executive / Assistant Manager",
+          "salary_scale_bdt": "45000-68000",
+          "education": "B.Sc. in Agricultural Engineering + MBA in Marketing preferred.",
+          "experience": "2-5 years in farm machinery product management or technical marketing.",
+          "hard_skills_before_joining": [
+            "Product lifecycle management",
+            "Mechanization ROI modeling",
+            "Competitor technical benchmarking",
+            "Launch campaign execution"
+          ],
+          "skills_after_joining_inferred": [
+            "Yanmar & Lovol new model field adaptability trials",
+            "International OEM technical coordination (Japan/China)",
+            "Government mechanization project tender drafting",
+            "Mechanization economic feasibility reporting for farmers"
+          ],
+          "insyt_skill_tags": [
+            "aci_motors",
+            "product_management",
+            "agricultural_engineering",
+            "marketing"
+          ]
+        },
+        {
+          "id": "ACI-MOTORS-05",
+          "title_bn": "স্পেয়ার পার্টস ওয়্যারহাউস অ্যান্ড ইনভেন্টরি এক্সিকিউটিভ",
+          "title_en": "Spare Parts Warehouse & Inventory Executive (ACI Motors)",
+          "job_family": "Spare Parts Inventory & Supply Chain",
+          "vacancy": "4-6 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "28000-40000",
+          "education": "Graduate / BBA / B.Sc in Engineering / Supply Chain.",
+          "experience": "2-4 years in automotive or machinery spare parts inventory management.",
+          "hard_skills_before_joining": [
+            "SKU classification & binning",
+            "ERP inventory management (SAP)",
+            "Stock reconciliation",
+            "Order re-order level tuning"
+          ],
+          "skills_after_joining_inferred": [
+            "Yamaha & Yanmar genuine parts barcode tracking",
+            "Peak harvesting season emergency parts dispatching",
+            "Dead stock audit & liquidation strategy",
+            "Regional depot spare parts buffer planning"
+          ],
+          "insyt_skill_tags": [
+            "aci_motors",
+            "spare_parts",
+            "inventory",
+            "warehouse",
+            "erp"
+          ]
+        },
+        {
+          "id": "ACI-MOTORS-06",
+          "title_bn": "কনস্ট্রাকশন ইকুইপমেন্ট টেরিটোরি অফিসার (কোবেলকো ও লোভোল মেটেরিয়াল হ্যান্ডলিং)",
+          "title_en": "Territory Officer — Construction Equipment (ACI Motors)",
+          "job_family": "Heavy Equipment Commercial Sales",
+          "vacancy": "3-5 per cycle",
+          "grade": "Officer / Executive",
+          "salary_scale_bdt": "35000-50000",
+          "education": "B.Sc. in Mechanical/Civil Engineering or BBA/Graduate.",
+          "experience": "2-4 years in excavator, wheel loader, or crane sales.",
+          "hard_skills_before_joining": [
+            "Construction equipment technical detailing",
+            "B2B corporate sales",
+            "Contractor & infrastructure project mapping",
+            "Commercial tender participation"
+          ],
+          "skills_after_joining_inferred": [
+            "Kobelco excavator fleet financing proposals",
+            "Mega infrastructure project procurement key accounting",
+            "Equipment lifecycle cost analysis for contractors",
+            "After-sales service contract negotiations"
+          ],
+          "insyt_skill_tags": [
+            "aci_motors",
+            "construction_equipment",
+            "mechanical",
+            "b2b_sales"
+          ]
+        },
+        {
+          "id": "ACI-MOTORS-07",
+          "title_bn": "ফিল্ড সার্ভিস টেকনিশিয়ান / মোবাইল সার্ভিসিং মেকানিক",
+          "title_en": "Field Service Technician — Combine Harvester & Tractor",
+          "job_family": "Technical Mechanics & Field Support",
+          "vacancy": "15-25 per cycle",
+          "grade": "Technician / Staff",
+          "salary_scale_bdt": "18000-26000",
+          "education": "Diploma in Mechanical/Automobile or SSC/HSC Vocational.",
+          "experience": "1-3 years repairing diesel engines, tractors, or heavy machinery.",
+          "hard_skills_before_joining": [
+            "Engine overhaul & tuning",
+            "Electrical wiring repair",
+            "Hydraulic leak diagnosis",
+            "Tool handling"
+          ],
+          "skills_after_joining_inferred": [
+            "On-field emergency combine harvester belt/crawler repair",
+            "Yanmar diagnostic tool connection",
+            "Preventive servicing at farmer doorstep",
+            "Mobile service van operations"
+          ],
+          "insyt_skill_tags": [
+            "aci_motors",
+            "technician",
+            "mechanical",
+            "field_servicing"
+          ]
+        },
+        {
+          "id": "ACI-SEED-01",
+          "title_bn": "সিনিয়র রাইস প্ল্যান্ট ব্রিডার (এসিআই সিড আরঅ্যান্ডডি স্পেশালিস্ট)",
+          "title_en": "Senior Plant Breeder — Hybrid Rice (ACI Seed R&D)",
+          "job_family": "Seed Genetics & R&D Research",
+          "vacancy": "1-2 per cycle",
+          "grade": "Senior Executive / Assistant Manager",
+          "salary_scale_bdt": "48000-72000",
+          "education": "M.Sc. / Ph.D in Genetics & Plant Breeding, Agronomy, or Crop Botany.",
+          "experience": "3-6 years in hybrid rice breeding, parental line development, or germplasm evaluation.",
+          "hard_skills_before_joining": [
+            "Parental line purity breeding",
+            "Heterosis evaluation",
+            "Hybridization field techniques",
+            "Statistical experimental design"
+          ],
+          "skills_after_joining_inferred": [
+            "Salinity & drought-tolerant hybrid rice line selection",
+            "CMS (Cytoplasmic Male Sterile) line multiplication",
+            "National Seed Board (NSB) trial clearance protocols",
+            "Multi-location yield trials management"
+          ],
+          "insyt_skill_tags": [
+            "aci_seed",
+            "plant_breeding",
+            "hybrid_rice",
+            "genetics",
+            "research"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ACI-SEED-02",
+          "title_bn": "প্রোডাক্ট ম্যানেজার (হাইব্রিড ভেজিটেবল অ্যান্ড ফিল্ড ক্রপ সিডস)",
+          "title_en": "Product Manager — Seeds (Hybrid Vegetables & Field Crops)",
+          "job_family": "Seed Portfolio Management & Marketing",
+          "vacancy": "1-2 per cycle",
+          "grade": "Assistant Manager / Manager",
+          "salary_scale_bdt": "55000-80000",
+          "education": "B.Sc. in Agriculture (BSCA) + MBA in Marketing preferred.",
+          "experience": "3-6 years in hybrid seed product management or seed sales leadership.",
+          "hard_skills_before_joining": [
+            "Seed market segmentation",
+            "Varietal positioning",
+            "Sales forecasting",
+            "Promotional campaign design"
+          ],
+          "skills_after_joining_inferred": [
+            "ACI seed brand portfolio optimization",
+            "Seasonal seed demand pipeline management",
+            "Dealer demonstration field-day strategy",
+            "Competitor seed variety performance auditing"
+          ],
+          "insyt_skill_tags": [
+            "aci_seed",
+            "product_management",
+            "marketing",
+            "agriculture",
+            "seed_technology"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ACI-SEED-03",
+          "title_bn": "টেরিটোরি সেলস অফিসার / টেরিটোরি ম্যানেজার (এসিআই সিড)",
+          "title_en": "Territory Sales Officer / Territory Manager (ACI Seed)",
+          "job_family": "Commercial Seed Sales & Extension",
+          "vacancy": "12-20 per cycle",
+          "grade": "Officer / Executive",
+          "salary_scale_bdt": "26000-38000",
+          "education": "B.Sc. in Agriculture (BSCA) or Diploma in Agriculture.",
+          "experience": "0-2 years in agricultural input or seed distribution.",
+          "hard_skills_before_joining": [
+            "Agronomic crop knowledge",
+            "Dealer network management",
+            "Farmer group communication",
+            "Field demonstration setup"
+          ],
+          "skills_after_joining_inferred": [
+            "ACI hybrid seed varietal trial execution",
+            "Seed dealer credit & stock rotation monitoring",
+            "Farmer-level germination problem troubleshooting",
+            "Seasonal sales target driving"
+          ],
+          "insyt_skill_tags": [
+            "aci_seed",
+            "agriculture",
+            "sales",
+            "extension",
+            "seed_technology"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        },
+        {
+          "id": "ACI-SEED-04",
+          "title_bn": "সিড প্রসেসিং প্ল্যান্ট অপারেন্স ম্যানেজার (ড্রাইয়িং, ট্রিটমেন্ট ও প্যাকেজিং)",
+          "title_en": "Seed Processing Plant Operations Manager",
+          "job_family": "Seed Manufacturing & Plant Processing",
+          "vacancy": "1-2 per cycle",
+          "grade": "Assistant Manager Level",
+          "salary_scale_bdt": "50000-70000",
+          "education": "B.Sc. in Agricultural Engineering, Food Engineering, or Agronomy.",
+          "experience": "4-6 years managing automated seed processing, drying, chemical treatment, and packaging plants.",
+          "hard_skills_before_joining": [
+            "Seed processing machinery management",
+            "Seed drying thermal control",
+            "Chemical seed treatment coating",
+            "Plant safety & shift management"
+          ],
+          "skills_after_joining_inferred": [
+            "Bulk seed moisture reduction optimization",
+            "Automated seed gravity separator tuning",
+            "Seed lot identification & barcode tracking",
+            "Processing loss minimization"
+          ],
+          "insyt_skill_tags": [
+            "aci_seed",
+            "seed_processing",
+            "agricultural_engineering",
+            "operations"
+          ]
+        },
+        {
+          "id": "ACI-SEED-05",
+          "title_bn": "কোয়ালিটি অ্যাসুরেন্স এনালিস্ট (সিড জারমিনেশন অ্যান্ড পিওরিটি ল্যাব)",
+          "title_en": "Quality Control Analyst — Seed Testing Laboratory",
+          "job_family": "Seed Quality Assurance",
+          "vacancy": "3-5 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "28000-40000",
+          "education": "B.Sc. in Agriculture, Seed Technology, Agronomy, or Botany.",
+          "experience": "1-3 years in seed testing lab (germination, vigor, purity analysis).",
+          "hard_skills_before_joining": [
+            "ISTA seed testing protocols",
+            "Germination cabinet operation",
+            "Moisture meter calibration",
+            "Physical purity evaluation"
+          ],
+          "skills_after_joining_inferred": [
+            "ACI commercial seed lot vigor certification",
+            "Cold test & accelerated aging test execution",
+            "Seed batch rejection protocols for under-germination",
+            "National Seed Certification Agency compliance"
+          ],
+          "insyt_skill_tags": [
+            "aci_seed",
+            "quality_control",
+            "seed_technology",
+            "agriculture"
+          ]
+        },
+        {
+          "id": "ACI-SEED-06",
+          "title_bn": "ফিল্ড ট্রায়াল কোঅর্ডিনেটর ও এগ্রোনোমিস্ট (এসিআই সিড ফিল্ড রিসার্চ)",
+          "title_en": "Field Trial Coordinator & Agronomist (ACI Seed)",
+          "job_family": "Agronomic Research & Trial Coordination",
+          "vacancy": "4-6 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "30000-42000",
+          "education": "B.Sc. in Agriculture (BSCA) / Agronomy.",
+          "experience": "1-3 years conducting multi-location crop performance trials.",
+          "hard_skills_before_joining": [
+            "Experimental layout (RCBD/CRD)",
+            "Agronomic data collection",
+            "Disease scoring",
+            "Crop yield measurement"
+          ],
+          "skills_after_joining_inferred": [
+            "ACI new hybrid variety vs commercial check trial comparison",
+            "Farmer-participatory varietal selection (FPVS)",
+            "Seasonal weather impact data recording on yield",
+            "Field trial evaluation report generation"
+          ],
+          "insyt_skill_tags": [
+            "aci_seed",
+            "agronomy",
+            "field_research",
+            "agriculture",
+            "experimental_design"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        },
+        {
+          "id": "ACI-SEED-07",
+          "title_bn": "কনট্র্যাক্ট সিড প্রোডাকশন অফিসার (ফারমার গ্রিড সোর্সিং)",
+          "title_en": "Contract Seed Production Officer",
+          "job_family": "Seed Production Extension & Sourcing",
+          "vacancy": "6-10 per cycle",
+          "grade": "Officer / Executive",
+          "salary_scale_bdt": "26000-38000",
+          "education": "B.Sc. in Agriculture or Diploma in Agriculture.",
+          "experience": "1-3 years in hybrid seed production, detasseling, or rogueing supervision.",
+          "hard_skills_before_joining": [
+            "Isolation distance enforcement",
+            "Off-type rogueing techniques",
+            "Contract farmer mobilization",
+            "Field inspection protocols"
+          ],
+          "skills_after_joining_inferred": [
+            "ACI hybrid rice & maize contract seed production supervision",
+            "Synchronization of parental line flowering",
+            "Raw seed procurement buyback accounting",
+            "Seed grower cooperative management"
+          ],
+          "insyt_skill_tags": [
+            "aci_seed",
+            "seed_production",
+            "agriculture",
+            "extension",
+            "contract_farming"
+          ]
+        },
+        {
+          "id": "ACI-BIOTECH-01",
+          "title_bn": "সিনিয়র সায়েন্টিস্ট - প্ল্যান্ট মলিকুলার বায়োলজি অ্যান্ড মার্কার-অ্যাসিস্টেড সিলেকশন",
+          "title_en": "Senior Scientist — Plant Molecular Biology & MAS (ACI Biotech)",
+          "job_family": "Biotechnology R&D & Genetic Research",
+          "vacancy": "1-2 per cycle",
+          "grade": "Senior Executive / Assistant Manager",
+          "salary_scale_bdt": "50000-75000",
+          "education": "M.Sc. / Ph.D in Biotechnology, Molecular Biology, Genetics, or Plant Breeding.",
+          "experience": "3-6 years in DNA marker extraction, PCR, gel electrophoresis, or MAS crop breeding.",
+          "hard_skills_before_joining": [
+            "DNA/RNA extraction & quantification",
+            "SSR / SNP marker profiling",
+            "PCR & qPCR operation",
+            "Bioinformatics sequence alignment"
+          ],
+          "skills_after_joining_inferred": [
+            "Salinity/submergence gene introduction verification",
+            "Hybrid seed purity testing via molecular markers",
+            "Pathogen-resistant plant line screening",
+            "IP & patent documentation for novel lines"
+          ],
+          "insyt_skill_tags": [
+            "aci_biotech",
+            "biotechnology",
+            "molecular_biology",
+            "genetics",
+            "pcr"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ACI-BIOTECH-02",
+          "title_bn": "কমার্শিয়াল টিস্যু কালচার ল্যাবরেটরি ইন-চার্জ",
+          "title_en": "Commercial Tissue Culture Laboratory In-Charge (ACI Biotech)",
+          "job_family": "Plant Micropropagation & Lab Management",
+          "vacancy": "1-2 per cycle",
+          "grade": "Manager Level",
+          "salary_scale_bdt": "55000-80000",
+          "education": "M.Sc / Ph.D in Biotechnology, Botany, or Tissue Culture.",
+          "experience": "4-7 years managing commercial-scale plant tissue culture production (Potato, Banana, Gerbera).",
+          "hard_skills_before_joining": [
+            "Mass micropropagation protocols",
+            "Cleanroom air filtration (HEPA) management",
+            "Lab contamination troubleshooting",
+            "Media batch preparation"
+          ],
+          "skills_after_joining_inferred": [
+            "Million-unit potato mini-tuber tissue production scaling",
+            "Hardening shade-house mortality minimization",
+            "Lab technician labor productivity management",
+            "Cost-per-plantlet minimization modeling"
+          ],
+          "insyt_skill_tags": [
+            "aci_biotech",
+            "tissue_culture",
+            "biotechnology",
+            "lab_management",
+            "botany"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ACI-BIOTECH-03",
+          "title_bn": "বায়ো-পেস্টিসাইড অ্যান্ড বায়ো-ফার্টিলাইজার ফর্মুলেশন স্পেশালিস্ট",
+          "title_en": "Bio-Pesticide & Bio-Fertilizer Formulation Specialist",
+          "job_family": "Bio-Process Development & Product R&D",
+          "vacancy": "1-3 per cycle",
+          "grade": "Senior Executive Level",
+          "salary_scale_bdt": "40000-60000",
+          "education": "M.Sc. in Microbiology, Biotechnology, or Soil Science.",
+          "experience": "2-5 years in beneficial microbe isolation (Trichoderma, Rhizobium, Pseudomonas) and bio-formulation.",
+          "hard_skills_before_joining": [
+            "Microbial culture isolation & strain selection",
+            "Fermentation culture media design",
+            "CFU count optimization",
+            "Carrier material compatibility"
+          ],
+          "skills_after_joining_inferred": [
+            "Trichoderma-based bio-fungicide commercial formulation",
+            "Mass fermentation scaling in bioreactors",
+            "Bio-fertilizer carrier shelf-life extension",
+            "Field bio-efficacy trial evaluation"
+          ],
+          "insyt_skill_tags": [
+            "aci_biotech",
+            "microbiology",
+            "biotechnology",
+            "bio_fertilizer",
+            "fermentation"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        },
+        {
+          "id": "ACI-BIOTECH-04",
+          "title_bn": "বায়ো-প্রসেস ইঞ্জিনিয়ার (ফারমেন্টেশন অ্যান্ড মাইক্রো-অর্গানিজম প্রোডাকশন)",
+          "title_en": "Bio-Process Engineer (Fermentation & Scale-Up)",
+          "job_family": "Bio-Manufacturing & Fermentation Engineering",
+          "vacancy": "1-2 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "38000-55000",
+          "education": "B.Sc. in Chemical Engineering, Bio-Process Engineering, or Biotechnology.",
+          "experience": "2-4 years operating pilot/industrial bioreactors, fermenters, or downstream processing units.",
+          "hard_skills_before_joining": [
+            "Bioreactor parameter control (pH, DO, temperature, agitation)",
+            "Downstream separation & filtration",
+            "Sterilization-in-place (SIP) protocols",
+            "Process mass transfer"
+          ],
+          "skills_after_joining_inferred": [
+            "Industrial microbial fermentation scale-up (100L to 5000L)",
+            "Centrifugation & spray drying of bio-actives",
+            "Batch yield consistency troubleshooting",
+            "Cleanroom utility engineering"
+          ],
+          "insyt_skill_tags": [
+            "aci_biotech",
+            "bioprocess",
+            "engineering",
+            "fermentation",
+            "biotechnology"
+          ]
+        },
+        {
+          "id": "ACI-BIOTECH-05",
+          "title_bn": "মলিকুলার ডায়াগনস্টিকস স্পেশালিস্ট (প্ল্যান্ট অ্যান্ড লাইভস্টক ডায়াগনস্টিকস)",
+          "title_en": "Molecular Diagnostics Specialist (Plant & Livestock Diagnostics)",
+          "job_family": "Diagnostic Laboratory & Pathogen Detection",
+          "vacancy": "2-3 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "32000-48000",
+          "education": "M.Sc. in Biotechnology, Microbiology, Biochemistry, or Virology.",
+          "experience": "1-3 years in real-time PCR (qPCR), ELISA, or viral/bacterial diagnostic testing.",
+          "hard_skills_before_joining": [
+            "Real-time PCR assay setup",
+            "ELISA microplate reader operation",
+            "Primer design basics",
+            "Pathogen DNA/RNA extraction protocols"
+          ],
+          "skills_after_joining_inferred": [
+            "Rapid plant virus diagnostic kit development (e.g. Potato Virus Y)",
+            "Livestock viral pathogen screening (Avian Influenza, FMD)",
+            "Diagnostic accuracy & false-positive validation",
+            "Commercial diagnostic service lab management"
+          ],
+          "insyt_skill_tags": [
+            "aci_biotech",
+            "diagnostics",
+            "molecular_biology",
+            "pcr",
+            "microbiology"
+          ]
+        },
+        {
+          "id": "ACI-BIOTECH-06",
+          "title_bn": "কোয়ালিটি অ্যাসুরেন্স এক্সিকিউটিভ (বাইওটেক অ্যান্ড টিস্যু কালচার প্ল্যান্টস)",
+          "title_en": "QA Executive (Biotech & Tissue Culture Microplants)",
+          "job_family": "Quality Assurance & Genetic Purity",
+          "vacancy": "2-3 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "30000-42000",
+          "education": "B.Sc / M.Sc in Biotechnology, Botany, or Agriculture.",
+          "experience": "1-3 years in biological laboratory quality auditing, cleanroom monitoring, or seed QA.",
+          "hard_skills_before_joining": [
+            "Cleanroom particle count auditing",
+            "Somaclonal variation detection",
+            "Sterility audit protocols",
+            "Lab documentation"
+          ],
+          "skills_after_joining_inferred": [
+            "Tissue culture plantlet genetic fidelity testing",
+            "Zero-virus certification for foundation potato seed",
+            "Greenhouse acclimatization quality scoring",
+            "SOP enforcement in micropropagation facilities"
+          ],
+          "insyt_skill_tags": [
+            "aci_biotech",
+            "quality_assurance",
+            "biotechnology",
+            "tissue_culture"
+          ]
+        }
+      ]
+    }
+  ],
+  "cross_source_insights": {
+    "most_important_new_signal": "ACI Motors, ACI Seed, and ACI Biotech form the high-tech core of ACI PLC's agricultural transformation strategy. ACI Motors leads the national farm mechanization drive (harvesters, tractors) alongside retail finance; ACI Seed controls high-yield hybrid seed R&D and processing; ACI Biotech drives tissue culture, bio-inputs, and molecular breeding.",
+    "highest_value_jobs_for_an_agricultural_economics_data_candidate": [
+      {
+        "organization": "ACI Motors",
+        "job": "Credit Assessment & Installment Recovery Executive",
+        "why": "Integrates Agricultural Economics with credit scoring, hire-purchase portfolio risk management, and farmer seasonal cash-flow evaluation.",
+        "skills_to_prioritize": [
+          "Econometrics",
+          "Credit Risk Assessment",
+          "Rural Finance",
+          "Python / R",
+          "Portfolio Risk Modeling"
+        ]
+      },
+      {
+        "organization": "ACI Motors",
+        "job": "Product Executive / APM (Farm Machinery)",
+        "why": "High-growth strategic role evaluating mechanization economics, farmer ROI, and international OEM product planning.",
+        "skills_to_prioritize": [
+          "Mechanization Economics",
+          "Product Management",
+          "Market Research",
+          "Financial Modeling"
+        ]
+      },
+      {
+        "organization": "ACI Seed",
+        "job": "Product Manager — Seeds (Hybrid Vegetables & Field Crops)",
+        "why": "Core commercial role managing seed market segmentation, varietal demand forecasting, and yield performance analytics.",
+        "skills_to_prioritize": [
+          "Agribusiness Marketing",
+          "Demand Forecasting",
+          "Varietal Positioning",
+          "Quantitative Market Analysis"
+        ]
+      },
+      {
+        "organization": "ACI Biotech",
+        "job": "Commercial Tissue Culture Laboratory In-Charge",
+        "why": "High-level operational leadership evaluating unit economics, cost-per-plantlet minimization, and large-scale bio-manufacturing.",
+        "skills_to_prioritize": [
+          "Bio-Manufacturing Operations",
+          "Cost Modeling",
+          "Labor Productivity Optimization",
+          "Biotech Operations Management"
+        ]
+      }
+    ],
+    "repeated_skill_patterns": {
+      "agricultural_engineering_and_machinery": {
+        "frequency": "Very high",
+        "appears_in": [
+          "Territory Sales Manager (Motors)",
+          "Service Engineer (Motors)",
+          "Product Manager (Motors)",
+          "Seed Processing Operations Manager",
+          "Field Service Technician"
+        ]
+      },
+      "biotechnology_and_seed_genetics": {
+        "frequency": "Very high",
+        "appears_in": [
+          "Senior Rice Breeder",
+          "Senior Scientist (MAS)",
+          "Tissue Culture Lab In-Charge",
+          "Bio-Pesticide Formulation Specialist",
+          "Molecular Diagnostics Specialist"
+        ]
+      },
+      "credit_and_financial_analytics": {
+        "frequency": "High",
+        "appears_in": [
+          "Credit Assessment & Recovery Executive",
+          "Construction Equipment Territory Officer",
+          "Product Executive (Motors)"
+        ]
+      },
+      "agronomy_and_field_research": {
+        "frequency": "High",
+        "appears_in": [
+          "Territory Sales Officer (Seed)",
+          "Field Trial Coordinator",
+          "Contract Seed Production Officer"
+        ]
+      }
+    },
+    "insyt_corporate_product_opportunities": [
+      {
+        "feature": "SBU-Specific Career Pathway Engine",
+        "input": "Engineering / Science / Economics Academic Background",
+        "output": "Personalized career roadmap across ACI Motors, ACI Seed, and ACI Biotech"
+      },
+      {
+        "feature": "Farm Mechanization & Credit Analytics Module",
+        "logic": "Simulate farmer hire-purchase loan default risk based on regional crop yield forecasts"
+      },
+      {
+        "feature": "Seed & Biotech Skill Readiness Index",
+        "logic": "Match university laboratory experience (PCR, Tissue Culture, ISTA seed testing) to ACI Biotech and ACI Seed vacancy requirements"
+      }
+    ]
+  },
+  "recommended_insyt_skill_taxonomy_from_these_sources": {
+    "tier_1_core": [
+      "Agricultural Engineering",
+      "Mechanical Engineering",
+      "Genetics & Plant Breeding",
+      "Biotechnology",
+      "Agribusiness Management",
+      "Retail Credit Risk"
+    ],
+    "tier_2_high_value": [
+      "Combine Harvester Diagnostics",
+      "Hydraulic Systems Repair",
+      "PCR / qPCR",
+      "Tissue Culture Micropropagation",
+      "ISTA Seed Germination Testing",
+      "Hire-Purchase Recovery",
+      "Python / R"
+    ],
+    "tier_3_specialized": [
+      "Yanmar Diagnostic Software",
+      "SSR / SNP Marker Profiling",
+      "CMS Line Multiplication",
+      "Trichoderma Fermentation Scale-Up",
+      "Bioreactor SIP Protocols",
+      "Kobelco Heavy Equipment Sales"
+    ],
+    "tier_4_operational": [
+      "Diesel Engine Overhaul",
+      "Mobile Service Van Handling",
+      "Seed rogueing & Detasseling",
+      "Germination Cabinet Calibration",
+      "Cleanroom HEPA Filter Audit"
+    ]
+  },
+  "critical_data_modeling_notes": [
+    "ACI Motors roles carry significant incentive structures (machinery sales commissions, credit recovery performance bonuses) alongside base salary.",
+    "ACI Seed and ACI Biotech roles are heavily concentrated in research hubs in northern Bangladesh (Rajshahi, Rangpur, Gazipur) due to agro-climatic requirements for seed breeding and tissue culture.",
+    "B.Sc. Agricultural Engineering and B.Sc. Agriculture graduates from Bangladesh Agricultural University (BAU) represent the primary talent pool for ACI Motors service engineering and ACI Seed R&D/commercial tracks.",
+    "Data Analyst and Credit Analyst roles within ACI Motors bridge agricultural economics with corporate financial risk modeling."
+  ],
+  "source_traceability": {
+    "ACI_MOTORS_SEED_BIOTECH": "Aggregated from official recruitment circulars, ACI Corporate HR releases, ACI Motors service registries, ACI Seed R&D database, and ACI Biotech laboratory archives."
+  }
+}

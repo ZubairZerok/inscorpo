@@ -11,6 +11,13 @@ import { jobsData } from "@/lib/data/jobs";
 const DB_DATASETS = [
   { name: "aarong.json", category: "Corporate Circulars", desc: "Aarong & BRAC Dairy Plant Quality, Procurement, R&D, and Sales circulars" },
   { name: "aarongdairy_1.json", category: "Corporate Circulars", desc: "Aarong Dairy Processing, Engineering, EHS, and Logistics circulars" },
+  { name: "Aci_aciagb.json", category: "Corporate Agribusiness", desc: "ACI Crop Care, Motors, Seed, Animal Health, Fertilizer & Genetics circulars" },
+  { name: "aci_agLink_biossci_ah.json", category: "Corporate Agribusiness", desc: "ACI AgLink, Biosciences, Animal Health & Crop Solutions talent registry" },
+  { name: "aci_biotech_motor_seed.json", category: "Corporate Agribusiness", desc: "ACI Biotech, Motors Assembly & Hybrid Seed R&D technical circulars" },
+  { name: "acmeLab_adama_aftab_agilentTech.json", category: "Multinational & FMCG", desc: "ACME Laboratories, Adama, Aftab & Agilent Tech executive circulars" },
+  { name: "agromas_agroshift_akijDairy_AlltechBD.json", category: "FMCG & Dairy", desc: "Agromas, Agroshift, Akij Dairy & Alltech BD corporate circulars" },
+  { name: "aman_apex_armalikseeds_arannaykFoundation.json", category: "Agro & Enterprise", desc: "Aman Group, Apex Footwear, ARM Malik Seeds & Arannayk Foundation" },
+  { name: "aristo_astrazzeneca_ABD_ACC.json", category: "Pharma & Corporate", desc: "Aristopharma, AstraZeneca, ABD & ACC technical postings" },
   { name: "jobs_1.json", category: "Govt Research Cadre", desc: "BARI, BRRI, BINA, BJRI, BTRI, BSRI combined intelligence dataset" },
   { name: "jobs_batch1.json", category: "Govt Research Cadre", desc: "BARI & BRRI specialized research scientist & officer circulars" },
   { name: "jobs_batch2.json", category: "Govt Research Cadre", desc: "BJRI & BTRI research assistant & technical officer circulars" },
@@ -241,7 +248,7 @@ export default function AdminPage() {
             <span className="text-[10px] font-extrabold uppercase text-slate-500">Cloud JSON Datasets</span>
             <Database size={18} className="text-[#2563eb]" />
           </div>
-          <h3 className="text-2xl font-black text-slate-900">6</h3>
+          <h3 className="text-2xl font-black text-slate-900">{DB_DATASETS.length}</h3>
           <p className="text-[11px] font-sans font-medium text-slate-500">
             Verified JSON intelligence files in DB folder
           </p>
@@ -252,9 +259,11 @@ export default function AdminPage() {
             <span className="text-[10px] font-extrabold uppercase text-slate-500">Corporate Circulars</span>
             <Building2 size={18} className="text-[#2563eb]" />
           </div>
-          <h3 className="text-2xl font-black text-[#2563eb]">{jobsData.length}</h3>
+          <h3 className="text-2xl font-black text-[#2563eb]">
+            {jobsData.filter((j) => !j.id.startsWith("BARI") && !j.id.startsWith("BRRI") && !j.id.startsWith("BINA") && !j.id.startsWith("BJRI") && !j.id.startsWith("BTRI") && !j.id.startsWith("BSRI")).length}
+          </h3>
           <p className="text-[11px] font-sans font-medium text-slate-500">
-            DB-derived Aarong & BRAC Dairy roles
+            Aarong, ACI, ACME, Apex, Akij & FMCG roles
           </p>
         </div>
 
@@ -263,7 +272,9 @@ export default function AdminPage() {
             <span className="text-[10px] font-extrabold uppercase text-slate-500">Govt Research Cadres</span>
             <FileText size={18} className="text-[#2563eb]" />
           </div>
-          <h3 className="text-2xl font-black text-slate-900">126</h3>
+          <h3 className="text-2xl font-black text-slate-900">
+            {jobsData.filter((j) => j.id.startsWith("BARI") || j.id.startsWith("BRRI") || j.id.startsWith("BINA") || j.id.startsWith("BJRI") || j.id.startsWith("BTRI") || j.id.startsWith("BSRI")).length}
+          </h3>
           <p className="text-[11px] font-sans font-medium text-slate-500">
             BARI, BRRI, BINA, BJRI, BTRI, BSRI posts
           </p>

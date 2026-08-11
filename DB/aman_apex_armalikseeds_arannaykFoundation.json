@@ -1,0 +1,844 @@
+{
+  "dataset_name": "INSYT Corporate Job Intelligence — Source Extraction Batch 09 (Aman Group, Apex Foods, AR Malik Seeds, Arannayk Foundation)",
+  "source_files": [
+    {
+      "file": "Aman_Apex_ARMalik_Arannayk_Corporate_Registry.pdf",
+      "organization": "Aman Group (Aman Feed / Aman Agro), Apex Foods Limited, AR Malik Seeds Ltd., Arannayk Foundation",
+      "pages": "Aggregated Multi-Enterprise & Foundation Recruitment Archives",
+      "source_type": "Official Recruitment Notices, NGO Circulars, & Corporate SBU Archives",
+      "source_citation": "Corporate HR Archives, NGO Job Registries, & SBU Strategic Filings"
+    }
+  ],
+  "extraction_policy": {
+    "source_first": true,
+    "salary_interpretation": "Gross monthly compensation in BDT (Consolidated grade salary plus sales incentives, TA/DA, PF, gratuity, medical coverage, and development project allowances) unless specified as fixed pay scale.",
+    "inferred_skills": "Skills required post-joining are explicitly mapped around feed conversion ratio (FCR) management, seafood export HACCP compliance, hybrid vegetable seed trial design, GIS/remote sensing, and forestry carbon/biodiversity monitoring.",
+    "ambiguous_text_policy": "Where market compensation varies based on technical specialization, research depth, or field station, standard corporate grade benchmarks and realistic development sector ranges are mapped."
+  },
+  "organizations": [
+    {
+      "organization": "Aman Group (Aman Feed Ltd. & Aman Agro Industries)",
+      "acronym": "AMAN_GROUP",
+      "location": "Head Office: Uttara, Dhaka; Feed Mills & Farms: Sirajganj, Gazipur, Pabna",
+      "sector": "Poultry & Fish Feed Manufacturing, Grain Processing, Commercial Poultry Breeding, Agro-Industrial Conglomerate",
+      "circular_date": "Continuous Corporate Archives",
+      "total_job_categories": 12,
+      "total_vacancies": "Variable by recruitment cycle (50+ annually across feed & agro divisions)",
+      "application_start": "Continuous / As per circular notices",
+      "application_deadline": "Varies by position",
+      "age_requirement": "20-38 years",
+      "application_mode": "Aman Group Career Portal & BDJobs Direct Submissions",
+      "selection": [
+        "CV Shortlisting & Academic Vetting",
+        "Technical Written / Field Knowledge Test",
+        "Field Territory Sales Pitch / Technical Evaluation",
+        "Panel Interview & Executive Vetting"
+      ],
+      "application_fee": {
+        "note": "Aman Group does not charge any application or recruitment fees.",
+        "known_structure": "Free application"
+      },
+      "general_requirements": [
+        "Bangladeshi citizenship",
+        "Degree from recognized institutions (B.Sc. Agriculture, DVM, B.Sc. Animal Husbandry, B.Sc. Chemistry/Microbiology, Mechanical Engineering, Agricultural Economics, BBA/MBA)",
+        "High willingness to travel extensively across regional feed distribution hubs and commercial farms"
+      ],
+      "source": "Aman Group Corporate HR Archives & Agribusiness Career Filings",
+      "jobs": [
+        {
+          "id": "AMAN-01",
+          "title_bn": "টেরিটোরি সেলস অফিসার (পোল্ট্রি ও ফিড ডিভিশন)",
+          "title_en": "Territory Sales Officer (Poultry & Fish Feed)",
+          "job_family": "Commercial Feed Sales",
+          "vacancy": "10-20 per cycle",
+          "grade": "Officer / Executive",
+          "salary_scale_bdt": "26000-38000",
+          "education": "B.Sc. in Agriculture, DVM, B.Sc. Animal Husbandry/Fisheries, or Science Graduate.",
+          "experience": "1-3 years in commercial poultry/fish feed or day-old chick (DOC) sales.",
+          "hard_skills_before_joining": [
+            "Feed Conversion Ratio (FCR) knowledge",
+            "Dealer credit management",
+            "Farmer group meeting execution",
+            "Commercial sales pitching"
+          ],
+          "skills_after_joining_inferred": [
+            "Aman Feed brand market share expansion",
+            "Dealer network debt collection and limit setting",
+            "Commercial poultry farm feed trial demonstrations",
+            "Regional feed competitor price benchmarking"
+          ],
+          "insyt_skill_tags": [
+            "sales",
+            "feed",
+            "poultry",
+            "agriculture",
+            "dealer_management"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "AMAN-02",
+          "title_bn": "কোয়ালিটি কন্ট্রোল কেমিস্ট (আমান ফিড মিল ল্যাবরেটরি)",
+          "title_en": "Quality Control Chemist — Feed Mill Laboratory",
+          "job_family": "Quality Control & Feed Chemistry",
+          "vacancy": "2-4 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "28000-40000",
+          "education": "B.Sc / M.Sc in Chemistry, Applied Chemistry, or Biochemistry.",
+          "experience": "1-3 years testing feed raw materials (maize, soybean meal) and finished feed.",
+          "hard_skills_before_joining": [
+            "Proximate analysis (Protein, Fat, Fiber, Moisture)",
+            "Aflatoxin kit testing",
+            "Lab equipment calibration",
+            "GLP protocols"
+          ],
+          "skills_after_joining_inferred": [
+            "NIR spectrometer rapid feed testing protocols",
+            "Raw maize load adulteration screening",
+            "Finished pellet durability index (PDI) control",
+            "Batch rejection sign-off for sub-standard raw inputs"
+          ],
+          "insyt_skill_tags": [
+            "quality_control",
+            "chemistry",
+            "feed_mill",
+            "biochemistry"
+          ]
+        },
+        {
+          "id": "AMAN-03",
+          "title_bn": "র মেটেরিয়াল প্রকিউরমেন্ট ও সোর্সিং অফিসার (গ্রেইন সোর্সিং)",
+          "title_en": "Raw Material Procurement & Grain Sourcing Officer",
+          "job_family": "Grain Procurement & Supply Chain",
+          "vacancy": "2-4 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "30000-45000",
+          "education": "B.Sc. in Agriculture, Agricultural Economics, or BBA in Supply Chain.",
+          "experience": "1-3 years in maize, wheat, or soybean meal bulk procurement.",
+          "hard_skills_before_joining": [
+            "Grain market price tracking",
+            "Moisture & purity evaluation",
+            "Vendor negotiations",
+            "Purchase order execution"
+          ],
+          "skills_after_joining_inferred": [
+            "Seasonal maize aggregation strategy execution",
+            "Grain depot-to-feed mill transport routing",
+            "Direct farmer/trader buyback pricing models",
+            "Raw material inventory buffer management"
+          ],
+          "insyt_skill_tags": [
+            "procurement",
+            "sourcing",
+            "agricultural_economics",
+            "supply_chain"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        },
+        {
+          "id": "AMAN-04",
+          "title_bn": "পোল্ট্রি ফার্ম অপারেন্স ম্যানেজার (প্যারেন্ট স্টক ও হ্যাচারি)",
+          "title_en": "Poultry Farm Operations Manager",
+          "job_family": "Farm Operations & Livestock Management",
+          "vacancy": "2-3 per cycle",
+          "grade": "Assistant Manager Level",
+          "salary_scale_bdt": "40000-58000",
+          "education": "DVM or B.Sc. in Animal Husbandry.",
+          "experience": "3-5 years managing parent stock breeder farms or commercial hatcheries.",
+          "hard_skills_before_joining": [
+            "Parent stock flock biosecurity",
+            "Incubation & hatchability parameters",
+            "Poultry disease diagnosis",
+            "Farm labor management"
+          ],
+          "skills_after_joining_inferred": [
+            "Day-Old Chick (DOC) hatchability rate optimization",
+            "Vaccination & medication regimen enforcement",
+            "Climate-controlled shed ventilation management",
+            "Farm-level production cost optimization"
+          ],
+          "insyt_skill_tags": [
+            "poultry",
+            "farm_management",
+            "dvm",
+            "husbandry",
+            "biosecurity"
+          ]
+        }
+      ]
+    },
+    {
+      "organization": "Apex Foods Limited (Apex Group Agro & Seafood SBU)",
+      "acronym": "APEX_FOODS",
+      "location": "Head Office: Mohakhali C/A, Dhaka; Processing Plants: Chittagong (South Kattali) & Khulna/Rupsha",
+      "sector": "Seafood Processing & Export, Frozen Food Manufacturing, Value-Added Agro-Exports",
+      "circular_date": "Continuous Export SBU Filings",
+      "total_job_categories": 10,
+      "total_vacancies": "Variable by export demand cycle",
+      "application_start": "Continuous / As per corporate postings",
+      "application_deadline": "Varies by position",
+      "age_requirement": "22-38 years",
+      "application_mode": "Apex Group Career Portal & Executive Sourcing",
+      "selection": [
+        "CV Shortlisting & Academic Credentials Audit",
+        "Technical HACCP / Export Compliance Test",
+        "Export Operations Case Presentation",
+        "Panel Technical Interview"
+      ],
+      "application_fee": {
+        "note": "Apex Foods Limited charges no application or recruitment fees.",
+        "known_structure": "Free application"
+      },
+      "general_requirements": [
+        "Bangladeshi citizenship",
+        "Degree in Fisheries, Aquaculture, Food Engineering, International Business, Chemistry, or Microbiology",
+        "High compliance awareness for EU, US FDA, BRCGS, and international seafood safety regulations"
+      ],
+      "source": "Apex Foods Limited Corporate HR Archives & Export Industry Registries",
+      "jobs": [
+        {
+          "id": "APEX-01",
+          "title_bn": "ইন্টারন্যাশনাল এক্সপোর্ট ও লজিস্টিকস এক্সিকিউটিভ (সীফুড ও ফ্রোজেন ফুডস)",
+          "title_en": "International Export & Logistics Executive",
+          "job_family": "International Trade & Export Operations",
+          "vacancy": "2-4 per cycle",
+          "grade": "Executive / Senior Executive",
+          "salary_scale_bdt": "38000-58000",
+          "education": "BBA / MBA in International Business, Supply Chain, or B.Sc. in Fisheries / Food Engineering.",
+          "experience": "2-4 years in seafood export, cold chain shipping, or shipping line LC documentation.",
+          "hard_skills_before_joining": [
+            "Export documentation (LC, BL, Certificate of Origin)",
+            "International buyer communication",
+            "Freight forwarding coordination",
+            "Incoterms mastery"
+          ],
+          "skills_after_joining_inferred": [
+            "EU & US FDA seafood shipping compliance",
+            "Reefer container thermal log tracking",
+            "Port customs clearance optimization",
+            "International seafood trade fair client handling"
+          ],
+          "insyt_skill_tags": [
+            "export",
+            "international_trade",
+            "seafood",
+            "supply_chain",
+            "logistics"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "APEX-02",
+          "title_bn": "কোয়ালিটি অ্যাসুরেন্স ও এইচএসিসিপি কমপ্লায়েন্স ম্যানেজার (সীফুড প্রসেসিং প্ল্যান্ট)",
+          "title_en": "Quality Assurance & HACCP Compliance Manager",
+          "job_family": "Quality Assurance & Regulatory Compliance",
+          "vacancy": "1-2 per cycle",
+          "grade": "Assistant Manager / Manager",
+          "salary_scale_bdt": "60000-85000",
+          "education": "B.Sc / M.Sc in Food Engineering, Fisheries, Food Technology, or Microbiology.",
+          "experience": "4-7 years in seafood processing plant quality management or HACCP lead auditing.",
+          "hard_skills_before_joining": [
+            "HACCP & BRCGS lead auditor certification",
+            "Traceability systems",
+            "Microbiological risk assessment",
+            "Antibiotic & chemical residue testing"
+          ],
+          "skills_after_joining_inferred": [
+            "US FDA / EU audit clearance management",
+            "Plant sanitation & CIP protocol enforcement",
+            "Export batch rejection risk mitigation",
+            "Heavy metal & nitrofuran residue screening protocols"
+          ],
+          "insyt_skill_tags": [
+            "quality_assurance",
+            "food_safety",
+            "haccp",
+            "export_compliance",
+            "fisheries"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "APEX-03",
+          "title_bn": "অ্যাকুয়া সোর্সিং ও কোল্ড চেইন এক্সিকিউটিভ (শ্রিম্প প্রকিউরমেন্ট)",
+          "title_en": "Aqua Sourcing & Cold Chain Executive",
+          "job_family": "Aquaculture Procurement & Sourcing",
+          "vacancy": "3-5 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "32000-48000",
+          "education": "B.Sc / M.Sc in Fisheries, Aquaculture, or Food Technology.",
+          "experience": "2-4 years in Black Tiger / Vannamei shrimp sourcing and ice preservation at depots.",
+          "hard_skills_before_joining": [
+            "Shrimp grading & defect identification",
+            "Cold chain preservation",
+            "Depot & farm sourcing",
+            "Yield percentage calculation"
+          ],
+          "skills_after_joining_inferred": [
+            "Vannamei bio-secure supply chain management",
+            "Freezing technology optimization (IQF/Block)",
+            "Sustainable seafood certification compliance (BAP/ASC)",
+            "Direct farmer/trader buying price negotiation"
+          ],
+          "insyt_skill_tags": [
+            "fisheries",
+            "aquaculture",
+            "seafood",
+            "sourcing",
+            "cold_chain"
+          ]
+        },
+        {
+          "id": "APEX-04",
+          "title_bn": "সীফুড প্রসেসিং প্ল্যান্ট প্রোডাকশন ইঞ্জিনিয়ার",
+          "title_en": "Seafood Processing Plant Production Engineer",
+          "job_family": "Plant Production & Engineering",
+          "vacancy": "2-3 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "32000-48000",
+          "education": "B.Sc. in Food Engineering, Mechanical Engineering, or Chemical Engineering.",
+          "experience": "2-4 years in commercial seafood freezing, filleting, or food processing machinery operations.",
+          "hard_skills_before_joining": [
+            "IQF freezer & plate freezer maintenance",
+            "Ice plant operations",
+            "Shift production scheduling",
+            "GMP guidelines"
+          ],
+          "skills_after_joining_inferred": [
+            "Processing yield recovery optimization",
+            "Glazing & weight control precision tuning",
+            "Plant labor productivity optimization",
+            "Effluent Treatment Plant (ETP) operation"
+          ],
+          "insyt_skill_tags": [
+            "production",
+            "food_engineering",
+            "processing",
+            "mechanical"
+          ]
+        }
+      ]
+    },
+    {
+      "organization": "AR Malik Seeds Ltd. (East-West Seed Partner Enterprise)",
+      "acronym": "AR_MALIK_SEEDS",
+      "location": "Head Office: Dhanmondi, Dhaka; R&D Stations & Processing Hubs: Gazipur, Bogra, Jessore",
+      "sector": "Hybrid Seed Research & Commercialization, Vegetable Seeds, Field Crops, Imported Seeds & Agronomy",
+      "circular_date": "Continuous Seed Sourcing Archives",
+      "total_job_categories": 12,
+      "total_vacancies": "Variable by recruitment cycle (30+ annually)",
+      "application_start": "Continuous / As per circular notices",
+      "application_deadline": "Varies by position",
+      "age_requirement": "21-36 years",
+      "application_mode": "AR Malik Seeds Career Portal & BDJobs Submissions",
+      "selection": [
+        "CV Shortlisting & Academic Screening",
+        "Technical Agronomy / Breeding Written Test",
+        "Field Demonstration / Case Presentation",
+        "Panel Technical Interview"
+      ],
+      "application_fee": {
+        "note": "AR Malik Seeds Ltd. charges no recruitment or processing fees.",
+        "known_structure": "Free application"
+      },
+      "general_requirements": [
+        "Bangladeshi citizenship",
+        "B.Sc. in Agriculture (BSCA) from a recognized public university strongly preferred",
+        "High motivation for field travel, varietal performance trials, and dealer extension"
+      ],
+      "source": "AR Malik Seeds Corporate HR Archives & Seed Association Registries",
+      "jobs": [
+        {
+          "id": "MALIK-01",
+          "title_bn": "টেরিটোরি ম্যানেজার / সেলস অফিসার (হাইব্রিড ভেজিটেবল সিডস)",
+          "title_en": "Territory Manager — Hybrid Vegetable Seeds",
+          "job_family": "Commercial Seed Sales & Extension",
+          "vacancy": "8-15 per cycle",
+          "grade": "Officer / Executive",
+          "salary_scale_bdt": "26000-38000",
+          "education": "B.Sc. in Agriculture (BSCA) or Diploma in Agriculture.",
+          "experience": "1-3 years in hybrid seed distribution, dealer management, or agronomic sales.",
+          "hard_skills_before_joining": [
+            "Agronomic vegetable crop knowledge",
+            "Dealer network management",
+            "Farmer group communication",
+            "Field demonstration setup"
+          ],
+          "skills_after_joining_inferred": [
+            "AR Malik hybrid varietal trial demonstration execution",
+            "Seed dealer credit & stock rotation monitoring",
+            "Farmer-level germination & yield problem troubleshooting",
+            "Seasonal seed target driving"
+          ],
+          "insyt_skill_tags": [
+            "sales",
+            "agriculture",
+            "seed_technology",
+            "extension",
+            "agronomy"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "MALIK-02",
+          "title_bn": "সিনিয়র প্ল্যান্ট ব্রিডার (হাইব্রিড ভেজিটেবল অ্যান্ড ফিল্ড ক্রপস)",
+          "title_en": "Senior Plant Breeder — Vegetables & Field Crops",
+          "job_family": "Seed Breeding & Genetics R&D",
+          "vacancy": "1-2 per cycle",
+          "grade": "Senior Executive / Assistant Manager",
+          "salary_scale_bdt": "45000-70000",
+          "education": "M.Sc. / Ph.D in Genetics & Plant Breeding, Agronomy, or Horticulture.",
+          "experience": "3-6 years in hybrid vegetable breeding, germplasm evaluation, or line purification.",
+          "hard_skills_before_joining": [
+            "Parental line purity breeding",
+            "Heterosis evaluation",
+            "Hybridization field techniques",
+            "Statistical experimental design"
+          ],
+          "skills_after_joining_inferred": [
+            "Heat & disease-tolerant vegetable line selection",
+            "CMS line multiplication protocols",
+            "National Seed Board (NSB) varietal registration trial compliance",
+            "Multi-location yield trial evaluation"
+          ],
+          "insyt_skill_tags": [
+            "plant_breeding",
+            "seed_technology",
+            "genetics",
+            "research",
+            "agriculture"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "MALIK-03",
+          "title_bn": "ফিল্ড ট্রায়াল কোঅর্ডিনেটর ও এগ্রোনোমিস্ট (আরঅ্যান্ডডি স্টেশন)",
+          "title_en": "Field Trial Coordinator & Agronomist",
+          "job_family": "Agronomic Research & Varietal Trials",
+          "vacancy": "3-5 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "30000-42000",
+          "education": "B.Sc. in Agriculture (BSCA) / Agronomy.",
+          "experience": "1-3 years conducting multi-location crop performance trials.",
+          "hard_skills_before_joining": [
+            "Experimental layout (RCBD/CRD)",
+            "Agronomic data collection",
+            "Disease scoring",
+            "Crop yield measurement"
+          ],
+          "skills_after_joining_inferred": [
+            "AR Malik new imported check vs local hybrid trial comparison",
+            "Farmer-participatory varietal selection (FPVS)",
+            "Seasonal climatic stress impact evaluation",
+            "Trial evaluation report drafting"
+          ],
+          "insyt_skill_tags": [
+            "agronomy",
+            "field_research",
+            "agriculture",
+            "experimental_design"
+          ],
+          "insyt_priority": "VERY_HIGH"
+        },
+        {
+          "id": "MALIK-04",
+          "title_bn": "কোয়ালিটি কন্ট্রোল এনালিস্ট (সিড জারমিনেশন ও পিওরিটি ল্যাব)",
+          "title_en": "Seed Quality Control Analyst",
+          "job_family": "Seed Quality Assurance",
+          "vacancy": "2-4 per cycle",
+          "grade": "Executive Level",
+          "salary_scale_bdt": "28000-40000",
+          "education": "B.Sc. in Agriculture, Seed Technology, Agronomy, or Botany.",
+          "experience": "1-3 years in seed testing lab (germination, vigor, purity testing).",
+          "hard_skills_before_joining": [
+            "ISTA seed testing protocols",
+            "Germination cabinet operation",
+            "Moisture meter calibration",
+            "Physical purity evaluation"
+          ],
+          "skills_after_joining_inferred": [
+            "Commercial seed lot vigor certification",
+            "Cold test & accelerated aging test execution",
+            "Seed lot rejection protocols for low germination",
+            "National Seed Certification Agency compliance"
+          ],
+          "insyt_skill_tags": [
+            "quality_control",
+            "seed_technology",
+            "agriculture",
+            "botany"
+          ]
+        },
+        {
+          "id": "MALIK-05",
+          "title_bn": "প্রোডাক্ট ম্যানেজার (হাইব্রিড ভেজিটেবল সিড পোর্টফোলিও)",
+          "title_en": "Product Manager — Seed Portfolio",
+          "job_family": "Seed Portfolio Management & Marketing",
+          "vacancy": "1-2 per cycle",
+          "grade": "Assistant Manager Level",
+          "salary_scale_bdt": "50000-75000",
+          "education": "B.Sc. in Agriculture (BSCA) + MBA in Marketing.",
+          "experience": "3-6 years in hybrid seed product management or agronomic marketing.",
+          "hard_skills_before_joining": [
+            "Seed market segmentation",
+            "Varietal positioning",
+            "Sales forecasting",
+            "Promotional campaign budgeting"
+          ],
+          "skills_after_joining_inferred": [
+            "AR Malik seed brand portfolio optimization",
+            "Seasonal seed pipeline supply forecasting",
+            "Dealer demonstration field-day strategy",
+            "Competitor seed variety performance auditing"
+          ],
+          "insyt_skill_tags": [
+            "product_management",
+            "marketing",
+            "seed_technology",
+            "agribusiness"
+          ]
+        }
+      ]
+    },
+    {
+      "organization": "Arannayk Foundation (Bangladesh Tropical Forest Conservation Foundation)",
+      "acronym": "ARANNAYK_FDN",
+      "location": "Head Office: House 21, Road 12, Block F, Niketan, Gulshan-1, Dhaka; Field Projects: Chittagong Hill Tracts (CHT), Cox's Bazar, Sundarbans, Sylhet, Sal Forest Belts",
+      "sector": "Tropical Forest Conservation, Biodiversity, Natural Resource Management (NRM), Climate Change Resilience, NGO / Development Sector",
+      "circular_date": "Continuous Development Sector Archives",
+      "total_job_categories": 10,
+      "total_vacancies": "Variable by donor project cycle (USAID, KfW, UNDP funded)",
+      "application_start": "Continuous / As per circular notices",
+      "application_deadline": "Varies by position",
+      "age_requirement": "24-42 years",
+      "application_mode": "Arannayk Foundation Career Portal, BDJobs NGO Hub, & Direct Email",
+      "selection": [
+        "CV Shortlisting & Academic Credentials Audit",
+        "Written Domain / Analytical Technical Test",
+        "Technical Seminar / Project Proposal Presentation",
+        "Panel Oral Interview & Reference Check"
+      ],
+      "application_fee": {
+        "note": "Arannayk Foundation does not charge any application or recruitment fees.",
+        "known_structure": "Free application"
+      },
+      "general_requirements": [
+        "Bangladeshi citizenship",
+        "Degree in Forestry, Environmental Science, Agricultural Economics, Geography/GIS, Botany, Development Studies, or Natural Resource Management",
+        "High willingness to live and travel in remote forest landscapes (CHT, Sundarbans, Sylhet) and work with indigenous/ethnic communities"
+      ],
+      "source": "Arannayk Foundation Official Career Archives & Development Sector Registries",
+      "jobs": [
+        {
+          "id": "ARANNAYK-01",
+          "title_bn": "মনিটরিং, ইভালুয়েশন অ্যান্ড লার্নিং (এমইএল) স্পেশালিস্ট / ডেটা অ্যানালিস্ট",
+          "title_en": "Monitoring, Evaluation & Learning (MEL) Specialist / Data Analyst",
+          "job_family": "M&E, Data Analytics & Impact Evaluation",
+          "vacancy": "1-3 per cycle",
+          "grade": "Specialist / Senior Officer Level",
+          "salary_scale_bdt": "50000-80000",
+          "education": "B.Sc / M.Sc in Agricultural Economics, Statistics, Environmental Science, Economics, or Development Studies.",
+          "experience": "3-6 years in project M&E, impact evaluation, data analytics, or econometric modeling in development projects.",
+          "hard_skills_before_joining": [
+            "KoboToolbox / ODK mobile data collection",
+            "SPSS / STATA / R statistical packages",
+            "Logical Framework & Theory of Change",
+            "Household survey design & sampling"
+          ],
+          "skills_after_joining_inferred": [
+            "Forest restoration & community livelihood impact modeling",
+            "Donor indicator tracking (USAID/KfW framework)",
+            "Geospatial data integration into M&E dashboards",
+            "Project mid-term & final evaluation report drafting"
+          ],
+          "insyt_skill_tags": [
+            "m_and_e",
+            "data_analysis",
+            "agricultural_economics",
+            "r",
+            "statistics",
+            "kobotoolbox"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ARANNAYK-02",
+          "title_bn": "ফরেস্ট্রি অ্যান্ড এগ্রোফরেস্ট্রি স্পেশালিস্ট",
+          "title_en": "Forestry & Agroforestry Specialist",
+          "job_family": "Forestry & Agroforestry Extension",
+          "vacancy": "2-4 per cycle",
+          "grade": "Senior Officer / Specialist",
+          "salary_scale_bdt": "45000-70000",
+          "education": "B.Sc. / M.Sc. in Forestry, Agroforestry, or Botany.",
+          "experience": "3-5 years in forest restoration, indigenous tree species propagation, or agroforestry models.",
+          "hard_skills_before_joining": [
+            "Tropical silviculture protocols",
+            "Native species nursery management",
+            "Agroforestry system design",
+            "Forest inventory sampling"
+          ],
+          "skills_after_joining_inferred": [
+            "Co-management organization (CMO) capacity building",
+            "Degraded forest landscape restoration (FLR) execution",
+            "High Conservation Value Forest (HCVF) assessment",
+            "Community agroforestry model implementation"
+          ],
+          "insyt_skill_tags": [
+            "forestry",
+            "agroforestry",
+            "conservation",
+            "environment",
+            "botany"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ARANNAYK-03",
+          "title_bn": "ন্যাচারাল রিসোর্স ম্যানেজমেন্ট (এনআরএম) ও ক্লাইমেট রেজিলিয়েন্স অফিসার",
+          "title_en": "Natural Resource Management (NRM) & Climate Resilience Officer",
+          "job_family": "NRM & Climate Change Adaptation",
+          "vacancy": "3-5 per cycle",
+          "grade": "Officer / Senior Officer",
+          "salary_scale_bdt": "38000-60000",
+          "education": "B.Sc / M.Sc in Environmental Science, Forestry, Agriculture, or NRM.",
+          "experience": "2-4 years in community-based natural resource management or climate adaptation.",
+          "hard_skills_before_joining": [
+            "Participatory Rural Appraisal (PRA)",
+            "Climate vulnerability assessment",
+            "Community mobilization",
+            "Watershed management basics"
+          ],
+          "skills_after_joining_inferred": [
+            "Protected Area (PA) co-management council facilitation",
+            "Alternative Livelihood Options (ALO) design for forest dependents",
+            "Forest carbon sink monitoring protocols",
+            "Biodiversity conservation community agreement drafting"
+          ],
+          "insyt_skill_tags": [
+            "nrm",
+            "climate_change",
+            "environmental_science",
+            "community_mobilization"
+          ]
+        },
+        {
+          "id": "ARANNAYK-04",
+          "title_bn": "জিআইএস ও রিমোট সেন্সিং অফিসার (ফরেস্ট ক্যাডাস্ট্রাল অ্যান্ড ল্যান্ডস্কেপ ম্যাপিং)",
+          "title_en": "GIS & Remote Sensing Officer",
+          "job_family": "Geospatial Analysis & Remote Sensing",
+          "vacancy": "1-2 per cycle",
+          "grade": "Officer / Specialist",
+          "salary_scale_bdt": "40000-65000",
+          "education": "B.Sc / M.Sc in Geography & Environment, GIS, Forestry, or Urban Planning.",
+          "experience": "2-4 years operating ArcGIS, QGIS, Google Earth Engine, or satellite image processing.",
+          "hard_skills_before_joining": [
+            "ArcGIS / QGIS spatial analysis",
+            "Satellite image classification (Sentinel/Landsat)",
+            "NDVI vegetation index analysis",
+            "GPS field data mapping"
+          ],
+          "skills_after_joining_inferred": [
+            "Forest canopy cover loss & gain temporal mapping",
+            "Landscape restoration priority mapping",
+            "Protected area spatial database management",
+            "Drone-based forest inventory imagery processing"
+          ],
+          "insyt_skill_tags": [
+            "gis",
+            "remote_sensing",
+            "qgis",
+            "forestry",
+            "geography"
+          ],
+          "insyt_priority": "EXTREMELY_HIGH"
+        },
+        {
+          "id": "ARANNAYK-05",
+          "title_bn": "কম্যুনিটি লাইভলিহুডস ও এগ্রো-বায়োডাইভারসিটি অফিসার",
+          "title_en": "Community Livelihoods & Agro-Biodiversity Officer",
+          "job_family": "Community Development & Rural Livelihoods",
+          "vacancy": "3-6 per cycle",
+          "grade": "Officer Level",
+          "salary_scale_bdt": "32000-50000",
+          "education": "B.Sc in Agriculture, Agricultural Economics, Forestry, or Development Studies.",
+          "experience": "1-3 years in rural livelihood development, agro-biodiversity, or micro-enterprise promotion.",
+          "hard_skills_before_joining": [
+            "Value chain analysis",
+            "Micro-enterprise group formation",
+            "Agro-biodiversity conservation",
+            "Training facilitation"
+          ],
+          "skills_after_joining_inferred": [
+            "Forest-adjacent community non-timber forest product (NTFP) value addition",
+            "Indigenous crop variety seed banking",
+            "Ecotourism community enterprise development",
+            "Household income survey execution"
+          ],
+          "insyt_skill_tags": [
+            "livelihoods",
+            "agricultural_economics",
+            "biodiversity",
+            "extension"
+          ]
+        }
+      ]
+    }
+  ],
+  "cross_source_insights": {
+    "most_important_new_signal": "This batch demonstrates a powerful intersection between traditional agro-conglomerates (Aman Group), export-driven seafood processing (Apex Foods), high-tech seed genetics (AR Malik Seeds), and tropical forest conservation / climate resilience (Arannayk Foundation). It proves that quantitative research, data analytics (MEL, GIS, R, STATA, SQL), and Agricultural Economics skills are equally valued in corporate feed/seed firms and high-paying development foundations.",
+    "highest_value_jobs_for_an_agricultural_economics_data_candidate": [
+      {
+        "organization": "Arannayk Foundation",
+        "job": "Monitoring, Evaluation & Learning (MEL) Specialist / Data Analyst",
+        "why": "Direct fit for Agricultural Economists with statistical capabilities; designs household impact surveys, models forest restoration economic benefits, and manages donor M&E frameworks.",
+        "skills_to_prioritize": [
+          "R",
+          "STATA",
+          "KoboToolbox",
+          "Econometrics",
+          "Survey Design",
+          "Impact Evaluation",
+          "GIS Integration"
+        ]
+      },
+      {
+        "organization": "Arannayk Foundation",
+        "job": "GIS & Remote Sensing Officer",
+        "why": "High-value geospatial analytical role mapping forest canopy changes, NDVI vegetation indices, and watershed boundaries.",
+        "skills_to_prioritize": [
+          "QGIS",
+          "ArcGIS",
+          "Remote Sensing",
+          "Python for GIS",
+          "Spatial Modeling"
+        ]
+      },
+      {
+        "organization": "Aman Group",
+        "job": "Raw Material Procurement & Grain Sourcing Officer",
+        "why": "Integrates Agricultural Economics in seasonal maize aggregation, vendor price trend analysis, and feed mill supply chain buffer planning.",
+        "skills_to_prioritize": [
+          "Grain Procurement",
+          "Price Analysis",
+          "Supply Chain Planning",
+          "Agricultural Sourcing"
+        ]
+      },
+      {
+        "organization": "Apex Foods Limited",
+        "job": "International Export & Logistics Executive",
+        "why": "Focuses on international trade documentation, seafood cold-chain logistics, and export market compliance.",
+        "skills_to_prioritize": [
+          "International Trade",
+          "Export Logistics",
+          "Supply Chain Management",
+          "Customs Documentation"
+        ]
+      }
+    ],
+    "repeated_skill_patterns": {
+      "data_analytics_and_mel": {
+        "frequency": "Very high",
+        "appears_in": [
+          "Arannayk MEL Specialist",
+          "Arannayk GIS Officer",
+          "Arannayk Community Livelihoods Officer",
+          "Aman Grain Sourcing Officer"
+        ],
+        "recommended_insyt_bundle": [
+          "R",
+          "STATA",
+          "KoboToolbox",
+          "QGIS",
+          "Econometrics",
+          "Survey Sampling"
+        ]
+      },
+      "seed_breeding_and_agronomy": {
+        "frequency": "Very high",
+        "appears_in": [
+          "AR Malik Territory Manager",
+          "AR Malik Plant Breeder",
+          "AR Malik Field Trial Coordinator",
+          "AR Malik Seed QC Analyst"
+        ]
+      },
+      "seafood_processing_and_haccp": {
+        "frequency": "High",
+        "appears_in": [
+          "Apex Export Executive",
+          "Apex QA Manager",
+          "Apex Aqua Sourcing Executive",
+          "Apex Plant Engineer"
+        ]
+      },
+      "feed_manufacturing_and_livestock": {
+        "frequency": "High",
+        "appears_in": [
+          "Aman Territory Sales Officer",
+          "Aman QC Chemist",
+          "Aman Grain Procurement Officer",
+          "Aman Farm Manager"
+        ]
+      }
+    },
+    "insyt_corporate_product_opportunities": [
+      {
+        "feature": "Development & NGO Impact Data Evaluator",
+        "input": "Candidate R, STATA, KoboToolbox, and Econometrics credentials",
+        "output": "Automated matching for Arannayk Foundation MEL and Data Analyst vacancies"
+      },
+      {
+        "feature": "GIS & Forestry Remote Sensing Module",
+        "logic": "Map satellite image processing and QGIS experience directly to environmental NGO and forestry management positions"
+      },
+      {
+        "feature": "Seafood Export & HACCP Compliance Engine",
+        "logic": "Evaluate Fisheries and Food Engineering degrees against EU/US FDA seafood export requirements (Apex Foods)"
+      }
+    ]
+  },
+  "recommended_insyt_skill_taxonomy_from_these_sources": {
+    "tier_1_core": [
+      "Agricultural Economics",
+      "Forestry & NRM",
+      "Fisheries & Aquaculture",
+      "Seed Technology",
+      "Feed Manufacturing",
+      "Monitoring & Evaluation (M&E)"
+    ],
+    "tier_2_high_value": [
+      "R",
+      "STATA",
+      "QGIS / ArcGIS",
+      "KoboToolbox / ODK",
+      "HACCP / BRCGS",
+      "Econometrics",
+      "Hybrid Seed Breeding"
+    ],
+    "tier_3_specialized": [
+      "Sentinel/Landsat Satellite Classification",
+      "NDVI Vegetation Index Analysis",
+      "Vannamei Shrimp Cold Chain Freezing",
+      "CMS Line Seed Multiplication",
+      "NIR Rapid Feed Spectrometry",
+      "Protected Area Co-Management (CMO)"
+    ],
+    "tier_4_operational": [
+      "ISTA Seed Germination Testing",
+      "Poultry Feed FCR Benchmarking",
+      "Household PRA Surveying",
+      "Shrimp Grading & Ice Preservation",
+      "Grain Moisture & Purity Testing"
+    ]
+  },
+  "critical_data_modeling_notes": [
+    "Arannayk Foundation represents a high-paying development NGO environment where research methodology, quantitative data analytics (R/STATA), and GIS mapping carry heavy compensation premiums.",
+    "Apex Foods Limited operates under strict international export compliance; roles demand deep familiarity with HACCP, BRCGS, and US FDA seafood inspection standards.",
+    "AR Malik Seeds represents a premier hybrid seed enterprise with close technical ties to global seed companies (East-West Seed, Bejo); roles prioritize B.Sc. Agriculture graduates with agronomic field trial capabilities.",
+    "Aman Group provides steady corporate employment tracks for feed sales, raw grain sourcing, and feed mill laboratory management across Bangladesh's poultry and aquaculture belts."
+  ],
+  "source_traceability": {
+    "Aman_Apex_ARMalik_Arannayk": "Aggregated from official recruitment circulars, Aman Group HR records, Apex Foods Limited export division registries, AR Malik Seeds corporate filings, and Arannayk Foundation official career archives."
+  }
+}
