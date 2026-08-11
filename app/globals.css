@@ -462,7 +462,7 @@ body {
   align-items: center;
   gap: 4px;
   padding: 4px 12px;
-  border-radius: 9999px;
+  border-radius: 0.5rem;
   font-size: 12px;
   font-weight: 800;
   background: var(--game-blue-light);
@@ -481,7 +481,7 @@ body {
   justify-content: center;
   min-width: 32px;
   height: 32px;
-  border-radius: 50%;
+  border-radius: 0.5rem;
   font-size: 13px;
   font-weight: 900;
 }
@@ -507,7 +507,7 @@ body {
   align-items: center;
   gap: 4px;
   padding: 3px 10px;
-  border-radius: 9999px;
+  border-radius: 0.5rem;
   font-size: 11px;
   font-weight: 700;
 }
@@ -519,7 +519,7 @@ body {
   justify-content: center;
   width: 52px;
   height: 52px;
-  border-radius: 50%;
+  border-radius: 0.5rem;
   background: var(--game-blue);
   color: #fff;
   box-shadow: var(--shadow-game-blue);
@@ -537,7 +537,7 @@ body {
   align-items: center;
   gap: 4px;
   padding: 4px 12px;
-  border-radius: 9999px;
+  border-radius: 0.5rem;
   background: var(--game-blue);
   color: #fff;
   font-size: 12px;
@@ -551,7 +551,7 @@ body {
   align-items: center;
   gap: 4px;
   padding: 4px 12px;
-  border-radius: 9999px;
+  border-radius: 0.5rem;
   background: var(--game-amber);
   color: #fff;
   font-size: 12px;
@@ -564,7 +564,7 @@ body {
   align-items: center;
   gap: 6px;
   padding: 4px 14px;
-  border-radius: 9999px;
+  border-radius: 0.5rem;
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.06em;
@@ -715,7 +715,7 @@ body {
   justify-content: center;
   gap: 8px;
   padding: 10px 20px;
-  border-radius: 14px;
+  border-radius: 0.5rem;
   font-weight: 800;
   font-size: 14px;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
@@ -865,13 +865,31 @@ button, [role="button"], a, input[type="submit"], input[type="button"], select, 
   cursor: pointer !important;
 }
 
-/* ─── Global Site-Wide Corner Radius Enforcement (Crisp rounded-sm / 4px) ─── */
-.rounded-md,
-.rounded-lg,
-.rounded-xl,
-.rounded-2xl,
-.rounded-3xl {
-  border-radius: 4px !important;
+/* ─── Global Corner Radius Enforcement for Buttons & Badges ONLY (rounded-lg / 0.5rem / 8px) ─── */
+button,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.btn,
+[class*="btn-"],
+[class*="btn_"],
+.badge,
+[class*="badge"],
+[class*="-badge"],
+.tag,
+[class*="tag"],
+[class*="-tag"],
+.pill,
+[class*="pill"],
+[class*="-pill"] {
+  border-radius: 0.5rem !important; /* rounded-lg (8px) */
+}
+
+/* Preserve smooth track curves for progress bars */
+.progress-pill,
+.progress-pill-fill {
+  border-radius: 9999px !important;
 }
 
 

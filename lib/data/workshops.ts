@@ -20,7 +20,8 @@ export interface WorkshopDetail {
   totalCapacity: number;
   xpReward: number;
   examXpReward: number;
-  hostOrg: string; // e.g., "BAU Business Club (BAUBC) x INSYT"
+  hostOrg: string; // e.g., "BAU Career Club (BAUCC) x INSYT"
+  registrationUrl?: string;
   instructor: {
     name: string;
     role: string;
@@ -28,90 +29,101 @@ export interface WorkshopDetail {
     avatar: string;
     bio: string;
   };
-  venue: string; // e.g. "Zoom Executive Room & BAU Campus Auditorium"
+  venue: string;
   description: string;
   agenda: { time: string; topic: string; details: string }[];
   learningOutcomes: string[];
-  credentialName: string; // e.g. "Verified BAUBC Corporate Financial Analytics Credential"
+  credentialName: string;
   examQuestions: WorkshopQuestion[];
 }
 
 export const WORKSHOPS_DATA: WorkshopDetail[] = [
   {
-    id: "mto-assessment-masterclass",
-    title: "MTO Assessment Center & Case Solving Masterclass 2026",
-    tagline: "Master SHL numerical tests, McKinsey MECE frameworks, and Group Discussion dynamics for top FMCG & Bank recruitment.",
-    category: "MTO & Corporate",
-    level: "Advanced",
+    id: "cv-writing-linkedin-hacks",
+    title: "CV Writing & LinkedIn Hacks!",
+    tagline: "Did you know recruiters spend only about 6 seconds glancing at a CV? Master ATS-friendly CV engineering and LinkedIn optimization with Niaz Ahmed.",
+    category: "Career & Branding",
+    level: "Beginner",
     date: "Saturday, August 15, 2026",
-    time: "7:30 PM – 9:30 PM (BST)",
+    time: "3:00 PM – 5:00 PM (BST)",
     duration: "2.0 Hours",
     status: "upcoming",
-    spotsRemaining: 18,
-    totalCapacity: 150,
+    spotsRemaining: 25,
+    totalCapacity: 200,
     xpReward: 150,
     examXpReward: 200,
-    hostOrg: "BAU Business Club (BAUBC) x INSYT Corporate",
+    hostOrg: "BAU Career Club (BAUCC) x INSYT Corporate",
+    registrationUrl: "https://forms.gle/qYevAczJCgUe4KVPA",
     instructor: {
-      name: "Tanzim Hasan",
-      role: "Ex-MTO & Brand Manager",
-      company: "Unilever Bangladesh",
-      avatar: "TH",
-      bio: "Tanzim secured top rank in Unilever BizMaestros and led brand strategy across 4 division markets in South Asia.",
+      name: "Niaz Ahmed",
+      role: "Founder & CEO",
+      company: "Corporate Ask",
+      avatar: "NA",
+      bio: "Widely known as the best CV Engineer in Bangladesh. Crafted over 50,000 CVs, optimized 30,000 LinkedIn profiles, and authored 17 books on career development. National Young Entrepreneur Award 2017 & COF Inspiration Award 2017 winner.",
     },
-    venue: "Live Zoom Executive Suite + BAU Central Auditorium",
-    description: "An intensive 2-hour bootcamp designed for final-year university students and fresh graduates preparing for Management Trainee Officer (MTO) recruitment rounds across BAT, Unilever, BRAC Bank, and Grameenphone.",
+    venue: "Live Zoom Interactive Masterclass & BAUCC Hub",
+    description: "Did you know recruiters spend only about 6 seconds glancing at a CV? Just like your resume, if your LinkedIn profile fails to create an instant impact, your best skills might go completely unnoticed. BAUCC is bringing you an exclusive session with Niaz Ahmed, Founder & CEO of Corporate Ask, to master ATS-friendly CV building and hidden LinkedIn growth hacks to help you stand out to top recruiters.",
     agenda: [
-      { time: "7:30 PM", topic: "SHL & Psychometric Numerical Test Speed Hacks", details: "Shortcut formulas for ratio, growth rate, and matrix interpretation." },
-      { time: "8:00 PM", topic: "Group Discussion (GD) Dominance Tactics", details: "How to introduce, structure consensus, and avoid candidate traps." },
-      { time: "8:45 PM", topic: "McKinsey MECE Frameworks for Business Cases", details: "Structuring profitability and market entry cases live on screen." },
-      { time: "9:15 PM", topic: "Live Q&A & BAUBC Credential Issuance Guidelines", details: "Direct candidate evaluation Q&A." },
+      { time: "3:00 PM", topic: "Building a Highly Effective ATS Friendly CV", details: "Formatting standards, keyword density, and single-column parsing rules." },
+      { time: "3:40 PM", topic: "Hidden Tricks to Optimize Your LinkedIn Profile", details: "Recruiter SEO algorithms, headline formulas, and featured section strategies." },
+      { time: "4:20 PM", topic: "Smart Ways to Showcase Your Achievements", details: "Quantifiable STAR metrics, action verbs, and portfolio positioning." },
+      { time: "4:50 PM", topic: "Live Q&A & BAUCC Credential Examination", details: "Direct candidate questions with Niaz Ahmed." },
     ],
     learningOutcomes: [
-      "Solve SHL numerical reasoning questions in under 45 seconds per item",
-      "Structure complex business problems using MECE issue trees",
-      "Lead Group Discussions (GD) without interrupting or overdominating",
-      "Format executive slide decks for Assessment Center final presentations",
+      "How to build a highly effective ATS friendly CV",
+      "Hidden tricks to optimize your LinkedIn profile",
+      "Smart ways to showcase your achievements",
+      "Proven techniques to catch the attention of top recruiters",
     ],
-    credentialName: "BAUBC Verified MTO & Case Solving Executive Certificate",
+    credentialName: "BAUCC Verified Executive CV & LinkedIn Branding Credential",
     examQuestions: [
       {
         id: 1,
-        question: "What does MECE stand for in corporate case solving?",
+        question: "How long on average do recruiters spend glancing at a CV during initial screening?",
         options: [
-          "Most Efficient Case Evaluation",
-          "Mutually Exclusive, Collectively Exhaustive",
-          "Management Executive Corporate Excellence",
-          "Main Entry Communication Strategy",
+          "About 30 seconds",
+          "About 6 seconds",
+          "About 2 minutes",
+          "About 15 seconds",
         ],
         correctAnswer: 1,
-        explanation: "MECE ensures that problem components do not overlap (mutually exclusive) and cover all possibilities (collectively exhaustive).",
+        explanation: "Recruiters spend approximately 6 seconds during initial screening scans, making visual structure and instant keyword clarity essential.",
       },
       {
         id: 2,
-        question: "During a Group Discussion (GD) round, what is the best strategy if another candidate speaks over you?",
+        question: "What is essential when building an ATS-friendly CV?",
         options: [
-          "Raise your voice to overpower them immediately",
-          "Remain quiet and do not speak for the rest of the GD",
-          "Wait for a 2-second pause, acknowledge their point briefly, and synthesize the group's consensus",
-          "Argue with the evaluator about fairness",
+          "Using elaborate graphics and multi-column tables",
+          "Using clean, parseable text structure with standard section headers",
+          "Hiding keyword lists in tiny font sizes",
+          "Saving the resume as an image file",
         ],
-        correctAnswer: 2,
-        explanation: "Evaluators look for active listening, professional synthesis, and structured collaboration over loud arguments.",
+        correctAnswer: 1,
+        explanation: "ATS scanners require clean text parsing, standard section headers (Experience, Education, Skills), and clear single-column layouts.",
       },
       {
         id: 3,
-        question: "If a company's revenue increased from ৳80 Crore to ৳112 Crore in one year, what is the percentage growth?",
-        options: ["30%", "35%", "40%", "42%"],
-        correctAnswer: 2,
-        explanation: "Growth = (112 - 80) / 80 = 32 / 80 = 0.40 = 40%.",
+        question: "Which formula is best for describing accomplishments on your CV and LinkedIn?",
+        options: [
+          "Listing basic daily responsibilities with no numbers",
+          "Action Verb + Task Context + Quantifiable Result / Impact",
+          "Copying and pasting generic job description bullet points",
+          "Writing long paragraphs describing personal characteristics",
+        ],
+        correctAnswer: 1,
+        explanation: "Action Verb + Context + Quantifiable Metric clearly proves your value to recruiters.",
       },
       {
         id: 4,
-        question: "Which matrix framework is most suitable for evaluating a product line's market share vs. market growth rate?",
-        options: ["SWOT Analysis", "BCG Growth-Share Matrix", "Porter's 5 Forces", "Ansoff Matrix"],
+        question: "What section of a LinkedIn profile has the highest impact on recruiter search algorithm visibility?",
+        options: [
+          "Profile Banner Photo",
+          "Headline and Summary Keywords",
+          "Number of Connections",
+          "Recommendations Received",
+        ],
         correctAnswer: 1,
-        explanation: "The BCG Matrix categorizes products into Stars, Cash Cows, Question Marks, and Dogs based on growth and market share.",
+        explanation: "LinkedIn's recruiter search index prioritizes exact job title keywords and skill terms in your Headline and Summary.",
       },
     ],
   },

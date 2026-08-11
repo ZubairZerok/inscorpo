@@ -11,7 +11,6 @@ import Link from "next/link";
 import { useUser } from "@/components/providers/user-context";
 
 import { LinkedInProfileHeader } from "@/components/dashboard/linkedin-profile-header";
-import { LinkedInAnalyticsBar } from "@/components/dashboard/linkedin-analytics-bar";
 import { LinkedInExperienceCard } from "@/components/dashboard/linkedin-experience-card";
 import { LinkedInSkillsCard } from "@/components/dashboard/linkedin-skills-card";
 import { WeeklyVelocityChart } from "@/components/dashboard/weekly-velocity-chart";
@@ -120,12 +119,6 @@ export default function LinkedInDashboardPage() {
         nextLevelXp={nextLevelXp}
       />
 
-      {/* ── 2. "Analytics — Private to you" Metric Bar ── */}
-      <LinkedInAnalyticsBar
-        state={state}
-        onOpenXpModal={() => setXpModalOpen(true)}
-        onOpenStreakModal={() => setStreakModalOpen(true)}
-      />
 
       {/* ── 3. Main LinkedIn 2-Column Profile Layout ── */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
@@ -285,14 +278,14 @@ export default function LinkedInDashboardPage() {
             <div className="p-3 rounded-lg border-2 border-corp-border bg-corp-bg-secondary/60 space-y-1">
               <div className="flex items-center gap-2">
                 <span className="px-2 py-0.5 rounded text-[9px] font-mono font-extrabold bg-[#2563eb] text-white">
-                  FEB 15
+                  AUG 15
                 </span>
                 <span className="text-xs font-bold text-corp-text truncate">
-                  Unilever MTO Case Masterclass
+                  CV Writing &amp; LinkedIn Hacks
                 </span>
               </div>
               <p className="text-[10px] text-corp-text-tertiary font-medium">
-                Live with Ex-Unilever Brand Directors & Case Judges
+                Live with Niaz Ahmed (Founder &amp; CEO, Corporate Ask)
               </p>
             </div>
           </motion.div>

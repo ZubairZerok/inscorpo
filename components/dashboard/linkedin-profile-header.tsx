@@ -40,10 +40,10 @@ export function LinkedInProfileHeader({
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
-      className="rounded-xl border-2 border-blue-400 p-6 sm:p-7 text-white font-sans relative overflow-hidden"
+      className="rounded-xl border-2 border-blue-400 p-4 sm:p-5 text-white font-sans relative overflow-hidden"
       style={{
         background: "#2563eb",
-        boxShadow: "5px 5px 0px 0px #1e3a8a",
+        boxShadow: "4px 4px 0px 0px #1e3a8a",
       }}
     >
       {/* Subtle grid pattern */}
@@ -56,96 +56,88 @@ export function LinkedInProfileHeader({
         }}
       />
 
-      <div className="relative z-10 space-y-5">
-        {/* Top Header Row: Badges */}
-        <div className="flex flex-wrap items-center justify-between gap-3">
-          <div className="flex items-center gap-2 flex-wrap">
-            <span className="px-3 py-1 rounded-md text-xs font-mono font-extrabold uppercase bg-amber-400 text-amber-950 border border-amber-500 shadow-sm flex items-center gap-1.5">
-              <ShieldCheck size={14} /> VERIFIED CANDIDATE
-            </span>
+      <div className="relative z-10">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          {/* Left Side: Avatar + Details */}
+          <div className="flex items-center gap-3.5 sm:gap-4 min-w-0 flex-1">
+            {/* Avatar */}
+            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-white text-[#2563eb] flex items-center justify-center text-xl sm:text-2xl font-black flex-shrink-0 border-2 border-white shadow-md overflow-hidden">
+              {pp?.photoUrl ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={pp.photoUrl} alt={state.name} className="w-full h-full object-cover" />
+              ) : (
+                <span className="font-mono">{initials}</span>
+              )}
+            </div>
 
-            {/* Interactive Rank-colored badge */}
-            {(() => {
-              const { current: rankData } = getRankInfo(state.xp);
-              const rankTextCol = getContrastColor(rankData.color);
-              return (
-                <div
-                  onClick={() => setRankModalOpen(true)}
-                  className="px-2.5 py-1 rounded-md text-xs font-mono font-extrabold uppercase flex items-center gap-1.5 cursor-pointer hover:scale-105 transition-transform"
-                  style={{
-                    background: rankData.gradient,
-                    color: rankTextCol,
-                    boxShadow: `0 2px 8px ${rankData.shadowColor}55`,
-                    border: `1px solid ${rankData.shadowColor}66`,
-                  }}
-                  title="Click to view Rank Tiers & Perks"
-                >
-                  <RankBadge rank={rankData} size="xs" />
-                  {rankData.name} Rank
-                </div>
-              );
-            })()}
+            {/* Main Text Content */}
+            <div className="space-y-1 min-w-0 flex-1">
+              <div className="flex flex-wrap items-center gap-2">
+                <h1 className="text-xl sm:text-2xl font-black font-bangla text-white">
+                  স্বাগতম, {firstName}
+                </h1>
 
-            <span className="px-3 py-1 rounded-md text-xs font-mono font-extrabold uppercase bg-blue-900/80 text-blue-100 border border-white/20 flex items-center gap-1">
-              <Zap size={13} className="fill-amber-300 text-amber-300" /> Level {state.level} ({state.xp.toLocaleString()} XP)
-            </span>
-          </div>
+                {/* Interactive Rank Badge */}
+                {(() => {
+                  const { current: rankData } = getRankInfo(state.xp);
+                  const rankTextCol = getContrastColor(rankData.color);
+                  return (
+                    <div
+                      onClick={() => setRankModalOpen(true)}
+                      className="px-2.5 py-0.5 rounded-lg text-[11px] font-mono font-extrabold uppercase flex items-center gap-1 cursor-pointer hover:scale-105 transition-transform"
+                      style={{
+                        background: rankData.gradient,
+                        color: rankTextCol,
+                        boxShadow: `0 2px 6px ${rankData.shadowColor}44`,
+                        border: `2px solid ${rankData.shadowColor}66`,
+                      }}
+                      title="Click to view Rank Tiers & Perks"
+                    >
+                      <RankBadge rank={rankData} size="xs" />
+                      {rankData.name} Rank
+                    </div>
+                  );
+                })()}
 
-          <div className="hidden lg:flex items-center gap-2 text-xs font-mono font-bold text-blue-100">
-            <Building2 size={13} /> INSYT Corporate Scholar
-          </div>
-        </div>
+                <span className="px-2.5 py-0.5 rounded-lg text-[10px] font-mono font-extrabold bg-amber-400 text-amber-950 border border-amber-500 flex items-center gap-1.5 shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-950 animate-pulse" />
+                  Open to Opportunities
+                </span>
+              </div>
 
-        {/* Middle Row: Avatar + Name + Headline */}
-        <div className="flex flex-col sm:flex-row sm:items-center gap-5">
-          {/* Avatar */}
-          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl bg-white text-[#2563eb] flex items-center justify-center text-2xl font-black flex-shrink-0 border-2 border-white shadow-md overflow-hidden">
-            {pp?.photoUrl ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img src={pp.photoUrl} alt={state.name} className="w-full h-full object-cover" />
-            ) : (
-              <span className="font-mono">{initials}</span>
-            )}
-          </div>
+              <p className="text-xs font-semibold text-blue-100 line-clamp-1 font-mono">
+                {headline}
+              </p>
 
-          <div className="space-y-1 min-w-0 flex-1">
-            <h1 className="text-2xl sm:text-3xl font-black font-bangla text-white flex items-center gap-2">
-              স্বাগতম, {firstName}
-            </h1>
-            <p className="text-xs sm:text-sm font-semibold text-blue-100 line-clamp-2 font-mono">
-              {headline}
-            </p>
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs font-mono text-blue-200 pt-1">
-              <span className="flex items-center gap-1 font-bold">
-                <MapPin size={13} /> {location}
-              </span>
-              <span>•</span>
-              <span className="flex items-center gap-1 font-bold">
-                <GraduationCap size={13} /> {university}
-              </span>
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-0.5 text-[11px] font-mono text-blue-200">
+                <span className="flex items-center gap-1 font-bold">
+                  <MapPin size={12} /> {location}
+                </span>
+                <span>•</span>
+                <span className="flex items-center gap-1 font-bold">
+                  <GraduationCap size={12} /> {university}
+                </span>
+                <span className="hidden sm:inline">•</span>
+                <span className="hidden sm:flex items-center gap-1 font-bold text-blue-100">
+                  <Building2 size={12} /> INSYT Corporate Scholar
+                </span>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Bottom Row: Actions Bar */}
-        <div className="pt-2 border-t border-white/20 flex flex-wrap items-center justify-between gap-3">
-          <div className="px-3 py-1.5 rounded-lg text-xs font-mono font-extrabold bg-amber-400 text-amber-950 border border-amber-500 flex items-center gap-1.5 shadow-sm">
-            <span className="w-2 h-2 rounded-full bg-amber-950 animate-pulse" />
-            <span>Open to Corporate & MTO Opportunities</span>
-          </div>
-
-          <div className="flex items-center gap-2.5 flex-wrap">
+          {/* Right Side: Action Buttons */}
+          <div className="flex items-center gap-2.5 flex-wrap sm:flex-nowrap flex-shrink-0 pt-2 md:pt-0 border-t md:border-t-0 border-white/20">
             <Link
               href={`/learn/${activeSlug}`}
-              className="px-5 py-2 rounded-lg text-xs font-mono font-extrabold uppercase text-amber-950 bg-amber-400 hover:bg-amber-300 transition-all border-2 border-amber-500 flex items-center gap-1.5 cursor-pointer"
-              style={{ boxShadow: "3px 3px 0px 0px #78350f" }}
+              className="flex-1 sm:flex-none px-4 py-2 rounded-lg text-xs font-mono font-extrabold uppercase text-amber-950 bg-amber-400 hover:bg-amber-300 transition-all border-2 border-amber-500 flex items-center justify-center gap-1.5 cursor-pointer"
+              style={{ boxShadow: "2px 2px 0px 0px #78350f" }}
             >
               <Play size={12} fill="currentColor" /> Resume Track
             </Link>
 
             <Link
               href="/career-passport"
-              className="px-4 py-2 rounded-lg text-xs font-mono font-extrabold uppercase text-white bg-blue-900/90 hover:bg-blue-900 transition-all border border-white/30 flex items-center gap-1.5 cursor-pointer"
+              className="flex-1 sm:flex-none px-4 py-2 rounded-lg text-xs font-mono font-extrabold uppercase text-white bg-blue-900/90 hover:bg-blue-900 transition-all border border-white/30 flex items-center justify-center gap-1.5 cursor-pointer"
             >
               Career Passport <ArrowRight size={12} />
             </Link>
