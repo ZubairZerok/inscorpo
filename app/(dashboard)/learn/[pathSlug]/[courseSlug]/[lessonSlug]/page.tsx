@@ -14,7 +14,7 @@ interface PageProps {
   params: Promise<{ pathSlug: string; courseSlug: string; lessonSlug: string }>;
 }
 
-// Extensive database of specific GOATED lesson details for GMAT & Excel
+// Extensive database of specific GOATED lesson details for Excel & Corporate Analytics
 const dynamicLessons: Record<string, {
   title: string;
   xpReward: number;
@@ -29,7 +29,7 @@ const dynamicLessons: Record<string, {
   };
   hasSimulator?: "lookup" | "npv" | "solver" | "email" | "resume" | "star" | "forces" | "formula";
 }> = {
-  // GMAT & GRE Lessons
+  // Quantitative Aptitude & Number Theory Lessons
   "divisibility-remainders": {
     title: "Factors, Multiples, and Remainder Theorem",
     xpReward: 60,
@@ -37,8 +37,8 @@ const dynamicLessons: Record<string, {
     videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
     notes: `### Factors, Multiples & Remainder Theorem
 
-#### Executive Overview & GMAT Strategy
-Quantitative reasoning on top-tier standardized tests evaluates your ability to recognize structural number properties rather than perform brute-force arithmetic.
+#### Executive Overview & Quantitative Strategy
+Quantitative reasoning on top-tier corporate assessments evaluates your ability to recognize structural number properties rather than perform brute-force arithmetic.
 
 #### Core Mathematical Theorems:
 1. **Divisibility Definition**: An integer $n$ is divisible by $d$ if there exists an integer $k$ such that:

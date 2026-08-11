@@ -14,7 +14,7 @@ const CAREER_GOALS = [
   { id: "mto", title: "Management Trainee Officer (MTO)", icon: "🏆", desc: "Targeting MNCs & Bank leadership tracks (BRAC Bank, Unilever, GP, BAT)" },
   { id: "finance", title: "Corporate Finance & Banking", icon: "📊", desc: "Financial modeling, credit analysis, valuation, and investment banking" },
   { id: "tech", title: "Tech, Product & Data Analytics", icon: "💻", desc: "Software engineering, product management, Power BI, and AI automation" },
-  { id: "higher-study", title: "GRE / GMAT Higher Study", icon: "🎓", desc: "Targeting top global MBA / MS admissions with quantitative & verbal mastery" },
+  { id: "comm", title: "Business Communication & Pitching", icon: "🎤", desc: "Executive presentations, slide decks, cold email strategy, and workplace communication" },
 ];
 
 const EXP_LEVELS = [
@@ -45,7 +45,7 @@ export default function OnboardingWizardPage() {
     if (selectedGoal === "mto") enrollInPath("corporate-mto", "Corporate Job / MTO Masterclass");
     else if (selectedGoal === "finance") enrollInPath("excel-corporate", "Excel for Corporate Careers");
     else if (selectedGoal === "tech") enrollInPath("ai-automation", "AI & Automation for Work");
-    else enrollInPath("gmat-insights", "GMAT Focus & Quantitative Analytics");
+    else enrollInPath("business-comm", "Business Communication & Slide Pitching");
 
     // Award welcome XP
     addXP(100, "🎉 Completed Onboarding Wizard & Activated Career Passport");
@@ -182,7 +182,7 @@ export default function OnboardingWizardPage() {
                         ? "Excel Financial Modeling & Corporate Finance"
                         : selectedGoal === "tech"
                         ? "AI & Automation for Work Productivity"
-                        : "GMAT Focus & Verbal Reasoning Masterclass"}
+                        : "Business Communication & Slide Pitching Masterclass"}
                     </p>
                     <p className="text-[11px] text-corp-text-tertiary">Recommended Starter Path</p>
                   </div>
@@ -208,8 +208,8 @@ export default function OnboardingWizardPage() {
                     </>
                   ) : (
                     <>
-                      <li>Quant Number Properties & Data Sufficiency</li>
-                      <li>Verbal Reasoning & Vocabulary Engine</li>
+                      <li>McKinsey Issue Trees & Slide Storytelling</li>
+                      <li>Executive Cold Email & Memo Writing</li>
                       <li>Verified Certificate of Completion</li>
                     </>
                   )}

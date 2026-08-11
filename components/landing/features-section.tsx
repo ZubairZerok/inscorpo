@@ -51,7 +51,7 @@ const features = [
   },
   {
     title: "Professional Community",
-    description: "Spaces for Excel, Power BI, GRE, AI, Interviews, and more. Earn XP by helping peers.",
+    description: "Spaces for Excel, Power BI, Finance, AI, Interviews, and more. Earn XP by helping peers.",
     icon: Users,
     variant: "neutral",
     span: "",

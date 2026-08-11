@@ -9,7 +9,7 @@ const faqs = [
   {
     category: "Platform",
     question: "What is INSYT Corporate?",
-    answer: "INSYT Corporate is The Career Operating System — a premium platform for professional development. It combines structured learning paths, mock tests, AI tools, gamification, and career tracking into one platform. We prepare users for private banking, Bangladesh Bank, corporate jobs, GRE, GMAT, IELTS, and more.",
+    answer: "INSYT Corporate is The Career Operating System — a premium platform for professional development. It combines structured learning paths, mock tests, AI tools, gamification, and career tracking into one platform. We prepare users for private banking, Bangladesh Bank, corporate Management Trainee (MTO) roles, business analytics, and executive skills.",
   },
   {
     category: "Platform",

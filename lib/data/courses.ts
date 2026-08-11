@@ -252,43 +252,6 @@ export const ALL_PATHS: Record<string, LearningPathItem> = {
       },
     ],
   },
-
-  "test-prep-gre-gmat": {
-    slug: "test-prep-gre-gmat",
-    title: "GRE & GMAT Test Prep Hub",
-    category: "testprep",
-    description: "Prepare for top international business school admissions with AI-driven quantitative, verbal, and integrated reasoning tutors.",
-    gradient: "from-indigo-600 to-purple-900",
-    icon: "GraduationCap",
-    students: 19400,
-    rating: 4.9,
-    courses: [
-      {
-        slug: "gre-quant-reasoning",
-        pathSlug: "test-prep-gre-gmat",
-        title: "GRE Quantitative Reasoning & Formula Mastery",
-        description: "Algebra, geometry, statistics, and probability problem-solving modules tailored for 165+ GRE Quant scores.",
-        lessons: 10, hours: 12, xp: 500, enrolledCount: 19400, rating: 4.9,
-        skills: ["GRE Quant", "Algebra", "Geometry", "Data Analysis"],
-      },
-      {
-        slug: "gre-verbal-vocab",
-        pathSlug: "test-prep-gre-gmat",
-        title: "GRE Verbal & Vocabulary Builder (3000 Words)",
-        description: "High-frequency vocabulary flashcards, text completion strategies, and reading comprehension techniques.",
-        lessons: 9, hours: 10, xp: 450, enrolledCount: 16800, rating: 4.8,
-        skills: ["GRE Verbal", "Vocabulary", "Text Completion", "Reading Comp"],
-      },
-      {
-        slug: "gmat-data-insights",
-        pathSlug: "test-prep-gre-gmat",
-        title: "GMAT Data Insights & Integrated Reasoning",
-        description: "Multi-source reasoning, table analysis, graphics interpretation, and two-part analysis practice.",
-        lessons: 8, hours: 9, xp: 450, enrolledCount: 12500, rating: 4.9,
-        skills: ["GMAT Focus", "Data Insights", "Graph Interpretation"],
-      },
-    ],
-  },
 };
 
 // Helper function to find any course across all paths by slug

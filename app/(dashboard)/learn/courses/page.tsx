@@ -33,7 +33,6 @@ function getCourseCoverImage(slug: string, pathSlug: string): string {
   if (pathSlug === "excel-corporate" || slug.includes("excel")) return "/images/course_excel.svg";
   if (pathSlug === "power-bi" || slug.includes("power-bi")) return "/images/course_powerbi.svg";
   if (pathSlug === "corporate-finance" || slug.includes("fin")) return "/images/course_finance.svg";
-  if (pathSlug === "test-prep-gre-gmat" || slug.includes("gre") || slug.includes("gmat")) return "/images/course_gmat.svg";
   if (pathSlug === "ai-automation" || slug.includes("ai")) return "/images/course_ai.svg";
   return "/images/course_career.svg";
 }

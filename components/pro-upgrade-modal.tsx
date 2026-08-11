@@ -15,7 +15,7 @@ const PRO_BENEFITS = [
   "Unlimited AI Mock Interviews & Voice Feedback",
   "High-Res 1-Page PDF Resume Exports from Career Passport",
   "Access to all 8+ Executive Learning Paths & Certificates",
-  "Unlimited Practice Assessments & GMAT Insights Lab",
+  "Unlimited Practice Assessments & Corporate Case Labs",
   "Direct 1-Click Job Application Dispatch",
 ];
 

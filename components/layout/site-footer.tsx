@@ -12,7 +12,7 @@ const footerLinks = {
   ],
   Learning: [
     { label: "Banking Preparation", href: "#" },
-    { label: "GRE & GMAT", href: "#" },
+    { label: "Corporate Strategy", href: "#" },
     { label: "IELTS", href: "#" },
     { label: "Business Analytics", href: "#" },
     { label: "AI Productivity", href: "#" },

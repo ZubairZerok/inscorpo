@@ -17,7 +17,7 @@ const OPENROUTER_MODELS = [
 const ChatRequestSchema = z.object({
   message: z.string().min(1, "Message cannot be empty").max(4000, "Message exceeds 4000 characters limit").trim(),
   context: z
-    .enum(["mock-interview", "gmat-tutor", "gre-tutor", "resume-reviewer", "excel-assistant", "general"])
+    .enum(["mock-interview", "resume-reviewer", "excel-assistant", "general"])
     .default("general"),
 });
 
@@ -68,8 +68,6 @@ Rules for scoring:
    **Critical Flaw:** (One specific vulnerability in candidate's response)
    **Next Probing Question:** (A follow-up scenario pressing on their weakest point)`,
 
-  "gmat-tutor": `You are an expert GMAT Focus Edition tutor with 15 years of experience coaching students to 700+ scores.`,
-  "gre-tutor": `You are an elite GRE tutor specializing in Verbal Reasoning and Quantitative Reasoning.`,
   "resume-reviewer": `You are a senior corporate recruiter evaluating candidate resumes for top FMCG, Banking, and Telecom roles.`,
   "excel-assistant": `You are an expert Excel and Google Sheets specialist translating business requirements into precise formulas.`,
   "general": `You are INSYT AI, an intelligent career development assistant for corporate professionals and business students.`,
@@ -88,8 +86,6 @@ const SMART_FALLBACKS: Record<string, (message: string) => string> = {
 **Critical Flaw:** Lack of exact percentage metrics or monetary figures in the result section.
 **Next Probing Question:** "How would you defend your supply chain reallocation proposal when faced with a 25% cost overrun from foreign suppliers?"`;
   },
-  "gmat-tutor": () => `**GMAT Focus Strategy:** Focus on AD/BCE elimination for Data Sufficiency. Analyze Statement 1 alone before testing Statement 2.`,
-  "gre-tutor": () => `**GRE Verbal Strategy:** Use word roots and context clues to master high-frequency sentence equivalence questions.`,
   "resume-reviewer": () => `**Resume ATS Check:** Quantify achievements using Google's XYZ formula: "Accomplished [X] measured by [Y] doing [Z]".`,
   "excel-assistant": () => `**Excel Solution:** Use \`=XLOOKUP(lookup_val, lookup_range, return_range, "Not Found")\` for robust data matching.`,
   "general": () => `I'm INSYT AI, your corporate career partner. Ask me about MTO preparation, supply chain case studies, or interview practice!`,

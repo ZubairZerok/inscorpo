@@ -209,25 +209,16 @@ export async function POST(req: Request) {
 
     results.push("--- certificates ---");
     await stringAttr("certificates", "userId");
-    await stringAttr("certificates", "courseTitle");
-    await stringAttr("certificates", "pathTitle");
-    await stringAttr("certificates", "issuedDate");
-    await intAttr("certificates", "score", false, 0);
-    await sleep(2000);
-
-    // ─── 4. SEED DATA ────────────────────────────────────────────
-    results.push("=== SEEDING DATA ===");
-
-    // ─── Paths ───────────────────────────────────────────────────
+    await stringAttr("certificates", "courseTitle");    // ─── Paths ───────────────────────────────────────────────────
     const paths = [
       {
         slug: "academic-english",
-        title: "Academic English Mastery",
-        description: "Target elite verbal reasoning logic, academic syntax, writing templates, and vocabulary for GRE, GMAT, IELTS, and Corporate English.",
+        title: "Academic & Business English Mastery",
+        description: "Target elite verbal reasoning logic, academic syntax, writing templates, and vocabulary for Corporate English.",
         modules: 5, hours: 40, students: 1892, rating: 4.9,
         icon: "GraduationCap",
         gradient: "from-violet-600 to-purple-700",
-        topics: ["GRE Verbal", "GMAT Verbal", "IELTS Academic", "Corporate English", "Analytical Writing"],
+        topics: ["Corporate English", "Analytical Writing", "Business Presentations", "Cold Outreach"],
       },
       {
         slug: "data-analytics",
@@ -248,13 +239,13 @@ export async function POST(req: Request) {
         topics: ["Financial Statements", "DCF Valuation", "Fixed Income", "Equity", "Ethics"],
       },
       {
-        slug: "gmat-prep",
-        title: "GMAT Complete Prep",
-        description: "Comprehensive GMAT preparation covering Quant, Verbal, Data Insights and AWA with adaptive practice.",
-        modules: 8, hours: 72, students: 2300, rating: 4.7,
-        icon: "Brain",
+        slug: "business-comm",
+        title: "Business Communication & Slide Pitching",
+        description: "Comprehensive corporate communication preparation covering McKinsey slide layouts, memo writing, and cold email outreach.",
+        modules: 8, hours: 40, students: 2300, rating: 4.8,
+        icon: "Presentation",
         gradient: "from-rose-600 to-pink-700",
-        topics: ["Quant", "Verbal", "Data Insights", "AWA", "Integrated Reasoning"],
+        topics: ["PowerPoint Design", "Executive Summaries", "Cold Emailing", "Slide Pitching"],
       },
       {
         slug: "career-readiness",
@@ -266,7 +257,7 @@ export async function POST(req: Request) {
         topics: ["CV Writing", "Case Interviews", "Behavioral", "Networking", "Salary Negotiation"],
       },
     ];
- 
+
     for (const path of paths) {
       try {
         const existing = await db.listDocuments(DB_ID, "paths", [Query.equal("slug", path.slug)]);
@@ -281,44 +272,29 @@ export async function POST(req: Request) {
         results.push(`  ❌ Path ${path.title}: ${e.message}`);
       }
     }
- 
+
     // ─── Courses ─────────────────────────────────────────────────
     const courses = [
       // Academic English
-      { slug: "verbal-reasoning", pathSlug: "academic-english", title: "Verbal Reasoning & Logical Structures", description: "Master sentence context, logical pivots, synonyms, and inference logic for GRE and GMAT.", lessons: 12, hours: 8, xp: 300, locked: false, skills: ["Verbal Logic", "Inference", "Critical Reading"] },
-      { slug: "academic-writing", pathSlug: "academic-english", title: "Academic Writing & AWA Essays", description: "Draft structured essays, outline logical arguments, and check cohesion for AWA.", lessons: 10, hours: 7, xp: 280, locked: false, skills: ["Essay Writing", "Argument Analysis", "AWA Templates"] },
-      { slug: "gre-vocabulary", pathSlug: "academic-english", title: "GRE/GMAT Vocabulary Mastery", description: "Learn 1200+ high-frequency words through spaced repetition and contextual usage.", lessons: 15, hours: 10, xp: 350, locked: false, skills: ["Vocabulary", "Context Clues", "Word Roots"] },
-      { slug: "ielts-academic", pathSlug: "academic-english", title: "IELTS Academic Band 7+", description: "Reading, Writing, Listening strategies to achieve Band 7+ in IELTS Academic.", lessons: 14, hours: 9, xp: 320, locked: true, skills: ["IELTS Reading", "IELTS Writing", "Band Scoring"] },
+      { slug: "verbal-reasoning", pathSlug: "academic-english", title: "Verbal Reasoning & Logical Structures", description: "Master sentence context, logical pivots, synonyms, and inference logic for Corporate English.", lessons: 12, hours: 8, xp: 300, locked: false, skills: ["Verbal Logic", "Inference", "Critical Reading"] },
+      { slug: "academic-writing", pathSlug: "academic-english", title: "Academic Writing & Executive Essays", description: "Draft structured essays, outline logical arguments, and check cohesion.", lessons: 10, hours: 7, xp: 280, locked: false, skills: ["Essay Writing", "Argument Analysis", "Executive Templates"] },
       { slug: "corporate-english", pathSlug: "academic-english", title: "Corporate English Communication", description: "Professional emails, presentations, and negotiation language for the workplace.", lessons: 8, hours: 6, xp: 250, locked: true, skills: ["Business Writing", "Presentations", "Negotiation"] },
- 
+
       // Data Analytics
       { slug: "excel-advanced", pathSlug: "data-analytics", title: "Excel Advanced Formulas & Pivot", description: "VLOOKUP, INDEX-MATCH, pivot tables, dashboards and automation with macros.", lessons: 16, hours: 10, xp: 400, locked: false, skills: ["VLOOKUP", "Pivot Tables", "Dashboard Design"] },
       { slug: "power-bi", pathSlug: "data-analytics", title: "Power BI for Business Intelligence", description: "Build interactive BI dashboards connecting to Excel, SQL and web sources.", lessons: 14, hours: 10, xp: 380, locked: false, skills: ["Power BI", "DAX", "Data Modeling"] },
       { slug: "sql-fundamentals", pathSlug: "data-analytics", title: "SQL for Data Analysis", description: "Query databases, join tables and aggregate data using SQL for business analytics.", lessons: 12, hours: 8, xp: 320, locked: false, skills: ["SELECT", "JOINs", "Aggregation"] },
-      { slug: "python-analytics", pathSlug: "data-analytics", title: "Python for Data Analytics", description: "Use pandas, matplotlib and seaborn to analyze and visualize business data.", lessons: 18, hours: 14, xp: 450, locked: true, skills: ["Pandas", "Matplotlib", "Data Cleaning"] },
-      { slug: "data-visualization", pathSlug: "data-analytics", title: "Data Visualization & Storytelling", description: "Design charts and dashboards that communicate insights to stakeholders.", lessons: 10, hours: 7, xp: 280, locked: true, skills: ["Chart Design", "Storytelling", "Canva/Figma"] },
-      { slug: "financial-modelling", pathSlug: "data-analytics", title: "Financial Modelling in Excel", description: "Build 3-statement models, DCF, and LBO models used in investment banking.", lessons: 12, hours: 10, xp: 380, locked: true, skills: ["3-Statement Model", "DCF", "Scenario Analysis"] },
- 
+
       // Corporate Finance
       { slug: "financial-statements", pathSlug: "corporate-finance", title: "Financial Statements Analysis", description: "Read and interpret income statements, balance sheets and cash flow statements.", lessons: 10, hours: 7, xp: 300, locked: false, skills: ["Income Statement", "Balance Sheet", "Cash Flow"] },
       { slug: "dcf-valuation", pathSlug: "corporate-finance", title: "DCF Valuation & Business Valuation", description: "Build discounted cash flow models, WACC calculations and sensitivity analysis.", lessons: 12, hours: 9, xp: 350, locked: false, skills: ["DCF", "WACC", "Terminal Value"] },
-      { slug: "fixed-income", pathSlug: "corporate-finance", title: "Fixed Income & Bonds", description: "Bond pricing, duration, yield curves and credit analysis for the CFA exam.", lessons: 10, hours: 8, xp: 300, locked: true, skills: ["Bond Pricing", "Duration", "Yield Curves"] },
-      { slug: "equity-analysis", pathSlug: "corporate-finance", title: "Equity Research & Stock Analysis", description: "Comparable company analysis, precedent transactions and equity research reports.", lessons: 12, hours: 9, xp: 350, locked: true, skills: ["Comps", "Equity Research", "P/E Ratios"] },
-      { slug: "portfolio-management", pathSlug: "corporate-finance", title: "Portfolio Management & Risk", description: "Modern Portfolio Theory, CAPM, Sharpe ratio and asset allocation strategies.", lessons: 10, hours: 8, xp: 320, locked: true, skills: ["MPT", "CAPM", "Risk Management"] },
- 
-      // GMAT
-      { slug: "gmat-quant", pathSlug: "gmat-prep", title: "GMAT Quantitative Reasoning", description: "Problem solving and data sufficiency for GMAT Quant from Q40 to Q51.", lessons: 20, hours: 16, xp: 500, locked: false, skills: ["Problem Solving", "Data Sufficiency", "Number Properties"] },
-      { slug: "gmat-verbal", pathSlug: "gmat-prep", title: "GMAT Verbal: CR, SC, RC", description: "Critical Reasoning, Sentence Correction, and Reading Comprehension mastery.", lessons: 18, hours: 14, xp: 450, locked: false, skills: ["Critical Reasoning", "Sentence Correction", "RC"] },
-      { slug: "gmat-data-insights", pathSlug: "gmat-prep", title: "Data Insights (DI) Section", description: "Master the new DI section including Multi-Source Reasoning and Table Analysis.", lessons: 10, hours: 8, xp: 300, locked: false, skills: ["Data Sufficiency", "Multi-Source Reasoning", "Graphics"] },
-      { slug: "gmat-awa", pathSlug: "gmat-prep", title: "AWA Essay Writing", description: "Score 5+ on the AWA with structured templates and argument analysis practice.", lessons: 8, hours: 5, xp: 200, locked: true, skills: ["Essay Templates", "Argument Analysis", "Transitions"] },
- 
+
       // Career
       { slug: "cv-linkedin", pathSlug: "career-readiness", title: "CV, Cover Letter & LinkedIn", description: "Craft ATS-optimized CVs and compelling cover letters that get shortlisted.", lessons: 8, hours: 5, xp: 200, locked: false, skills: ["CV Writing", "LinkedIn SEO", "Cover Letter"] },
       { slug: "case-interviews", pathSlug: "career-readiness", title: "Case Interview Masterclass", description: "Crack McKinsey, BCG, Bain case interviews with structured frameworks.", lessons: 14, hours: 10, xp: 380, locked: false, skills: ["Case Frameworks", "MECE", "Presentation"] },
       { slug: "behavioral-interviews", pathSlug: "career-readiness", title: "Behavioral & HR Interviews", description: "STAR method answers for leadership, teamwork, failure and conflict questions.", lessons: 10, hours: 6, xp: 250, locked: true, skills: ["STAR Method", "Leadership", "Conflict Resolution"] },
-      { slug: "networking-strategy", pathSlug: "career-readiness", title: "Networking & Personal Branding", description: "Build a professional network, cold email templates and negotiation playbooks.", lessons: 8, hours: 5, xp: 200, locked: true, skills: ["Cold Outreach", "Informational Interviews", "Salary Negotiation"] },
     ];
- 
+
     for (const course of courses) {
       try {
         const existing = await db.listDocuments(DB_ID, "courses", [Query.equal("slug", course.slug)]);
@@ -333,14 +309,12 @@ export async function POST(req: Request) {
         results.push(`  ❌ Course ${course.title}: ${e.message}`);
       }
     }
- 
+
     // ─── Tasks ───────────────────────────────────────────────────
     const tasks = [
       { title: "Complete 1 Verbal Reasoning lesson", xp: 50, category: "learning" },
-      { title: "Practice 20 GRE Vocabulary words", xp: 30, category: "learning" },
       { title: "Take an Excel Mock Test", xp: 100, category: "test" },
       { title: "Post in the Community Forum", xp: 20, category: "social" },
-      { title: "Watch 1 GMAT Quant video", xp: 40, category: "learning" },
     ];
     for (const task of tasks) {
       try {
@@ -356,14 +330,12 @@ export async function POST(req: Request) {
         results.push(`  ❌ Task ${task.title}: ${e.message}`);
       }
     }
- 
+
     // ─── Events ──────────────────────────────────────────────────
     const events = [
       { title: "Excel Workshop — BAUBC Chapter", date: "Jul 18", time: "3:00 PM", type: "Workshop", location: "Zoom", description: "Live Excel session covering VLOOKUP, Pivot Tables and dashboard design." },
       { title: "Mock Test Marathon", date: "Jul 20", time: "10:00 AM", type: "Competition", location: "Online", description: "Compete against peers across 3 mock tests in one session. Top 3 win prizes." },
-      { title: "GMAT Study Group", date: "Jul 22", time: "7:00 PM", type: "Study Session", location: "Discord", description: "Community-led GMAT Quant problem-solving session." },
       { title: "Career Panel: IBA Alumni", date: "Jul 25", time: "5:00 PM", type: "Webinar", location: "Zoom", description: "IBA alumni from McKinsey, Unilever and Standard Chartered share their journeys." },
-      { title: "AWA Essay Review Session", date: "Aug 01", time: "6:00 PM", type: "Workshop", location: "Google Meet", description: "Submit your AWA essays for expert feedback and improvement tips." },
     ];
     for (const ev of events) {
       try {
@@ -379,17 +351,12 @@ export async function POST(req: Request) {
         results.push(`  ❌ Event ${ev.title}: ${e.message}`);
       }
     }
- 
+
     // ─── Mock Tests ──────────────────────────────────────────────
     const mockTests = [
-      { title: "GRE Verbal Reasoning — Set A", category: "GRE", difficulty: "Medium", questions: 40, duration: 60, xp: 200, description: "Text Completion, Sentence Equivalence and Reading Comprehension.", locked: false },
-      { title: "GMAT Quantitative — Full Section", category: "GMAT", difficulty: "Hard", questions: 31, duration: 62, xp: 250, description: "Problem Solving and Data Sufficiency questions at GMAT difficulty.", locked: false },
-      { title: "GMAT Verbal — Full Section", category: "GMAT", difficulty: "Hard", questions: 36, duration: 65, xp: 250, description: "Critical Reasoning, Reading Comprehension and Sentence Correction.", locked: false },
+      { title: "Bangladesh Bank AD Full Length Mock Test", category: "Banking", difficulty: "Advanced", questions: 30, duration: 60, xp: 250, description: "Monetary policy, CRR/SLR regulations, and financial economics.", locked: false },
+      { title: "Corporate Management Trainee (MTO) Cognitive Test", category: "Corporate", difficulty: "Advanced", questions: 30, duration: 45, xp: 300, description: "Numerical reasoning, logical deduction, and case analytics.", locked: false },
       { title: "Excel Aptitude Test — Banking", category: "Excel", difficulty: "Medium", questions: 30, duration: 45, xp: 180, description: "Applied Excel questions for banking and finance interviews.", locked: false },
-      { title: "GMAT Data Insights — Full Section", category: "GMAT", difficulty: "Hard", questions: 20, duration: 45, xp: 200, description: "Multi-Source Reasoning, Table Analysis, and Graphics Interpretation.", locked: true },
-      { title: "Corporate Finance Fundamentals", category: "Finance", difficulty: "Medium", questions: 50, duration: 75, xp: 300, description: "Financial statements, DCF, ratios and investment analysis.", locked: true },
-      { title: "GRE Quantitative Reasoning — Set A", category: "GRE", difficulty: "Medium", questions: 40, duration: 70, xp: 200, description: "Arithmetic, Algebra, Geometry and Data Analysis for GRE.", locked: true },
-      { title: "IELTS Academic Reading Mock", category: "IELTS", difficulty: "Medium", questions: 40, duration: 60, xp: 200, description: "Full IELTS Academic Reading paper with answer explanations.", locked: true },
     ];
     for (const test of mockTests) {
       try {
@@ -405,14 +372,12 @@ export async function POST(req: Request) {
         results.push(`  ❌ Mock Test ${test.title}: ${e.message}`);
       }
     }
- 
+
     // ─── Workshops ───────────────────────────────────────────────
     const workshops = [
       { title: "Excel for Finance Professionals", host: "Shadman Sakib, CFA", date: "Jul 18, 2025", time: "3:00 PM", duration: "2 hours", level: "Intermediate", description: "VLOOKUP, Pivot Tables, financial model templates and live Q&A.", registered: false, spots: 40 },
-      { title: "GMAT 700+ Strategy Session", host: "Rasha Binte Karim", date: "Jul 22, 2025", time: "5:00 PM", duration: "1.5 hours", level: "Advanced", description: "Quant shortcuts, Verbal pacing strategies and official prep resources.", registered: false, spots: 25 },
       { title: "Case Interview Bootcamp", host: "Tahmid Farhan, McKinsey", date: "Jul 26, 2025", time: "4:00 PM", duration: "3 hours", level: "All Levels", description: "Live case cracking with frameworks, feedback and practice pairs.", registered: false, spots: 20 },
       { title: "Power BI Dashboard Design", host: "Nusrat Jahan", date: "Aug 02, 2025", time: "6:00 PM", duration: "2 hours", level: "Beginner", description: "Build your first interactive Power BI dashboard from scratch.", registered: false, spots: 50 },
-      { title: "AWA Masterclass: Score 5+", host: "Dr. Arif Rahman", date: "Aug 08, 2025", time: "7:00 PM", duration: "1.5 hours", level: "Intermediate", description: "Templates, transitions, sample essays and timed practice for AWA.", registered: false, spots: 30 },
     ];
     for (const ws of workshops) {
       try {
@@ -428,12 +393,11 @@ export async function POST(req: Request) {
         results.push(`  ❌ Workshop ${ws.title}: ${e.message}`);
       }
     }
- 
+
     // ─── Community Posts ─────────────────────────────────────────
     const communityPosts = [
-      { authorName: "Farhan Ahmed", authorRole: "GMAT 720 Scorer", content: "Just scored 720 on GMAT after 3 months on INSYT! The Data Insights module was 🔥. The practice questions are almost identical to the real exam. Huge thanks to the community!", space: "GMAT", likes: 47 },
+      { authorName: "Farhan Ahmed", authorRole: "Unilever MTO Officer", content: "Just cleared the Unilever Assessment Center after 3 months on INSYT! The STAR interview framework & case study modules were 🔥. Huge thanks to the community!", space: "Corporate", likes: 47 },
       { authorName: "Nusrat Jahan", authorRole: "Excel Enthusiast", content: "Pro tip: Use XLOOKUP instead of VLOOKUP for banking model templates — it handles left lookups and returns arrays natively. Here's a quick formula: =XLOOKUP(A2, data!A:A, data!B:B, \"Not Found\")", space: "Excel", likes: 38 },
-      { authorName: "Rafiul Islam", authorRole: "IBA MBA Aspirant", content: "For GRE Verbal — the biggest hack is learning word roots. Once you know 'bene' means good, you can figure out benevolent, benefactor, beneficent without memorizing them separately. Works for 60% of GRE words!", space: "GRE", likes: 31 },
       { authorName: "Sabrina Islam", authorRole: "Finance Student", content: "Anyone else finding the DCF module incredibly practical? I built a full 3-statement model for a BD telecom company as a class project and my professor was impressed. The Excel templates here are industry-grade.", space: "Excel", likes: 25 },
       { authorName: "Mehedi Hasan", authorRole: "Data Analyst Trainee", content: "Power BI tip: Use the RANKX function in DAX to create dynamic rankings that update automatically when your data refreshes. Game-changer for monthly sales reports!", space: "Power BI", likes: 19 },
     ];

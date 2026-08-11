@@ -23,8 +23,8 @@ const testimonials = [
   },
   {
     name: "Rafiul Islam",
-    role: "GRE 328, MS at Georgia Tech",
-    quote: "The GRE modules combined with AI-powered study plans kept me on track. The gamification system made studying addictive — I genuinely looked forward to earning XP every day.",
+    role: "Financial Analyst, Standard Chartered",
+    quote: "The financial modeling modules combined with AI-powered study plans kept me on track. The gamification system made studying addictive — I genuinely looked forward to earning XP every day.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=96&q=80",
     initials: "RI",

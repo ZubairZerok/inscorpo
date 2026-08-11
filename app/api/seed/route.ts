@@ -127,12 +127,12 @@ export async function POST(req: Request) {
     // Seed Data
     const seedPaths = [
       {
-        slug: "gre-gmat",
-        title: "Academic English Mastery",
-        description: "Target elite verbal reasoning logic, academic syntax, writing templates, and vocabulary for GRE, GMAT, IELTS, and Corporate English.",
-        modules: 2, hours: 120, students: 1900, rating: 4.9,
-        icon: "GraduationCap", gradient: "from-violet-600 to-purple-700",
-        topics: ["GRE Verbal", "GMAT Verbal", "IELTS Academic", "Corporate English", "Analytical Writing"],
+        slug: "corporate-mto",
+        title: "Corporate Job / MTO Masterclass",
+        description: "Crack Management Trainee assessments, refine your CV for ATS screening, and master behavioral, technical, and consulting case interviews.",
+        modules: 4, hours: 23, students: 52100, rating: 5.0,
+        icon: "Briefcase", gradient: "from-blue-600 to-indigo-800",
+        topics: ["SHL Tests", "Psychometric", "Situational Judgment", "ATS CV", "STAR Method"],
       }
     ];
 
@@ -147,20 +147,20 @@ export async function POST(req: Request) {
 
     const seedCourses = [
       {
-        slug: "verbal-reasoning-logic",
-        pathSlug: "gre-gmat",
-        title: "Verbal Reasoning & Logical Structures",
-        description: "Master sentence context, logical pivots, synonyms, and inference logic for GRE, GMAT, and IELTS.",
-        lessons: 12, hours: 20, xp: 450, locked: false,
-        skills: ["Verbal Logic", "Argument Analysis", "Critical Reading"],
+        slug: "recruit-assessments",
+        pathSlug: "corporate-mto",
+        title: "Application Strategy & Assessment Tests",
+        description: "SHL numerical reasoning, situational judgment tests (SJT), and employer expectations for top MNC recruitment drives.",
+        lessons: 8, hours: 6, xp: 350, locked: false,
+        skills: ["SHL Tests", "Psychometric", "Situational Judgment", "ATS CV"],
       },
       {
-        slug: "academic-writing-awa",
-        pathSlug: "gre-gmat",
-        title: "Academic Writing & Essay Curation",
-        description: "Draft structured essays, outline logical arguments, and check cohesion for corporate reports and AWA.",
-        lessons: 12, hours: 20, xp: 450, locked: true,
-        skills: ["Analytical Writing", "Essay Templates", "Paragraph Coherence"],
+        slug: "recruit-behavioral",
+        pathSlug: "corporate-mto",
+        title: "Behavioral & HR Interview Mastery",
+        description: "STAR framework storytelling, CAR structures, and templates for answering tough behavioral questions.",
+        lessons: 7, hours: 5, xp: 350, locked: false,
+        skills: ["STAR Method", "HR Interviews", "Behavioral Q&A"],
       }
     ];
 
@@ -176,7 +176,7 @@ export async function POST(req: Request) {
     // Seed initial Tasks & Events
     const seedTasks = [
       { title: "Complete Banking Module 3 Quiz", xp: 50 },
-      { title: "Practice 20 GRE Vocab Words", xp: 30 },
+      { title: "Practice Excel Shortcuts Drill", xp: 30 },
       { title: "Take a Mock Test (Banking)", xp: 100 },
     ];
     for (const task of seedTasks) {

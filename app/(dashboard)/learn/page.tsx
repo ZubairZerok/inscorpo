@@ -296,7 +296,7 @@ export default function TailoredCareerTracksHubPage() {
             Explore Individual Skill Courses & Secondary Modules
           </h3>
           <p className="text-xs mt-1 font-medium font-sans text-blue-100">
-            Need single topics like Power BI, Corporate Finance, or GRE Verbal? Browse our complete collection.
+            Need single topics like Power BI, Corporate Finance, or Business Communication? Browse our complete collection.
           </p>
         </div>
         <Link

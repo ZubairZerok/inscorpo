@@ -15,7 +15,7 @@ const footerNavigation = {
     { name: "Management Trainee (MTO)", href: "/learn" },
     { name: "Business Analytics & Excel", href: "/learn" },
     { name: "Banking Prep (AD & Officer)", href: "/learn" },
-    { name: "GRE & GMAT Strategy", href: "/learn" },
+    { name: "AI Workplace Automation", href: "/learn" },
   ],
   company: [
     { name: "About INSYT Corporate", href: "/about" },

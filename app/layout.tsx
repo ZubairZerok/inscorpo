@@ -31,18 +31,16 @@ export const metadata: Metadata = {
     template: "%s | INSYT Corporate",
   },
   description:
-    "Level up your career with INSYT Corporate. Master banking, corporate skills, GRE, GMAT, IELTS, AI productivity and more. The most advanced career development platform.",
+    "Level up your career with INSYT Corporate. Master banking, management trainee tracks, business analytics, corporate skills, and AI productivity.",
   keywords: [
     "career development",
     "corporate training",
     "banking preparation",
-    "GRE preparation",
-    "GMAT preparation",
-    "IELTS preparation",
+    "management trainee",
     "business skills",
     "professional development",
     "AI productivity",
-    "management trainee",
+    "MTO preparation",
     "INSYT Corporate",
   ],
   authors: [{ name: "INSYT" }],
@@ -52,7 +50,7 @@ export const metadata: Metadata = {
     siteName: "INSYT Corporate",
     title: "INSYT Corporate — The Career Operating System",
     description:
-      "Level up your career. Master banking, corporate skills, GRE, GMAT, IELTS, and more.",
+      "Level up your career. Master banking, MTO tracks, business analytics, and executive skills.",
     images: [
       {
         url: "/og-image.png",

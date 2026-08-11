@@ -26,7 +26,7 @@ export const TIER_FEATURES: Record<string, TierFeature> = {
     id: "unlimitedMockTests",
     name: "Unlimited Mock Tests",
     minTier: "pro",
-    description: "Take unlimited GRE, GMAT, and corporate assessment mock tests.",
+    description: "Take unlimited banking, corporate, and analytics mock tests.",
   },
   allLearningPaths: {
     id: "allLearningPaths",

@@ -30,8 +30,8 @@ export function DashboardHero({
     ? "Business Analytics & Corporate Excel"
     : activeSlug === "corporate-finance"
     ? "Corporate Finance & Valuation"
-    : activeSlug === "test-prep-gre-gmat"
-    ? "GRE/GMAT & Global Scholarship Track"
+    : activeSlug === "business-comm"
+    ? "Business Communication & Slide Pitching"
     : activeSlug === "power-bi"
     ? "Power BI & Business Intelligence"
     : "AI Productivity & Automation Suite";

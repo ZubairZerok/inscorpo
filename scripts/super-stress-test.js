@@ -132,7 +132,7 @@ async function runSuperStressTest() {
 
   // Test 1.7: AI Chat - Context Fallbacks & Prompting
   {
-    const contexts = ["gmat-tutor", "gre-tutor", "resume-reviewer", "mock-interview", "excel-assistant", "general"];
+    const contexts = ["resume-reviewer", "mock-interview", "excel-assistant", "general"];
     for (const ctx of contexts) {
       const res = await request("/api/ai/chat", {
         method: "POST",

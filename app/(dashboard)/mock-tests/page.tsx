@@ -49,7 +49,7 @@ export default function MockTestsPage() {
     message: "",
   });
 
-  const categories = ["All", "Banking", "Corporate", "GRE", "GMAT", "Excel"];
+  const categories = ["All", "Banking", "Corporate", "Excel"];
 
   const testsList = useMemo(() => {
     return Object.values(MOCK_TESTS_DATABASE);
@@ -76,10 +76,6 @@ export default function MockTestsPage() {
         return Landmark;
       case "corporate":
         return Briefcase;
-      case "gre":
-        return GraduationCap;
-      case "gmat":
-        return BarChart3;
       case "excel":
         return FileSpreadsheet;
       default:

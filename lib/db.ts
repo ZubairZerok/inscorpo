@@ -146,16 +146,16 @@ export const fetchLeaderboard = fetchLeaderboardFromDB;
 export const INITIAL_COMMUNITY_POSTS = [
   {
     id: "seed_1",
-    author: { name: "Farhan Ahmed", role: "GMAT 720 Scorer", avatar: "FA" },
-    content: "Just scored 720 on GMAT after 3 months on INSYT! The Data Insights module was 🔥. The practice questions are almost identical to the real exam. Huge thanks to the community!",
-    space: "GMAT",
+    author: { name: "Farhan Ahmed", role: "Unilever MTO Officer", avatar: "FA" },
+    content: "Just cleared the Unilever Assessment Center after 3 months on INSYT! The STAR interview framework & case study modules were 🔥. Huge thanks to the community!",
+    space: "Corporate",
     time: "2 hours ago",
     likes: 47,
     comments: 2,
     isLikedByMe: false,
     replies: [
       { author: "Nusrat Jahan", text: "Congrats Farhan! How many hours did you study daily?" },
-      { author: "Farhan Ahmed", text: "Thanks Nusrat! About 2-3 hours daily after work using the INSYT study plan." },
+      { author: "Farhan Ahmed", text: "Thanks Nusrat! About 2-3 hours daily after work using the INSYT MTO case practice." },
     ],
   },
 ];
